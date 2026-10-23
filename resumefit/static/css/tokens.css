@@ -49,6 +49,17 @@
   --shadow-lg: 0 10px 30px rgba(0, 0, 0, 0.6);
   --shadow-teal: 0 0 25px rgba(20, 255, 236, 0.25);
 
+  /* Component Surface Tokens */
+  --navbar-bg: rgba(11, 15, 20, 0.85);
+  --resume-pane-bg: #0D1117;
+  --resume-pane-text: #C9D1D9;
+  --fit-gauge-bg: radial-gradient(circle at center, rgba(13, 115, 119, 0.25) 0%, rgba(18, 26, 36, 0.9) 70%);
+  --secondary-btn-bg: rgba(255, 255, 255, 0.06);
+  --secondary-btn-hover: rgba(255, 255, 255, 0.12);
+  --meter-track-bg: rgba(255, 255, 255, 0.08);
+  --highlight-mark-color: #FFFFFF;
+  --table-hover-bg: rgba(255, 255, 255, 0.02);
+
   /* Radii */
   --radius-sm: 6px;
   --radius-md: 10px;
@@ -64,29 +75,39 @@
 /* Light Theme Variable Overrides */
 [data-theme="light"] {
   --bg-dark: #F8FAFC;
-  --bg-card: rgba(255, 255, 255, 0.94);
-  --bg-card-hover: rgba(255, 255, 255, 1);
+  --bg-card: rgba(255, 255, 255, 0.95);
+  --bg-card-hover: #FFFFFF;
   --bg-surface: #FFFFFF;
   --bg-surface-elevated: #EDF2F7;
-  --border-subtle: rgba(0, 0, 0, 0.09);
+  --border-subtle: rgba(0, 0, 0, 0.12);
   --border-focus: #0D7377;
-  --border-active: rgba(13, 115, 119, 0.4);
+  --border-active: rgba(13, 115, 119, 0.5);
 
   --teal-primary: #0D7377;
-  --teal-glow: #064E51;
+  --teal-glow: #0D7377;
   --teal-dark: #0A585B;
   --teal-light: #0D7377;
-  --teal-gradient: linear-gradient(135deg, #0D7377 0%, #32E0C4 100%);
-  --teal-gradient-subtle: linear-gradient(135deg, rgba(13, 115, 119, 0.12) 0%, rgba(50, 224, 196, 0.06) 100%);
+  --teal-gradient: linear-gradient(135deg, #0D7377 0%, #14B8A6 100%);
+  --teal-gradient-subtle: linear-gradient(135deg, rgba(13, 115, 119, 0.10) 0%, rgba(20, 184, 166, 0.05) 100%);
 
-  --text-main: #0F172A;
+  --text-main: #1E293B;
   --text-muted: #475569;
   --text-dim: #64748B;
-  --text-highlight: #020617;
+  --text-highlight: #0F172A;
+
+  --navbar-bg: rgba(255, 255, 255, 0.92);
+  --resume-pane-bg: #F1F5F9;
+  --resume-pane-text: #1E293B;
+  --fit-gauge-bg: radial-gradient(circle at center, rgba(13, 115, 119, 0.12) 0%, rgba(241, 245, 249, 0.9) 70%);
+  --secondary-btn-bg: rgba(0, 0, 0, 0.05);
+  --secondary-btn-hover: rgba(0, 0, 0, 0.10);
+  --meter-track-bg: rgba(0, 0, 0, 0.10);
+  --highlight-mark-color: #0F172A;
+  --table-hover-bg: rgba(0, 0, 0, 0.02);
 
   --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.08);
   --shadow-md: 0 4px 12px rgba(0, 0, 0, 0.08);
-  --shadow-lg: 0 10px 25px rgba(0, 0, 0, 0.12);
+  --shadow-lg: 0 10px 25px rgba(0, 0, 0, 0.10);
   --shadow-teal: 0 0 20px rgba(13, 115, 119, 0.15);
 }
 

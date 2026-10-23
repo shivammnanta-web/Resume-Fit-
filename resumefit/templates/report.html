@@ -10,7 +10,7 @@
     <div style="display: flex; justify-content: space-between; align-items: flex-start; flex-wrap: wrap; gap: 1rem;">
       <div>
         <div style="display: flex; align-items: center; gap: 0.75rem; margin-bottom: 0.5rem;">
-          <h1 style="font-size: 1.85rem; font-weight: 800; color: #FFF;">
+          <h1 style="font-size: 1.85rem; font-weight: 800; color: var(--text-highlight);">
             {{ report.candidate_name or "Candidate" }}
           </h1>
           {% if report.fit_index >= 80 %}
@@ -130,7 +130,7 @@
   <div class="card" style="margin-bottom: 2rem;">
     <div style="display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid var(--border-subtle); padding-bottom: 1rem; margin-bottom: 1rem;">
       <div>
-        <h2 style="font-size: 1.25rem; font-weight: 700; color: #FFF;">
+        <h2 style="font-size: 1.25rem; font-weight: 700; color: var(--text-highlight);">
           Interactive Skill Evidence Explorer
         </h2>
         <p style="font-size: 0.85rem; color: var(--text-muted);">
@@ -210,14 +210,14 @@
 
   <!-- Itemized Constraints & Deductions -->
   <div class="card" style="margin-bottom: 2rem;">
-    <h2 style="font-size: 1.15rem; font-weight: 700; color: #FFF; margin-bottom: 1rem;">
+    <h2 style="font-size: 1.15rem; font-weight: 700; color: var(--text-highlight); margin-bottom: 1rem;">
       Audit Trail & Itemized Constraint Deductions
     </h2>
 
     <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.25rem;">
       <div style="background: var(--bg-surface); padding: 1rem; border-radius: var(--radius-md); border: 1px solid var(--border-subtle);">
         <span style="font-size: 0.8rem; color: var(--text-muted); text-transform: uppercase;">Experience Requirement</span>
-        <div style="font-size: 1.1rem; font-weight: 700; color: #FFF; margin: 0.25rem 0;">
+        <div style="font-size: 1.1rem; font-weight: 700; color: var(--text-highlight); margin: 0.25rem 0;">
           {% if report.constraints.get('years_penalty', 1.0) < 1.0 %}
             <span style="color: var(--tier-weak);">-{{ "%.0f%%"|format((1.0 - report.constraints.get('years_penalty', 1.0)) * 100) }} Deduction</span>
           {% else %}
@@ -231,7 +231,7 @@
 
       <div style="background: var(--bg-surface); padding: 1rem; border-radius: var(--radius-md); border: 1px solid var(--border-subtle);">
         <span style="font-size: 0.8rem; color: var(--text-muted); text-transform: uppercase;">Academic Degree Check</span>
-        <div style="font-size: 1.1rem; font-weight: 700; color: #FFF; margin: 0.25rem 0;">
+        <div style="font-size: 1.1rem; font-weight: 700; color: var(--text-highlight); margin: 0.25rem 0;">
           {% if report.constraints.get('degree_penalty', 1.0) < 1.0 %}
             <span style="color: var(--tier-weak);">-{{ "%.0f%%"|format((1.0 - report.constraints.get('degree_penalty', 1.0)) * 100) }} Deduction</span>
           {% else %}
@@ -245,7 +245,7 @@
 
       <div style="background: var(--bg-surface); padding: 1rem; border-radius: var(--radius-md); border: 1px solid var(--border-subtle);">
         <span style="font-size: 0.8rem; color: var(--text-muted); text-transform: uppercase;">Missing Skills Penalty</span>
-        <div style="font-size: 1.1rem; font-weight: 700; color: #FFF; margin: 0.25rem 0;">
+        <div style="font-size: 1.1rem; font-weight: 700; color: var(--text-highlight); margin: 0.25rem 0;">
           {% if report.constraints.get('must_have_penalty', 1.0) < 1.0 %}
             <span style="color: var(--tier-weak);">-{{ "%.0f%%"|format((1.0 - report.constraints.get('must_have_penalty', 1.0)) * 100) }} Deduction</span>
           {% else %}
