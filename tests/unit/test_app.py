@@ -153,3 +153,67 @@ def test_web_routes_render_html(client: FlaskClient) -> None:
     resp_eval = client.get("/eval")
     assert resp_eval.status_code == 200
     assert b"Empirical Benchmarks" in resp_eval.data
+
+
+def test_web_form_analyze_and_report_view(client: FlaskClient) -> None:
+    """Verify HTML form submission on /analyze redirects and renders match report view."""
+    form_data = {
+        "candidate_name": "Web Form Tester",
+        "resume_text": "Full stack engineer with Python, Flask, HTML, CSS, and PostgreSQL skills.",
+        "jd_text": "Seeking Python and Flask Web Developer with PostgreSQL experience.",
+    }
+    resp = client.post("/analyze", data=form_data, follow_redirects=True)
+    assert resp.status_code == 200
+    assert b"Web Form Tester" in resp.data
+    assert b"FIT INDEX" in resp.data or b"Fit Index" in resp.data
+
+
+def test_web_compare_form_submission(client: FlaskClient) -> None:
+    """Verify HTML form submission on /compare renders side-by-side comparison."""
+    form_data = {
+        "jd_text": "Backend Engineer with Python and SQL experience.",
+        "cand1_name": "Alice",
+        "cand1_text": "Python and SQL developer with 5 years backend experience.",
+        "cand2_name": "Bob",
+        "cand2_text": "Frontend designer with CSS and HTML experience.",
+    }
+    resp = client.post("/compare", data=form_data)
+    assert resp.status_code == 200
+    assert b"Ranked Evaluation Matrix" in resp.data
+    assert b"Alice" in resp.data
+
+
+def test_api_eval_latest_endpoint(client: FlaskClient) -> None:
+    """Verify /api/eval/latest returns JSON with summary benchmark metrics."""
+    resp = client.get("/api/eval/latest")
+    assert resp.status_code == 200
+    data = resp.get_json()
+    assert "benchmarks" in data or "esco_version" in data
+
+
+def test_api_reports_not_found(client: FlaskClient) -> None:
+    """Verify GET /api/reports/<nonexistent> returns 404 envelope."""
+    resp = client.get("/api/reports/nonexistent-uuid-123")
+    assert resp.status_code == 404
+    data = resp.get_json()
+    assert "error" in data
+
+
+def test_api_suggest_jobs_endpoint(client: FlaskClient) -> None:
+    """Verify /api/suggest-jobs returns top matched job descriptions."""
+    payload = {
+        "resume_text": "Data scientist with Python, pandas, machine learning, and statistical analysis experience.",
+        "top_k": 3,
+    }
+    resp = client.post("/api/suggest-jobs", json=payload)
+    assert resp.status_code == 200
+    data = resp.get_json()
+    assert "jobs" in data
+
+
+def test_custom_404_error_page(client: FlaskClient) -> None:
+    """Verify custom 404 error page renders cleanly."""
+    resp = client.get("/this-route-does-not-exist-at-all")
+    assert resp.status_code == 404
+    assert b"404" in resp.data
+

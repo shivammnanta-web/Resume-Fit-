@@ -623,6 +623,27 @@ mark.evidence-highlight {
   background: rgba(255, 255, 255, 0.02);
 }
 
+/* Theme Toggle Button */
+.theme-toggle {
+  background: var(--bg-surface-elevated);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-full);
+  color: var(--text-main);
+  padding: 0.4rem 0.65rem;
+  font-size: 1rem;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  transition: all var(--transition-fast);
+}
+
+.theme-toggle:hover {
+  border-color: var(--teal-glow);
+  box-shadow: 0 0 10px rgba(20, 255, 236, 0.25);
+  transform: scale(1.05);
+}
+
 /* Footer */
 .footer {
   margin-top: auto;

@@ -4,6 +4,7 @@
  */
 
 document.addEventListener("DOMContentLoaded", () => {
+  initThemeToggle();
   initTabs();
   initDropzone();
   initPresets();
@@ -269,3 +270,28 @@ function initDeleteAction() {
     });
   });
 }
+
+// 7. Dark/Light Mode Theme Toggle
+function initThemeToggle() {
+  const toggleBtn = document.getElementById("theme-toggle-btn");
+  if (!toggleBtn) return;
+
+  const currentTheme = () => document.documentElement.getAttribute("data-theme") || "dark";
+  const iconSpan = document.getElementById("theme-toggle-icon");
+
+  const updateIcon = (theme) => {
+    if (iconSpan) {
+      iconSpan.textContent = theme === "light" ? "☀️" : "🌙";
+    }
+  };
+
+  updateIcon(currentTheme());
+
+  toggleBtn.addEventListener("click", () => {
+    const nextTheme = currentTheme() === "dark" ? "light" : "dark";
+    document.documentElement.setAttribute("data-theme", nextTheme);
+    localStorage.setItem("resumefit-theme", nextTheme);
+    updateIcon(nextTheme);
+  });
+}
+

@@ -4,6 +4,7 @@ services:
   db:
     image: pgvector/pgvector:pg15
     container_name: resumefit_db
+    restart: unless-stopped
     environment:
       POSTGRES_USER: ${POSTGRES_USER:-resumefit}
       POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:-resumefit}
@@ -17,6 +18,33 @@ services:
       interval: 5s
       timeout: 5s
       retries: 5
+
+  web:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: resumefit_web
+    restart: unless-stopped
+    depends_on:
+      db:
+        condition: service_healthy
+    environment:
+      DATABASE_URL: postgresql://${POSTGRES_USER:-resumefit}:${POSTGRES_PASSWORD:-resumefit}@db:5432/${POSTGRES_DB:-resumefit}
+      FLASK_ENV: production
+      APP_CONFIG: config/default.yaml
+      SECRET_KEY: ${SECRET_KEY:-production-deployment-secret-key-change-me}
+      PORT: 5000
+    ports:
+      - "5000:5000"
+    command: >
+      sh -c "alembic upgrade head &&
+             gunicorn --bind 0.0.0.0:5000 --workers 2 --timeout 120 --access-logfile - --error-logfile - 'resumefit.app:create_app()'"
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:5000/api/health"]
+      interval: 30s
+      timeout: 5s
+      start_period: 25s
+      retries: 3
 
 volumes:
   pgdata:

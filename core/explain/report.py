@@ -261,7 +261,10 @@ class ReportGenerator:
                 "keyword_stuffing_detected": keyword_stuffing_flag,
                 "keyword_stuffing_ratio": round(keyword_stuffing_ratio, 2),
             },
-            lexical_attribution=lexical_result.to_dict(),
+            lexical_attribution={
+                **lexical_result.to_dict(),
+                "top_contributing_terms": lexical_result.to_dict().get("matched_terms", []),
+            },
             semantic_attribution={
                 "mean_pooled_score": round(semantic_result.mean_pooled_score, 4),
                 "requirement_to_chunk_score": round(
@@ -280,6 +283,9 @@ class ReportGenerator:
                 "required_years_exp": parsed_jd.min_years_experience,
                 "candidate_degree": candidate_degree,
                 "required_degree": parsed_jd.min_degree,
+                "years_penalty": next((d.multiplier for d in constraint_result.deductions if "Experience" in d.constraint_name), 1.0),
+                "degree_penalty": next((d.multiplier for d in constraint_result.deductions if "Education" in d.constraint_name), 1.0),
+                "must_have_penalty": next((d.multiplier for d in constraint_result.deductions if "Skill" in d.constraint_name), 1.0),
                 "total_multiplier": round(constraint_result.total_multiplier, 4),
                 "total_penalty_multiplier": round(constraint_result.total_multiplier, 4),
                 "deductions": [d.to_dict() for d in constraint_result.deductions],

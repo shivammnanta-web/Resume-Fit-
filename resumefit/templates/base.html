@@ -14,6 +14,12 @@
   <!-- Design System & Styles -->
   <link rel="stylesheet" href="{{ url_for('static', filename='css/tokens.css') }}">
   <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
+  <script>
+    (function() {
+      const saved = localStorage.getItem('resumefit-theme') || 'dark';
+      document.documentElement.setAttribute('data-theme', saved);
+    })();
+  </script>
   {% block extra_head %}{% endblock %}
 </head>
 <body>
@@ -40,6 +46,11 @@
         <li><a href="{{ url_for('web.compare_candidates') }}" class="nav-link {% if request.endpoint == 'web.compare_candidates' %}active{% endif %}" id="nav-compare">Side-by-Side Compare</a></li>
         <li><a href="{{ url_for('web.dashboard') }}" class="nav-link {% if request.endpoint == 'web.dashboard' %}active{% endif %}" id="nav-dashboard">Candidate Pool</a></li>
         <li><a href="{{ url_for('web.evaluation_dashboard') }}" class="nav-link {% if request.endpoint == 'web.evaluation_dashboard' %}active{% endif %}" id="nav-eval">Academic Benchmarks</a></li>
+        <li>
+          <button id="theme-toggle-btn" class="theme-toggle" aria-label="Toggle dark/light theme" title="Toggle Theme">
+            <span id="theme-toggle-icon">🌓</span>
+          </button>
+        </li>
       </ul>
     </div>
   </nav>
