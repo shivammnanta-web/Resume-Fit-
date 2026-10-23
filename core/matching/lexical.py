@@ -117,7 +117,7 @@ class LexicalScorer:
         corpus = build_reference_corpus()
         vec = TfidfVectorizer(
             tokenizer=tech_tokenize,
-            token_pattern=None,
+            token_pattern=None,  # type: ignore[arg-type]
             ngram_range=(1, 2),
             min_df=1,
             max_df=0.95,

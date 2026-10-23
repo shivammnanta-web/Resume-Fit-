@@ -10,6 +10,7 @@ from __future__ import annotations
 import logging
 from collections.abc import Sequence
 from dataclasses import dataclass
+from typing import Any
 
 import numpy as np
 from scipy import stats
@@ -77,9 +78,9 @@ def paired_bootstrap_test(
     wilc_p = None
     if not np.all(diff_vector == 0):
         try:
-            res = stats.wilcoxon(arr_a, arr_b, alternative="two-sided")
-            wilc_stat = float(res.statistic)
-            wilc_p = float(res.pvalue)
+            res: Any = stats.wilcoxon(arr_a, arr_b, alternative="two-sided")
+            wilc_stat = float(getattr(res, "statistic", res[0]))
+            wilc_p = float(getattr(res, "pvalue", res[1]))
         except Exception as exc:
             logger.debug("Wilcoxon test failed: %s", exc)
 
