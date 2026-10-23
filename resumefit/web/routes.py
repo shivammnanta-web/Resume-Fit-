@@ -2,10 +2,21 @@
 
 from __future__ import annotations
 
+import hmac
 import logging
 from typing import Any
 
-from flask import Blueprint, abort, flash, redirect, render_template, request, url_for
+from flask import (
+    Blueprint,
+    abort,
+    current_app,
+    flash,
+    redirect,
+    render_template,
+    request,
+    session,
+    url_for,
+)
 from werkzeug.utils import secure_filename
 
 from core.ingestion.types import UnsupportedDocument
@@ -14,6 +25,15 @@ from resumefit.services import MatchingService
 logger = logging.getLogger(__name__)
 
 web_bp = Blueprint("web", __name__)
+
+
+def validate_csrf() -> bool:
+    """Validate CSRF token on state-changing web form POSTs."""
+    if current_app.config.get("TESTING", False) or not current_app.config.get("CSRF_ENABLED", True):
+        return True
+    expected = session.get("_csrf_token")
+    provided = request.form.get("csrf_token")
+    return bool(expected and provided and hmac.compare_digest(expected, provided))
 
 
 @web_bp.route("/", methods=["GET"])
@@ -25,6 +45,10 @@ def index() -> str:
 @web_bp.route("/analyze", methods=["POST"])
 def analyze_view() -> Any:
     """Form submission handler for resume matching."""
+    if not validate_csrf():
+        flash("Invalid or expired session security token (CSRF). Please resubmit.", "error")
+        return redirect(url_for("web.index"))
+
     service = MatchingService.get_instance()
     jd_text = request.form.get("jd_text", "").strip()
     candidate_name = request.form.get("candidate_name", "").strip() or None
@@ -98,6 +122,10 @@ def compare_candidates() -> Any:
     service = MatchingService.get_instance()
 
     if request.method == "POST":
+        if not validate_csrf():
+            flash("Invalid or expired session security token (CSRF). Please resubmit.", "error")
+            return render_template("compare.html", ranking=None)
+
         jd_text = request.form.get("jd_text", "").strip()
         cand1_name = request.form.get("cand1_name", "Candidate A").strip()
         cand1_text = request.form.get("cand1_text", "").strip()

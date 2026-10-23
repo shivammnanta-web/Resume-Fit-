@@ -5,7 +5,7 @@ from __future__ import annotations
 import logging
 from typing import Any
 
-from flask import Blueprint, jsonify, request
+from flask import Blueprint, current_app, jsonify, request
 from pydantic import ValidationError
 from werkzeug.utils import secure_filename
 
@@ -28,9 +28,25 @@ api_bp = Blueprint("api", __name__)
 
 
 def make_error_response(code: str, message: str, status_code: int, details: Any = None) -> Any:
-    """Format and return a standard API ErrorEnvelope JSON response."""
+    """Format and return a standard API ErrorEnvelope JSON response.
+
+    Masks raw exception details on 500 errors unless debug mode is active to prevent
+    sensitive information disclosure in production environments.
+    """
+    safe_message = message
+    safe_details = details
+
+    try:
+        is_debug = bool(current_app and current_app.config.get("DEBUG", False))
+    except Exception:
+        is_debug = False
+
+    if status_code >= 500 and not is_debug:
+        safe_message = "An unexpected internal server error occurred."
+        safe_details = None
+
     payload = ErrorEnvelope(
-        error=ErrorDetail(code=code, message=message, details=details)
+        error=ErrorDetail(code=code, message=safe_message, details=safe_details)
     ).model_dump()
     return jsonify(payload), status_code
 

@@ -28,6 +28,7 @@
 
   <!-- Matching Form -->
   <form action="{{ url_for('web.analyze_view') }}" method="POST" enctype="multipart/form-data">
+    <input type="hidden" name="csrf_token" value="{{ csrf_token() }}">
 
     <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1.75rem; margin-bottom: 1.75rem;">
 

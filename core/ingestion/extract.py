@@ -7,6 +7,7 @@ quality heuristic (character density, garbled-token ratio, line length sanity).
 
 from __future__ import annotations
 
+import contextlib
 import io
 import logging
 from pathlib import Path
@@ -94,9 +95,23 @@ def extract_page_with_pdfplumber(pdf_bytes: bytes, page_idx: int) -> str:
         with pdfplumber.open(io.BytesIO(pdf_bytes)) as pdf:
             if page_idx < len(pdf.pages):
                 page = pdf.pages[page_idx]
-                # Extract text preserving approximate visual layout
                 text = page.extract_text(layout=True) or page.extract_text() or ""
                 return text
+        return ""
+    except Exception as exc:
+        logger.debug("pdfplumber failed on page %d: %s", page_idx + 1, exc)
+        return ""
+
+
+def extract_page_from_plumber_doc(plumber_doc: pdfplumber.pdf.PDF | None, page_idx: int) -> str:
+    """Extract text from a pre-opened pdfplumber document page."""
+    if plumber_doc is None:
+        return ""
+    try:
+        if page_idx < len(plumber_doc.pages):
+            page = plumber_doc.pages[page_idx]
+            text = page.extract_text(layout=True) or page.extract_text() or ""
+            return text
         return ""
     except Exception as exc:
         logger.debug("pdfplumber failed on page %d: %s", page_idx + 1, exc)
@@ -120,12 +135,20 @@ def extract_pdf_text(
     raw_bytes, pypdf_reader = check_pdf_preconditions(file_source)
     total_pages = len(pypdf_reader.pages)
 
+    # Open pdfplumber once for the entire document to avoid O(N) re-parsing overhead
+    plumber_doc: pdfplumber.pdf.PDF | None = None
+    try:
+        plumber_doc = pdfplumber.open(io.BytesIO(raw_bytes))
+    except Exception as exc:
+        logger.warning("Could not open document with pdfplumber: %s. Using pypdf fallback.", exc)
+
     page_results: list[PageExtractionResult] = []
     chosen_texts: list[str] = []
 
-    for page_idx in range(total_pages):
-        text_pypdf = extract_page_with_pypdf(pypdf_reader, page_idx)
-        text_plumber = extract_page_with_pdfplumber(raw_bytes, page_idx)
+    try:
+        for page_idx in range(total_pages):
+            text_pypdf = extract_page_with_pypdf(pypdf_reader, page_idx)
+            text_plumber = extract_page_from_plumber_doc(plumber_doc, page_idx)
 
         c_pypdf, g_pypdf, s_pypdf = evaluate_page_text_quality(text_pypdf)
         c_plumb, g_plumb, s_plumb = evaluate_page_text_quality(text_plumber)
@@ -172,6 +195,11 @@ def extract_pdf_text(
             )
         )
         chosen_texts.append(chosen_text)
+
+    finally:
+        if plumber_doc is not None:
+            with contextlib.suppress(Exception):
+                plumber_doc.close()
 
     # Enforce scan check: Fail loudly if characters per page are below threshold
     evaluate_scan_quality(chosen_texts)

@@ -3,9 +3,10 @@
 from __future__ import annotations
 
 import logging
+import secrets
 from typing import Any
 
-from flask import Flask, render_template, request
+from flask import Flask, render_template, request, session
 
 from resumefit.api.routes import api_bp, make_error_response
 from resumefit.config import get_config
@@ -14,6 +15,25 @@ from resumefit.logging import setup_logging
 from resumefit.web.routes import web_bp
 
 logger = logging.getLogger(__name__)
+
+
+def generate_csrf_token() -> str:
+    """Generate or retrieve a cryptographically secure session-bound CSRF token."""
+    if "_csrf_token" not in session:
+        session["_csrf_token"] = secrets.token_hex(24)
+    return str(session["_csrf_token"])
+
+
+def warmup_models() -> None:
+    """Pre-warm SentenceTransformer inference graph to eliminate cold-start user latency."""
+    try:
+        from core.matching.semantic import get_embedding_model
+
+        model = get_embedding_model()
+        model.encode(["system model warmup initialization query"], show_progress_bar=False)
+        logger.info("SentenceTransformer model pre-warmed successfully.")
+    except Exception as exc:
+        logger.debug("Model warmup bypassed: %s", exc)
 
 
 def create_app(test_config: dict[str, Any] | None = None) -> Flask:
@@ -36,9 +56,18 @@ def create_app(test_config: dict[str, Any] | None = None) -> Flask:
     # Initialize rate limiter
     limiter.init_app(app)
 
+    # Register CSRF template helper
+    @app.context_processor
+    def inject_csrf() -> dict[str, Any]:
+        return {"csrf_token": generate_csrf_token}
+
     # Register blueprints
     app.register_blueprint(api_bp, url_prefix="/api")
     app.register_blueprint(web_bp)
+
+    # Pre-warm embedding model unless running in fast unit test mode
+    if not app.config.get("TESTING", False):
+        warmup_models()
 
     # Central error handlers
     @app.errorhandler(400)

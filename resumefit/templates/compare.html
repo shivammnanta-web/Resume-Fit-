@@ -96,6 +96,7 @@
     </h2>
 
     <form action="{{ url_for('web.compare_candidates') }}" method="POST">
+      <input type="hidden" name="csrf_token" value="{{ csrf_token() }}">
       <!-- Target JD -->
       <div class="form-group">
         <label class="form-label" for="jd_text">Target Job Description</label>

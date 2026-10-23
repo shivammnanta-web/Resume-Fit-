@@ -25,6 +25,7 @@ class AppConfig(BaseModel):
     secret_key: str = "dev-insecure-secret-key-change-in-production"
     rate_limit_analyze: str = "10 per minute"
     rate_limit_default: str = "30 per minute"
+    rate_limit_storage_url: str = "memory://"
 
 
 class IngestionConfig(BaseModel):
