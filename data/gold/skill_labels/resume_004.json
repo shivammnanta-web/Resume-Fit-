@@ -1,0 +1,24 @@
+{
+  "id": "resume_004",
+  "domain": "frontend_web",
+  "text": "\nNeha Gupta | Senior Frontend Engineer\nSUMMARY\nFrontend specialist with 5 years experience creating responsive, accessible web applications in React and TypeScript.\n\nWORK EXPERIENCE\nSenior Frontend Developer | WebCraft Digital (2022 - Present)\n\u2022 Built server-side rendered web applications using Next.js, React.js, and TypeScript.\n\u2022 Architected client state management with Zustand and TanStack Query.\n\u2022 Styled responsive UI design systems using Tailwind CSS and modern CSS3.\n\u2022 Wrote unit and component integration tests using Jest and Playwright.\n\nFrontend Developer | Pixel Studio (2019 - 2022)\n\u2022 Developed interactive single page applications using React, HTML5, and JavaScript.\n\u2022 Integrated RESTful API and WebSocket endpoints for live real-time chats.\n\nTECHNICAL SKILLS\nLanguages: TypeScript, JavaScript, HTML5, CSS3\nFrameworks: React.js, Next.js, Tailwind CSS\nState & Data: Zustand, TanStack Query, Redux\nTesting & Tooling: Jest, Playwright, Vite, Webpack, Git\nProtocols: RESTful API, WebSockets\n",
+  "expected_skills": [
+    "TypeScript",
+    "JavaScript",
+    "HTML5",
+    "CSS3",
+    "React.js",
+    "Next.js",
+    "Tailwind CSS",
+    "Zustand",
+    "TanStack Query",
+    "Redux",
+    "Jest",
+    "Playwright",
+    "Vite",
+    "Webpack",
+    "Git",
+    "RESTful API",
+    "WebSockets"
+  ]
+}

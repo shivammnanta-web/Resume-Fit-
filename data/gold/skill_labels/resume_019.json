@@ -1,0 +1,24 @@
+{
+  "id": "resume_019",
+  "domain": "nlp_engineer",
+  "text": "\nShreya Iyer | NLP & Computational Linguistics Specialist\nSUMMARY\nComputational linguist and NLP Engineer with 4 years experience creating multilingual classification and search engines.\n\nWORK EXPERIENCE\nNLP Engineer | LinguaTech (2022 - Present)\n\u2022 Developed entity extraction and topic modeling pipelines with spaCy, NLTK, and scikit-learn.\n\u2022 Trained neural cross-encoders with PyTorch, Sentence-Transformers, and Hugging Face.\n\u2022 Built lexical search and semantic ranking pipelines with Elasticsearch and pgvector.\n\nTECHNICAL SKILLS\nNLP & AI: Natural Language Processing, spaCy, NLTK, Hugging Face, Sentence-Transformers, PyTorch, scikit-learn\nSearch & Databases: Elasticsearch, pgvector, PostgreSQL\nLanguages & Tools: Python, SQL, Docker, Git, Linux\n",
+  "expected_skills": [
+    "Natural Language Processing",
+    "spaCy",
+    "NLTK",
+    "Hugging Face",
+    "Sentence-Transformers",
+    "PyTorch",
+    "scikit-learn",
+    "Elasticsearch",
+    "pgvector",
+    "PostgreSQL",
+    "Python",
+    "SQL",
+    "Docker",
+    "Git",
+    "Linux",
+    "Deep Learning",
+    "Machine Learning"
+  ]
+}

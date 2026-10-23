@@ -1,0 +1,26 @@
+{
+  "id": "resume_008",
+  "domain": "backend_java",
+  "text": "\nAditi Deshmukh | Java Backend Developer\nSUMMARY\nEnterprise Java developer with 6 years experience in Spring Boot microservices, Hibernate ORM, and Oracle Database.\n\nWORK EXPERIENCE\nSenior Java Developer | GlobalBank Tech (2021 - Present)\n\u2022 Architected enterprise financial services using Java, Spring Boot, and Spring Framework.\n\u2022 Implemented ORM persistence layers with Hibernate ORM and PostgreSQL.\n\u2022 Orchestrated messaging and decoupling using RabbitMQ.\n\u2022 Practiced test-driven development using JUnit and Mockito.\n\nSoftware Engineer | TechCorp (2018 - 2021)\n\u2022 Built RESTful API microservices in Java and MySQL.\n\u2022 Configured build automation with Apache Maven and Jenkins.\n\nTECHNICAL SKILLS\nLanguages: Java (programming language), SQL\nFrameworks: Spring Boot, Spring Framework, Hibernate ORM\nDatabases: PostgreSQL, MySQL, Oracle Database\nMessaging: RabbitMQ, Apache Kafka\nDevOps: Docker, Jenkins, Apache Maven, Git\nMethodologies: Test-Driven Development, Agile, Scrum\n",
+  "expected_skills": [
+    "Java (programming language)",
+    "SQL",
+    "Spring Boot",
+    "Spring Framework",
+    "Hibernate ORM",
+    "PostgreSQL",
+    "MySQL",
+    "Oracle Database",
+    "RabbitMQ",
+    "Apache Kafka",
+    "Docker",
+    "Jenkins",
+    "Apache Maven",
+    "Git",
+    "Test-Driven Development",
+    "Agile",
+    "Scrum",
+    "Microservices Architecture",
+    "RESTful API"
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "id": "resume_010",
+  "domain": "systems_cpp",
+  "text": "\nManish Kulkarni | C++ Systems Engineer\nSUMMARY\nLow-latency C++ developer specializing in high-performance computing, memory optimization, and Linux systems programming.\n\nWORK EXPERIENCE\nSystems Engineer | HighFreq Trading (2021 - Present)\n\u2022 Engineered low-latency trading execution gateways in C++ on Linux.\n\u2022 Implemented concurrent multithreaded order books with lock-free data structures and algorithms.\n\u2022 Automated performance profiling and unit tests using Google Test and CMake.\n\nFirmware Engineer | EmbeddedTech (2019 - 2021)\n\u2022 Programmed microcontrollers in C (programming language) and modern C++.\n\u2022 Developed hardware communication drivers over TCP/IP and CAN bus.\n\nTECHNICAL SKILLS\nLanguages: C++, C (programming language), Python, Bash Scripting\nSystems: Linux, algorithms and data structures, Multi-threading\nTools: Git, Docker, GDB\n",
+  "expected_skills": [
+    "C++",
+    "C (programming language)",
+    "Python",
+    "Bash Scripting",
+    "Linux",
+    "algorithms and data structures",
+    "Git",
+    "Docker"
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "id": "resume_013",
+  "domain": "mobile_developer",
+  "text": "\nArjun Kapoor | Mobile Application Developer\nSUMMARY\nMobile app engineer with 4 years developing cross-platform applications in Flutter, React Native, and native iOS.\n\nWORK EXPERIENCE\nMobile Engineer | AppVenture (2022 - Present)\n\u2022 Developed cross-platform mobile apps using Flutter and Dart (programming language).\n\u2022 Built responsive React Native mobile clients with Redux state management.\n\u2022 Integrated RESTful API backend microservices and Firebase cloud notifications.\n\nTECHNICAL SKILLS\nLanguages: Dart (programming language), JavaScript, TypeScript, Swift (programming language)\nMobile Frameworks: Flutter, React Native\nState & Backend: Redux, Google Firebase, RESTful API\nTools: Git, Docker, Figma\n",
+  "expected_skills": [
+    "Dart (programming language)",
+    "JavaScript",
+    "TypeScript",
+    "Swift (programming language)",
+    "Flutter",
+    "React Native",
+    "Redux",
+    "Google Firebase",
+    "RESTful API",
+    "Git",
+    "Docker",
+    "Figma"
+  ]
+}

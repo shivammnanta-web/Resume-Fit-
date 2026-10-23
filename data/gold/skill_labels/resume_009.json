@@ -1,0 +1,25 @@
+{
+  "id": "resume_009",
+  "domain": "ai_rag_specialist",
+  "text": "\nKaran Mehta | Generative AI & RAG Engineer\nSUMMARY\nAI Engineer specializing in Large Language Models (LLM), Retrieval-Augmented Generation (RAG), and vector database infrastructure.\n\nWORK EXPERIENCE\nAI Research Engineer | SynthAI (2023 - Present)\n\u2022 Architected production Retrieval-Augmented Generation pipelines using LangChain, LlamaIndex, and pgvector.\n\u2022 Fine-tuned open-source Large Language Models using PyTorch and Hugging Face Transformers.\n\u2022 Deployed low-latency inference services with vLLM and FastAPI.\n\u2022 Optimized vector similarity search across 5M document embeddings in ChromaDB and Qdrant.\n\nTECHNICAL SKILLS\nLanguages: Python, SQL\nAI & LLM: Large Language Models, Retrieval-Augmented Generation, LangChain, LlamaIndex, PyTorch, Hugging Face\nVector DBs: pgvector, ChromaDB, Qdrant\nAPIs & Deployment: FastAPI, Docker, Git, Linux\n",
+  "expected_skills": [
+    "Python",
+    "SQL",
+    "Large Language Models",
+    "Retrieval-Augmented Generation",
+    "LangChain",
+    "LlamaIndex",
+    "PyTorch",
+    "Hugging Face",
+    "pgvector",
+    "ChromaDB",
+    "Qdrant",
+    "FastAPI",
+    "Docker",
+    "Git",
+    "Linux",
+    "Deep Learning",
+    "Natural Language Processing",
+    "Vector Similarity Search"
+  ]
+}

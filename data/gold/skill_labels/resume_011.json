@@ -1,0 +1,23 @@
+{
+  "id": "resume_011",
+  "domain": "dotnet_engineer",
+  "text": "\nDeepak Joshi | Senior .NET Backend Developer\nSUMMARY\nFull lifecycle software engineer building cloud services on Microsoft C#, ASP.NET Core, and Microsoft Azure.\n\nWORK EXPERIENCE\nSenior .NET Engineer | EnterpriseCloud (2021 - Present)\n\u2022 Built distributed microservices in C# and ASP.NET Core.\n\u2022 Implemented relational persistence using Entity Framework and Microsoft SQL Server.\n\u2022 Provisioned cloud infrastructure across Microsoft Azure using Azure Kubernetes Service.\n\u2022 Configured CI/CD release pipelines with Azure DevOps and Docker.\n\nTECHNICAL SKILLS\nLanguages: C#, SQL, TypeScript\nFrameworks: .NET, ASP.NET Core, Entity Framework\nCloud & DB: Microsoft Azure, Microsoft SQL Server, Redis\nDevOps: Docker, Kubernetes, Git\nMethodologies: Agile, Scrum, Domain-Driven Design\n",
+  "expected_skills": [
+    "C#",
+    "SQL",
+    "TypeScript",
+    ".NET",
+    "ASP.NET Core",
+    "Entity Framework",
+    "Microsoft Azure",
+    "Microsoft SQL Server",
+    "Redis",
+    "Docker",
+    "Kubernetes",
+    "Git",
+    "Agile",
+    "Scrum",
+    "Domain-Driven Design",
+    "Microservices Architecture"
+  ]
+}

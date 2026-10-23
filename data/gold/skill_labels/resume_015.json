@@ -1,0 +1,23 @@
+{
+  "id": "resume_015",
+  "domain": "mlops_engineer",
+  "text": "\nTarun Nair | MLOps & Platform Engineer\nSUMMARY\nMLOps practitioner experienced in machine learning deployment, model registry pipelines, and distributed GPU training.\n\nWORK EXPERIENCE\nMLOps Engineer | DeepScale (2022 - Present)\n\u2022 Built automated machine learning training and evaluation pipelines using MLflow, DVC, and Ray.\n\u2022 Packaged and served deep learning models using Docker, Triton Inference Server, and FastAPI.\n\u2022 Orchestrated model tracking and experiment logging with Weights & Biases.\n\u2022 Provisioned cloud GPU clusters on Amazon Web Services using Kubernetes.\n\nTECHNICAL SKILLS\nMLOps: MLflow, Data Version Control (DVC), Weights & Biases, Triton Inference Server, Ray\nML Frameworks: PyTorch, scikit-learn, Hugging Face\nCloud & Infrastructure: Amazon Web Services, Kubernetes, Docker, FastAPI, Git, Linux\n",
+  "expected_skills": [
+    "MLflow",
+    "Data Version Control (DVC)",
+    "Weights & Biases",
+    "Triton Inference Server",
+    "PyTorch",
+    "scikit-learn",
+    "Hugging Face",
+    "Amazon Web Services",
+    "Kubernetes",
+    "Docker",
+    "FastAPI",
+    "Git",
+    "Linux",
+    "MLOps",
+    "Machine Learning",
+    "Deep Learning"
+  ]
+}

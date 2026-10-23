@@ -1,0 +1,26 @@
+{
+  "id": "resume_020",
+  "domain": "backend_architect",
+  "text": "\nRajesh Sundaram | Principal Backend Architect\nSUMMARY\nPrincipal Software Architect with 8 years experience leading enterprise digital transformations, event-driven architectures, and high-throughput databases.\n\nWORK EXPERIENCE\nPrincipal Architect | Enterprise Core (2020 - Present)\n\u2022 Architected enterprise event-driven architectures processing 100M events/day using Apache Kafka, RabbitMQ, and microservices.\n\u2022 Modeled distributed persistence across PostgreSQL, Apache Cassandra, and Redis.\n\u2022 Enforced Clean Architecture, Domain-Driven Design, and SOLID Principles across 6 agile engineering squads.\n\u2022 Deployed microservices on Kubernetes across Amazon Web Services and Google Cloud Platform.\n\nTECHNICAL SKILLS\nArchitecture & Design: Microservices Architecture, Event-Driven Architecture, Domain-Driven Design, Clean Architecture, SOLID Principles, System Design\nMessaging: Apache Kafka, RabbitMQ\nDatabases: PostgreSQL, Apache Cassandra, Redis\nCloud: Amazon Web Services, Google Cloud Platform, Kubernetes, Docker, Git\nMethodologies: Agile, Scrum, Code Review\n",
+  "expected_skills": [
+    "Microservices Architecture",
+    "Event-Driven Architecture",
+    "Domain-Driven Design",
+    "Clean Architecture",
+    "SOLID Principles",
+    "System Design",
+    "Apache Kafka",
+    "RabbitMQ",
+    "PostgreSQL",
+    "Apache Cassandra",
+    "Redis",
+    "Amazon Web Services",
+    "Google Cloud Platform",
+    "Kubernetes",
+    "Docker",
+    "Git",
+    "Agile",
+    "Scrum",
+    "Code Review"
+  ]
+}

@@ -335,9 +335,7 @@ def parse_experience_entries(experience_text: str) -> list[ExperienceEntry]:
                 if current_entry_lines:
                     text_block = "\n".join(current_entry_lines).strip()
                     years = (
-                        (current_date_range.duration_months / 12.0)
-                        if current_date_range
-                        else 0.0
+                        (current_date_range.duration_months / 12.0) if current_date_range else 0.0
                     )
                     entries.append(
                         ExperienceEntry(
@@ -377,11 +375,7 @@ def parse_experience_entries(experience_text: str) -> list[ExperienceEntry]:
 
     if current_entry_lines:
         text_block = "\n".join(current_entry_lines).strip()
-        years = (
-            (current_date_range.duration_months / 12.0)
-            if current_date_range
-            else 0.0
-        )
+        years = (current_date_range.duration_months / 12.0) if current_date_range else 0.0
         entries.append(
             ExperienceEntry(
                 title=current_title,

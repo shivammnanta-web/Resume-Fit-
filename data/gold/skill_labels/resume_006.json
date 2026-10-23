@@ -1,0 +1,22 @@
+{
+  "id": "resume_006",
+  "domain": "backend_go",
+  "text": "\nVikram Nair | Cloud Backend Engineer\nSUMMARY\nSystems engineer with 4 years building high-concurrency microservices in Go and Rust.\n\nWORK EXPERIENCE\nBackend Engineer | CloudGrid (2022 - Present)\n\u2022 Developed distributed streaming services in Go and gRPC handling 50k events/sec.\n\u2022 Integrated Apache Kafka message queues for asynchronous order processing.\n\u2022 Maintained containerized workloads on Kubernetes clusters in Google Cloud Platform.\n\nSystems Programmer | NetworkEdge (2020 - 2022)\n\u2022 Built low-latency networking utilities in C++ and Go.\n\u2022 Optimized PostgreSQL database queries and connection pools.\n\nTECHNICAL SKILLS\nLanguages: Go, C++, SQL, Bash Scripting\nFrameworks & Protocols: gRPC, Protocol Buffers, RESTful API\nMessaging & Storage: Apache Kafka, PostgreSQL, Redis\nCloud & Ops: Google Cloud Platform, Kubernetes, Docker, Git\n",
+  "expected_skills": [
+    "Go",
+    "C++",
+    "SQL",
+    "Bash Scripting",
+    "gRPC",
+    "Protocol Buffers",
+    "RESTful API",
+    "Apache Kafka",
+    "PostgreSQL",
+    "Redis",
+    "Google Cloud Platform",
+    "Kubernetes",
+    "Docker",
+    "Git",
+    "Microservices Architecture"
+  ]
+}

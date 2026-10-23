@@ -1,0 +1,1259 @@
+version: 1.2.1
+overlay_version: '2026.1'
+aliases:
+- alias: flask
+  canonical_label: Flask
+  category: framework
+  parent_esco_uri: http://data.europa.eu/esco/skill/python-prog
+- alias: fastapi
+  canonical_label: FastAPI
+  category: framework
+  parent_esco_uri: http://data.europa.eu/esco/skill/python-prog
+- alias: django
+  canonical_label: Django
+  category: framework
+  parent_esco_uri: http://data.europa.eu/esco/skill/python-prog
+- alias: django rest framework
+  canonical_label: Django REST Framework
+  category: framework
+  parent_esco_uri: http://data.europa.eu/esco/skill/rest-apis
+- alias: drf
+  canonical_label: Django REST Framework
+  category: framework
+  parent_esco_uri: http://data.europa.eu/esco/skill/rest-apis
+- alias: sqlalchemy
+  canonical_label: SQLAlchemy
+  category: library
+  parent_esco_uri: http://data.europa.eu/esco/skill/sql-query
+- alias: alembic
+  canonical_label: Alembic
+  category: tool
+  parent_esco_uri: http://data.europa.eu/esco/skill/sql-query
+- alias: pydantic
+  canonical_label: Pydantic
+  category: library
+  parent_esco_uri: http://data.europa.eu/esco/skill/python-prog
+- alias: celery
+  canonical_label: Celery
+  category: library
+  parent_esco_uri: http://data.europa.eu/esco/skill/microservices
+- alias: pandas
+  canonical_label: Pandas
+  category: library
+  parent_esco_uri: http://data.europa.eu/esco/skill/data-analysis
+- alias: numpy
+  canonical_label: NumPy
+  category: library
+  parent_esco_uri: http://data.europa.eu/esco/skill/data-analysis
+- alias: scipy
+  canonical_label: SciPy
+  category: library
+  parent_esco_uri: http://data.europa.eu/esco/skill/data-analysis
+- alias: scikit-learn
+  canonical_label: scikit-learn
+  category: library
+  parent_esco_uri: http://data.europa.eu/esco/skill/machine-learning
+- alias: sklearn
+  canonical_label: scikit-learn
+  category: library
+  parent_esco_uri: http://data.europa.eu/esco/skill/machine-learning
+- alias: pytorch
+  canonical_label: PyTorch
+  category: framework
+  parent_esco_uri: http://data.europa.eu/esco/skill/deep-learning
+- alias: torch
+  canonical_label: PyTorch
+  category: framework
+  parent_esco_uri: http://data.europa.eu/esco/skill/deep-learning
+- alias: tensorflow
+  canonical_label: TensorFlow
+  category: framework
+  parent_esco_uri: http://data.europa.eu/esco/skill/deep-learning
+- alias: tf
+  canonical_label: TensorFlow
+  category: framework
+  parent_esco_uri: http://data.europa.eu/esco/skill/deep-learning
+- alias: keras
+  canonical_label: Keras
+  category: framework
+  parent_esco_uri: http://data.europa.eu/esco/skill/deep-learning
+- alias: huggingface
+  canonical_label: Hugging Face
+  category: library
+  parent_esco_uri: http://data.europa.eu/esco/skill/nlp-proc
+- alias: hugging face
+  canonical_label: Hugging Face
+  category: library
+  parent_esco_uri: http://data.europa.eu/esco/skill/nlp-proc
+- alias: transformers
+  canonical_label: Transformers (Hugging Face)
+  category: library
+  parent_esco_uri: http://data.europa.eu/esco/skill/nlp-proc
+- alias: sentence-transformers
+  canonical_label: Sentence-Transformers
+  category: library
+  parent_esco_uri: http://data.europa.eu/esco/skill/nlp-proc
+- alias: spacy
+  canonical_label: spaCy
+  category: library
+  parent_esco_uri: http://data.europa.eu/esco/skill/nlp-proc
+- alias: nltk
+  canonical_label: NLTK
+  category: library
+  parent_esco_uri: http://data.europa.eu/esco/skill/nlp-proc
+- alias: opencv
+  canonical_label: OpenCV
+  category: library
+  parent_esco_uri: http://data.europa.eu/esco/skill/machine-learning
+- alias: cv2
+  canonical_label: OpenCV
+  category: library
+  parent_esco_uri: http://data.europa.eu/esco/skill/machine-learning
+- alias: matplotlib
+  canonical_label: Matplotlib
+  category: library
+  parent_esco_uri: http://data.europa.eu/esco/skill/data-analysis
+- alias: seaborn
+  canonical_label: Seaborn
+  category: library
+  parent_esco_uri: http://data.europa.eu/esco/skill/data-analysis
+- alias: plotly
+  canonical_label: Plotly
+  category: library
+  parent_esco_uri: http://data.europa.eu/esco/skill/data-analysis
+- alias: polars
+  canonical_label: Polars
+  category: library
+  parent_esco_uri: http://data.europa.eu/esco/skill/data-analysis
+- alias: xgboost
+  canonical_label: XGBoost
+  category: library
+  parent_esco_uri: http://data.europa.eu/esco/skill/machine-learning
+- alias: lightgbm
+  canonical_label: LightGBM
+  category: library
+  parent_esco_uri: http://data.europa.eu/esco/skill/machine-learning
+- alias: catboost
+  canonical_label: CatBoost
+  category: library
+  parent_esco_uri: http://data.europa.eu/esco/skill/machine-learning
+- alias: pytest
+  canonical_label: Pytest
+  category: tool
+  parent_esco_uri: http://data.europa.eu/esco/skill/software-testing
+- alias: unittest
+  canonical_label: Unittest
+  category: library
+  parent_esco_uri: http://data.europa.eu/esco/skill/software-testing
+- alias: ruff
+  canonical_label: Ruff
+  category: tool
+  parent_esco_uri: http://data.europa.eu/esco/skill/python-prog
+- alias: mypy
+  canonical_label: Mypy
+  category: tool
+  parent_esco_uri: http://data.europa.eu/esco/skill/python-prog
+- alias: black
+  canonical_label: Black (formatter)
+  category: tool
+  parent_esco_uri: http://data.europa.eu/esco/skill/python-prog
+- alias: poetry
+  canonical_label: Poetry (Python)
+  category: tool
+  parent_esco_uri: http://data.europa.eu/esco/skill/python-prog
+- alias: uv
+  canonical_label: uv (package manager)
+  category: tool
+  parent_esco_uri: http://data.europa.eu/esco/skill/python-prog
+- alias: beautifulsoup
+  canonical_label: Beautiful Soup
+  category: library
+  parent_esco_uri: http://data.europa.eu/esco/skill/python-prog
+- alias: bs4
+  canonical_label: Beautiful Soup
+  category: library
+  parent_esco_uri: http://data.europa.eu/esco/skill/python-prog
+- alias: scrapy
+  canonical_label: Scrapy
+  category: framework
+  parent_esco_uri: http://data.europa.eu/esco/skill/python-prog
+- alias: httpx
+  canonical_label: HTTPX
+  category: library
+  parent_esco_uri: http://data.europa.eu/esco/skill/rest-apis
+- alias: requests
+  canonical_label: Requests (Python)
+  category: library
+  parent_esco_uri: http://data.europa.eu/esco/skill/rest-apis
+- alias: llm
+  canonical_label: Large Language Models
+  category: concept
+  parent_esco_uri: http://data.europa.eu/esco/skill/deep-learning
+- alias: large language models
+  canonical_label: Large Language Models
+  category: concept
+  parent_esco_uri: http://data.europa.eu/esco/skill/deep-learning
+- alias: rag
+  canonical_label: Retrieval-Augmented Generation
+  category: concept
+  parent_esco_uri: http://data.europa.eu/esco/skill/nlp-proc
+- alias: retrieval augmented generation
+  canonical_label: Retrieval-Augmented Generation
+  category: concept
+  parent_esco_uri: http://data.europa.eu/esco/skill/nlp-proc
+- alias: retrieval-augmented generation
+  canonical_label: Retrieval-Augmented Generation
+  category: concept
+  parent_esco_uri: http://data.europa.eu/esco/skill/nlp-proc
+- alias: langchain
+  canonical_label: LangChain
+  category: framework
+  parent_esco_uri: http://data.europa.eu/esco/skill/nlp-proc
+- alias: llamaindex
+  canonical_label: LlamaIndex
+  category: framework
+  parent_esco_uri: http://data.europa.eu/esco/skill/nlp-proc
+- alias: vector search
+  canonical_label: Vector Similarity Search
+  category: concept
+  parent_esco_uri: http://data.europa.eu/esco/skill/machine-learning
+- alias: vector database
+  canonical_label: Vector Database
+  category: concept
+  parent_esco_uri: http://data.europa.eu/esco/skill/sql-query
+- alias: pgvector
+  canonical_label: pgvector
+  category: database
+  parent_esco_uri: http://data.europa.eu/esco/skill/postgresql-db
+- alias: faiss
+  canonical_label: FAISS
+  category: library
+  parent_esco_uri: http://data.europa.eu/esco/skill/machine-learning
+- alias: chromadb
+  canonical_label: ChromaDB
+  category: database
+  parent_esco_uri: http://data.europa.eu/esco/skill/machine-learning
+- alias: pinecone
+  canonical_label: Pinecone
+  category: database
+  parent_esco_uri: http://data.europa.eu/esco/skill/machine-learning
+- alias: qdrant
+  canonical_label: Qdrant
+  category: database
+  parent_esco_uri: http://data.europa.eu/esco/skill/machine-learning
+- alias: weaviate
+  canonical_label: Weaviate
+  category: database
+  parent_esco_uri: http://data.europa.eu/esco/skill/machine-learning
+- alias: milvus
+  canonical_label: Milvus
+  category: database
+  parent_esco_uri: http://data.europa.eu/esco/skill/machine-learning
+- alias: mlflow
+  canonical_label: MLflow
+  category: tool
+  parent_esco_uri: http://data.europa.eu/esco/skill/machine-learning
+- alias: dvc
+  canonical_label: Data Version Control (DVC)
+  category: tool
+  parent_esco_uri: http://data.europa.eu/esco/skill/machine-learning
+- alias: wandb
+  canonical_label: Weights & Biases
+  category: tool
+  parent_esco_uri: http://data.europa.eu/esco/skill/machine-learning
+- alias: weights & biases
+  canonical_label: Weights & Biases
+  category: tool
+  parent_esco_uri: http://data.europa.eu/esco/skill/machine-learning
+- alias: mlops
+  canonical_label: MLOps
+  category: concept
+  parent_esco_uri: http://data.europa.eu/esco/skill/ci-cd-devops
+- alias: model evaluation
+  canonical_label: Model Evaluation
+  category: concept
+  parent_esco_uri: http://data.europa.eu/esco/skill/machine-learning
+- alias: cross-validation
+  canonical_label: Cross-Validation
+  category: concept
+  parent_esco_uri: http://data.europa.eu/esco/skill/machine-learning
+- alias: hyperparameter tuning
+  canonical_label: Hyperparameter Tuning
+  category: concept
+  parent_esco_uri: http://data.europa.eu/esco/skill/machine-learning
+- alias: feature engineering
+  canonical_label: Feature Engineering
+  category: concept
+  parent_esco_uri: http://data.europa.eu/esco/skill/machine-learning
+- alias: fine-tuning
+  canonical_label: Model Fine-Tuning
+  category: concept
+  parent_esco_uri: http://data.europa.eu/esco/skill/deep-learning
+- alias: react
+  canonical_label: React.js
+  category: framework
+  parent_esco_uri: http://data.europa.eu/esco/skill/javascript-prog
+- alias: react.js
+  canonical_label: React.js
+  category: framework
+  parent_esco_uri: http://data.europa.eu/esco/skill/javascript-prog
+- alias: reactjs
+  canonical_label: React.js
+  category: framework
+  parent_esco_uri: http://data.europa.eu/esco/skill/javascript-prog
+- alias: next.js
+  canonical_label: Next.js
+  category: framework
+  parent_esco_uri: http://data.europa.eu/esco/skill/javascript-prog
+- alias: nextjs
+  canonical_label: Next.js
+  category: framework
+  parent_esco_uri: http://data.europa.eu/esco/skill/javascript-prog
+- alias: vue
+  canonical_label: Vue.js
+  category: framework
+  parent_esco_uri: http://data.europa.eu/esco/skill/javascript-prog
+- alias: vue.js
+  canonical_label: Vue.js
+  category: framework
+  parent_esco_uri: http://data.europa.eu/esco/skill/javascript-prog
+- alias: angular
+  canonical_label: Angular
+  category: framework
+  parent_esco_uri: http://data.europa.eu/esco/skill/typescript-prog
+- alias: svelte
+  canonical_label: Svelte
+  category: framework
+  parent_esco_uri: http://data.europa.eu/esco/skill/javascript-prog
+- alias: node.js
+  canonical_label: Node.js
+  category: runtime
+  parent_esco_uri: http://data.europa.eu/esco/skill/javascript-prog
+- alias: nodejs
+  canonical_label: Node.js
+  category: runtime
+  parent_esco_uri: http://data.europa.eu/esco/skill/javascript-prog
+- alias: express
+  canonical_label: Express.js
+  category: framework
+  parent_esco_uri: http://data.europa.eu/esco/skill/rest-apis
+- alias: express.js
+  canonical_label: Express.js
+  category: framework
+  parent_esco_uri: http://data.europa.eu/esco/skill/rest-apis
+- alias: nestjs
+  canonical_label: NestJS
+  category: framework
+  parent_esco_uri: http://data.europa.eu/esco/skill/typescript-prog
+- alias: tailwind
+  canonical_label: Tailwind CSS
+  category: tool
+  parent_esco_uri: http://data.europa.eu/esco/skill/javascript-prog
+- alias: tailwind css
+  canonical_label: Tailwind CSS
+  category: tool
+  parent_esco_uri: http://data.europa.eu/esco/skill/javascript-prog
+- alias: bootstrap
+  canonical_label: Bootstrap (CSS)
+  category: tool
+  parent_esco_uri: http://data.europa.eu/esco/skill/javascript-prog
+- alias: html
+  canonical_label: HTML5
+  category: language
+  parent_esco_uri: http://data.europa.eu/esco/skill/javascript-prog
+- alias: html5
+  canonical_label: HTML5
+  category: language
+  parent_esco_uri: http://data.europa.eu/esco/skill/javascript-prog
+- alias: css
+  canonical_label: CSS3
+  category: language
+  parent_esco_uri: http://data.europa.eu/esco/skill/javascript-prog
+- alias: css3
+  canonical_label: CSS3
+  category: language
+  parent_esco_uri: http://data.europa.eu/esco/skill/javascript-prog
+- alias: sass
+  canonical_label: Sass
+  category: tool
+  parent_esco_uri: http://data.europa.eu/esco/skill/javascript-prog
+- alias: webpack
+  canonical_label: Webpack
+  category: tool
+  parent_esco_uri: http://data.europa.eu/esco/skill/javascript-prog
+- alias: vite
+  canonical_label: Vite
+  category: tool
+  parent_esco_uri: http://data.europa.eu/esco/skill/javascript-prog
+- alias: redux
+  canonical_label: Redux
+  category: library
+  parent_esco_uri: http://data.europa.eu/esco/skill/javascript-prog
+- alias: graphql
+  canonical_label: GraphQL
+  category: concept
+  parent_esco_uri: http://data.europa.eu/esco/skill/rest-apis
+- alias: websocket
+  canonical_label: WebSockets
+  category: concept
+  parent_esco_uri: http://data.europa.eu/esco/skill/rest-apis
+- alias: websockets
+  canonical_label: WebSockets
+  category: concept
+  parent_esco_uri: http://data.europa.eu/esco/skill/rest-apis
+- alias: postgres
+  canonical_label: PostgreSQL
+  category: database
+  parent_esco_uri: http://data.europa.eu/esco/skill/postgresql-db
+- alias: postgresql
+  canonical_label: PostgreSQL
+  category: database
+  parent_esco_uri: http://data.europa.eu/esco/skill/postgresql-db
+- alias: mysql
+  canonical_label: MySQL
+  category: database
+  parent_esco_uri: http://data.europa.eu/esco/skill/sql-query
+- alias: mariadb
+  canonical_label: MariaDB
+  category: database
+  parent_esco_uri: http://data.europa.eu/esco/skill/sql-query
+- alias: sqlite
+  canonical_label: SQLite
+  category: database
+  parent_esco_uri: http://data.europa.eu/esco/skill/sql-query
+- alias: redis
+  canonical_label: Redis
+  category: database
+  parent_esco_uri: http://data.europa.eu/esco/skill/sql-query
+- alias: mongodb
+  canonical_label: MongoDB
+  category: database
+  parent_esco_uri: http://data.europa.eu/esco/skill/sql-query
+- alias: cassandra
+  canonical_label: Apache Cassandra
+  category: database
+  parent_esco_uri: http://data.europa.eu/esco/skill/sql-query
+- alias: dynamodb
+  canonical_label: Amazon DynamoDB
+  category: database
+  parent_esco_uri: http://data.europa.eu/esco/skill/cloud-computing
+- alias: elasticsearch
+  canonical_label: Elasticsearch
+  category: database
+  parent_esco_uri: http://data.europa.eu/esco/skill/sql-query
+- alias: opensearch
+  canonical_label: OpenSearch
+  category: database
+  parent_esco_uri: http://data.europa.eu/esco/skill/sql-query
+- alias: neo4j
+  canonical_label: Neo4j
+  category: database
+  parent_esco_uri: http://data.europa.eu/esco/skill/sql-query
+- alias: snowflake
+  canonical_label: Snowflake
+  category: database
+  parent_esco_uri: http://data.europa.eu/esco/skill/cloud-computing
+- alias: bigquery
+  canonical_label: Google BigQuery
+  category: database
+  parent_esco_uri: http://data.europa.eu/esco/skill/cloud-computing
+- alias: redshift
+  canonical_label: Amazon Redshift
+  category: database
+  parent_esco_uri: http://data.europa.eu/esco/skill/cloud-computing
+- alias: clickhouse
+  canonical_label: ClickHouse
+  category: database
+  parent_esco_uri: http://data.europa.eu/esco/skill/sql-query
+- alias: docker
+  canonical_label: Docker
+  category: tool
+  parent_esco_uri: http://data.europa.eu/esco/skill/docker-containers
+- alias: docker compose
+  canonical_label: Docker Compose
+  category: tool
+  parent_esco_uri: http://data.europa.eu/esco/skill/docker-containers
+- alias: docker-compose
+  canonical_label: Docker Compose
+  category: tool
+  parent_esco_uri: http://data.europa.eu/esco/skill/docker-containers
+- alias: kubernetes
+  canonical_label: Kubernetes
+  category: tool
+  parent_esco_uri: http://data.europa.eu/esco/skill/kubernetes
+- alias: k8s
+  canonical_label: Kubernetes
+  category: tool
+  parent_esco_uri: http://data.europa.eu/esco/skill/kubernetes
+- alias: helm
+  canonical_label: Helm
+  category: tool
+  parent_esco_uri: http://data.europa.eu/esco/skill/kubernetes
+- alias: terraform
+  canonical_label: Terraform
+  category: tool
+  parent_esco_uri: http://data.europa.eu/esco/skill/cloud-computing
+- alias: ansible
+  canonical_label: Ansible
+  category: tool
+  parent_esco_uri: http://data.europa.eu/esco/skill/ci-cd-devops
+- alias: jenkins
+  canonical_label: Jenkins
+  category: tool
+  parent_esco_uri: http://data.europa.eu/esco/skill/ci-cd-devops
+- alias: github actions
+  canonical_label: GitHub Actions
+  category: tool
+  parent_esco_uri: http://data.europa.eu/esco/skill/ci-cd-devops
+- alias: gitlab ci
+  canonical_label: GitLab CI
+  category: tool
+  parent_esco_uri: http://data.europa.eu/esco/skill/ci-cd-devops
+- alias: circleci
+  canonical_label: CircleCI
+  category: tool
+  parent_esco_uri: http://data.europa.eu/esco/skill/ci-cd-devops
+- alias: aws
+  canonical_label: Amazon Web Services
+  category: cloud
+  parent_esco_uri: http://data.europa.eu/esco/skill/cloud-computing
+- alias: amazon web services
+  canonical_label: Amazon Web Services
+  category: cloud
+  parent_esco_uri: http://data.europa.eu/esco/skill/cloud-computing
+- alias: ec2
+  canonical_label: Amazon EC2
+  category: cloud
+  parent_esco_uri: http://data.europa.eu/esco/skill/cloud-computing
+- alias: s3
+  canonical_label: Amazon S3
+  category: cloud
+  parent_esco_uri: http://data.europa.eu/esco/skill/cloud-computing
+- alias: rds
+  canonical_label: Amazon RDS
+  category: cloud
+  parent_esco_uri: http://data.europa.eu/esco/skill/cloud-computing
+- alias: lambda
+  canonical_label: AWS Lambda
+  category: cloud
+  parent_esco_uri: http://data.europa.eu/esco/skill/cloud-computing
+- alias: aws lambda
+  canonical_label: AWS Lambda
+  category: cloud
+  parent_esco_uri: http://data.europa.eu/esco/skill/cloud-computing
+- alias: eks
+  canonical_label: Amazon EKS
+  category: cloud
+  parent_esco_uri: http://data.europa.eu/esco/skill/kubernetes
+- alias: ecs
+  canonical_label: Amazon ECS
+  category: cloud
+  parent_esco_uri: http://data.europa.eu/esco/skill/docker-containers
+- alias: cloudfront
+  canonical_label: Amazon CloudFront
+  category: cloud
+  parent_esco_uri: http://data.europa.eu/esco/skill/cloud-computing
+- alias: gcp
+  canonical_label: Google Cloud Platform
+  category: cloud
+  parent_esco_uri: http://data.europa.eu/esco/skill/cloud-computing
+- alias: google cloud platform
+  canonical_label: Google Cloud Platform
+  category: cloud
+  parent_esco_uri: http://data.europa.eu/esco/skill/cloud-computing
+- alias: google cloud
+  canonical_label: Google Cloud Platform
+  category: cloud
+  parent_esco_uri: http://data.europa.eu/esco/skill/cloud-computing
+- alias: gke
+  canonical_label: Google Kubernetes Engine
+  category: cloud
+  parent_esco_uri: http://data.europa.eu/esco/skill/kubernetes
+- alias: cloud run
+  canonical_label: Google Cloud Run
+  category: cloud
+  parent_esco_uri: http://data.europa.eu/esco/skill/docker-containers
+- alias: azure
+  canonical_label: Microsoft Azure
+  category: cloud
+  parent_esco_uri: http://data.europa.eu/esco/skill/cloud-computing
+- alias: microsoft azure
+  canonical_label: Microsoft Azure
+  category: cloud
+  parent_esco_uri: http://data.europa.eu/esco/skill/cloud-computing
+- alias: aks
+  canonical_label: Azure Kubernetes Service
+  category: cloud
+  parent_esco_uri: http://data.europa.eu/esco/skill/kubernetes
+- alias: linux
+  canonical_label: Linux
+  category: os
+  parent_esco_uri: http://data.europa.eu/esco/skill/linux-sysadmin
+- alias: ubuntu
+  canonical_label: Ubuntu Linux
+  category: os
+  parent_esco_uri: http://data.europa.eu/esco/skill/linux-sysadmin
+- alias: bash
+  canonical_label: Bash Scripting
+  category: language
+  parent_esco_uri: http://data.europa.eu/esco/skill/linux-sysadmin
+- alias: shell scripting
+  canonical_label: Shell Scripting
+  category: skill
+  parent_esco_uri: http://data.europa.eu/esco/skill/linux-sysadmin
+- alias: nginx
+  canonical_label: Nginx
+  category: tool
+  parent_esco_uri: http://data.europa.eu/esco/skill/rest-apis
+- alias: apache
+  canonical_label: Apache HTTP Server
+  category: tool
+  parent_esco_uri: http://data.europa.eu/esco/skill/rest-apis
+- alias: prometheus
+  canonical_label: Prometheus
+  category: tool
+  parent_esco_uri: http://data.europa.eu/esco/skill/ci-cd-devops
+- alias: grafana
+  canonical_label: Grafana
+  category: tool
+  parent_esco_uri: http://data.europa.eu/esco/skill/ci-cd-devops
+- alias: microservices
+  canonical_label: Microservices Architecture
+  category: architecture
+  parent_esco_uri: http://data.europa.eu/esco/skill/microservices
+- alias: microservice
+  canonical_label: Microservices Architecture
+  category: architecture
+  parent_esco_uri: http://data.europa.eu/esco/skill/microservices
+- alias: distributed systems
+  canonical_label: Distributed Systems
+  category: concept
+  parent_esco_uri: http://data.europa.eu/esco/skill/microservices
+- alias: kafka
+  canonical_label: Apache Kafka
+  category: tool
+  parent_esco_uri: http://data.europa.eu/esco/skill/microservices
+- alias: apache kafka
+  canonical_label: Apache Kafka
+  category: tool
+  parent_esco_uri: http://data.europa.eu/esco/skill/microservices
+- alias: rabbitmq
+  canonical_label: RabbitMQ
+  category: tool
+  parent_esco_uri: http://data.europa.eu/esco/skill/microservices
+- alias: message queue
+  canonical_label: Message Queuing
+  category: concept
+  parent_esco_uri: http://data.europa.eu/esco/skill/microservices
+- alias: event-driven architecture
+  canonical_label: Event-Driven Architecture
+  category: concept
+  parent_esco_uri: http://data.europa.eu/esco/skill/microservices
+- alias: rest
+  canonical_label: RESTful API
+  category: architecture
+  parent_esco_uri: http://data.europa.eu/esco/skill/rest-apis
+- alias: rest api
+  canonical_label: RESTful API
+  category: architecture
+  parent_esco_uri: http://data.europa.eu/esco/skill/rest-apis
+- alias: restful
+  canonical_label: RESTful API
+  category: architecture
+  parent_esco_uri: http://data.europa.eu/esco/skill/rest-apis
+- alias: ci/cd
+  canonical_label: CI/CD
+  category: practice
+  parent_esco_uri: http://data.europa.eu/esco/skill/ci-cd-devops
+- alias: git
+  canonical_label: Git
+  category: tool
+  parent_esco_uri: http://data.europa.eu/esco/skill/git-vcs
+- alias: github
+  canonical_label: GitHub
+  category: tool
+  parent_esco_uri: http://data.europa.eu/esco/skill/git-vcs
+- alias: gitlab
+  canonical_label: GitLab
+  category: tool
+  parent_esco_uri: http://data.europa.eu/esco/skill/git-vcs
+- alias: agile
+  canonical_label: Agile
+  category: methodology
+  parent_esco_uri: http://data.europa.eu/esco/skill/agile-dev
+- alias: scrum
+  canonical_label: Scrum
+  category: methodology
+  parent_esco_uri: http://data.europa.eu/esco/skill/agile-dev
+- alias: kanban
+  canonical_label: Kanban
+  category: methodology
+  parent_esco_uri: http://data.europa.eu/esco/skill/agile-dev
+- alias: jira
+  canonical_label: Jira
+  category: tool
+  parent_esco_uri: http://data.europa.eu/esco/skill/agile-dev
+- alias: java
+  canonical_label: Java (programming language)
+  category: language
+  parent_esco_uri: http://data.europa.eu/esco/skill/c-plus-plus
+- alias: spring
+  canonical_label: Spring Framework
+  category: framework
+  parent_esco_uri: http://data.europa.eu/esco/skill/microservices
+- alias: spring boot
+  canonical_label: Spring Boot
+  category: framework
+  parent_esco_uri: http://data.europa.eu/esco/skill/microservices
+- alias: springboot
+  canonical_label: Spring Boot
+  category: framework
+  parent_esco_uri: http://data.europa.eu/esco/skill/microservices
+- alias: hibernate
+  canonical_label: Hibernate ORM
+  category: library
+  parent_esco_uri: http://data.europa.eu/esco/skill/sql-query
+- alias: maven
+  canonical_label: Apache Maven
+  category: tool
+  parent_esco_uri: http://data.europa.eu/esco/skill/ci-cd-devops
+- alias: gradle
+  canonical_label: Gradle
+  category: tool
+  parent_esco_uri: http://data.europa.eu/esco/skill/ci-cd-devops
+- alias: kotlin
+  canonical_label: Kotlin
+  category: language
+  parent_esco_uri: http://data.europa.eu/esco/skill/c-plus-plus
+- alias: scala
+  canonical_label: Scala
+  category: language
+  parent_esco_uri: http://data.europa.eu/esco/skill/data-analysis
+- alias: spark
+  canonical_label: Apache Spark
+  category: framework
+  parent_esco_uri: http://data.europa.eu/esco/skill/data-analysis
+- alias: pyspark
+  canonical_label: PySpark
+  category: framework
+  parent_esco_uri: http://data.europa.eu/esco/skill/data-analysis
+- alias: apache spark
+  canonical_label: Apache Spark
+  category: framework
+  parent_esco_uri: http://data.europa.eu/esco/skill/data-analysis
+- alias: .net
+  canonical_label: .NET
+  category: framework
+  parent_esco_uri: http://data.europa.eu/esco/skill/c-sharp
+- alias: dotnet
+  canonical_label: .NET
+  category: framework
+  parent_esco_uri: http://data.europa.eu/esco/skill/c-sharp
+- alias: .net core
+  canonical_label: .NET Core
+  category: framework
+  parent_esco_uri: http://data.europa.eu/esco/skill/c-sharp
+- alias: asp.net
+  canonical_label: ASP.NET
+  category: framework
+  parent_esco_uri: http://data.europa.eu/esco/skill/c-sharp
+- alias: asp.net core
+  canonical_label: ASP.NET Core
+  category: framework
+  parent_esco_uri: http://data.europa.eu/esco/skill/c-sharp
+- alias: entity framework
+  canonical_label: Entity Framework
+  category: library
+  parent_esco_uri: http://data.europa.eu/esco/skill/sql-query
+- alias: rust
+  canonical_label: Rust (programming language)
+  category: language
+  parent_esco_uri: http://data.europa.eu/esco/skill/c-plus-plus
+- alias: cargo
+  canonical_label: Cargo (Rust)
+  category: tool
+  parent_esco_uri: http://data.europa.eu/esco/skill/ci-cd-devops
+- alias: golang
+  canonical_label: Go
+  category: language
+  parent_esco_uri: http://data.europa.eu/esco/skill/go-lang
+- alias: go language
+  canonical_label: Go
+  category: language
+  parent_esco_uri: http://data.europa.eu/esco/skill/go-lang
+- alias: swift
+  canonical_label: Swift (programming language)
+  category: language
+  parent_esco_uri: http://data.europa.eu/esco/skill/c-plus-plus
+- alias: php
+  canonical_label: PHP
+  category: language
+  parent_esco_uri: http://data.europa.eu/esco/skill/rest-apis
+- alias: laravel
+  canonical_label: Laravel
+  category: framework
+  parent_esco_uri: http://data.europa.eu/esco/skill/rest-apis
+- alias: ruby
+  canonical_label: Ruby
+  category: language
+  parent_esco_uri: http://data.europa.eu/esco/skill/rest-apis
+- alias: rails
+  canonical_label: Ruby on Rails
+  category: framework
+  parent_esco_uri: http://data.europa.eu/esco/skill/rest-apis
+- alias: ruby on rails
+  canonical_label: Ruby on Rails
+  category: framework
+  parent_esco_uri: http://data.europa.eu/esco/skill/rest-apis
+- alias: react native
+  canonical_label: React Native
+  category: framework
+  parent_esco_uri: http://data.europa.eu/esco/skill/javascript-prog
+- alias: react-native
+  canonical_label: React Native
+  category: framework
+  parent_esco_uri: http://data.europa.eu/esco/skill/javascript-prog
+- alias: flutter
+  canonical_label: Flutter
+  category: framework
+  parent_esco_uri: http://data.europa.eu/esco/skill/javascript-prog
+- alias: dart
+  canonical_label: Dart (programming language)
+  category: language
+  parent_esco_uri: http://data.europa.eu/esco/skill/javascript-prog
+- alias: zustand
+  canonical_label: Zustand
+  category: library
+  parent_esco_uri: http://data.europa.eu/esco/skill/javascript-prog
+- alias: react query
+  canonical_label: TanStack Query
+  category: library
+  parent_esco_uri: http://data.europa.eu/esco/skill/javascript-prog
+- alias: tanstack query
+  canonical_label: TanStack Query
+  category: library
+  parent_esco_uri: http://data.europa.eu/esco/skill/javascript-prog
+- alias: d3
+  canonical_label: D3.js
+  category: library
+  parent_esco_uri: http://data.europa.eu/esco/skill/data-analysis
+- alias: d3.js
+  canonical_label: D3.js
+  category: library
+  parent_esco_uri: http://data.europa.eu/esco/skill/data-analysis
+- alias: chart.js
+  canonical_label: Chart.js
+  category: library
+  parent_esco_uri: http://data.europa.eu/esco/skill/data-analysis
+- alias: electron
+  canonical_label: Electron.js
+  category: framework
+  parent_esco_uri: http://data.europa.eu/esco/skill/javascript-prog
+- alias: webassembly
+  canonical_label: WebAssembly
+  category: technology
+  parent_esco_uri: http://data.europa.eu/esco/skill/c-plus-plus
+- alias: wasm
+  canonical_label: WebAssembly
+  category: technology
+  parent_esco_uri: http://data.europa.eu/esco/skill/c-plus-plus
+- alias: jest
+  canonical_label: Jest
+  category: tool
+  parent_esco_uri: http://data.europa.eu/esco/skill/software-testing
+- alias: vitest
+  canonical_label: Vitest
+  category: tool
+  parent_esco_uri: http://data.europa.eu/esco/skill/software-testing
+- alias: cypress
+  canonical_label: Cypress
+  category: tool
+  parent_esco_uri: http://data.europa.eu/esco/skill/software-testing
+- alias: playwright
+  canonical_label: Playwright
+  category: tool
+  parent_esco_uri: http://data.europa.eu/esco/skill/software-testing
+- alias: selenium
+  canonical_label: Selenium
+  category: tool
+  parent_esco_uri: http://data.europa.eu/esco/skill/software-testing
+- alias: tdd
+  canonical_label: Test-Driven Development
+  category: practice
+  parent_esco_uri: http://data.europa.eu/esco/skill/software-testing
+- alias: test-driven development
+  canonical_label: Test-Driven Development
+  category: practice
+  parent_esco_uri: http://data.europa.eu/esco/skill/software-testing
+- alias: bdd
+  canonical_label: Behavior-Driven Development
+  category: practice
+  parent_esco_uri: http://data.europa.eu/esco/skill/software-testing
+- alias: grpc
+  canonical_label: gRPC
+  category: framework
+  parent_esco_uri: http://data.europa.eu/esco/skill/microservices
+- alias: protobuf
+  canonical_label: Protocol Buffers
+  category: tool
+  parent_esco_uri: http://data.europa.eu/esco/skill/microservices
+- alias: protocol buffers
+  canonical_label: Protocol Buffers
+  category: tool
+  parent_esco_uri: http://data.europa.eu/esco/skill/microservices
+- alias: openapi
+  canonical_label: OpenAPI / Swagger
+  category: standard
+  parent_esco_uri: http://data.europa.eu/esco/skill/rest-apis
+- alias: swagger
+  canonical_label: OpenAPI / Swagger
+  category: tool
+  parent_esco_uri: http://data.europa.eu/esco/skill/rest-apis
+- alias: oracle
+  canonical_label: Oracle Database
+  category: database
+  parent_esco_uri: http://data.europa.eu/esco/skill/sql-query
+- alias: mssql
+  canonical_label: Microsoft SQL Server
+  category: database
+  parent_esco_uri: http://data.europa.eu/esco/skill/sql-query
+- alias: sql server
+  canonical_label: Microsoft SQL Server
+  category: database
+  parent_esco_uri: http://data.europa.eu/esco/skill/sql-query
+- alias: cockroachdb
+  canonical_label: CockroachDB
+  category: database
+  parent_esco_uri: http://data.europa.eu/esco/skill/sql-query
+- alias: duckdb
+  canonical_label: DuckDB
+  category: database
+  parent_esco_uri: http://data.europa.eu/esco/skill/sql-query
+- alias: timescaledb
+  canonical_label: TimescaleDB
+  category: database
+  parent_esco_uri: http://data.europa.eu/esco/skill/postgresql-db
+- alias: memcached
+  canonical_label: Memcached
+  category: database
+  parent_esco_uri: http://data.europa.eu/esco/skill/sql-query
+- alias: podman
+  canonical_label: Podman
+  category: tool
+  parent_esco_uri: http://data.europa.eu/esco/skill/docker-containers
+- alias: argocd
+  canonical_label: ArgoCD
+  category: tool
+  parent_esco_uri: http://data.europa.eu/esco/skill/ci-cd-devops
+- alias: gitops
+  canonical_label: GitOps
+  category: practice
+  parent_esco_uri: http://data.europa.eu/esco/skill/ci-cd-devops
+- alias: iac
+  canonical_label: Infrastructure as Code
+  category: practice
+  parent_esco_uri: http://data.europa.eu/esco/skill/cloud-computing
+- alias: infrastructure as code
+  canonical_label: Infrastructure as Code
+  category: practice
+  parent_esco_uri: http://data.europa.eu/esco/skill/cloud-computing
+- alias: sre
+  canonical_label: Site Reliability Engineering
+  category: practice
+  parent_esco_uri: http://data.europa.eu/esco/skill/ci-cd-devops
+- alias: site reliability engineering
+  canonical_label: Site Reliability Engineering
+  category: practice
+  parent_esco_uri: http://data.europa.eu/esco/skill/ci-cd-devops
+- alias: datadog
+  canonical_label: Datadog
+  category: tool
+  parent_esco_uri: http://data.europa.eu/esco/skill/ci-cd-devops
+- alias: splunk
+  canonical_label: Splunk
+  category: tool
+  parent_esco_uri: http://data.europa.eu/esco/skill/ci-cd-devops
+- alias: opentelemetry
+  canonical_label: OpenTelemetry
+  category: tool
+  parent_esco_uri: http://data.europa.eu/esco/skill/ci-cd-devops
+- alias: otel
+  canonical_label: OpenTelemetry
+  category: tool
+  parent_esco_uri: http://data.europa.eu/esco/skill/ci-cd-devops
+- alias: sentry
+  canonical_label: Sentry (monitoring)
+  category: tool
+  parent_esco_uri: http://data.europa.eu/esco/skill/ci-cd-devops
+- alias: airflow
+  canonical_label: Apache Airflow
+  category: tool
+  parent_esco_uri: http://data.europa.eu/esco/skill/ci-cd-devops
+- alias: apache airflow
+  canonical_label: Apache Airflow
+  category: tool
+  parent_esco_uri: http://data.europa.eu/esco/skill/ci-cd-devops
+- alias: deep learning
+  canonical_label: Deep Learning
+  category: concept
+  parent_esco_uri: http://data.europa.eu/esco/skill/deep-learning
+- alias: machine learning
+  canonical_label: Machine Learning
+  category: concept
+  parent_esco_uri: http://data.europa.eu/esco/skill/machine-learning
+- alias: computer vision
+  canonical_label: Computer Vision
+  category: concept
+  parent_esco_uri: http://data.europa.eu/esco/skill/machine-learning
+- alias: natural language processing
+  canonical_label: Natural Language Processing
+  category: concept
+  parent_esco_uri: http://data.europa.eu/esco/skill/nlp-proc
+- alias: data science
+  canonical_label: Data Science
+  category: concept
+  parent_esco_uri: http://data.europa.eu/esco/skill/data-analysis
+- alias: statistical modeling
+  canonical_label: Statistical Modeling
+  category: concept
+  parent_esco_uri: http://data.europa.eu/esco/skill/data-analysis
+- alias: jax
+  canonical_label: JAX
+  category: framework
+  parent_esco_uri: http://data.europa.eu/esco/skill/deep-learning
+- alias: ray
+  canonical_label: Ray (distributed computing)
+  category: framework
+  parent_esco_uri: http://data.europa.eu/esco/skill/machine-learning
+- alias: dask
+  canonical_label: Dask
+  category: framework
+  parent_esco_uri: http://data.europa.eu/esco/skill/data-analysis
+- alias: optuna
+  canonical_label: Optuna
+  category: library
+  parent_esco_uri: http://data.europa.eu/esco/skill/machine-learning
+- alias: statsmodels
+  canonical_label: Statsmodels
+  category: library
+  parent_esco_uri: http://data.europa.eu/esco/skill/data-analysis
+- alias: vllm
+  canonical_label: vLLM
+  category: library
+  parent_esco_uri: http://data.europa.eu/esco/skill/deep-learning
+- alias: ollama
+  canonical_label: Ollama
+  category: tool
+  parent_esco_uri: http://data.europa.eu/esco/skill/deep-learning
+- alias: crewai
+  canonical_label: CrewAI
+  category: framework
+  parent_esco_uri: http://data.europa.eu/esco/skill/deep-learning
+- alias: autogen
+  canonical_label: AutoGen
+  category: framework
+  parent_esco_uri: http://data.europa.eu/esco/skill/deep-learning
+- alias: prompt engineering
+  canonical_label: Prompt Engineering
+  category: skill
+  parent_esco_uri: http://data.europa.eu/esco/skill/nlp-proc
+- alias: system design
+  canonical_label: System Design
+  category: skill
+  parent_esco_uri: http://data.europa.eu/esco/skill/microservices
+- alias: solid
+  canonical_label: SOLID Principles
+  category: concept
+  parent_esco_uri: http://data.europa.eu/esco/skill/microservices
+- alias: solid principles
+  canonical_label: SOLID Principles
+  category: concept
+  parent_esco_uri: http://data.europa.eu/esco/skill/microservices
+- alias: design patterns
+  canonical_label: Design Patterns
+  category: concept
+  parent_esco_uri: http://data.europa.eu/esco/skill/microservices
+- alias: clean architecture
+  canonical_label: Clean Architecture
+  category: concept
+  parent_esco_uri: http://data.europa.eu/esco/skill/microservices
+- alias: domain-driven design
+  canonical_label: Domain-Driven Design
+  category: concept
+  parent_esco_uri: http://data.europa.eu/esco/skill/microservices
+- alias: ddd
+  canonical_label: Domain-Driven Design
+  category: concept
+  parent_esco_uri: http://data.europa.eu/esco/skill/microservices
+- alias: cqrs
+  canonical_label: CQRS
+  category: concept
+  parent_esco_uri: http://data.europa.eu/esco/skill/microservices
+- alias: oop
+  canonical_label: Object-Oriented Programming
+  category: concept
+  parent_esco_uri: http://data.europa.eu/esco/skill/c-plus-plus
+- alias: object-oriented programming
+  canonical_label: Object-Oriented Programming
+  category: concept
+  parent_esco_uri: http://data.europa.eu/esco/skill/c-plus-plus
+- alias: functional programming
+  canonical_label: Functional Programming
+  category: concept
+  parent_esco_uri: http://data.europa.eu/esco/skill/python-prog
+- alias: code review
+  canonical_label: Code Review
+  category: practice
+  parent_esco_uri: http://data.europa.eu/esco/skill/git-vcs
+- alias: high availability
+  canonical_label: High Availability
+  category: concept
+  parent_esco_uri: http://data.europa.eu/esco/skill/cloud-computing
+- alias: load balancing
+  canonical_label: Load Balancing
+  category: concept
+  parent_esco_uri: http://data.europa.eu/esco/skill/microservices
+- alias: database sharding
+  canonical_label: Database Sharding
+  category: concept
+  parent_esco_uri: http://data.europa.eu/esco/skill/sql-query
+- alias: acid
+  canonical_label: ACID Compliance
+  category: concept
+  parent_esco_uri: http://data.europa.eu/esco/skill/sql-query
+- alias: caching
+  canonical_label: Distributed Caching
+  category: concept
+  parent_esco_uri: http://data.europa.eu/esco/skill/sql-query
+- alias: redis cache
+  canonical_label: Redis
+  category: database
+  parent_esco_uri: http://data.europa.eu/esco/skill/sql-query
+- alias: linear
+  canonical_label: Linear (issue tracking)
+  category: tool
+  parent_esco_uri: http://data.europa.eu/esco/skill/agile-dev
+- alias: confluence
+  canonical_label: Confluence
+  category: tool
+  parent_esco_uri: http://data.europa.eu/esco/skill/agile-dev
+- alias: cloudflare
+  canonical_label: Cloudflare
+  category: cloud
+  parent_esco_uri: http://data.europa.eu/esco/skill/cloud-computing
+- alias: supabase
+  canonical_label: Supabase
+  category: database
+  parent_esco_uri: http://data.europa.eu/esco/skill/postgresql-db
+- alias: firebase
+  canonical_label: Google Firebase
+  category: cloud
+  parent_esco_uri: http://data.europa.eu/esco/skill/cloud-computing
+- alias: sveltekit
+  canonical_label: SvelteKit
+  category: framework
+  parent_esco_uri: http://data.europa.eu/esco/skill/javascript-prog
+- alias: astro
+  canonical_label: Astro (web framework)
+  category: framework
+  parent_esco_uri: http://data.europa.eu/esco/skill/javascript-prog
+- alias: pytorch lightning
+  canonical_label: PyTorch Lightning
+  category: framework
+  parent_esco_uri: http://data.europa.eu/esco/skill/deep-learning
+- alias: lightning
+  canonical_label: PyTorch Lightning
+  category: framework
+  parent_esco_uri: http://data.europa.eu/esco/skill/deep-learning
+- alias: onnx
+  canonical_label: ONNX (Open Neural Network Exchange)
+  category: standard
+  parent_esco_uri: http://data.europa.eu/esco/skill/deep-learning
+- alias: tensorrt
+  canonical_label: TensorRT
+  category: library
+  parent_esco_uri: http://data.europa.eu/esco/skill/deep-learning
+- alias: triton
+  canonical_label: Triton Inference Server
+  category: tool
+  parent_esco_uri: http://data.europa.eu/esco/skill/deep-learning
+- alias: vault
+  canonical_label: HashiCorp Vault
+  category: tool
+  parent_esco_uri: http://data.europa.eu/esco/skill/cloud-computing
+- alias: consul
+  canonical_label: HashiCorp Consul
+  category: tool
+  parent_esco_uri: http://data.europa.eu/esco/skill/cloud-computing
+- alias: istio
+  canonical_label: Istio Service Mesh
+  category: tool
+  parent_esco_uri: http://data.europa.eu/esco/skill/kubernetes
+- alias: envoy
+  canonical_label: Envoy Proxy
+  category: tool
+  parent_esco_uri: http://data.europa.eu/esco/skill/microservices
+- alias: conda
+  canonical_label: Conda
+  category: tool
+  parent_esco_uri: http://data.europa.eu/esco/skill/python-prog
+- alias: pip
+  canonical_label: pip
+  category: tool
+  parent_esco_uri: http://data.europa.eu/esco/skill/python-prog
+- alias: flake8
+  canonical_label: Flake8
+  category: tool
+  parent_esco_uri: http://data.europa.eu/esco/skill/python-prog
+- alias: pylint
+  canonical_label: Pylint
+  category: tool
+  parent_esco_uri: http://data.europa.eu/esco/skill/python-prog
+- alias: prettier
+  canonical_label: Prettier
+  category: tool
+  parent_esco_uri: http://data.europa.eu/esco/skill/javascript-prog
+- alias: eslint
+  canonical_label: ESLint
+  category: tool
+  parent_esco_uri: http://data.europa.eu/esco/skill/javascript-prog
+- alias: bitbucket
+  canonical_label: Bitbucket
+  category: tool
+  parent_esco_uri: http://data.europa.eu/esco/skill/git-vcs
+- alias: trello
+  canonical_label: Trello
+  category: tool
+  parent_esco_uri: http://data.europa.eu/esco/skill/agile-dev
+- alias: notion
+  canonical_label: Notion
+  category: tool
+  parent_esco_uri: http://data.europa.eu/esco/skill/agile-dev
+- alias: figma
+  canonical_label: Figma
+  category: tool
+  parent_esco_uri: http://data.europa.eu/esco/skill/javascript-prog
+- alias: restful apis
+  canonical_label: RESTful API
+  category: architecture
+  parent_esco_uri: http://data.europa.eu/esco/skill/rest-apis
+- alias: rest apis
+  canonical_label: RESTful API
+  category: architecture
+  parent_esco_uri: http://data.europa.eu/esco/skill/rest-apis
+- alias: jwt
+  canonical_label: JSON Web Tokens (JWT)
+  category: standard
+  parent_esco_uri: http://data.europa.eu/esco/skill/rest-apis
+- alias: oauth
+  canonical_label: OAuth 2.0
+  category: standard
+  parent_esco_uri: http://data.europa.eu/esco/skill/rest-apis
+- alias: oauth2
+  canonical_label: OAuth 2.0
+  category: standard
+  parent_esco_uri: http://data.europa.eu/esco/skill/rest-apis
+- alias: oauth 2.0
+  canonical_label: OAuth 2.0
+  category: standard
+  parent_esco_uri: http://data.europa.eu/esco/skill/rest-apis

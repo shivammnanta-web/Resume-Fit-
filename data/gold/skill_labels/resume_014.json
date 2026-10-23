@@ -1,0 +1,19 @@
+{
+  "id": "resume_014",
+  "domain": "cybersecurity_devsecops",
+  "text": "\nSunita Rao | DevSecOps & Security Engineer\nSUMMARY\nSecurity specialist focusing on cloud security posture, secrets management, and automated vulnerability scanning.\n\nWORK EXPERIENCE\nDevSecOps Engineer | SecureCloud (2021 - Present)\n\u2022 Configured automated secrets management with HashiCorp Vault across Kubernetes.\n\u2022 Implemented vulnerability scanning in GitLab CI pipelines with Docker container scanning.\n\u2022 Provisioned identity and access management policies across Amazon Web Services.\n\u2022 Maintained security incident monitoring using Splunk and Datadog.\n\nTECHNICAL SKILLS\nCloud & Security: Amazon Web Services, HashiCorp Vault, Kubernetes, Docker\nCI/CD & Monitoring: GitLab CI, Splunk, Datadog, Git\nOS: Linux, Ubuntu Linux, Bash Scripting\n",
+  "expected_skills": [
+    "Amazon Web Services",
+    "HashiCorp Vault",
+    "Kubernetes",
+    "Docker",
+    "GitLab CI",
+    "Splunk",
+    "Datadog",
+    "Git",
+    "Linux",
+    "Ubuntu Linux",
+    "Bash Scripting",
+    "CI/CD"
+  ]
+}

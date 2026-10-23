@@ -1,0 +1,25 @@
+{
+  "id": "resume_005",
+  "domain": "fullstack_node",
+  "text": "\nAnanya Sen | Full Stack Developer\nSUMMARY\nFull Stack Engineer skilled in Node.js, Express.js, React, and MongoDB database modeling.\n\nWORK EXPERIENCE\nFull Stack Engineer | FinScale (2021 - Present)\n\u2022 Developed modular microservices using Node.js, Express.js, and TypeScript.\n\u2022 Built customer-facing responsive dashboards with React and Redux.\n\u2022 Designed NoSQL database schemas and aggregation queries in MongoDB.\n\u2022 Implemented authentication using JSON Web Tokens (JWT) and OAuth 2.0.\n\nTECHNICAL SKILLS\nLanguages: JavaScript, TypeScript, Python\nBackend: Node.js, Express.js, RESTful API\nFrontend: React.js, HTML5, CSS3, Bootstrap (CSS)\nDatabases: MongoDB, Redis\nDevOps: Docker, Git, GitHub\nSecurity: JSON Web Tokens (JWT), OAuth 2.0\n",
+  "expected_skills": [
+    "JavaScript",
+    "TypeScript",
+    "Python",
+    "Node.js",
+    "Express.js",
+    "RESTful API",
+    "React.js",
+    "HTML5",
+    "CSS3",
+    "Bootstrap (CSS)",
+    "MongoDB",
+    "Redis",
+    "Docker",
+    "Git",
+    "GitHub",
+    "JSON Web Tokens (JWT)",
+    "OAuth 2.0",
+    "Microservices Architecture"
+  ]
+}

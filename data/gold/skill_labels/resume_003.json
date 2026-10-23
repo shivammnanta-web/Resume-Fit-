@@ -1,0 +1,26 @@
+{
+  "id": "resume_003",
+  "domain": "devops_cloud",
+  "text": "\nRohan Verma | DevOps & Cloud Platform Engineer\nSUMMARY\nCloud Infrastructure Engineer with deep expertise in Kubernetes orchestration, AWS cloud provisioning, and CI/CD pipelines.\n\nWORK EXPERIENCE\nDevOps Engineer | Scalenet Labs (2021 - Present)\n\u2022 Architected and provisioned multi-region AWS cloud infrastructure using Terraform and Ansible.\n\u2022 Deployed and managed production Kubernetes clusters across Amazon EKS.\n\u2022 Automated end-to-end continuous integration and deployment with GitLab CI and Helm.\n\u2022 Implemented cluster observability and alerting using Prometheus and Grafana.\n\nSysAdmin | InfraSolutions (2019 - 2021)\n\u2022 Administered Linux Ubuntu servers and automated maintenance tasks with Bash scripting.\n\u2022 Managed container deployments using Docker and Docker Compose.\n\nTECHNICAL SKILLS\nCloud: Amazon Web Services, Amazon EKS, Amazon S3, Amazon EC2\nOrchestration: Kubernetes, Docker, Helm, Docker Compose\nIaC & Automation: Terraform, Ansible, GitLab CI\nMonitoring: Prometheus, Grafana\nOS & Scripting: Linux, Ubuntu Linux, Bash Scripting, Git\n",
+  "expected_skills": [
+    "Amazon Web Services",
+    "Amazon EKS",
+    "Amazon S3",
+    "Amazon EC2",
+    "Kubernetes",
+    "Docker",
+    "Helm",
+    "Docker Compose",
+    "Terraform",
+    "Ansible",
+    "GitLab CI",
+    "Prometheus",
+    "Grafana",
+    "Linux",
+    "Ubuntu Linux",
+    "Bash Scripting",
+    "Git",
+    "CI/CD",
+    "Infrastructure as Code"
+  ]
+}

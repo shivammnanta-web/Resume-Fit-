@@ -1,0 +1,21 @@
+{
+  "id": "resume_018",
+  "domain": "blockchain_web3",
+  "text": "\nNikhil Jain | Web3 & Distributed Systems Developer\nSUMMARY\nSoftware developer with 3 years building smart contract integrations and decentralized web applications.\n\nWORK EXPERIENCE\nBlockchain Developer | ChainCraft (2022 - Present)\n\u2022 Developed client integration libraries using TypeScript, Node.js, and WebSockets.\n\u2022 Built decentralized frontend interfaces with React.js, Next.js, and Tailwind CSS.\n\u2022 Integrated relational caching and document storage with PostgreSQL and Redis.\n\nTECHNICAL SKILLS\nLanguages: TypeScript, JavaScript, Rust (programming language), Python\nFrontend & Fullstack: React.js, Next.js, Tailwind CSS, Node.js\nDatabases: PostgreSQL, Redis\nProtocols & Tools: WebSockets, RESTful API, Docker, Git\n",
+  "expected_skills": [
+    "TypeScript",
+    "JavaScript",
+    "Rust (programming language)",
+    "Python",
+    "React.js",
+    "Next.js",
+    "Tailwind CSS",
+    "Node.js",
+    "PostgreSQL",
+    "Redis",
+    "WebSockets",
+    "RESTful API",
+    "Docker",
+    "Git"
+  ]
+}

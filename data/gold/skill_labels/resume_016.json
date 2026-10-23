@@ -1,0 +1,20 @@
+{
+  "id": "resume_016",
+  "domain": "data_analyst",
+  "text": "\nPooja Bhatt | Senior Data Analyst\nSUMMARY\nData Analyst with 4 years experience translating business requirements into dashboards, SQL pipelines, and predictive insights.\n\nWORK EXPERIENCE\nSenior Analyst | RetailInsights (2021 - Present)\n\u2022 Built automated reporting pipelines in Python with Pandas, NumPy, and Statsmodels.\n\u2022 Optimized complex analytical queries and database aggregation in PostgreSQL and Snowflake.\n\u2022 Developed interactive KPI visual dashboards using Plotly and Tableau.\n\u2022 Conducted exploratory data analysis and statistical modeling for customer retention.\n\nTECHNICAL SKILLS\nLanguages: Python, SQL, R (programming language)\nData & Stats: Pandas, NumPy, Statsmodels, exploratory data analysis\nVisualization: Plotly, Matplotlib, Seaborn\nDatabases: PostgreSQL, Snowflake\nTools: Git, Excel\n",
+  "expected_skills": [
+    "Python",
+    "SQL",
+    "R (programming language)",
+    "Pandas",
+    "NumPy",
+    "Statsmodels",
+    "Plotly",
+    "Matplotlib",
+    "Seaborn",
+    "PostgreSQL",
+    "Snowflake",
+    "Git",
+    "data analysis"
+  ]
+}

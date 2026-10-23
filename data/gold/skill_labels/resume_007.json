@@ -1,0 +1,22 @@
+{
+  "id": "resume_007",
+  "domain": "data_engineer",
+  "text": "\nSiddharth Rao | Big Data Engineer\nSUMMARY\nData Engineer with 5 years experience designing scalable data lakehouses and ETL pipelines using Apache Spark and Snowflake.\n\nWORK EXPERIENCE\nSenior Data Engineer | DataWave (2022 - Present)\n\u2022 Built batch and real-time ETL pipelines with PySpark and Apache Spark.\n\u2022 Orchestrated automated DAG workflows with Apache Airflow on Amazon Web Services.\n\u2022 Architected analytical data warehouse models in Snowflake and Google BigQuery.\n\nData Engineer | MetricStream (2019 - 2022)\n\u2022 Ingested streaming telemetry using Apache Kafka and Python.\n\u2022 Maintained relational databases in PostgreSQL and MySQL.\n\nTECHNICAL SKILLS\nLanguages: Python, SQL, Scala\nData Processing: Apache Spark, PySpark, Apache Airflow\nStorage & Warehousing: Snowflake, Google BigQuery, PostgreSQL, MySQL\nCloud & Messaging: Amazon Web Services, Apache Kafka, Docker, Git\n",
+  "expected_skills": [
+    "Python",
+    "SQL",
+    "Scala",
+    "Apache Spark",
+    "PySpark",
+    "Apache Airflow",
+    "Snowflake",
+    "Google BigQuery",
+    "PostgreSQL",
+    "MySQL",
+    "Amazon Web Services",
+    "Apache Kafka",
+    "Docker",
+    "Git",
+    "Data Analysis"
+  ]
+}

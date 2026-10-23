@@ -1,0 +1,29 @@
+{
+  "id": "resume_002",
+  "domain": "ml_engineer",
+  "text": "\nPriya Patel | Machine Learning Engineer\nSUMMARY\nMachine Learning Engineer with 4 years of experience building NLP systems, predictive models, and vector search pipelines.\n\nWORK EXPERIENCE\nML Engineer | DataCore Systems (2022 - Present)\n\u2022 Trained deep learning models using PyTorch and Hugging Face Transformers for sentiment analysis.\n\u2022 Built vector search retrieval pipelines with Sentence-Transformers and FAISS for 10M documents.\n\u2022 Conducted model evaluation and hyperparameter tuning using scikit-learn and MLflow.\n\nData Scientist | Alpha Analytics (2020 - 2022)\n\u2022 Developed tabular predictive models with XGBoost and Pandas.\n\u2022 Performed exploratory data analysis with NumPy, Matplotlib, and Seaborn.\n\nTECHNICAL SKILLS\nLanguages: Python, SQL\nML & AI: PyTorch, scikit-learn, Hugging Face, Sentence-Transformers, XGBoost, FAISS, MLflow\nData Analysis: Pandas, NumPy, Matplotlib, Seaborn\nTools: Git, Docker, Linux\n",
+  "expected_skills": [
+    "Python",
+    "SQL",
+    "PyTorch",
+    "scikit-learn",
+    "Hugging Face",
+    "Sentence-Transformers",
+    "XGBoost",
+    "FAISS",
+    "MLflow",
+    "Pandas",
+    "NumPy",
+    "Matplotlib",
+    "Seaborn",
+    "Git",
+    "Docker",
+    "Linux",
+    "Natural Language Processing",
+    "Deep Learning",
+    "Machine Learning",
+    "Vector Similarity Search",
+    "Model Evaluation",
+    "Hyperparameter Tuning"
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "id": "resume_017",
+  "domain": "sre_engineer",
+  "text": "\nVarun Menon | Site Reliability Engineer\nSUMMARY\nSRE with 5 years experience ensuring 99.99% availability of microservices on multi-cloud environments.\n\nWORK EXPERIENCE\nSite Reliability Engineer | CloudStream (2021 - Present)\n\u2022 Architected telemetry and distributed tracing systems using OpenTelemetry, Prometheus, and Grafana.\n\u2022 Automated incident reporting and alerting pipelines with Datadog and Sentry.\n\u2022 Managed containerized Kubernetes clusters in Google Cloud Platform and Amazon Web Services.\n\u2022 Scripted operational automation using Python and Bash Scripting.\n\nTECHNICAL SKILLS\nObservability: OpenTelemetry, Prometheus, Grafana, Datadog, Sentry\nCloud & Containers: Kubernetes, Docker, Google Cloud Platform, Amazon Web Services\nLanguages: Python, Go, Bash Scripting\nMethodologies: Site Reliability Engineering, High Availability, CI/CD, Git\n",
+  "expected_skills": [
+    "OpenTelemetry",
+    "Prometheus",
+    "Grafana",
+    "Datadog",
+    "Sentry (monitoring)",
+    "Kubernetes",
+    "Docker",
+    "Google Cloud Platform",
+    "Amazon Web Services",
+    "Python",
+    "Go",
+    "Bash Scripting",
+    "Site Reliability Engineering",
+    "High Availability",
+    "CI/CD",
+    "Git"
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "id": "resume_001",
+  "domain": "backend_python",
+  "text": "\nAarav Sharma | Senior Backend Developer\nSUMMARY\nExperienced backend engineer specializing in distributed Python microservices, PostgreSQL databases, and high-throughput REST APIs.\n\nWORK EXPERIENCE\nSenior Backend Engineer | CloudScale Tech (2022 - Present)\n\u2022 Architected and deployed microservices handling 20,000 requests/sec using Flask, PostgreSQL, and Redis.\n\u2022 Implemented automated CI/CD pipelines with Docker and GitHub Actions, cutting release cycles by 40%.\n\u2022 Optimized SQL queries and added pgvector indexing for semantic document similarity search.\n\nJunior Developer | InfoSystems (2020 - 2022)\n\u2022 Developed web APIs using Python, Flask, and SQLAlchemy for transaction ledger services.\n\u2022 Wrote automated unit test suites with pytest.\n\nTECHNICAL SKILLS\nLanguages: Python, SQL, Bash\nFrameworks: Flask, SQLAlchemy, FastAPI\nDatabases: PostgreSQL, Redis, pgvector\nDevOps & Tools: Docker, Git, GitHub Actions, Linux\n",
+  "expected_skills": [
+    "Python",
+    "SQL",
+    "Bash Scripting",
+    "Flask",
+    "SQLAlchemy",
+    "FastAPI",
+    "PostgreSQL",
+    "Redis",
+    "pgvector",
+    "Docker",
+    "Git",
+    "GitHub Actions",
+    "Linux",
+    "Microservices Architecture",
+    "CI/CD",
+    "RESTful API",
+    "Pytest"
+  ]
+}

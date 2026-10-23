@@ -1,0 +1,21 @@
+{
+  "id": "resume_012",
+  "domain": "qa_automation",
+  "text": "\nDivya Nambiar | QA Automation Engineer\nSUMMARY\nQuality Assurance Engineer with 4 years experience creating automated testing frameworks and CI integration tests.\n\nWORK EXPERIENCE\nQA Automation Lead | TestMatrix (2021 - Present)\n\u2022 Developed automated end-to-end testing suites using Playwright, Cypress, and TypeScript.\n\u2022 Built API test frameworks in Python using Pytest and Requests.\n\u2022 Integrated automated test execution in GitHub Actions continuous integration pipelines.\n\u2022 Executed cross-browser functional testing with Selenium.\n\nTECHNICAL SKILLS\nLanguages: Python, JavaScript, TypeScript\nTest Frameworks: Playwright, Cypress, Selenium, Pytest\nCI/CD: GitHub Actions, Jenkins, Git\nMethodologies: Test-Driven Development, Behavior-Driven Development, Agile\n",
+  "expected_skills": [
+    "Python",
+    "JavaScript",
+    "TypeScript",
+    "Playwright",
+    "Cypress",
+    "Selenium",
+    "Pytest",
+    "GitHub Actions",
+    "Jenkins",
+    "Git",
+    "Test-Driven Development",
+    "Behavior-Driven Development",
+    "Agile",
+    "CI/CD"
+  ]
+}
