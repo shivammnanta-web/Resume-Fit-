@@ -13,6 +13,7 @@ from __future__ import annotations
 import json
 import logging
 from pathlib import Path
+from typing import Any
 
 import joblib
 from sklearn.feature_extraction.text import TfidfVectorizer
@@ -142,14 +143,15 @@ def main() -> None:
     corpus = build_reference_corpus()
     logger.info("Fitting TfidfVectorizer with custom tech tokenizer...")
 
-    vectorizer = TfidfVectorizer(
-        tokenizer=tech_tokenize,
-        token_pattern=None,  # type: ignore[arg-type]
-        ngram_range=(1, 2),
-        min_df=1,
-        max_df=0.95,
-        sublinear_tf=True,
-    )
+    tfidf_kwargs: dict[str, Any] = {
+        "tokenizer": tech_tokenize,
+        "token_pattern": None,
+        "ngram_range": (1, 2),
+        "min_df": 1,
+        "max_df": 0.95,
+        "sublinear_tf": True,
+    }
+    vectorizer = TfidfVectorizer(**tfidf_kwargs)
     vectorizer.fit(corpus)
 
     ARTIFACT_DIR.mkdir(parents=True, exist_ok=True)

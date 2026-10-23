@@ -115,14 +115,15 @@ class LexicalScorer:
         from scripts.build_tfidf_reference import build_reference_corpus
 
         corpus = build_reference_corpus()
-        vec = TfidfVectorizer(
-            tokenizer=tech_tokenize,
-            token_pattern=None,  # type: ignore[arg-type]
-            ngram_range=(1, 2),
-            min_df=1,
-            max_df=0.95,
-            sublinear_tf=True,
-        )
+        tfidf_kwargs: dict[str, Any] = {
+            "tokenizer": tech_tokenize,
+            "token_pattern": None,
+            "ngram_range": (1, 2),
+            "min_df": 1,
+            "max_df": 0.95,
+            "sublinear_tf": True,
+        }
+        vec = TfidfVectorizer(**tfidf_kwargs)
         vec.fit(corpus)
         self.artifact_path.parent.mkdir(parents=True, exist_ok=True)
         joblib.dump(vec, self.artifact_path)
