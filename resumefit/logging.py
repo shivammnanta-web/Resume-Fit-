@@ -14,7 +14,7 @@ import sys
 try:
     from pythonjsonlogger.json import JsonFormatter
 except ImportError:
-    from pythonjsonlogger.jsonlogger import JsonFormatter
+    from pythonjsonlogger.jsonlogger import JsonFormatter  # type: ignore[attr-defined]
 
 # Regex patterns for scrubbing sensitive PII from log messages
 EMAIL_REGEX = re.compile(r"\b[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Z|a-z]{2,}\b")
