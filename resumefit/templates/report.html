@@ -1,0 +1,263 @@
+{% extends "base.html" %}
+
+{% block title %}Fit Report: {{ report.candidate_name }} — ResumeFit{% endblock %}
+
+{% block content %}
+<div style="max-width: 1180px; margin: 0 auto;">
+
+  <!-- Header & Verdict Summary Card -->
+  <div class="card" style="margin-bottom: 2rem;">
+    <div style="display: flex; justify-content: space-between; align-items: flex-start; flex-wrap: wrap; gap: 1rem;">
+      <div>
+        <div style="display: flex; align-items: center; gap: 0.75rem; margin-bottom: 0.5rem;">
+          <h1 style="font-size: 1.85rem; font-weight: 800; color: #FFF;">
+            {{ report.candidate_name or "Candidate" }}
+          </h1>
+          {% if report.fit_index >= 80 %}
+            <span class="badge badge-strong">&#9679; {{ report.verdict_headline }}</span>
+          {% elif report.fit_index >= 65 %}
+            <span class="badge badge-moderate">&#9679; {{ report.verdict_headline }}</span>
+          {% else %}
+            <span class="badge badge-weak">&#9679; {{ report.verdict_headline }}</span>
+          {% endif %}
+        </div>
+        <p style="font-size: 1.05rem; color: var(--teal-glow); font-weight: 600;">
+          Target Position: {{ report.role_title or "Target Position" }}
+        </p>
+      </div>
+
+      <!-- Action Buttons -->
+      <div style="display: flex; gap: 0.75rem; align-items: center;">
+        <a href="{{ url_for('web.index') }}" class="btn btn-secondary btn-sm">&larr; New Match</a>
+        <a href="/api/reports/{{ report.id }}" target="_blank" class="btn btn-secondary btn-sm" id="btn-export-json">Export JSON</a>
+        <button type="button" class="btn btn-danger btn-sm btn-delete-candidate" data-id="{{ report.id }}" data-name="{{ report.candidate_name }}">
+          Right-to-Erasure
+        </button>
+      </div>
+    </div>
+
+    <!-- Deterministic Narrative Summary -->
+    <div style="margin-top: 1.25rem; padding: 1rem 1.25rem; background: var(--bg-surface); border-radius: var(--radius-md); border-left: 4px solid var(--teal-primary);">
+      <p style="font-size: 0.95rem; color: var(--text-main); line-height: 1.6;">
+        {{ report.narrative_summary }}
+      </p>
+    </div>
+  </div>
+
+  <!-- Radial Gauge & Score Breakdown -->
+  <div style="display: grid; grid-template-columns: 280px 1fr; gap: 1.75rem; margin-bottom: 2rem;">
+
+    <!-- Radial Fit Index Gauge -->
+    <div class="card fit-gauge-card">
+      <div class="radial-progress">
+        <svg viewBox="0 0 100 100">
+          <circle class="radial-bg" cx="50" cy="50" r="42" />
+          <circle class="radial-meter" cx="50" cy="50" r="42"
+                  stroke-dasharray="264"
+                  stroke-dashoffset="{{ 264 - (264 * report.fit_index / 100) }}" />
+        </svg>
+        <div class="radial-value">
+          <span class="radial-number">{{ "%.1f"|format(report.fit_index) }}</span>
+          <span class="radial-sub">Fit Index</span>
+        </div>
+      </div>
+      <p style="font-size: 0.8rem; color: var(--text-muted); margin-top: 1rem;">
+        Percentile-calibrated linear & semantic fusion (α={{ report.audit_metadata.alpha }}, β={{ report.audit_metadata.beta }})
+      </p>
+    </div>
+
+    <!-- 4 Key Metric Cards -->
+    <div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 1.25rem;">
+
+      <!-- Lexical Score -->
+      <div class="card" style="padding: 1.25rem;">
+        <span class="metric-title">Lexical Match (TF-IDF)</span>
+        <div class="metric-val" style="color: #60A5FA;">
+          {{ "%.1f%%"|format(report.scores.lexical_score * 100) }}
+        </div>
+        <p class="metric-desc">
+          Top n-grams:
+          {% for term in report.lexical_attribution.top_contributing_terms[:3] %}
+            <span style="color: var(--text-highlight); font-family: var(--font-mono); font-size: 0.75rem;">{{ term.term }}</span>{% if not loop.last %}, {% endif %}
+          {% else %}
+            <span style="color: var(--text-dim);">No significant n-grams</span>
+          {% endfor %}
+        </p>
+      </div>
+
+      <!-- Semantic Score -->
+      <div class="card" style="padding: 1.25rem;">
+        <span class="metric-title">Semantic Match (MiniLM)</span>
+        <div class="metric-val" style="color: var(--teal-glow);">
+          {{ "%.1f%%"|format(report.scores.semantic_score * 100) }}
+        </div>
+        <p class="metric-desc">
+          Rating: <strong style="color: var(--text-highlight);">{{ report.scores.semantic_rating }}</strong> &bull; Section-weighted
+        </p>
+      </div>
+
+      <!-- Skills Coverage -->
+      <div class="card" style="padding: 1.25rem;">
+        <span class="metric-title">Skills Coverage</span>
+        <div class="metric-val" style="color: var(--tier-strong);">
+          {{ "%.1f%%"|format(report.skills_analysis.skill_coverage_percentage) }}
+        </div>
+        <p class="metric-desc">
+          {{ report.skills_analysis.matched_required_skills }} of {{ report.skills_analysis.total_required_skills }} required skills matched
+        </p>
+      </div>
+
+      <!-- Experience & Constraints -->
+      <div class="card" style="padding: 1.25rem;">
+        <span class="metric-title">Experience & Integrity</span>
+        <div class="metric-val" style="font-size: 1.25rem; margin-top: 0.25rem;">
+          {{ report.constraints.candidate_years_exp }} yrs <span style="font-size: 0.85rem; color: var(--text-muted);">(Req: {{ report.constraints.required_years_exp }} yrs)</span>
+        </div>
+        <p class="metric-desc">
+          {% if report.skills_analysis.keyword_stuffing_detected %}
+            <span style="color: var(--tier-weak); font-weight: 700;">&#9888; Keyword stuffing flagged (ratio {{ "%.1f"|format(report.skills_analysis.keyword_stuffing_ratio) }})</span>
+          {% else %}
+            <span style="color: var(--tier-strong);">&#10003; Honest skill distribution (verified)</span>
+          {% endif %}
+        </p>
+      </div>
+
+    </div>
+
+  </div>
+
+  <!-- Interactive Evidence Highlighting Section -->
+  <div class="card" style="margin-bottom: 2rem;">
+    <div style="display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid var(--border-subtle); padding-bottom: 1rem; margin-bottom: 1rem;">
+      <div>
+        <h2 style="font-size: 1.25rem; font-weight: 700; color: #FFF;">
+          Interactive Skill Evidence Explorer
+        </h2>
+        <p style="font-size: 0.85rem; color: var(--text-muted);">
+          Click any matched skill chip to locate and highlight its exact supporting text span in the candidate's resume.
+        </p>
+      </div>
+      <div style="font-size: 0.78rem; color: var(--teal-glow); display: flex; gap: 0.75rem;">
+        <span>&#9632; Demonstrated</span>
+        <span>&#9632; Listed-only</span>
+        <span>&#9632; Tentative</span>
+        <span>&#9632; Missing</span>
+      </div>
+    </div>
+
+    <div class="evidence-split">
+
+      <!-- Left Column: Skill Chips -->
+      <div class="skills-list-pane">
+        <h3 style="font-size: 0.85rem; font-weight: 700; color: var(--text-muted); text-transform: uppercase; margin-bottom: 0.75rem;">
+          Required Skills ({{ report.skills_analysis.skill_coverage_table|length }})
+        </h3>
+
+        {% for item in report.skills_analysis.skill_coverage_table %}
+          <div class="skill-chip" data-span="{{ item.matched_span or '' }}" data-skill="{{ item.skill_name }}">
+            <div>
+              <div style="font-weight: 600; color: var(--text-highlight); font-size: 0.9rem;">
+                {{ item.skill_name }}
+              </div>
+              <div style="font-size: 0.75rem; color: var(--text-dim);">
+                {% if item.is_matched %}
+                  Section: {{ item.matched_section or "Experience" }}
+                {% else %}
+                  Missing in candidate profile
+                {% endif %}
+              </div>
+            </div>
+
+            <div>
+              {% if item.is_matched %}
+                {% if item.evidence_tier == "Demonstrated" %}
+                  <span class="badge badge-demonstrated">Demonstrated</span>
+                {% elif item.evidence_tier == "Listed-only" %}
+                  <span class="badge badge-listed">Listed-only</span>
+                {% else %}
+                  <span class="badge badge-tentative">Tentative</span>
+                {% endif %}
+              {% else %}
+                <span class="badge badge-missing">Missing</span>
+              {% endif %}
+            </div>
+          </div>
+        {% endfor %}
+      </div>
+
+      <!-- Right Column: Candidate Resume Text Preview -->
+      <div>
+        <h3 style="font-size: 0.85rem; font-weight: 700; color: var(--text-muted); text-transform: uppercase; margin-bottom: 0.75rem;">
+          Candidate Resume Preview (Interactive Text Pane)
+        </h3>
+
+        <div class="resume-preview-pane">
+          {% if report.sections %}
+            {% for sec in report.sections %}
+              <h3>{{ sec.heading }}</h3>
+              <p style="white-space: pre-wrap; margin-bottom: 1rem;">{{ sec.text }}</p>
+            {% endfor %}
+          {% elif report.resume_text %}
+            <p style="white-space: pre-wrap;">{{ report.resume_text }}</p>
+          {% else %}
+            <p style="color: var(--text-dim); font-style: italic;">Cleaned resume text preview unavailable.</p>
+          {% endif %}
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Itemized Constraints & Deductions -->
+  <div class="card" style="margin-bottom: 2rem;">
+    <h2 style="font-size: 1.15rem; font-weight: 700; color: #FFF; margin-bottom: 1rem;">
+      Audit Trail & Itemized Constraint Deductions
+    </h2>
+
+    <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.25rem;">
+      <div style="background: var(--bg-surface); padding: 1rem; border-radius: var(--radius-md); border: 1px solid var(--border-subtle);">
+        <span style="font-size: 0.8rem; color: var(--text-muted); text-transform: uppercase;">Experience Requirement</span>
+        <div style="font-size: 1.1rem; font-weight: 700; color: #FFF; margin: 0.25rem 0;">
+          {% if report.constraints.years_penalty < 1.0 %}
+            <span style="color: var(--tier-weak);">-{{ "%.0f%%"|format((1.0 - report.constraints.years_penalty) * 100) }} Deduction</span>
+          {% else %}
+            <span style="color: var(--tier-strong);">&#10003; Met Criteria</span>
+          {% endif %}
+        </div>
+        <p style="font-size: 0.78rem; color: var(--text-dim);">
+          Req: {{ report.constraints.required_years_exp }} yrs | Found: {{ report.constraints.candidate_years_exp }} yrs
+        </p>
+      </div>
+
+      <div style="background: var(--bg-surface); padding: 1rem; border-radius: var(--radius-md); border: 1px solid var(--border-subtle);">
+        <span style="font-size: 0.8rem; color: var(--text-muted); text-transform: uppercase;">Academic Degree Check</span>
+        <div style="font-size: 1.1rem; font-weight: 700; color: #FFF; margin: 0.25rem 0;">
+          {% if report.constraints.degree_penalty < 1.0 %}
+            <span style="color: var(--tier-weak);">-{{ "%.0f%%"|format((1.0 - report.constraints.degree_penalty) * 100) }} Deduction</span>
+          {% else %}
+            <span style="color: var(--tier-strong);">&#10003; Met Criteria</span>
+          {% endif %}
+        </div>
+        <p style="font-size: 0.78rem; color: var(--text-dim);">
+          Candidate: {{ report.constraints.candidate_degree or "Unspecified" }}
+        </p>
+      </div>
+
+      <div style="background: var(--bg-surface); padding: 1rem; border-radius: var(--radius-md); border: 1px solid var(--border-subtle);">
+        <span style="font-size: 0.8rem; color: var(--text-muted); text-transform: uppercase;">Missing Skills Penalty</span>
+        <div style="font-size: 1.1rem; font-weight: 700; color: #FFF; margin: 0.25rem 0;">
+          {% if report.constraints.must_have_penalty < 1.0 %}
+            <span style="color: var(--tier-weak);">-{{ "%.0f%%"|format((1.0 - report.constraints.must_have_penalty) * 100) }} Deduction</span>
+          {% else %}
+            <span style="color: var(--tier-strong);">&#10003; None</span>
+          {% endif %}
+        </div>
+        <p style="font-size: 0.78rem; color: var(--text-dim);">
+          Multiplier: {{ "%.2f"|format(report.constraints.total_penalty_multiplier) }}x
+        </p>
+      </div>
+    </div>
+  </div>
+
+</div>
+{% endblock %}

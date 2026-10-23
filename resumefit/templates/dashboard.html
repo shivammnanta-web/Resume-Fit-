@@ -1,0 +1,104 @@
+{% extends "base.html" %}
+
+{% block title %}Candidate Pool Dashboard — ResumeFit{% endblock %}
+
+{% block content %}
+<div style="max-width: 1180px; margin: 0 auto;">
+
+  <!-- Header -->
+  <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 2rem; flex-wrap: wrap; gap: 1rem;">
+    <div>
+      <h1 style="font-size: 2.2rem; font-weight: 800; color: #FFF; margin-bottom: 0.25rem;">
+        Candidate Pool & Right-to-Erasure
+      </h1>
+      <p style="font-size: 0.95rem; color: var(--text-muted);">
+        Auditable database of processed candidates with full GDPR Right-to-Erasure cascading deletion support.
+      </p>
+    </div>
+
+    <!-- Search Input -->
+    <div style="min-width: 280px;">
+      <input type="text" id="candidate-search" class="form-control" placeholder="Search by name or skill...">
+    </div>
+  </div>
+
+  <!-- Table Card -->
+  <div class="card" style="padding: 0; overflow: hidden;">
+    {% if candidates %}
+      <table class="data-table">
+        <thead>
+          <tr>
+            <th>Candidate</th>
+            <th>Experience</th>
+            <th>Degree</th>
+            <th>Extracted Skills</th>
+            <th>Fit Index</th>
+            <th>Actions</th>
+          </tr>
+        </thead>
+        <tbody>
+          {% for cand in candidates %}
+            <tr>
+              <td>
+                <div style="font-weight: 700; color: #FFF;">{{ cand.name }}</div>
+                <div style="font-size: 0.75rem; color: var(--text-dim);">{{ cand.filename }} &bull; {{ cand.created_at }}</div>
+              </td>
+              <td>
+                <span style="font-weight: 600;">{{ cand.years_experience }} yrs</span>
+              </td>
+              <td>
+                <span style="font-size: 0.85rem; color: var(--text-muted);">{{ cand.degree or "N/A" }}</span>
+              </td>
+              <td style="max-width: 320px;">
+                <div style="display: flex; flex-wrap: wrap; gap: 0.35rem;">
+                  {% for s in cand.skills[:5] %}
+                    <span style="font-size: 0.72rem; background: rgba(255, 255, 255, 0.05); padding: 0.15rem 0.45rem; border-radius: var(--radius-sm); border: 1px solid var(--border-subtle); color: var(--text-main);">
+                      {{ s }}
+                    </span>
+                  {% endfor %}
+                  {% if cand.skills|length > 5 %}
+                    <span style="font-size: 0.72rem; color: var(--text-dim);">+{{ cand.skills|length - 5 }} more</span>
+                  {% endif %}
+                </div>
+              </td>
+              <td>
+                {% if cand.fit_index >= 80 %}
+                  <span class="badge badge-strong">{{ "%.1f"|format(cand.fit_index) }}</span>
+                {% elif cand.fit_index >= 65 %}
+                  <span class="badge badge-moderate">{{ "%.1f"|format(cand.fit_index) }}</span>
+                {% else %}
+                  <span class="badge badge-weak">{{ "%.1f"|format(cand.fit_index) }}</span>
+                {% endif %}
+              </td>
+              <td>
+                <div style="display: flex; gap: 0.5rem; align-items: center;">
+                  <a href="{{ url_for('web.view_report', report_id=cand.report_id) }}" class="btn btn-secondary btn-sm">
+                    Report
+                  </a>
+                  <button type="button" class="btn btn-danger btn-sm btn-delete-candidate" data-id="{{ cand.id }}" data-name="{{ cand.name }}">
+                    Erase
+                  </button>
+                </div>
+              </td>
+            </tr>
+          {% endfor %}
+        </tbody>
+      </table>
+    {% else %}
+      <div style="text-align: center; padding: 4rem 2rem;">
+        <div style="font-size: 2.5rem; margin-bottom: 1rem; color: var(--text-dim);">&#128194;</div>
+        <h3 style="font-size: 1.25rem; font-weight: 700; color: #FFF; margin-bottom: 0.5rem;">
+          No candidates in pool yet
+        </h3>
+        <p style="font-size: 0.9rem; color: var(--text-muted); max-width: 450px; margin: 0 auto 1.5rem;">
+          Run your first explainable resume match to automatically index candidates into the auditable pool.
+        </p>
+        <a href="{{ url_for('web.index') }}" class="btn btn-primary">
+          Run First Match &rarr;
+        </a>
+      </div>
+    {% endif %}
+  </div>
+
+</div>
+{% endblock %}

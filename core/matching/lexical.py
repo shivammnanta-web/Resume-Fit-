@@ -129,6 +129,11 @@ class LexicalScorer:
         logger.info("Fitted and saved reference TF-IDF vectorizer to %s", self.artifact_path)
         return vec
 
+    @property
+    def vocabulary_size(self) -> int:
+        """Return the number of terms in the fitted reference vocabulary."""
+        return len(self.vectorizer.vocabulary_) if hasattr(self.vectorizer, "vocabulary_") else 0
+
     def score(self, resume_text: str, jd_text: str, top_k_terms: int = 10) -> LexicalMatchResult:
         """Compute cosine similarity and term attribution between resume and JD."""
         if not resume_text.strip() or not jd_text.strip():

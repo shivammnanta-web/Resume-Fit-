@@ -96,3 +96,41 @@ def process_resume(
         redacted_full_text=pii_result.redacted_text,
         unredacted_full_text=cleaned_text,
     )
+
+
+def process_resume_text(
+    text: str, filename: str = "pasted_resume.txt", candidate_name: str | None = None
+) -> IngestionOutput:
+    """Execute the ingestion pipeline directly on raw/pasted resume text."""
+    cleaned_text = preprocess_text(text)
+    sections = detect_sections(cleaned_text)
+
+    exp_sections = [s for s in sections if s.section_type == SectionType.EXPERIENCE]
+    all_date_ranges: list[DateRange] = []
+    exp_entries: list[ExperienceEntry] = []
+
+    for s in exp_sections:
+        entries = parse_experience_entries(s.text)
+        exp_entries.extend(entries)
+        for e in entries:
+            if e.date_range:
+                all_date_ranges.append(e.date_range)
+
+    total_years = compute_total_experience_years(all_date_ranges)
+    pii_result = redact_pii(cleaned_text)
+
+    return IngestionOutput(
+        filename=filename,
+        total_pages=1,
+        raw_character_count=len(text),
+        cleaned_character_count=len(cleaned_text),
+        sections=sections,
+        experience_entries=exp_entries,
+        total_experience_years=total_years,
+        detected_candidate_name=candidate_name or pii_result.detected_name,
+        detected_email=pii_result.detected_email,
+        detected_phone=pii_result.detected_phone,
+        redacted_full_text=pii_result.redacted_text,
+        unredacted_full_text=cleaned_text,
+    )
+

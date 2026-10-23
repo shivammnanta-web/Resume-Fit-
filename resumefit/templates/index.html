@@ -1,0 +1,121 @@
+{% extends "base.html" %}
+
+{% block title %}ResumeFit — Explainable Hybrid Resume Matcher{% endblock %}
+
+{% block content %}
+<div style="max-width: 980px; margin: 0 auto;">
+
+  <!-- Hero Header -->
+  <div style="text-align: center; margin-bottom: 2.25rem;">
+    <h1 style="font-size: 2.4rem; font-weight: 800; color: #FFFFFF; letter-spacing: -0.02em; margin-bottom: 0.75rem;">
+      Explainable, Auditable Resume Matching
+    </h1>
+    <p style="font-size: 1.05rem; color: var(--text-muted); max-width: 680px; margin: 0 auto;">
+      Deconstruct matching into transparent, human-verifiable components: TF-IDF lexical attribution, dense sentence-transformer semantics, verified ESCO skill evidence, and deterministic constraint checks.
+    </p>
+  </div>
+
+  <!-- Quick Demo Presets Bar -->
+  <div class="presets-bar">
+    <span class="presets-label">&#9889; Quick Presets:</span>
+    <button type="button" class="btn btn-secondary btn-sm" id="btn-preset-python">
+      Senior Python Architect Demo
+    </button>
+    <button type="button" class="btn btn-secondary btn-sm" id="btn-preset-frontend">
+      Frontend React Dev Demo
+    </button>
+  </div>
+
+  <!-- Matching Form -->
+  <form action="{{ url_for('web.analyze_view') }}" method="POST" enctype="multipart/form-data">
+
+    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1.75rem; margin-bottom: 1.75rem;">
+
+      <!-- Left Column: Resume Input -->
+      <div class="card">
+        <h2 style="font-size: 1.15rem; font-weight: 700; color: #FFF; margin-bottom: 1rem; display: flex; align-items: center; gap: 0.5rem;">
+          <span style="color: var(--teal-glow);">&#9632;</span> 1. Candidate Resume
+        </h2>
+
+        <div class="form-group">
+          <label class="form-label" for="candidate_name">Candidate Name (Optional)</label>
+          <input type="text" name="candidate_name" id="candidate_name" class="form-control" placeholder="e.g. Alex Mercer">
+        </div>
+
+        <!-- Input Format Tabs -->
+        <div class="tabs">
+          <button type="button" class="tab-btn active" data-tab="tab-upload">Upload PDF</button>
+          <button type="button" class="tab-btn" data-tab="tab-text">Paste Text</button>
+        </div>
+
+        <!-- Tab 1: PDF File Dropzone -->
+        <div class="tab-content active" id="tab-upload">
+          <div class="dropzone">
+            <div class="dropzone-icon">&#128196;</div>
+            <p class="dropzone-text" id="dropzone-filename"><strong>Drag & drop PDF resume here</strong> or click to browse</p>
+            <p class="dropzone-hint">Standard PDF, up to 10 pages, max 5MB</p>
+            <input type="file" name="resume_file" id="resume_file" accept=".pdf">
+          </div>
+        </div>
+
+        <!-- Tab 2: Raw Text Paste -->
+        <div class="tab-content" id="tab-text">
+          <div class="form-group">
+            <textarea name="resume_text" id="resume_text" class="form-control" placeholder="Paste full resume text here..." style="min-height: 200px;"></textarea>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Right Column: Target Job Description -->
+      <div class="card">
+        <h2 style="font-size: 1.15rem; font-weight: 700; color: #FFF; margin-bottom: 1rem; display: flex; align-items: center; gap: 0.5rem;">
+          <span style="color: var(--teal-glow);">&#9632;</span> 2. Job Description
+        </h2>
+
+        <div class="form-group" style="height: calc(100% - 3rem); display: flex; flex-direction: column;">
+          <label class="form-label" for="jd_text">Role Requirements & Responsibilities</label>
+          <textarea name="jd_text" id="jd_text" class="form-control" placeholder="Paste job description text here... (include role title, required skills, and required experience)" required style="flex: 1; min-height: 270px;"></textarea>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Submit Action Button -->
+    <div style="text-align: center; margin-bottom: 3rem;">
+      <button type="submit" class="btn btn-primary" id="btn-submit-analyze" style="padding: 1rem 2.75rem; font-size: 1.1rem;">
+        Run Explainable Match Engine &rarr;
+      </button>
+    </div>
+
+  </form>
+
+  <!-- Architectural Pillars -->
+  <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.5rem;">
+    <div class="card" style="padding: 1.25rem;">
+      <div style="font-size: 1.3rem; margin-bottom: 0.5rem;">&#128269;</div>
+      <h3 style="font-size: 0.95rem; font-weight: 700; color: #FFF; margin-bottom: 0.35rem;">Dual Lexical & Semantic Retrieval</h3>
+      <p style="font-size: 0.82rem; color: var(--text-muted); line-height: 1.5;">
+        TF-IDF with frozen 2685-term domain reference vocabulary fused with Sentence-Transformers dense embeddings (all-MiniLM-L6-v2).
+      </p>
+    </div>
+
+    <div class="card" style="padding: 1.25rem;">
+      <div style="font-size: 1.3rem; margin-bottom: 0.5rem;">&#128737;</div>
+      <h3 style="font-size: 0.95rem; font-weight: 700; color: #FFF; margin-bottom: 0.35rem;">Evidence & Stuffing Detection</h3>
+      <p style="font-size: 0.82rem; color: var(--text-muted); line-height: 1.5;">
+        ESCO v1.2.1 skill hierarchy classification (Demonstrated vs Listed-only) and active keyword-stuffing penalty guards.
+      </p>
+    </div>
+
+    <div class="card" style="padding: 1.25rem;">
+      <div style="font-size: 1.3rem; margin-bottom: 0.5rem;">&#9878;</div>
+      <h3 style="font-size: 0.95rem; font-weight: 700; color: #FFF; margin-bottom: 0.35rem;">Auditable Invariants</h3>
+      <p style="font-size: 0.82rem; color: var(--text-muted); line-height: 1.5;">
+        Deterministic template wording, bounded percentile calibrations, and cascading Right-to-Erasure compliant architecture.
+      </p>
+    </div>
+  </div>
+
+</div>
+{% endblock %}

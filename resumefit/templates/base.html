@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="ResumeFit - Explainable, Auditable, Hybrid Resume-JD Matching System for Academic Defense & Production">
+  <title>{% block title %}ResumeFit — Explainable Hybrid Resume Matcher{% endblock %}</title>
+
+  <!-- Google Fonts: Inter & JetBrains Mono -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+  <!-- Design System & Styles -->
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/tokens.css') }}">
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
+  {% block extra_head %}{% endblock %}
+</head>
+<body>
+
+  <!-- Audit / Defense Banner -->
+  <div class="audit-banner">
+    <span class="audit-shield-icon">&#9670;</span>
+    <span><strong>Academic Defense Grade:</strong> 100% Explainable Invariant Pipeline (TF-IDF Lexical + MiniLM Semantic + ESCO v1.2.1). Zero opaque generative hallucinations.</span>
+  </div>
+
+  <!-- Navigation Bar -->
+  <nav class="navbar">
+    <div class="container nav-container">
+      <a href="{{ url_for('web.index') }}" class="brand-logo" id="nav-brand">
+        <div class="brand-icon">R</div>
+        <div>
+          <span>ResumeFit</span>
+          <span class="brand-tagline">Explainable AI</span>
+        </div>
+      </a>
+
+      <ul class="nav-links">
+        <li><a href="{{ url_for('web.index') }}" class="nav-link {% if request.endpoint == 'web.index' %}active{% endif %}" id="nav-match">Match & Analyze</a></li>
+        <li><a href="{{ url_for('web.compare_candidates') }}" class="nav-link {% if request.endpoint == 'web.compare_candidates' %}active{% endif %}" id="nav-compare">Side-by-Side Compare</a></li>
+        <li><a href="{{ url_for('web.dashboard') }}" class="nav-link {% if request.endpoint == 'web.dashboard' %}active{% endif %}" id="nav-dashboard">Candidate Pool</a></li>
+        <li><a href="{{ url_for('web.evaluation_dashboard') }}" class="nav-link {% if request.endpoint == 'web.evaluation_dashboard' %}active{% endif %}" id="nav-eval">Academic Benchmarks</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Flash Messages -->
+  <div class="container flash-container">
+    {% with messages = get_flashed_messages(with_categories=true) %}
+      {% if messages %}
+        {% for category, message in messages %}
+          <div class="flash-message {{ category }}">
+            <span>{{ message }}</span>
+          </div>
+        {% endfor %}
+      {% endif %}
+    {% endwith %}
+  </div>
+
+  <!-- Main View Content -->
+  <main class="container" style="flex: 1; padding: 2rem 1.5rem;">
+    {% block content %}{% endblock %}
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <p>ResumeFit &bull; Built with ESCO v1.2.1 Taxonomy, Sentence-Transformers (all-MiniLM-L6-v2), and pgvector HNSW.</p>
+      <p style="margin-top: 0.35rem; font-size: 0.78rem;">GDPR Right-to-Erasure Compliant &bull; Auditable Decomposition &bull; Deterministic Invariant Architecture</p>
+    </div>
+  </footer>
+
+  <script src="{{ url_for('static', filename='js/app.js') }}"></script>
+  {% block extra_scripts %}{% endblock %}
+</body>
+</html>

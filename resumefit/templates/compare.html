@@ -1,0 +1,151 @@
+{% extends "base.html" %}
+
+{% block title %}Side-by-Side Comparison — ResumeFit{% endblock %}
+
+{% block content %}
+<div style="max-width: 1100px; margin: 0 auto;">
+
+  <!-- Header -->
+  <div style="text-align: center; margin-bottom: 2rem;">
+    <h1 style="font-size: 2.2rem; font-weight: 800; color: #FFF; margin-bottom: 0.5rem;">
+      Side-by-Side Candidate Comparison
+    </h1>
+    <p style="font-size: 1rem; color: var(--text-muted); max-width: 650px; margin: 0 auto;">
+      Benchmark multiple candidate profiles against the identical Job Description to eliminate hiring bias through auditable scoring metrics.
+    </p>
+  </div>
+
+  {% if ranking %}
+    <!-- Comparison Results View -->
+    <div class="card" style="margin-bottom: 2.5rem;">
+      <div style="display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid var(--border-subtle); padding-bottom: 1rem; margin-bottom: 1.5rem;">
+        <div>
+          <h2 style="font-size: 1.3rem; font-weight: 700; color: #FFF;">
+            Ranked Evaluation Matrix ({{ ranking|length }} Candidates)
+          </h2>
+          <p style="font-size: 0.85rem; color: var(--text-muted);">
+            Ranked strictly by calibrated Fit Index (0–100) using dual lexical & semantic fusion.
+          </p>
+        </div>
+        <a href="{{ url_for('web.compare_candidates') }}" class="btn btn-secondary btn-sm">&larr; New Comparison</a>
+      </div>
+
+      <!-- Ranking Cards -->
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 1.5rem;">
+        {% for cand in ranking %}
+          <div style="background: var(--bg-surface); border: 1px solid {% if loop.first %}var(--teal-glow){% else %}var(--border-subtle){% endif %}; border-radius: var(--radius-lg); padding: 1.5rem; position: relative; box-shadow: {% if loop.first %}var(--shadow-teal){% else %}none{% endif %};">
+            
+            {% if loop.first %}
+              <div style="position: absolute; top: -10px; right: 20px; background: var(--teal-gradient); color: #000; font-size: 0.72rem; font-weight: 800; padding: 0.2rem 0.65rem; border-radius: var(--radius-full); text-transform: uppercase;">
+                Top Candidate #1
+              </div>
+            {% else %}
+              <div style="position: absolute; top: -10px; right: 20px; background: rgba(255, 255, 255, 0.1); color: var(--text-muted); font-size: 0.72rem; font-weight: 700; padding: 0.2rem 0.65rem; border-radius: var(--radius-full); text-transform: uppercase;">
+                Rank #{{ loop.index }}
+              </div>
+            {% endif %}
+
+            <h3 style="font-size: 1.25rem; font-weight: 700; color: #FFF; margin-bottom: 0.25rem;">
+              {{ cand.candidate_name }}
+            </h3>
+            <p style="font-size: 0.82rem; color: var(--teal-light); margin-bottom: 1rem;">
+              {{ cand.verdict }}
+            </p>
+
+            <!-- Fit Score Meter -->
+            <div style="margin-bottom: 1.25rem;">
+              <div style="display: flex; justify-content: space-between; font-size: 0.85rem; margin-bottom: 0.35rem;">
+                <span style="color: var(--text-muted);">Fit Index</span>
+                <span style="font-weight: 700; color: #FFF;">{{ "%.1f"|format(cand.fit_index) }} / 100</span>
+              </div>
+              <div style="height: 8px; background: rgba(255, 255, 255, 0.08); border-radius: 4px; overflow: hidden;">
+                <div style="height: 100%; width: {{ cand.fit_index }}%; background: var(--teal-gradient); border-radius: 4px;"></div>
+              </div>
+            </div>
+
+            <!-- Detailed Breakdown -->
+            <div style="font-size: 0.85rem; display: flex; flex-direction: column; gap: 0.5rem; border-top: 1px solid var(--border-subtle); padding-top: 1rem; margin-bottom: 1.25rem;">
+              <div style="display: flex; justify-content: space-between;">
+                <span style="color: var(--text-muted);">Lexical Score (TF-IDF):</span>
+                <span style="font-weight: 600; color: #60A5FA;">{{ "%.1f%%"|format(cand.lexical_score * 100) }}</span>
+              </div>
+              <div style="display: flex; justify-content: space-between;">
+                <span style="color: var(--text-muted);">Semantic Score (MiniLM):</span>
+                <span style="font-weight: 600; color: var(--teal-glow);">{{ "%.1f%%"|format(cand.semantic_score * 100) }}</span>
+              </div>
+              <div style="display: flex; justify-content: space-between;">
+                <span style="color: var(--text-muted);">Required Skills Matched:</span>
+                <span style="font-weight: 600; color: var(--tier-strong);">{{ cand.matched_required }} / {{ cand.total_required }}</span>
+              </div>
+              <div style="display: flex; justify-content: space-between;">
+                <span style="color: var(--text-muted);">Total Experience:</span>
+                <span style="font-weight: 600; color: #FFF;">{{ cand.years_experience }} years</span>
+              </div>
+            </div>
+
+          </div>
+        {% endfor %}
+      </div>
+    </div>
+  {% endif %}
+
+  <!-- Comparison Form -->
+  <div class="card">
+    <h2 style="font-size: 1.25rem; font-weight: 700; color: #FFF; margin-bottom: 1.25rem;">
+      Configure Candidates to Compare
+    </h2>
+
+    <form action="{{ url_for('web.compare_candidates') }}" method="POST">
+      <!-- Target JD -->
+      <div class="form-group">
+        <label class="form-label" for="jd_text">Target Job Description</label>
+        <textarea name="jd_text" id="jd_text" class="form-control" placeholder="Paste target job description here..." required style="min-height: 140px;">{{ jd_text or '' }}</textarea>
+      </div>
+
+      <!-- Candidate Inputs (2 or 3) -->
+      <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem; margin-bottom: 1.5rem;">
+        
+        <!-- Candidate 1 -->
+        <div style="background: var(--bg-surface); padding: 1.25rem; border-radius: var(--radius-md); border: 1px solid var(--border-subtle);">
+          <h3 style="font-size: 0.95rem; font-weight: 700; color: var(--teal-glow); margin-bottom: 0.75rem;">
+            Candidate 1
+          </h3>
+          <div class="form-group">
+            <input type="text" name="cand1_name" class="form-control" placeholder="Candidate 1 Name" value="Alex Mercer" required>
+          </div>
+          <div class="form-group" style="margin-bottom: 0;">
+            <textarea name="cand1_text" class="form-control" placeholder="Paste Candidate 1 resume text..." required style="min-height: 180px;">Alex Mercer - Senior Cloud Architect
+Experience: 7 years
+Skills: Python, FastAPI, AWS, Docker, Kubernetes, PostgreSQL, Redis, Microservices, CI/CD, Terraform
+Master of Science in Computer Science, Stanford University</textarea>
+          </div>
+        </div>
+
+        <!-- Candidate 2 -->
+        <div style="background: var(--bg-surface); padding: 1.25rem; border-radius: var(--radius-md); border: 1px solid var(--border-subtle);">
+          <h3 style="font-size: 0.95rem; font-weight: 700; color: #60A5FA; margin-bottom: 0.75rem;">
+            Candidate 2
+          </h3>
+          <div class="form-group">
+            <input type="text" name="cand2_name" class="form-control" placeholder="Candidate 2 Name" value="Jordan Smith" required>
+          </div>
+          <div class="form-group" style="margin-bottom: 0;">
+            <textarea name="cand2_text" class="form-control" placeholder="Paste Candidate 2 resume text..." required style="min-height: 180px;">Jordan Smith - Junior Developer
+Experience: 2 years
+Skills: Python, Flask, SQLite, Git, HTML, CSS
+Bachelor of Arts in English Literature</textarea>
+          </div>
+        </div>
+
+      </div>
+
+      <div style="text-align: center;">
+        <button type="submit" class="btn btn-primary" style="padding: 0.85rem 2.25rem;">
+          Compare Candidates Side-by-Side &rarr;
+        </button>
+      </div>
+    </form>
+  </div>
+
+</div>
+{% endblock %}

@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+
+{% block title %}Error {{ code }} — ResumeFit{% endblock %}
+
+{% block content %}
+<div style="max-width: 600px; margin: 4rem auto; text-align: center;">
+  <div class="card" style="padding: 3rem 2rem;">
+    <div style="font-size: 3.5rem; font-weight: 800; color: var(--teal-glow); margin-bottom: 0.5rem;">
+      {{ code }}
+    </div>
+    <h1 style="font-size: 1.5rem; font-weight: 700; color: #FFF; margin-bottom: 1rem;">
+      {{ message }}
+    </h1>
+    <p style="font-size: 0.95rem; color: var(--text-muted); margin-bottom: 2rem;">
+      The requested operation could not be completed. Please check your input parameters or return to the main dashboard.
+    </p>
+    <a href="{{ url_for('web.index') }}" class="btn btn-primary">
+      &larr; Return to Matcher
+    </a>
+  </div>
+</div>
+{% endblock %}
