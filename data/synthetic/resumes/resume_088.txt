@@ -1,0 +1,14 @@
+Alex Davis
+
+SUMMARY
+Junior technologist with 0 years experience in Appium, Mobile Testing, iOS.
+
+WORK EXPERIENCE
+Intern Developer | MicroGlobal (2024 - Present)
+- Assisted in coding features with Appium, Mobile Testing, iOS.
+
+EDUCATION
+Bachelor of Science in Software Engineering
+
+TECHNICAL SKILLS
+Appium, Mobile Testing, iOS

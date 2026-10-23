@@ -1,0 +1,18 @@
+NLP Research Scientist
+Role Family: Machine Learning & AI
+Experience Required: 4+ years of professional engineering experience.
+Degree Required: Phd in Computer Science, Software Engineering, or related discipline.
+
+Summary:
+We are seeking an experienced NLP Research Scientist to join our high-growth engineering organization. You will design, build, and deploy high-reliability production systems and collaborate across engineering, product, and QA teams.
+
+Required Technical Skills:
+Python, PyTorch, NLP, Transformers, Deep Learning
+
+Preferred Technical Skills:
+HuggingFace, BERT, CUDA
+
+Key Responsibilities:
+- Design and develop scalable microservices and infrastructure.
+- Deliver robust code with high unit and integration test coverage.
+- Collaborate with stakeholders to ensure high uptime and continuous integration.

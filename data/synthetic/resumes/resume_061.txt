@@ -1,0 +1,14 @@
+Sam Williams
+
+SUMMARY
+Self-taught developer with 2 years of real-world experience building software in HTML, CSS, JavaScript, Git.
+
+WORK EXPERIENCE
+Software Developer | CodeCraft (2020 - Present)
+- Developed commercial applications with HTML, CSS, JavaScript, Git.
+
+EDUCATION
+Bachelor of Arts in Philosophy
+
+TECHNICAL SKILLS
+HTML, CSS, JavaScript, Git

@@ -1,0 +1,15 @@
+Devon Miller
+
+SUMMARY
+Senior Senior Python Architect with 7 years of demonstrated experience in Python, FastAPI, PostgreSQL.
+
+WORK EXPERIENCE
+Lead Engineer | TechCorp (2018 - Present)
+- Led architecture and deployment of services using Python, FastAPI, PostgreSQL, Docker.
+- Reduced latency by 45% through query optimization.
+
+EDUCATION
+Master of Science in Computer Science
+
+TECHNICAL SKILLS
+Python, FastAPI, PostgreSQL, Docker, AWS, Microservices, Redis, Kubernetes

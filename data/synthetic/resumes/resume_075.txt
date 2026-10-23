@@ -1,0 +1,14 @@
+Avery Davis
+
+SUMMARY
+Self-taught developer with 5 years of real-world experience building software in Kubernetes, Go, Terraform, Docker.
+
+WORK EXPERIENCE
+Software Developer | CodeCraft (2020 - Present)
+- Developed commercial applications with Kubernetes, Go, Terraform, Docker.
+
+EDUCATION
+Bachelor of Arts in Philosophy
+
+TECHNICAL SKILLS
+Kubernetes, Go, Terraform, Docker

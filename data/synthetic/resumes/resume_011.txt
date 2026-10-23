@@ -1,0 +1,14 @@
+Taylor Martinez
+
+SUMMARY
+Junior technologist with 0 years experience in HTML, CSS, JavaScript.
+
+WORK EXPERIENCE
+Intern Developer | MicroGlobal (2024 - Present)
+- Assisted in coding features with HTML, CSS, JavaScript.
+
+EDUCATION
+Bachelor of Science in Software Engineering
+
+TECHNICAL SKILLS
+HTML, CSS, JavaScript

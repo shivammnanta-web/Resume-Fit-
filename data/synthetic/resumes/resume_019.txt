@@ -1,0 +1,14 @@
+Taylor Martinez
+
+SUMMARY
+Self-taught developer with 2 years of real-world experience building software in Python, scikit-learn, Pandas, NumPy.
+
+WORK EXPERIENCE
+Software Developer | CodeCraft (2020 - Present)
+- Developed commercial applications with Python, scikit-learn, Pandas, NumPy.
+
+EDUCATION
+Bachelor of Arts in Philosophy
+
+TECHNICAL SKILLS
+Python, scikit-learn, Pandas, NumPy

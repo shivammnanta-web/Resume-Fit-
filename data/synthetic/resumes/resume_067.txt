@@ -1,0 +1,14 @@
+Taylor Kumar
+
+SUMMARY
+Junior technologist with 0 years experience in Python, OpenCV, PyTorch.
+
+WORK EXPERIENCE
+Intern Developer | MicroGlobal (2024 - Present)
+- Assisted in coding features with Python, OpenCV, PyTorch.
+
+EDUCATION
+Bachelor of Science in Software Engineering
+
+TECHNICAL SKILLS
+Python, OpenCV, PyTorch

@@ -1,0 +1,15 @@
+Avery Smith
+
+SUMMARY
+Junior QA Tester with 2 years of engineering experience focusing on Manual Testing, Test Cases, Bug Tracking.
+
+WORK EXPERIENCE
+Software Engineer | InnoSoft (2020 - Present)
+- Implemented backend pipelines using Manual Testing, Test Cases, Bug Tracking.
+- Wrote unit tests and automated CI/CD deployments.
+
+EDUCATION
+Bachelor of Science in Computer Science
+
+TECHNICAL SKILLS
+Manual Testing, Test Cases, Bug Tracking, Jira, Selenium

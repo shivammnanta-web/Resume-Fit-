@@ -1,0 +1,18 @@
+SOC Security Analyst
+Role Family: Cybersecurity
+Experience Required: 2+ years of professional engineering experience.
+Degree Required: Bachelor in Computer Science, Software Engineering, or related discipline.
+
+Summary:
+We are seeking an experienced SOC Security Analyst to join our high-growth engineering organization. You will design, build, and deploy high-reliability production systems and collaborate across engineering, product, and QA teams.
+
+Required Technical Skills:
+SIEM, Incident Response, Network Security, Linux, Threat Analysis
+
+Preferred Technical Skills:
+Python, Wireshark, Splunk
+
+Key Responsibilities:
+- Design and develop scalable microservices and infrastructure.
+- Deliver robust code with high unit and integration test coverage.
+- Collaborate with stakeholders to ensure high uptime and continuous integration.

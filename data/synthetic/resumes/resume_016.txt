@@ -1,0 +1,15 @@
+Devon Garcia
+
+SUMMARY
+NLP Research Scientist with 5 years of engineering experience focusing on Python, PyTorch, NLP.
+
+WORK EXPERIENCE
+Software Engineer | InnoSoft (2020 - Present)
+- Implemented backend pipelines using Python, PyTorch, NLP.
+- Wrote unit tests and automated CI/CD deployments.
+
+EDUCATION
+Bachelor of Science in Computer Science
+
+TECHNICAL SKILLS
+Python, PyTorch, NLP, Transformers, HuggingFace

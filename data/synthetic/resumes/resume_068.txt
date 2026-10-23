@@ -1,0 +1,14 @@
+Chris Johnson
+
+SUMMARY
+Self-taught developer with 4 years of real-world experience building software in Python, SQL, Pandas, scikit-learn.
+
+WORK EXPERIENCE
+Software Developer | CodeCraft (2020 - Present)
+- Developed commercial applications with Python, SQL, Pandas, scikit-learn.
+
+EDUCATION
+Bachelor of Arts in Philosophy
+
+TECHNICAL SKILLS
+Python, SQL, Pandas, scikit-learn

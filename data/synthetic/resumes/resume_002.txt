@@ -1,0 +1,15 @@
+Pat Davis
+
+SUMMARY
+Python Backend Engineer with 4 years of engineering experience focusing on Python, Django, PostgreSQL.
+
+WORK EXPERIENCE
+Software Engineer | InnoSoft (2020 - Present)
+- Implemented backend pipelines using Python, Django, PostgreSQL.
+- Wrote unit tests and automated CI/CD deployments.
+
+EDUCATION
+Bachelor of Science in Computer Science
+
+TECHNICAL SKILLS
+Python, Django, PostgreSQL, REST, Docker

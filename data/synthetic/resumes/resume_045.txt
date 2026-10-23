@@ -1,0 +1,14 @@
+Devon Garcia
+
+SUMMARY
+Junior developer passionate about building reliable software using Python, SQL, Git, Linux.
+
+WORK EXPERIENCE
+Associate Developer | StartUpX (2023 - Present)
+- Built basic endpoints using Python, SQL.
+
+EDUCATION
+Bachelor of Science in Information Technology
+
+TECHNICAL SKILLS
+Python, SQL, Git, Linux

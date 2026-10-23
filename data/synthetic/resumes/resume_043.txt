@@ -1,0 +1,15 @@
+Jamie Patel
+
+SUMMARY
+Senior Cloud Security Analyst with 7 years of demonstrated experience in AWS, Cloud Security, IAM.
+
+WORK EXPERIENCE
+Lead Engineer | TechCorp (2018 - Present)
+- Led architecture and deployment of services using AWS, Cloud Security, IAM, Linux.
+- Reduced latency by 45% through query optimization.
+
+EDUCATION
+Master of Science in Computer Science
+
+TECHNICAL SKILLS
+AWS, Cloud Security, IAM, Linux, Python, Terraform, Docker

@@ -1,0 +1,1003 @@
+[
+  {
+    "id": "jd_001",
+    "role_family": "Backend Engineering",
+    "title": "Senior Python Architect",
+    "min_years": 5,
+    "min_degree": "bachelor",
+    "required_skills": [
+      "Python",
+      "FastAPI",
+      "PostgreSQL",
+      "Docker",
+      "AWS",
+      "Microservices"
+    ],
+    "preferred_skills": [
+      "Redis",
+      "Kubernetes",
+      "CI/CD"
+    ],
+    "text": "Senior Python Architect\nRole Family: Backend Engineering\nExperience Required: 5+ years of professional engineering experience.\nDegree Required: Bachelor in Computer Science, Software Engineering, or related discipline.\n\nSummary:\nWe are seeking an experienced Senior Python Architect to join our high-growth engineering organization. You will design, build, and deploy high-reliability production systems and collaborate across engineering, product, and QA teams.\n\nRequired Technical Skills:\nPython, FastAPI, PostgreSQL, Docker, AWS, Microservices\n\nPreferred Technical Skills:\nRedis, Kubernetes, CI/CD\n\nKey Responsibilities:\n- Design and develop scalable microservices and infrastructure.\n- Deliver robust code with high unit and integration test coverage.\n- Collaborate with stakeholders to ensure high uptime and continuous integration.\n"
+  },
+  {
+    "id": "jd_002",
+    "role_family": "Backend Engineering",
+    "title": "Python Backend Engineer",
+    "min_years": 3,
+    "min_degree": "bachelor",
+    "required_skills": [
+      "Python",
+      "Django",
+      "PostgreSQL",
+      "REST",
+      "Git"
+    ],
+    "preferred_skills": [
+      "Docker",
+      "Redis",
+      "Celery"
+    ],
+    "text": "Python Backend Engineer\nRole Family: Backend Engineering\nExperience Required: 3+ years of professional engineering experience.\nDegree Required: Bachelor in Computer Science, Software Engineering, or related discipline.\n\nSummary:\nWe are seeking an experienced Python Backend Engineer to join our high-growth engineering organization. You will design, build, and deploy high-reliability production systems and collaborate across engineering, product, and QA teams.\n\nRequired Technical Skills:\nPython, Django, PostgreSQL, REST, Git\n\nPreferred Technical Skills:\nDocker, Redis, Celery\n\nKey Responsibilities:\n- Design and develop scalable microservices and infrastructure.\n- Deliver robust code with high unit and integration test coverage.\n- Collaborate with stakeholders to ensure high uptime and continuous integration.\n"
+  },
+  {
+    "id": "jd_003",
+    "role_family": "Backend Engineering",
+    "title": "Staff Go Systems Engineer",
+    "min_years": 6,
+    "min_degree": "bachelor",
+    "required_skills": [
+      "Go",
+      "Kubernetes",
+      "Distributed Systems",
+      "gRPC",
+      "Docker"
+    ],
+    "preferred_skills": [
+      "Kafka",
+      "Prometheus",
+      "Linux"
+    ],
+    "text": "Staff Go Systems Engineer\nRole Family: Backend Engineering\nExperience Required: 6+ years of professional engineering experience.\nDegree Required: Bachelor in Computer Science, Software Engineering, or related discipline.\n\nSummary:\nWe are seeking an experienced Staff Go Systems Engineer to join our high-growth engineering organization. You will design, build, and deploy high-reliability production systems and collaborate across engineering, product, and QA teams.\n\nRequired Technical Skills:\nGo, Kubernetes, Distributed Systems, gRPC, Docker\n\nPreferred Technical Skills:\nKafka, Prometheus, Linux\n\nKey Responsibilities:\n- Design and develop scalable microservices and infrastructure.\n- Deliver robust code with high unit and integration test coverage.\n- Collaborate with stakeholders to ensure high uptime and continuous integration.\n"
+  },
+  {
+    "id": "jd_004",
+    "role_family": "Backend Engineering",
+    "title": "Junior Python Developer",
+    "min_years": 1,
+    "min_degree": "bachelor",
+    "required_skills": [
+      "Python",
+      "SQL",
+      "Git",
+      "REST APIs"
+    ],
+    "preferred_skills": [
+      "Flask",
+      "Linux",
+      "Docker"
+    ],
+    "text": "Junior Python Developer\nRole Family: Backend Engineering\nExperience Required: 1+ years of professional engineering experience.\nDegree Required: Bachelor in Computer Science, Software Engineering, or related discipline.\n\nSummary:\nWe are seeking an experienced Junior Python Developer to join our high-growth engineering organization. You will design, build, and deploy high-reliability production systems and collaborate across engineering, product, and QA teams.\n\nRequired Technical Skills:\nPython, SQL, Git, REST APIs\n\nPreferred Technical Skills:\nFlask, Linux, Docker\n\nKey Responsibilities:\n- Design and develop scalable microservices and infrastructure.\n- Deliver robust code with high unit and integration test coverage.\n- Collaborate with stakeholders to ensure high uptime and continuous integration.\n"
+  },
+  {
+    "id": "jd_005",
+    "role_family": "Backend Engineering",
+    "title": "Java Enterprise Developer",
+    "min_years": 4,
+    "min_degree": "bachelor",
+    "required_skills": [
+      "Java",
+      "Spring Boot",
+      "MySQL",
+      "Hibernate",
+      "Microservices"
+    ],
+    "preferred_skills": [
+      "Kafka",
+      "AWS",
+      "Docker"
+    ],
+    "text": "Java Enterprise Developer\nRole Family: Backend Engineering\nExperience Required: 4+ years of professional engineering experience.\nDegree Required: Bachelor in Computer Science, Software Engineering, or related discipline.\n\nSummary:\nWe are seeking an experienced Java Enterprise Developer to join our high-growth engineering organization. You will design, build, and deploy high-reliability production systems and collaborate across engineering, product, and QA teams.\n\nRequired Technical Skills:\nJava, Spring Boot, MySQL, Hibernate, Microservices\n\nPreferred Technical Skills:\nKafka, AWS, Docker\n\nKey Responsibilities:\n- Design and develop scalable microservices and infrastructure.\n- Deliver robust code with high unit and integration test coverage.\n- Collaborate with stakeholders to ensure high uptime and continuous integration.\n"
+  },
+  {
+    "id": "jd_006",
+    "role_family": "Backend Engineering",
+    "title": "Cloud Backend Engineer",
+    "min_years": 3,
+    "min_degree": "bachelor",
+    "required_skills": [
+      "Node.js",
+      "TypeScript",
+      "AWS",
+      "DynamoDB",
+      "Docker"
+    ],
+    "preferred_skills": [
+      "GraphQL",
+      "Serverless",
+      "Terraform"
+    ],
+    "text": "Cloud Backend Engineer\nRole Family: Backend Engineering\nExperience Required: 3+ years of professional engineering experience.\nDegree Required: Bachelor in Computer Science, Software Engineering, or related discipline.\n\nSummary:\nWe are seeking an experienced Cloud Backend Engineer to join our high-growth engineering organization. You will design, build, and deploy high-reliability production systems and collaborate across engineering, product, and QA teams.\n\nRequired Technical Skills:\nNode.js, TypeScript, AWS, DynamoDB, Docker\n\nPreferred Technical Skills:\nGraphQL, Serverless, Terraform\n\nKey Responsibilities:\n- Design and develop scalable microservices and infrastructure.\n- Deliver robust code with high unit and integration test coverage.\n- Collaborate with stakeholders to ensure high uptime and continuous integration.\n"
+  },
+  {
+    "id": "jd_007",
+    "role_family": "Backend Engineering",
+    "title": "C++ Systems Programmer",
+    "min_years": 4,
+    "min_degree": "master",
+    "required_skills": [
+      "C++",
+      "Linux",
+      "Multithreading",
+      "Data Structures",
+      "Algorithms"
+    ],
+    "preferred_skills": [
+      "Socket Programming",
+      "Git",
+      "CMake"
+    ],
+    "text": "C++ Systems Programmer\nRole Family: Backend Engineering\nExperience Required: 4+ years of professional engineering experience.\nDegree Required: Master in Computer Science, Software Engineering, or related discipline.\n\nSummary:\nWe are seeking an experienced C++ Systems Programmer to join our high-growth engineering organization. You will design, build, and deploy high-reliability production systems and collaborate across engineering, product, and QA teams.\n\nRequired Technical Skills:\nC++, Linux, Multithreading, Data Structures, Algorithms\n\nPreferred Technical Skills:\nSocket Programming, Git, CMake\n\nKey Responsibilities:\n- Design and develop scalable microservices and infrastructure.\n- Deliver robust code with high unit and integration test coverage.\n- Collaborate with stakeholders to ensure high uptime and continuous integration.\n"
+  },
+  {
+    "id": "jd_008",
+    "role_family": "Frontend Engineering",
+    "title": "Senior Frontend React Architect",
+    "min_years": 5,
+    "min_degree": "bachelor",
+    "required_skills": [
+      "React",
+      "TypeScript",
+      "JavaScript",
+      "HTML5",
+      "CSS3",
+      "Redux"
+    ],
+    "preferred_skills": [
+      "Next.js",
+      "GraphQL",
+      "TailwindCSS"
+    ],
+    "text": "Senior Frontend React Architect\nRole Family: Frontend Engineering\nExperience Required: 5+ years of professional engineering experience.\nDegree Required: Bachelor in Computer Science, Software Engineering, or related discipline.\n\nSummary:\nWe are seeking an experienced Senior Frontend React Architect to join our high-growth engineering organization. You will design, build, and deploy high-reliability production systems and collaborate across engineering, product, and QA teams.\n\nRequired Technical Skills:\nReact, TypeScript, JavaScript, HTML5, CSS3, Redux\n\nPreferred Technical Skills:\nNext.js, GraphQL, TailwindCSS\n\nKey Responsibilities:\n- Design and develop scalable microservices and infrastructure.\n- Deliver robust code with high unit and integration test coverage.\n- Collaborate with stakeholders to ensure high uptime and continuous integration.\n"
+  },
+  {
+    "id": "jd_009",
+    "role_family": "Frontend Engineering",
+    "title": "Frontend React Developer",
+    "min_years": 2,
+    "min_degree": "bachelor",
+    "required_skills": [
+      "React",
+      "JavaScript",
+      "HTML",
+      "CSS",
+      "Git"
+    ],
+    "preferred_skills": [
+      "TypeScript",
+      "TailwindCSS",
+      "Jest"
+    ],
+    "text": "Frontend React Developer\nRole Family: Frontend Engineering\nExperience Required: 2+ years of professional engineering experience.\nDegree Required: Bachelor in Computer Science, Software Engineering, or related discipline.\n\nSummary:\nWe are seeking an experienced Frontend React Developer to join our high-growth engineering organization. You will design, build, and deploy high-reliability production systems and collaborate across engineering, product, and QA teams.\n\nRequired Technical Skills:\nReact, JavaScript, HTML, CSS, Git\n\nPreferred Technical Skills:\nTypeScript, TailwindCSS, Jest\n\nKey Responsibilities:\n- Design and develop scalable microservices and infrastructure.\n- Deliver robust code with high unit and integration test coverage.\n- Collaborate with stakeholders to ensure high uptime and continuous integration.\n"
+  },
+  {
+    "id": "jd_010",
+    "role_family": "Frontend Engineering",
+    "title": "Vue.js Web Developer",
+    "min_years": 3,
+    "min_degree": "bachelor",
+    "required_skills": [
+      "Vue.js",
+      "JavaScript",
+      "HTML",
+      "CSS",
+      "REST"
+    ],
+    "preferred_skills": [
+      "TypeScript",
+      "Pinia",
+      "Sass"
+    ],
+    "text": "Vue.js Web Developer\nRole Family: Frontend Engineering\nExperience Required: 3+ years of professional engineering experience.\nDegree Required: Bachelor in Computer Science, Software Engineering, or related discipline.\n\nSummary:\nWe are seeking an experienced Vue.js Web Developer to join our high-growth engineering organization. You will design, build, and deploy high-reliability production systems and collaborate across engineering, product, and QA teams.\n\nRequired Technical Skills:\nVue.js, JavaScript, HTML, CSS, REST\n\nPreferred Technical Skills:\nTypeScript, Pinia, Sass\n\nKey Responsibilities:\n- Design and develop scalable microservices and infrastructure.\n- Deliver robust code with high unit and integration test coverage.\n- Collaborate with stakeholders to ensure high uptime and continuous integration.\n"
+  },
+  {
+    "id": "jd_011",
+    "role_family": "Frontend Engineering",
+    "title": "Junior Frontend Engineer",
+    "min_years": 1,
+    "min_degree": "bachelor",
+    "required_skills": [
+      "HTML",
+      "CSS",
+      "JavaScript",
+      "Git"
+    ],
+    "preferred_skills": [
+      "React",
+      "Bootstrap",
+      "Figma"
+    ],
+    "text": "Junior Frontend Engineer\nRole Family: Frontend Engineering\nExperience Required: 1+ years of professional engineering experience.\nDegree Required: Bachelor in Computer Science, Software Engineering, or related discipline.\n\nSummary:\nWe are seeking an experienced Junior Frontend Engineer to join our high-growth engineering organization. You will design, build, and deploy high-reliability production systems and collaborate across engineering, product, and QA teams.\n\nRequired Technical Skills:\nHTML, CSS, JavaScript, Git\n\nPreferred Technical Skills:\nReact, Bootstrap, Figma\n\nKey Responsibilities:\n- Design and develop scalable microservices and infrastructure.\n- Deliver robust code with high unit and integration test coverage.\n- Collaborate with stakeholders to ensure high uptime and continuous integration.\n"
+  },
+  {
+    "id": "jd_012",
+    "role_family": "Frontend Engineering",
+    "title": "Frontend Performance Engineer",
+    "min_years": 4,
+    "min_degree": "bachelor",
+    "required_skills": [
+      "JavaScript",
+      "React",
+      "Web Performance",
+      "Webpack",
+      "CSS"
+    ],
+    "preferred_skills": [
+      "TypeScript",
+      "Lighthouse",
+      "Service Workers"
+    ],
+    "text": "Frontend Performance Engineer\nRole Family: Frontend Engineering\nExperience Required: 4+ years of professional engineering experience.\nDegree Required: Bachelor in Computer Science, Software Engineering, or related discipline.\n\nSummary:\nWe are seeking an experienced Frontend Performance Engineer to join our high-growth engineering organization. You will design, build, and deploy high-reliability production systems and collaborate across engineering, product, and QA teams.\n\nRequired Technical Skills:\nJavaScript, React, Web Performance, Webpack, CSS\n\nPreferred Technical Skills:\nTypeScript, Lighthouse, Service Workers\n\nKey Responsibilities:\n- Design and develop scalable microservices and infrastructure.\n- Deliver robust code with high unit and integration test coverage.\n- Collaborate with stakeholders to ensure high uptime and continuous integration.\n"
+  },
+  {
+    "id": "jd_013",
+    "role_family": "Frontend Engineering",
+    "title": "Mobile React Native Engineer",
+    "min_years": 3,
+    "min_degree": "bachelor",
+    "required_skills": [
+      "React Native",
+      "JavaScript",
+      "TypeScript",
+      "Mobile Development",
+      "Git"
+    ],
+    "preferred_skills": [
+      "iOS",
+      "Android",
+      "Redux"
+    ],
+    "text": "Mobile React Native Engineer\nRole Family: Frontend Engineering\nExperience Required: 3+ years of professional engineering experience.\nDegree Required: Bachelor in Computer Science, Software Engineering, or related discipline.\n\nSummary:\nWe are seeking an experienced Mobile React Native Engineer to join our high-growth engineering organization. You will design, build, and deploy high-reliability production systems and collaborate across engineering, product, and QA teams.\n\nRequired Technical Skills:\nReact Native, JavaScript, TypeScript, Mobile Development, Git\n\nPreferred Technical Skills:\niOS, Android, Redux\n\nKey Responsibilities:\n- Design and develop scalable microservices and infrastructure.\n- Deliver robust code with high unit and integration test coverage.\n- Collaborate with stakeholders to ensure high uptime and continuous integration.\n"
+  },
+  {
+    "id": "jd_014",
+    "role_family": "Frontend Engineering",
+    "title": "UI/UX Frontend Developer",
+    "min_years": 2,
+    "min_degree": "bachelor",
+    "required_skills": [
+      "JavaScript",
+      "HTML5",
+      "CSS3",
+      "Figma",
+      "UI Design"
+    ],
+    "preferred_skills": [
+      "React",
+      "Animation",
+      "Accessibility"
+    ],
+    "text": "UI/UX Frontend Developer\nRole Family: Frontend Engineering\nExperience Required: 2+ years of professional engineering experience.\nDegree Required: Bachelor in Computer Science, Software Engineering, or related discipline.\n\nSummary:\nWe are seeking an experienced UI/UX Frontend Developer to join our high-growth engineering organization. You will design, build, and deploy high-reliability production systems and collaborate across engineering, product, and QA teams.\n\nRequired Technical Skills:\nJavaScript, HTML5, CSS3, Figma, UI Design\n\nPreferred Technical Skills:\nReact, Animation, Accessibility\n\nKey Responsibilities:\n- Design and develop scalable microservices and infrastructure.\n- Deliver robust code with high unit and integration test coverage.\n- Collaborate with stakeholders to ensure high uptime and continuous integration.\n"
+  },
+  {
+    "id": "jd_015",
+    "role_family": "Machine Learning & AI",
+    "title": "Senior Machine Learning Engineer",
+    "min_years": 4,
+    "min_degree": "master",
+    "required_skills": [
+      "Python",
+      "PyTorch",
+      "scikit-learn",
+      "Machine Learning",
+      "Docker"
+    ],
+    "preferred_skills": [
+      "MLOps",
+      "Transformers",
+      "Kubernetes"
+    ],
+    "text": "Senior Machine Learning Engineer\nRole Family: Machine Learning & AI\nExperience Required: 4+ years of professional engineering experience.\nDegree Required: Master in Computer Science, Software Engineering, or related discipline.\n\nSummary:\nWe are seeking an experienced Senior Machine Learning Engineer to join our high-growth engineering organization. You will design, build, and deploy high-reliability production systems and collaborate across engineering, product, and QA teams.\n\nRequired Technical Skills:\nPython, PyTorch, scikit-learn, Machine Learning, Docker\n\nPreferred Technical Skills:\nMLOps, Transformers, Kubernetes\n\nKey Responsibilities:\n- Design and develop scalable microservices and infrastructure.\n- Deliver robust code with high unit and integration test coverage.\n- Collaborate with stakeholders to ensure high uptime and continuous integration.\n"
+  },
+  {
+    "id": "jd_016",
+    "role_family": "Machine Learning & AI",
+    "title": "NLP Research Scientist",
+    "min_years": 4,
+    "min_degree": "phd",
+    "required_skills": [
+      "Python",
+      "PyTorch",
+      "NLP",
+      "Transformers",
+      "Deep Learning"
+    ],
+    "preferred_skills": [
+      "HuggingFace",
+      "BERT",
+      "CUDA"
+    ],
+    "text": "NLP Research Scientist\nRole Family: Machine Learning & AI\nExperience Required: 4+ years of professional engineering experience.\nDegree Required: Phd in Computer Science, Software Engineering, or related discipline.\n\nSummary:\nWe are seeking an experienced NLP Research Scientist to join our high-growth engineering organization. You will design, build, and deploy high-reliability production systems and collaborate across engineering, product, and QA teams.\n\nRequired Technical Skills:\nPython, PyTorch, NLP, Transformers, Deep Learning\n\nPreferred Technical Skills:\nHuggingFace, BERT, CUDA\n\nKey Responsibilities:\n- Design and develop scalable microservices and infrastructure.\n- Deliver robust code with high unit and integration test coverage.\n- Collaborate with stakeholders to ensure high uptime and continuous integration.\n"
+  },
+  {
+    "id": "jd_017",
+    "role_family": "Machine Learning & AI",
+    "title": "Computer Vision Engineer",
+    "min_years": 3,
+    "min_degree": "master",
+    "required_skills": [
+      "Python",
+      "OpenCV",
+      "PyTorch",
+      "Deep Learning",
+      "Convolutional Neural Networks"
+    ],
+    "preferred_skills": [
+      "C++",
+      "TensorRT",
+      "Docker"
+    ],
+    "text": "Computer Vision Engineer\nRole Family: Machine Learning & AI\nExperience Required: 3+ years of professional engineering experience.\nDegree Required: Master in Computer Science, Software Engineering, or related discipline.\n\nSummary:\nWe are seeking an experienced Computer Vision Engineer to join our high-growth engineering organization. You will design, build, and deploy high-reliability production systems and collaborate across engineering, product, and QA teams.\n\nRequired Technical Skills:\nPython, OpenCV, PyTorch, Deep Learning, Convolutional Neural Networks\n\nPreferred Technical Skills:\nC++, TensorRT, Docker\n\nKey Responsibilities:\n- Design and develop scalable microservices and infrastructure.\n- Deliver robust code with high unit and integration test coverage.\n- Collaborate with stakeholders to ensure high uptime and continuous integration.\n"
+  },
+  {
+    "id": "jd_018",
+    "role_family": "Machine Learning & AI",
+    "title": "Data Scientist",
+    "min_years": 3,
+    "min_degree": "master",
+    "required_skills": [
+      "Python",
+      "SQL",
+      "Pandas",
+      "scikit-learn",
+      "Statistics"
+    ],
+    "preferred_skills": [
+      "Tableau",
+      "Machine Learning",
+      "R"
+    ],
+    "text": "Data Scientist\nRole Family: Machine Learning & AI\nExperience Required: 3+ years of professional engineering experience.\nDegree Required: Master in Computer Science, Software Engineering, or related discipline.\n\nSummary:\nWe are seeking an experienced Data Scientist to join our high-growth engineering organization. You will design, build, and deploy high-reliability production systems and collaborate across engineering, product, and QA teams.\n\nRequired Technical Skills:\nPython, SQL, Pandas, scikit-learn, Statistics\n\nPreferred Technical Skills:\nTableau, Machine Learning, R\n\nKey Responsibilities:\n- Design and develop scalable microservices and infrastructure.\n- Deliver robust code with high unit and integration test coverage.\n- Collaborate with stakeholders to ensure high uptime and continuous integration.\n"
+  },
+  {
+    "id": "jd_019",
+    "role_family": "Machine Learning & AI",
+    "title": "Junior ML Developer",
+    "min_years": 1,
+    "min_degree": "bachelor",
+    "required_skills": [
+      "Python",
+      "scikit-learn",
+      "Pandas",
+      "NumPy",
+      "Git"
+    ],
+    "preferred_skills": [
+      "PyTorch",
+      "SQL",
+      "Matplotlib"
+    ],
+    "text": "Junior ML Developer\nRole Family: Machine Learning & AI\nExperience Required: 1+ years of professional engineering experience.\nDegree Required: Bachelor in Computer Science, Software Engineering, or related discipline.\n\nSummary:\nWe are seeking an experienced Junior ML Developer to join our high-growth engineering organization. You will design, build, and deploy high-reliability production systems and collaborate across engineering, product, and QA teams.\n\nRequired Technical Skills:\nPython, scikit-learn, Pandas, NumPy, Git\n\nPreferred Technical Skills:\nPyTorch, SQL, Matplotlib\n\nKey Responsibilities:\n- Design and develop scalable microservices and infrastructure.\n- Deliver robust code with high unit and integration test coverage.\n- Collaborate with stakeholders to ensure high uptime and continuous integration.\n"
+  },
+  {
+    "id": "jd_020",
+    "role_family": "Machine Learning & AI",
+    "title": "Generative AI Engineer",
+    "min_years": 3,
+    "min_degree": "bachelor",
+    "required_skills": [
+      "Python",
+      "LangChain",
+      "LLMs",
+      "Vector Databases",
+      "PyTorch"
+    ],
+    "preferred_skills": [
+      "RAG",
+      "Docker",
+      "FastAPI"
+    ],
+    "text": "Generative AI Engineer\nRole Family: Machine Learning & AI\nExperience Required: 3+ years of professional engineering experience.\nDegree Required: Bachelor in Computer Science, Software Engineering, or related discipline.\n\nSummary:\nWe are seeking an experienced Generative AI Engineer to join our high-growth engineering organization. You will design, build, and deploy high-reliability production systems and collaborate across engineering, product, and QA teams.\n\nRequired Technical Skills:\nPython, LangChain, LLMs, Vector Databases, PyTorch\n\nPreferred Technical Skills:\nRAG, Docker, FastAPI\n\nKey Responsibilities:\n- Design and develop scalable microservices and infrastructure.\n- Deliver robust code with high unit and integration test coverage.\n- Collaborate with stakeholders to ensure high uptime and continuous integration.\n"
+  },
+  {
+    "id": "jd_021",
+    "role_family": "DevOps & Cloud Infrastructure",
+    "title": "Senior Site Reliability Engineer (SRE)",
+    "min_years": 5,
+    "min_degree": "bachelor",
+    "required_skills": [
+      "Kubernetes",
+      "Docker",
+      "Terraform",
+      "AWS",
+      "Linux",
+      "Python"
+    ],
+    "preferred_skills": [
+      "Prometheus",
+      "Grafana",
+      "CI/CD"
+    ],
+    "text": "Senior Site Reliability Engineer (SRE)\nRole Family: DevOps & Cloud Infrastructure\nExperience Required: 5+ years of professional engineering experience.\nDegree Required: Bachelor in Computer Science, Software Engineering, or related discipline.\n\nSummary:\nWe are seeking an experienced Senior Site Reliability Engineer (SRE) to join our high-growth engineering organization. You will design, build, and deploy high-reliability production systems and collaborate across engineering, product, and QA teams.\n\nRequired Technical Skills:\nKubernetes, Docker, Terraform, AWS, Linux, Python\n\nPreferred Technical Skills:\nPrometheus, Grafana, CI/CD\n\nKey Responsibilities:\n- Design and develop scalable microservices and infrastructure.\n- Deliver robust code with high unit and integration test coverage.\n- Collaborate with stakeholders to ensure high uptime and continuous integration.\n"
+  },
+  {
+    "id": "jd_022",
+    "role_family": "DevOps & Cloud Infrastructure",
+    "title": "DevOps Automation Engineer",
+    "min_years": 3,
+    "min_degree": "bachelor",
+    "required_skills": [
+      "Docker",
+      "Kubernetes",
+      "CI/CD",
+      "Linux",
+      "Bash"
+    ],
+    "preferred_skills": [
+      "Terraform",
+      "AWS",
+      "Ansible"
+    ],
+    "text": "DevOps Automation Engineer\nRole Family: DevOps & Cloud Infrastructure\nExperience Required: 3+ years of professional engineering experience.\nDegree Required: Bachelor in Computer Science, Software Engineering, or related discipline.\n\nSummary:\nWe are seeking an experienced DevOps Automation Engineer to join our high-growth engineering organization. You will design, build, and deploy high-reliability production systems and collaborate across engineering, product, and QA teams.\n\nRequired Technical Skills:\nDocker, Kubernetes, CI/CD, Linux, Bash\n\nPreferred Technical Skills:\nTerraform, AWS, Ansible\n\nKey Responsibilities:\n- Design and develop scalable microservices and infrastructure.\n- Deliver robust code with high unit and integration test coverage.\n- Collaborate with stakeholders to ensure high uptime and continuous integration.\n"
+  },
+  {
+    "id": "jd_023",
+    "role_family": "DevOps & Cloud Infrastructure",
+    "title": "Cloud Security Architect",
+    "min_years": 6,
+    "min_degree": "bachelor",
+    "required_skills": [
+      "AWS",
+      "Cloud Security",
+      "IAM",
+      "Kubernetes",
+      "Linux"
+    ],
+    "preferred_skills": [
+      "Terraform",
+      "Compliance",
+      "Python"
+    ],
+    "text": "Cloud Security Architect\nRole Family: DevOps & Cloud Infrastructure\nExperience Required: 6+ years of professional engineering experience.\nDegree Required: Bachelor in Computer Science, Software Engineering, or related discipline.\n\nSummary:\nWe are seeking an experienced Cloud Security Architect to join our high-growth engineering organization. You will design, build, and deploy high-reliability production systems and collaborate across engineering, product, and QA teams.\n\nRequired Technical Skills:\nAWS, Cloud Security, IAM, Kubernetes, Linux\n\nPreferred Technical Skills:\nTerraform, Compliance, Python\n\nKey Responsibilities:\n- Design and develop scalable microservices and infrastructure.\n- Deliver robust code with high unit and integration test coverage.\n- Collaborate with stakeholders to ensure high uptime and continuous integration.\n"
+  },
+  {
+    "id": "jd_024",
+    "role_family": "DevOps & Cloud Infrastructure",
+    "title": "Junior DevOps Admin",
+    "min_years": 1,
+    "min_degree": "bachelor",
+    "required_skills": [
+      "Linux",
+      "Git",
+      "Bash",
+      "Docker"
+    ],
+    "preferred_skills": [
+      "CI/CD",
+      "AWS",
+      "Python"
+    ],
+    "text": "Junior DevOps Admin\nRole Family: DevOps & Cloud Infrastructure\nExperience Required: 1+ years of professional engineering experience.\nDegree Required: Bachelor in Computer Science, Software Engineering, or related discipline.\n\nSummary:\nWe are seeking an experienced Junior DevOps Admin to join our high-growth engineering organization. You will design, build, and deploy high-reliability production systems and collaborate across engineering, product, and QA teams.\n\nRequired Technical Skills:\nLinux, Git, Bash, Docker\n\nPreferred Technical Skills:\nCI/CD, AWS, Python\n\nKey Responsibilities:\n- Design and develop scalable microservices and infrastructure.\n- Deliver robust code with high unit and integration test coverage.\n- Collaborate with stakeholders to ensure high uptime and continuous integration.\n"
+  },
+  {
+    "id": "jd_025",
+    "role_family": "DevOps & Cloud Infrastructure",
+    "title": "Platform Engineer",
+    "min_years": 4,
+    "min_degree": "bachelor",
+    "required_skills": [
+      "Kubernetes",
+      "Go",
+      "Terraform",
+      "Docker",
+      "Helm"
+    ],
+    "preferred_skills": [
+      "ArgoCD",
+      "AWS",
+      "Monitoring"
+    ],
+    "text": "Platform Engineer\nRole Family: DevOps & Cloud Infrastructure\nExperience Required: 4+ years of professional engineering experience.\nDegree Required: Bachelor in Computer Science, Software Engineering, or related discipline.\n\nSummary:\nWe are seeking an experienced Platform Engineer to join our high-growth engineering organization. You will design, build, and deploy high-reliability production systems and collaborate across engineering, product, and QA teams.\n\nRequired Technical Skills:\nKubernetes, Go, Terraform, Docker, Helm\n\nPreferred Technical Skills:\nArgoCD, AWS, Monitoring\n\nKey Responsibilities:\n- Design and develop scalable microservices and infrastructure.\n- Deliver robust code with high unit and integration test coverage.\n- Collaborate with stakeholders to ensure high uptime and continuous integration.\n"
+  },
+  {
+    "id": "jd_026",
+    "role_family": "DevOps & Cloud Infrastructure",
+    "title": "Azure Infrastructure Specialist",
+    "min_years": 3,
+    "min_degree": "bachelor",
+    "required_skills": [
+      "Azure",
+      "Terraform",
+      "PowerShell",
+      "Docker",
+      "Networking"
+    ],
+    "preferred_skills": [
+      "Kubernetes",
+      "CI/CD",
+      "Security"
+    ],
+    "text": "Azure Infrastructure Specialist\nRole Family: DevOps & Cloud Infrastructure\nExperience Required: 3+ years of professional engineering experience.\nDegree Required: Bachelor in Computer Science, Software Engineering, or related discipline.\n\nSummary:\nWe are seeking an experienced Azure Infrastructure Specialist to join our high-growth engineering organization. You will design, build, and deploy high-reliability production systems and collaborate across engineering, product, and QA teams.\n\nRequired Technical Skills:\nAzure, Terraform, PowerShell, Docker, Networking\n\nPreferred Technical Skills:\nKubernetes, CI/CD, Security\n\nKey Responsibilities:\n- Design and develop scalable microservices and infrastructure.\n- Deliver robust code with high unit and integration test coverage.\n- Collaborate with stakeholders to ensure high uptime and continuous integration.\n"
+  },
+  {
+    "id": "jd_027",
+    "role_family": "Full-Stack Development",
+    "title": "Full-Stack Software Engineer",
+    "min_years": 3,
+    "min_degree": "bachelor",
+    "required_skills": [
+      "JavaScript",
+      "TypeScript",
+      "React",
+      "Node.js",
+      "SQL"
+    ],
+    "preferred_skills": [
+      "PostgreSQL",
+      "Docker",
+      "AWS"
+    ],
+    "text": "Full-Stack Software Engineer\nRole Family: Full-Stack Development\nExperience Required: 3+ years of professional engineering experience.\nDegree Required: Bachelor in Computer Science, Software Engineering, or related discipline.\n\nSummary:\nWe are seeking an experienced Full-Stack Software Engineer to join our high-growth engineering organization. You will design, build, and deploy high-reliability production systems and collaborate across engineering, product, and QA teams.\n\nRequired Technical Skills:\nJavaScript, TypeScript, React, Node.js, SQL\n\nPreferred Technical Skills:\nPostgreSQL, Docker, AWS\n\nKey Responsibilities:\n- Design and develop scalable microservices and infrastructure.\n- Deliver robust code with high unit and integration test coverage.\n- Collaborate with stakeholders to ensure high uptime and continuous integration.\n"
+  },
+  {
+    "id": "jd_028",
+    "role_family": "Full-Stack Development",
+    "title": "Senior Full-Stack Developer",
+    "min_years": 5,
+    "min_degree": "bachelor",
+    "required_skills": [
+      "Python",
+      "React",
+      "FastAPI",
+      "TypeScript",
+      "PostgreSQL",
+      "Docker"
+    ],
+    "preferred_skills": [
+      "Redis",
+      "AWS",
+      "CI/CD"
+    ],
+    "text": "Senior Full-Stack Developer\nRole Family: Full-Stack Development\nExperience Required: 5+ years of professional engineering experience.\nDegree Required: Bachelor in Computer Science, Software Engineering, or related discipline.\n\nSummary:\nWe are seeking an experienced Senior Full-Stack Developer to join our high-growth engineering organization. You will design, build, and deploy high-reliability production systems and collaborate across engineering, product, and QA teams.\n\nRequired Technical Skills:\nPython, React, FastAPI, TypeScript, PostgreSQL, Docker\n\nPreferred Technical Skills:\nRedis, AWS, CI/CD\n\nKey Responsibilities:\n- Design and develop scalable microservices and infrastructure.\n- Deliver robust code with high unit and integration test coverage.\n- Collaborate with stakeholders to ensure high uptime and continuous integration.\n"
+  },
+  {
+    "id": "jd_029",
+    "role_family": "Full-Stack Development",
+    "title": "Junior Full-Stack Developer",
+    "min_years": 1,
+    "min_degree": "bachelor",
+    "required_skills": [
+      "JavaScript",
+      "React",
+      "Node.js",
+      "HTML",
+      "CSS"
+    ],
+    "preferred_skills": [
+      "MongoDB",
+      "Git",
+      "REST"
+    ],
+    "text": "Junior Full-Stack Developer\nRole Family: Full-Stack Development\nExperience Required: 1+ years of professional engineering experience.\nDegree Required: Bachelor in Computer Science, Software Engineering, or related discipline.\n\nSummary:\nWe are seeking an experienced Junior Full-Stack Developer to join our high-growth engineering organization. You will design, build, and deploy high-reliability production systems and collaborate across engineering, product, and QA teams.\n\nRequired Technical Skills:\nJavaScript, React, Node.js, HTML, CSS\n\nPreferred Technical Skills:\nMongoDB, Git, REST\n\nKey Responsibilities:\n- Design and develop scalable microservices and infrastructure.\n- Deliver robust code with high unit and integration test coverage.\n- Collaborate with stakeholders to ensure high uptime and continuous integration.\n"
+  },
+  {
+    "id": "jd_030",
+    "role_family": "Full-Stack Development",
+    "title": "MEAN/MERN Stack Developer",
+    "min_years": 2,
+    "min_degree": "bachelor",
+    "required_skills": [
+      "MongoDB",
+      "Express.js",
+      "React",
+      "Node.js",
+      "JavaScript"
+    ],
+    "preferred_skills": [
+      "TypeScript",
+      "REST",
+      "Git"
+    ],
+    "text": "MEAN/MERN Stack Developer\nRole Family: Full-Stack Development\nExperience Required: 2+ years of professional engineering experience.\nDegree Required: Bachelor in Computer Science, Software Engineering, or related discipline.\n\nSummary:\nWe are seeking an experienced MEAN/MERN Stack Developer to join our high-growth engineering organization. You will design, build, and deploy high-reliability production systems and collaborate across engineering, product, and QA teams.\n\nRequired Technical Skills:\nMongoDB, Express.js, React, Node.js, JavaScript\n\nPreferred Technical Skills:\nTypeScript, REST, Git\n\nKey Responsibilities:\n- Design and develop scalable microservices and infrastructure.\n- Deliver robust code with high unit and integration test coverage.\n- Collaborate with stakeholders to ensure high uptime and continuous integration.\n"
+  },
+  {
+    "id": "jd_031",
+    "role_family": "Full-Stack Development",
+    "title": "Full-Stack Python & Vue Dev",
+    "min_years": 3,
+    "min_degree": "bachelor",
+    "required_skills": [
+      "Python",
+      "Vue.js",
+      "PostgreSQL",
+      "Docker",
+      "REST"
+    ],
+    "preferred_skills": [
+      "FastAPI",
+      "TailwindCSS",
+      "Git"
+    ],
+    "text": "Full-Stack Python & Vue Dev\nRole Family: Full-Stack Development\nExperience Required: 3+ years of professional engineering experience.\nDegree Required: Bachelor in Computer Science, Software Engineering, or related discipline.\n\nSummary:\nWe are seeking an experienced Full-Stack Python & Vue Dev to join our high-growth engineering organization. You will design, build, and deploy high-reliability production systems and collaborate across engineering, product, and QA teams.\n\nRequired Technical Skills:\nPython, Vue.js, PostgreSQL, Docker, REST\n\nPreferred Technical Skills:\nFastAPI, TailwindCSS, Git\n\nKey Responsibilities:\n- Design and develop scalable microservices and infrastructure.\n- Deliver robust code with high unit and integration test coverage.\n- Collaborate with stakeholders to ensure high uptime and continuous integration.\n"
+  },
+  {
+    "id": "jd_032",
+    "role_family": "Full-Stack Development",
+    "title": "Enterprise Solutions Engineer",
+    "min_years": 4,
+    "min_degree": "bachelor",
+    "required_skills": [
+      "Java",
+      "Spring Boot",
+      "Angular",
+      "TypeScript",
+      "SQL"
+    ],
+    "preferred_skills": [
+      "Docker",
+      "Kubernetes",
+      "REST"
+    ],
+    "text": "Enterprise Solutions Engineer\nRole Family: Full-Stack Development\nExperience Required: 4+ years of professional engineering experience.\nDegree Required: Bachelor in Computer Science, Software Engineering, or related discipline.\n\nSummary:\nWe are seeking an experienced Enterprise Solutions Engineer to join our high-growth engineering organization. You will design, build, and deploy high-reliability production systems and collaborate across engineering, product, and QA teams.\n\nRequired Technical Skills:\nJava, Spring Boot, Angular, TypeScript, SQL\n\nPreferred Technical Skills:\nDocker, Kubernetes, REST\n\nKey Responsibilities:\n- Design and develop scalable microservices and infrastructure.\n- Deliver robust code with high unit and integration test coverage.\n- Collaborate with stakeholders to ensure high uptime and continuous integration.\n"
+  },
+  {
+    "id": "jd_033",
+    "role_family": "QA & Test Engineering",
+    "title": "Senior QA Automation Engineer",
+    "min_years": 4,
+    "min_degree": "bachelor",
+    "required_skills": [
+      "Selenium",
+      "Python",
+      "pytest",
+      "Test Automation",
+      "CI/CD"
+    ],
+    "preferred_skills": [
+      "Docker",
+      "Postman",
+      "SQL"
+    ],
+    "text": "Senior QA Automation Engineer\nRole Family: QA & Test Engineering\nExperience Required: 4+ years of professional engineering experience.\nDegree Required: Bachelor in Computer Science, Software Engineering, or related discipline.\n\nSummary:\nWe are seeking an experienced Senior QA Automation Engineer to join our high-growth engineering organization. You will design, build, and deploy high-reliability production systems and collaborate across engineering, product, and QA teams.\n\nRequired Technical Skills:\nSelenium, Python, pytest, Test Automation, CI/CD\n\nPreferred Technical Skills:\nDocker, Postman, SQL\n\nKey Responsibilities:\n- Design and develop scalable microservices and infrastructure.\n- Deliver robust code with high unit and integration test coverage.\n- Collaborate with stakeholders to ensure high uptime and continuous integration.\n"
+  },
+  {
+    "id": "jd_034",
+    "role_family": "QA & Test Engineering",
+    "title": "SDET (Software Development Engineer in Test)",
+    "min_years": 3,
+    "min_degree": "bachelor",
+    "required_skills": [
+      "Java",
+      "Selenium",
+      "TestNG",
+      "CI/CD",
+      "Git"
+    ],
+    "preferred_skills": [
+      "Docker",
+      "RestAssured",
+      "SQL"
+    ],
+    "text": "SDET (Software Development Engineer in Test)\nRole Family: QA & Test Engineering\nExperience Required: 3+ years of professional engineering experience.\nDegree Required: Bachelor in Computer Science, Software Engineering, or related discipline.\n\nSummary:\nWe are seeking an experienced SDET (Software Development Engineer in Test) to join our high-growth engineering organization. You will design, build, and deploy high-reliability production systems and collaborate across engineering, product, and QA teams.\n\nRequired Technical Skills:\nJava, Selenium, TestNG, CI/CD, Git\n\nPreferred Technical Skills:\nDocker, RestAssured, SQL\n\nKey Responsibilities:\n- Design and develop scalable microservices and infrastructure.\n- Deliver robust code with high unit and integration test coverage.\n- Collaborate with stakeholders to ensure high uptime and continuous integration.\n"
+  },
+  {
+    "id": "jd_035",
+    "role_family": "QA & Test Engineering",
+    "title": "QA Performance Engineer",
+    "min_years": 4,
+    "min_degree": "bachelor",
+    "required_skills": [
+      "JMeter",
+      "Performance Testing",
+      "Python",
+      "Linux",
+      "SQL"
+    ],
+    "preferred_skills": [
+      "Grafana",
+      "Docker",
+      "Load Testing"
+    ],
+    "text": "QA Performance Engineer\nRole Family: QA & Test Engineering\nExperience Required: 4+ years of professional engineering experience.\nDegree Required: Bachelor in Computer Science, Software Engineering, or related discipline.\n\nSummary:\nWe are seeking an experienced QA Performance Engineer to join our high-growth engineering organization. You will design, build, and deploy high-reliability production systems and collaborate across engineering, product, and QA teams.\n\nRequired Technical Skills:\nJMeter, Performance Testing, Python, Linux, SQL\n\nPreferred Technical Skills:\nGrafana, Docker, Load Testing\n\nKey Responsibilities:\n- Design and develop scalable microservices and infrastructure.\n- Deliver robust code with high unit and integration test coverage.\n- Collaborate with stakeholders to ensure high uptime and continuous integration.\n"
+  },
+  {
+    "id": "jd_036",
+    "role_family": "QA & Test Engineering",
+    "title": "Junior QA Tester",
+    "min_years": 1,
+    "min_degree": "bachelor",
+    "required_skills": [
+      "Manual Testing",
+      "Test Cases",
+      "Bug Tracking",
+      "Jira",
+      "SQL"
+    ],
+    "preferred_skills": [
+      "Selenium",
+      "Git",
+      "Postman"
+    ],
+    "text": "Junior QA Tester\nRole Family: QA & Test Engineering\nExperience Required: 1+ years of professional engineering experience.\nDegree Required: Bachelor in Computer Science, Software Engineering, or related discipline.\n\nSummary:\nWe are seeking an experienced Junior QA Tester to join our high-growth engineering organization. You will design, build, and deploy high-reliability production systems and collaborate across engineering, product, and QA teams.\n\nRequired Technical Skills:\nManual Testing, Test Cases, Bug Tracking, Jira, SQL\n\nPreferred Technical Skills:\nSelenium, Git, Postman\n\nKey Responsibilities:\n- Design and develop scalable microservices and infrastructure.\n- Deliver robust code with high unit and integration test coverage.\n- Collaborate with stakeholders to ensure high uptime and continuous integration.\n"
+  },
+  {
+    "id": "jd_037",
+    "role_family": "QA & Test Engineering",
+    "title": "API Test Automation Engineer",
+    "min_years": 3,
+    "min_degree": "bachelor",
+    "required_skills": [
+      "Python",
+      "Postman",
+      "REST",
+      "pytest",
+      "Docker"
+    ],
+    "preferred_skills": [
+      "Git",
+      "SQL",
+      "CI/CD"
+    ],
+    "text": "API Test Automation Engineer\nRole Family: QA & Test Engineering\nExperience Required: 3+ years of professional engineering experience.\nDegree Required: Bachelor in Computer Science, Software Engineering, or related discipline.\n\nSummary:\nWe are seeking an experienced API Test Automation Engineer to join our high-growth engineering organization. You will design, build, and deploy high-reliability production systems and collaborate across engineering, product, and QA teams.\n\nRequired Technical Skills:\nPython, Postman, REST, pytest, Docker\n\nPreferred Technical Skills:\nGit, SQL, CI/CD\n\nKey Responsibilities:\n- Design and develop scalable microservices and infrastructure.\n- Deliver robust code with high unit and integration test coverage.\n- Collaborate with stakeholders to ensure high uptime and continuous integration.\n"
+  },
+  {
+    "id": "jd_038",
+    "role_family": "QA & Test Engineering",
+    "title": "Mobile QA Engineer",
+    "min_years": 3,
+    "min_degree": "bachelor",
+    "required_skills": [
+      "Appium",
+      "Mobile Testing",
+      "iOS",
+      "Android",
+      "Java"
+    ],
+    "preferred_skills": [
+      "Test Automation",
+      "Git",
+      "Jira"
+    ],
+    "text": "Mobile QA Engineer\nRole Family: QA & Test Engineering\nExperience Required: 3+ years of professional engineering experience.\nDegree Required: Bachelor in Computer Science, Software Engineering, or related discipline.\n\nSummary:\nWe are seeking an experienced Mobile QA Engineer to join our high-growth engineering organization. You will design, build, and deploy high-reliability production systems and collaborate across engineering, product, and QA teams.\n\nRequired Technical Skills:\nAppium, Mobile Testing, iOS, Android, Java\n\nPreferred Technical Skills:\nTest Automation, Git, Jira\n\nKey Responsibilities:\n- Design and develop scalable microservices and infrastructure.\n- Deliver robust code with high unit and integration test coverage.\n- Collaborate with stakeholders to ensure high uptime and continuous integration.\n"
+  },
+  {
+    "id": "jd_039",
+    "role_family": "Cybersecurity",
+    "title": "Application Security Engineer",
+    "min_years": 4,
+    "min_degree": "bachelor",
+    "required_skills": [
+      "AppSec",
+      "OWASP",
+      "Vulnerability Assessment",
+      "Python",
+      "Linux"
+    ],
+    "preferred_skills": [
+      "Docker",
+      "Penetration Testing",
+      "Git"
+    ],
+    "text": "Application Security Engineer\nRole Family: Cybersecurity\nExperience Required: 4+ years of professional engineering experience.\nDegree Required: Bachelor in Computer Science, Software Engineering, or related discipline.\n\nSummary:\nWe are seeking an experienced Application Security Engineer to join our high-growth engineering organization. You will design, build, and deploy high-reliability production systems and collaborate across engineering, product, and QA teams.\n\nRequired Technical Skills:\nAppSec, OWASP, Vulnerability Assessment, Python, Linux\n\nPreferred Technical Skills:\nDocker, Penetration Testing, Git\n\nKey Responsibilities:\n- Design and develop scalable microservices and infrastructure.\n- Deliver robust code with high unit and integration test coverage.\n- Collaborate with stakeholders to ensure high uptime and continuous integration.\n"
+  },
+  {
+    "id": "jd_040",
+    "role_family": "Cybersecurity",
+    "title": "SOC Security Analyst",
+    "min_years": 2,
+    "min_degree": "bachelor",
+    "required_skills": [
+      "SIEM",
+      "Incident Response",
+      "Network Security",
+      "Linux",
+      "Threat Analysis"
+    ],
+    "preferred_skills": [
+      "Python",
+      "Wireshark",
+      "Splunk"
+    ],
+    "text": "SOC Security Analyst\nRole Family: Cybersecurity\nExperience Required: 2+ years of professional engineering experience.\nDegree Required: Bachelor in Computer Science, Software Engineering, or related discipline.\n\nSummary:\nWe are seeking an experienced SOC Security Analyst to join our high-growth engineering organization. You will design, build, and deploy high-reliability production systems and collaborate across engineering, product, and QA teams.\n\nRequired Technical Skills:\nSIEM, Incident Response, Network Security, Linux, Threat Analysis\n\nPreferred Technical Skills:\nPython, Wireshark, Splunk\n\nKey Responsibilities:\n- Design and develop scalable microservices and infrastructure.\n- Deliver robust code with high unit and integration test coverage.\n- Collaborate with stakeholders to ensure high uptime and continuous integration.\n"
+  },
+  {
+    "id": "jd_041",
+    "role_family": "Cybersecurity",
+    "title": "Senior Penetration Tester",
+    "min_years": 5,
+    "min_degree": "bachelor",
+    "required_skills": [
+      "Penetration Testing",
+      "Burp Suite",
+      "Ethical Hacking",
+      "Linux",
+      "Networking"
+    ],
+    "preferred_skills": [
+      "Python",
+      "Exploit Development",
+      "Metasploit"
+    ],
+    "text": "Senior Penetration Tester\nRole Family: Cybersecurity\nExperience Required: 5+ years of professional engineering experience.\nDegree Required: Bachelor in Computer Science, Software Engineering, or related discipline.\n\nSummary:\nWe are seeking an experienced Senior Penetration Tester to join our high-growth engineering organization. You will design, build, and deploy high-reliability production systems and collaborate across engineering, product, and QA teams.\n\nRequired Technical Skills:\nPenetration Testing, Burp Suite, Ethical Hacking, Linux, Networking\n\nPreferred Technical Skills:\nPython, Exploit Development, Metasploit\n\nKey Responsibilities:\n- Design and develop scalable microservices and infrastructure.\n- Deliver robust code with high unit and integration test coverage.\n- Collaborate with stakeholders to ensure high uptime and continuous integration.\n"
+  },
+  {
+    "id": "jd_042",
+    "role_family": "Cybersecurity",
+    "title": "Security Compliance Specialist",
+    "min_years": 3,
+    "min_degree": "bachelor",
+    "required_skills": [
+      "SOC 2",
+      "ISO 27001",
+      "Compliance",
+      "Risk Assessment",
+      "Audit"
+    ],
+    "preferred_skills": [
+      "Cloud Security",
+      "NIST",
+      "IAM"
+    ],
+    "text": "Security Compliance Specialist\nRole Family: Cybersecurity\nExperience Required: 3+ years of professional engineering experience.\nDegree Required: Bachelor in Computer Science, Software Engineering, or related discipline.\n\nSummary:\nWe are seeking an experienced Security Compliance Specialist to join our high-growth engineering organization. You will design, build, and deploy high-reliability production systems and collaborate across engineering, product, and QA teams.\n\nRequired Technical Skills:\nSOC 2, ISO 27001, Compliance, Risk Assessment, Audit\n\nPreferred Technical Skills:\nCloud Security, NIST, IAM\n\nKey Responsibilities:\n- Design and develop scalable microservices and infrastructure.\n- Deliver robust code with high unit and integration test coverage.\n- Collaborate with stakeholders to ensure high uptime and continuous integration.\n"
+  },
+  {
+    "id": "jd_043",
+    "role_family": "Cybersecurity",
+    "title": "Cloud Security Analyst",
+    "min_years": 3,
+    "min_degree": "bachelor",
+    "required_skills": [
+      "AWS",
+      "Cloud Security",
+      "IAM",
+      "Linux",
+      "Python"
+    ],
+    "preferred_skills": [
+      "Terraform",
+      "Docker",
+      "SIEM"
+    ],
+    "text": "Cloud Security Analyst\nRole Family: Cybersecurity\nExperience Required: 3+ years of professional engineering experience.\nDegree Required: Bachelor in Computer Science, Software Engineering, or related discipline.\n\nSummary:\nWe are seeking an experienced Cloud Security Analyst to join our high-growth engineering organization. You will design, build, and deploy high-reliability production systems and collaborate across engineering, product, and QA teams.\n\nRequired Technical Skills:\nAWS, Cloud Security, IAM, Linux, Python\n\nPreferred Technical Skills:\nTerraform, Docker, SIEM\n\nKey Responsibilities:\n- Design and develop scalable microservices and infrastructure.\n- Deliver robust code with high unit and integration test coverage.\n- Collaborate with stakeholders to ensure high uptime and continuous integration.\n"
+  },
+  {
+    "id": "jd_044",
+    "role_family": "Cybersecurity",
+    "title": "Security Operations Lead",
+    "min_years": 6,
+    "min_degree": "bachelor",
+    "required_skills": [
+      "Incident Response",
+      "SIEM",
+      "Threat Intelligence",
+      "Leadership",
+      "Linux"
+    ],
+    "preferred_skills": [
+      "Python",
+      "Forensics",
+      "Cloud Security"
+    ],
+    "text": "Security Operations Lead\nRole Family: Cybersecurity\nExperience Required: 6+ years of professional engineering experience.\nDegree Required: Bachelor in Computer Science, Software Engineering, or related discipline.\n\nSummary:\nWe are seeking an experienced Security Operations Lead to join our high-growth engineering organization. You will design, build, and deploy high-reliability production systems and collaborate across engineering, product, and QA teams.\n\nRequired Technical Skills:\nIncident Response, SIEM, Threat Intelligence, Leadership, Linux\n\nPreferred Technical Skills:\nPython, Forensics, Cloud Security\n\nKey Responsibilities:\n- Design and develop scalable microservices and infrastructure.\n- Deliver robust code with high unit and integration test coverage.\n- Collaborate with stakeholders to ensure high uptime and continuous integration.\n"
+  },
+  {
+    "id": "jd_045",
+    "role_family": "Data Engineering",
+    "title": "Senior Data Engineer",
+    "min_years": 5,
+    "min_degree": "bachelor",
+    "required_skills": [
+      "Python",
+      "SQL",
+      "Apache Spark",
+      "Airflow",
+      "PostgreSQL"
+    ],
+    "preferred_skills": [
+      "AWS",
+      "Docker",
+      "Snowflake"
+    ],
+    "text": "Senior Data Engineer\nRole Family: Data Engineering\nExperience Required: 5+ years of professional engineering experience.\nDegree Required: Bachelor in Computer Science, Software Engineering, or related discipline.\n\nSummary:\nWe are seeking an experienced Senior Data Engineer to join our high-growth engineering organization. You will design, build, and deploy high-reliability production systems and collaborate across engineering, product, and QA teams.\n\nRequired Technical Skills:\nPython, SQL, Apache Spark, Airflow, PostgreSQL\n\nPreferred Technical Skills:\nAWS, Docker, Snowflake\n\nKey Responsibilities:\n- Design and develop scalable microservices and infrastructure.\n- Deliver robust code with high unit and integration test coverage.\n- Collaborate with stakeholders to ensure high uptime and continuous integration.\n"
+  },
+  {
+    "id": "jd_046",
+    "role_family": "Data Engineering",
+    "title": "Big Data Engineer",
+    "min_years": 4,
+    "min_degree": "bachelor",
+    "required_skills": [
+      "Scala",
+      "Apache Spark",
+      "Hadoop",
+      "Kafka",
+      "SQL"
+    ],
+    "preferred_skills": [
+      "Docker",
+      "Linux",
+      "Airflow"
+    ],
+    "text": "Big Data Engineer\nRole Family: Data Engineering\nExperience Required: 4+ years of professional engineering experience.\nDegree Required: Bachelor in Computer Science, Software Engineering, or related discipline.\n\nSummary:\nWe are seeking an experienced Big Data Engineer to join our high-growth engineering organization. You will design, build, and deploy high-reliability production systems and collaborate across engineering, product, and QA teams.\n\nRequired Technical Skills:\nScala, Apache Spark, Hadoop, Kafka, SQL\n\nPreferred Technical Skills:\nDocker, Linux, Airflow\n\nKey Responsibilities:\n- Design and develop scalable microservices and infrastructure.\n- Deliver robust code with high unit and integration test coverage.\n- Collaborate with stakeholders to ensure high uptime and continuous integration.\n"
+  },
+  {
+    "id": "jd_047",
+    "role_family": "Data Engineering",
+    "title": "ETL Pipeline Developer",
+    "min_years": 3,
+    "min_degree": "bachelor",
+    "required_skills": [
+      "Python",
+      "SQL",
+      "Airflow",
+      "ETL",
+      "PostgreSQL"
+    ],
+    "preferred_skills": [
+      "Pandas",
+      "Git",
+      "Docker"
+    ],
+    "text": "ETL Pipeline Developer\nRole Family: Data Engineering\nExperience Required: 3+ years of professional engineering experience.\nDegree Required: Bachelor in Computer Science, Software Engineering, or related discipline.\n\nSummary:\nWe are seeking an experienced ETL Pipeline Developer to join our high-growth engineering organization. You will design, build, and deploy high-reliability production systems and collaborate across engineering, product, and QA teams.\n\nRequired Technical Skills:\nPython, SQL, Airflow, ETL, PostgreSQL\n\nPreferred Technical Skills:\nPandas, Git, Docker\n\nKey Responsibilities:\n- Design and develop scalable microservices and infrastructure.\n- Deliver robust code with high unit and integration test coverage.\n- Collaborate with stakeholders to ensure high uptime and continuous integration.\n"
+  },
+  {
+    "id": "jd_048",
+    "role_family": "Data Engineering",
+    "title": "Analytics Engineer",
+    "min_years": 2,
+    "min_degree": "bachelor",
+    "required_skills": [
+      "SQL",
+      "dbt",
+      "Snowflake",
+      "Data Modeling",
+      "Git"
+    ],
+    "preferred_skills": [
+      "Python",
+      "Tableau",
+      "Looker"
+    ],
+    "text": "Analytics Engineer\nRole Family: Data Engineering\nExperience Required: 2+ years of professional engineering experience.\nDegree Required: Bachelor in Computer Science, Software Engineering, or related discipline.\n\nSummary:\nWe are seeking an experienced Analytics Engineer to join our high-growth engineering organization. You will design, build, and deploy high-reliability production systems and collaborate across engineering, product, and QA teams.\n\nRequired Technical Skills:\nSQL, dbt, Snowflake, Data Modeling, Git\n\nPreferred Technical Skills:\nPython, Tableau, Looker\n\nKey Responsibilities:\n- Design and develop scalable microservices and infrastructure.\n- Deliver robust code with high unit and integration test coverage.\n- Collaborate with stakeholders to ensure high uptime and continuous integration.\n"
+  },
+  {
+    "id": "jd_049",
+    "role_family": "Data Engineering",
+    "title": "Junior Data Engineer",
+    "min_years": 1,
+    "min_degree": "bachelor",
+    "required_skills": [
+      "Python",
+      "SQL",
+      "Pandas",
+      "Git",
+      "Linux"
+    ],
+    "preferred_skills": [
+      "Airflow",
+      "PostgreSQL",
+      "Docker"
+    ],
+    "text": "Junior Data Engineer\nRole Family: Data Engineering\nExperience Required: 1+ years of professional engineering experience.\nDegree Required: Bachelor in Computer Science, Software Engineering, or related discipline.\n\nSummary:\nWe are seeking an experienced Junior Data Engineer to join our high-growth engineering organization. You will design, build, and deploy high-reliability production systems and collaborate across engineering, product, and QA teams.\n\nRequired Technical Skills:\nPython, SQL, Pandas, Git, Linux\n\nPreferred Technical Skills:\nAirflow, PostgreSQL, Docker\n\nKey Responsibilities:\n- Design and develop scalable microservices and infrastructure.\n- Deliver robust code with high unit and integration test coverage.\n- Collaborate with stakeholders to ensure high uptime and continuous integration.\n"
+  },
+  {
+    "id": "jd_050",
+    "role_family": "Data Engineering",
+    "title": "Cloud Data Architect",
+    "min_years": 6,
+    "min_degree": "master",
+    "required_skills": [
+      "AWS",
+      "Snowflake",
+      "Apache Spark",
+      "Airflow",
+      "Data Architecture"
+    ],
+    "preferred_skills": [
+      "Terraform",
+      "Python",
+      "Kafka"
+    ],
+    "text": "Cloud Data Architect\nRole Family: Data Engineering\nExperience Required: 6+ years of professional engineering experience.\nDegree Required: Master in Computer Science, Software Engineering, or related discipline.\n\nSummary:\nWe are seeking an experienced Cloud Data Architect to join our high-growth engineering organization. You will design, build, and deploy high-reliability production systems and collaborate across engineering, product, and QA teams.\n\nRequired Technical Skills:\nAWS, Snowflake, Apache Spark, Airflow, Data Architecture\n\nPreferred Technical Skills:\nTerraform, Python, Kafka\n\nKey Responsibilities:\n- Design and develop scalable microservices and infrastructure.\n- Deliver robust code with high unit and integration test coverage.\n- Collaborate with stakeholders to ensure high uptime and continuous integration.\n"
+  }
+]

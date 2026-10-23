@@ -1,0 +1,14 @@
+Avery Davis
+
+SUMMARY
+Junior technologist with 3 years experience in Go, Kubernetes, Distributed Systems.
+
+WORK EXPERIENCE
+Intern Developer | MicroGlobal (2024 - Present)
+- Assisted in coding features with Go, Kubernetes, Distributed Systems.
+
+EDUCATION
+Bachelor of Science in Software Engineering
+
+TECHNICAL SKILLS
+Go, Kubernetes, Distributed Systems

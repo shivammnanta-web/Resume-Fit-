@@ -1,0 +1,14 @@
+Devon Martinez
+
+SUMMARY
+Junior developer passionate about building reliable software using Python, Vue.js, Git, Linux.
+
+WORK EXPERIENCE
+Associate Developer | StartUpX (2023 - Present)
+- Built basic endpoints using Python, Vue.js.
+
+EDUCATION
+Bachelor of Science in Information Technology
+
+TECHNICAL SKILLS
+Python, Vue.js, Git, Linux

@@ -1,0 +1,15 @@
+Avery Miller
+
+SUMMARY
+Frontend React Developer with 3 years of engineering experience focusing on React, JavaScript, HTML.
+
+WORK EXPERIENCE
+Software Engineer | InnoSoft (2020 - Present)
+- Implemented backend pipelines using React, JavaScript, HTML.
+- Wrote unit tests and automated CI/CD deployments.
+
+EDUCATION
+Bachelor of Science in Computer Science
+
+TECHNICAL SKILLS
+React, JavaScript, HTML, CSS, TypeScript

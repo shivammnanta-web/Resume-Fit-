@@ -1,0 +1,14 @@
+Jordan Miller
+
+SUMMARY
+Junior technologist with 1 years experience in Java, Spring Boot, Angular.
+
+WORK EXPERIENCE
+Intern Developer | MicroGlobal (2024 - Present)
+- Assisted in coding features with Java, Spring Boot, Angular.
+
+EDUCATION
+Bachelor of Science in Software Engineering
+
+TECHNICAL SKILLS
+Java, Spring Boot, Angular

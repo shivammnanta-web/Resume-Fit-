@@ -1,0 +1,14 @@
+Jamie Miller
+
+SUMMARY
+Junior developer passionate about building reliable software using MongoDB, Express.js, Git, Linux.
+
+WORK EXPERIENCE
+Associate Developer | StartUpX (2023 - Present)
+- Built basic endpoints using MongoDB, Express.js.
+
+EDUCATION
+Bachelor of Science in Information Technology
+
+TECHNICAL SKILLS
+MongoDB, Express.js, Git, Linux

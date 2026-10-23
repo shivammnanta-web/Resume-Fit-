@@ -1,0 +1,15 @@
+Casey Kumar
+
+SUMMARY
+Senior Python Architect with 6 years of engineering experience focusing on Python, FastAPI, PostgreSQL.
+
+WORK EXPERIENCE
+Software Engineer | InnoSoft (2020 - Present)
+- Implemented backend pipelines using Python, FastAPI, PostgreSQL.
+- Wrote unit tests and automated CI/CD deployments.
+
+EDUCATION
+Bachelor of Science in Computer Science
+
+TECHNICAL SKILLS
+Python, FastAPI, PostgreSQL, Docker, Redis

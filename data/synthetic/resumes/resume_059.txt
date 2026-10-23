@@ -1,0 +1,14 @@
+Pat Davis
+
+SUMMARY
+Junior developer passionate about building reliable software using React, JavaScript, Git, Linux.
+
+WORK EXPERIENCE
+Associate Developer | StartUpX (2023 - Present)
+- Built basic endpoints using React, JavaScript.
+
+EDUCATION
+Bachelor of Science in Information Technology
+
+TECHNICAL SKILLS
+React, JavaScript, Git, Linux

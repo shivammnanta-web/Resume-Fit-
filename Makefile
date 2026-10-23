@@ -28,7 +28,7 @@ run:
 	$(PYTHON) -m resumefit.app
 
 eval:
-	$(PYTHON) -m evaluation.harness
+	$(PYTHON) -m evaluation.report_tables
 
 fetch-esco:
 	$(PYTHON) scripts/fetch_esco.py

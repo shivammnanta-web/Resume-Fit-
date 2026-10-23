@@ -1,0 +1,14 @@
+Sam Williams
+
+SUMMARY
+Self-taught developer with 2 years of real-world experience building software in Python, SQL, Git, REST APIs.
+
+WORK EXPERIENCE
+Software Developer | CodeCraft (2020 - Present)
+- Developed commercial applications with Python, SQL, Git, REST APIs.
+
+EDUCATION
+Bachelor of Arts in Philosophy
+
+TECHNICAL SKILLS
+Python, SQL, Git, REST APIs

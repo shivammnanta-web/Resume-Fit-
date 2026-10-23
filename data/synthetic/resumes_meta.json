@@ -1,0 +1,1974 @@
+[
+  {
+    "id": "resume_001",
+    "name": "Devon Miller",
+    "persona_type": "senior_qualified",
+    "role_family": "Backend Engineering",
+    "target_jd_id": "jd_001",
+    "years_experience": 7,
+    "degree": "Master of Science in Computer Science",
+    "skills": [
+      "Python",
+      "FastAPI",
+      "PostgreSQL",
+      "Docker",
+      "AWS",
+      "Microservices",
+      "Redis",
+      "Kubernetes"
+    ],
+    "text": "Devon Miller\n\nSUMMARY\nSenior Senior Python Architect with 7 years of demonstrated experience in Python, FastAPI, PostgreSQL.\n\nWORK EXPERIENCE\nLead Engineer | TechCorp (2018 - Present)\n- Led architecture and deployment of services using Python, FastAPI, PostgreSQL, Docker.\n- Reduced latency by 45% through query optimization.\n\nEDUCATION\nMaster of Science in Computer Science\n\nTECHNICAL SKILLS\nPython, FastAPI, PostgreSQL, Docker, AWS, Microservices, Redis, Kubernetes"
+  },
+  {
+    "id": "resume_002",
+    "name": "Pat Davis",
+    "persona_type": "mid_qualified",
+    "role_family": "Backend Engineering",
+    "target_jd_id": "jd_002",
+    "years_experience": 4,
+    "degree": "Bachelor of Science in Computer Science",
+    "skills": [
+      "Python",
+      "Django",
+      "PostgreSQL",
+      "REST",
+      "Docker"
+    ],
+    "text": "Pat Davis\n\nSUMMARY\nPython Backend Engineer with 4 years of engineering experience focusing on Python, Django, PostgreSQL.\n\nWORK EXPERIENCE\nSoftware Engineer | InnoSoft (2020 - Present)\n- Implemented backend pipelines using Python, Django, PostgreSQL.\n- Wrote unit tests and automated CI/CD deployments.\n\nEDUCATION\nBachelor of Science in Computer Science\n\nTECHNICAL SKILLS\nPython, Django, PostgreSQL, REST, Docker"
+  },
+  {
+    "id": "resume_003",
+    "name": "Casey Brown",
+    "persona_type": "junior_entry",
+    "role_family": "Backend Engineering",
+    "target_jd_id": "jd_003",
+    "years_experience": 1,
+    "degree": "Bachelor of Science in Information Technology",
+    "skills": [
+      "Go",
+      "Kubernetes",
+      "Git",
+      "Linux"
+    ],
+    "text": "Casey Brown\n\nSUMMARY\nJunior developer passionate about building reliable software using Go, Kubernetes, Git, Linux.\n\nWORK EXPERIENCE\nAssociate Developer | StartUpX (2023 - Present)\n- Built basic endpoints using Go, Kubernetes.\n\nEDUCATION\nBachelor of Science in Information Technology\n\nTECHNICAL SKILLS\nGo, Kubernetes, Git, Linux"
+  },
+  {
+    "id": "resume_004",
+    "name": "Devon Johnson",
+    "persona_type": "missing_experience",
+    "role_family": "Backend Engineering",
+    "target_jd_id": "jd_004",
+    "years_experience": 0,
+    "degree": "Bachelor of Science in Software Engineering",
+    "skills": [
+      "Python",
+      "SQL",
+      "Git"
+    ],
+    "text": "Devon Johnson\n\nSUMMARY\nJunior technologist with 0 years experience in Python, SQL, Git.\n\nWORK EXPERIENCE\nIntern Developer | MicroGlobal (2024 - Present)\n- Assisted in coding features with Python, SQL, Git.\n\nEDUCATION\nBachelor of Science in Software Engineering\n\nTECHNICAL SKILLS\nPython, SQL, Git"
+  },
+  {
+    "id": "resume_005",
+    "name": "Jordan Davis",
+    "persona_type": "missing_degree",
+    "role_family": "Backend Engineering",
+    "target_jd_id": "jd_005",
+    "years_experience": 5,
+    "degree": "Bachelor of Arts in Philosophy",
+    "skills": [
+      "Java",
+      "Spring Boot",
+      "MySQL",
+      "Hibernate"
+    ],
+    "text": "Jordan Davis\n\nSUMMARY\nSelf-taught developer with 5 years of real-world experience building software in Java, Spring Boot, MySQL, Hibernate.\n\nWORK EXPERIENCE\nSoftware Developer | CodeCraft (2020 - Present)\n- Developed commercial applications with Java, Spring Boot, MySQL, Hibernate.\n\nEDUCATION\nBachelor of Arts in Philosophy\n\nTECHNICAL SKILLS\nJava, Spring Boot, MySQL, Hibernate"
+  },
+  {
+    "id": "resume_006",
+    "name": "Pat Brown",
+    "persona_type": "keyword_stuffed",
+    "role_family": "Backend Engineering",
+    "target_jd_id": "jd_006",
+    "years_experience": 1,
+    "degree": "High School Diploma",
+    "skills": [
+      "Node.js",
+      "TypeScript",
+      "AWS",
+      "DynamoDB",
+      "Docker",
+      "Python",
+      "Java",
+      "C++",
+      "Rust",
+      "Go",
+      "Kubernetes",
+      "AWS",
+      "Azure",
+      "GCP",
+      "PyTorch",
+      "TensorFlow",
+      "React",
+      "Angular",
+      "Vue",
+      "Spark",
+      "Hadoop",
+      "Docker",
+      "GraphQL",
+      "Solidity",
+      "Swift"
+    ],
+    "text": "Pat Brown\n\nSUMMARY\nEnthusiastic programmer familiar with all modern technologies and paradigms.\n\nWORK EXPERIENCE\nJunior Intern | WebStudio (2024 - 2024)\n- Assisted office tasks.\n\nEDUCATION\nHigh School Diploma\n\nTECHNICAL SKILLS\nNode.js, TypeScript, AWS, DynamoDB, Docker, Python, Java, C++, Rust, Go, Kubernetes, AWS, Azure, GCP, PyTorch, TensorFlow, React, Angular, Vue, Spark, Hadoop, Docker, GraphQL, Solidity, Swift"
+  },
+  {
+    "id": "resume_007",
+    "name": "Jamie Brown",
+    "persona_type": "unrelated_domain",
+    "role_family": "Backend Engineering",
+    "target_jd_id": "jd_007",
+    "years_experience": 5,
+    "degree": "Bachelor of Science in Accounting",
+    "skills": [
+      "QuickBooks",
+      "Excel",
+      "Tax Preparation",
+      "Financial Auditing",
+      "Bookkeeping",
+      "Payroll"
+    ],
+    "text": "Jamie Brown\n\nSUMMARY\nCertified Accountant with 5 years managing financial ledgers, auditing, and corporate taxes.\n\nWORK EXPERIENCE\nSenior Accountant | Ledger & Co (2019 - Present)\n- Reconciled monthly financial statements and tax filings.\n\nEDUCATION\nBachelor of Science in Accounting\n\nTECHNICAL SKILLS\nQuickBooks, Excel, Tax Preparation, Financial Auditing, Bookkeeping, Payroll"
+  },
+  {
+    "id": "resume_008",
+    "name": "Chris Kumar",
+    "persona_type": "senior_qualified",
+    "role_family": "Frontend Engineering",
+    "target_jd_id": "jd_008",
+    "years_experience": 7,
+    "degree": "Master of Science in Computer Science",
+    "skills": [
+      "React",
+      "TypeScript",
+      "JavaScript",
+      "HTML5",
+      "CSS3",
+      "Redux",
+      "Next.js",
+      "GraphQL"
+    ],
+    "text": "Chris Kumar\n\nSUMMARY\nSenior Senior Frontend React Architect with 7 years of demonstrated experience in React, TypeScript, JavaScript.\n\nWORK EXPERIENCE\nLead Engineer | TechCorp (2018 - Present)\n- Led architecture and deployment of services using React, TypeScript, JavaScript, HTML5.\n- Reduced latency by 45% through query optimization.\n\nEDUCATION\nMaster of Science in Computer Science\n\nTECHNICAL SKILLS\nReact, TypeScript, JavaScript, HTML5, CSS3, Redux, Next.js, GraphQL"
+  },
+  {
+    "id": "resume_009",
+    "name": "Avery Miller",
+    "persona_type": "mid_qualified",
+    "role_family": "Frontend Engineering",
+    "target_jd_id": "jd_009",
+    "years_experience": 3,
+    "degree": "Bachelor of Science in Computer Science",
+    "skills": [
+      "React",
+      "JavaScript",
+      "HTML",
+      "CSS",
+      "TypeScript"
+    ],
+    "text": "Avery Miller\n\nSUMMARY\nFrontend React Developer with 3 years of engineering experience focusing on React, JavaScript, HTML.\n\nWORK EXPERIENCE\nSoftware Engineer | InnoSoft (2020 - Present)\n- Implemented backend pipelines using React, JavaScript, HTML.\n- Wrote unit tests and automated CI/CD deployments.\n\nEDUCATION\nBachelor of Science in Computer Science\n\nTECHNICAL SKILLS\nReact, JavaScript, HTML, CSS, TypeScript"
+  },
+  {
+    "id": "resume_010",
+    "name": "Chris Johnson",
+    "persona_type": "junior_entry",
+    "role_family": "Frontend Engineering",
+    "target_jd_id": "jd_010",
+    "years_experience": 1,
+    "degree": "Bachelor of Science in Information Technology",
+    "skills": [
+      "Vue.js",
+      "JavaScript",
+      "Git",
+      "Linux"
+    ],
+    "text": "Chris Johnson\n\nSUMMARY\nJunior developer passionate about building reliable software using Vue.js, JavaScript, Git, Linux.\n\nWORK EXPERIENCE\nAssociate Developer | StartUpX (2023 - Present)\n- Built basic endpoints using Vue.js, JavaScript.\n\nEDUCATION\nBachelor of Science in Information Technology\n\nTECHNICAL SKILLS\nVue.js, JavaScript, Git, Linux"
+  },
+  {
+    "id": "resume_011",
+    "name": "Taylor Martinez",
+    "persona_type": "missing_experience",
+    "role_family": "Frontend Engineering",
+    "target_jd_id": "jd_011",
+    "years_experience": 0,
+    "degree": "Bachelor of Science in Software Engineering",
+    "skills": [
+      "HTML",
+      "CSS",
+      "JavaScript"
+    ],
+    "text": "Taylor Martinez\n\nSUMMARY\nJunior technologist with 0 years experience in HTML, CSS, JavaScript.\n\nWORK EXPERIENCE\nIntern Developer | MicroGlobal (2024 - Present)\n- Assisted in coding features with HTML, CSS, JavaScript.\n\nEDUCATION\nBachelor of Science in Software Engineering\n\nTECHNICAL SKILLS\nHTML, CSS, JavaScript"
+  },
+  {
+    "id": "resume_012",
+    "name": "Chris Davis",
+    "persona_type": "missing_degree",
+    "role_family": "Frontend Engineering",
+    "target_jd_id": "jd_012",
+    "years_experience": 5,
+    "degree": "Bachelor of Arts in Philosophy",
+    "skills": [
+      "JavaScript",
+      "React",
+      "Web Performance",
+      "Webpack"
+    ],
+    "text": "Chris Davis\n\nSUMMARY\nSelf-taught developer with 5 years of real-world experience building software in JavaScript, React, Web Performance, Webpack.\n\nWORK EXPERIENCE\nSoftware Developer | CodeCraft (2020 - Present)\n- Developed commercial applications with JavaScript, React, Web Performance, Webpack.\n\nEDUCATION\nBachelor of Arts in Philosophy\n\nTECHNICAL SKILLS\nJavaScript, React, Web Performance, Webpack"
+  },
+  {
+    "id": "resume_013",
+    "name": "Taylor Smith",
+    "persona_type": "keyword_stuffed",
+    "role_family": "Frontend Engineering",
+    "target_jd_id": "jd_013",
+    "years_experience": 1,
+    "degree": "High School Diploma",
+    "skills": [
+      "React Native",
+      "JavaScript",
+      "TypeScript",
+      "Mobile Development",
+      "Git",
+      "Python",
+      "Java",
+      "C++",
+      "Rust",
+      "Go",
+      "Kubernetes",
+      "AWS",
+      "Azure",
+      "GCP",
+      "PyTorch",
+      "TensorFlow",
+      "React",
+      "Angular",
+      "Vue",
+      "Spark",
+      "Hadoop",
+      "Docker",
+      "GraphQL",
+      "Solidity",
+      "Swift"
+    ],
+    "text": "Taylor Smith\n\nSUMMARY\nEnthusiastic programmer familiar with all modern technologies and paradigms.\n\nWORK EXPERIENCE\nJunior Intern | WebStudio (2024 - 2024)\n- Assisted office tasks.\n\nEDUCATION\nHigh School Diploma\n\nTECHNICAL SKILLS\nReact Native, JavaScript, TypeScript, Mobile Development, Git, Python, Java, C++, Rust, Go, Kubernetes, AWS, Azure, GCP, PyTorch, TensorFlow, React, Angular, Vue, Spark, Hadoop, Docker, GraphQL, Solidity, Swift"
+  },
+  {
+    "id": "resume_014",
+    "name": "Morgan Johnson",
+    "persona_type": "unrelated_domain",
+    "role_family": "Frontend Engineering",
+    "target_jd_id": "jd_014",
+    "years_experience": 5,
+    "degree": "Bachelor of Science in Accounting",
+    "skills": [
+      "QuickBooks",
+      "Excel",
+      "Tax Preparation",
+      "Financial Auditing",
+      "Bookkeeping",
+      "Payroll"
+    ],
+    "text": "Morgan Johnson\n\nSUMMARY\nCertified Accountant with 5 years managing financial ledgers, auditing, and corporate taxes.\n\nWORK EXPERIENCE\nSenior Accountant | Ledger & Co (2019 - Present)\n- Reconciled monthly financial statements and tax filings.\n\nEDUCATION\nBachelor of Science in Accounting\n\nTECHNICAL SKILLS\nQuickBooks, Excel, Tax Preparation, Financial Auditing, Bookkeeping, Payroll"
+  },
+  {
+    "id": "resume_015",
+    "name": "Jamie Martinez",
+    "persona_type": "senior_qualified",
+    "role_family": "Machine Learning & AI",
+    "target_jd_id": "jd_015",
+    "years_experience": 6,
+    "degree": "Master of Science in Computer Science",
+    "skills": [
+      "Python",
+      "PyTorch",
+      "scikit-learn",
+      "Machine Learning",
+      "Docker",
+      "MLOps",
+      "Transformers"
+    ],
+    "text": "Jamie Martinez\n\nSUMMARY\nSenior Senior Machine Learning Engineer with 6 years of demonstrated experience in Python, PyTorch, scikit-learn.\n\nWORK EXPERIENCE\nLead Engineer | TechCorp (2018 - Present)\n- Led architecture and deployment of services using Python, PyTorch, scikit-learn, Machine Learning.\n- Reduced latency by 45% through query optimization.\n\nEDUCATION\nMaster of Science in Computer Science\n\nTECHNICAL SKILLS\nPython, PyTorch, scikit-learn, Machine Learning, Docker, MLOps, Transformers"
+  },
+  {
+    "id": "resume_016",
+    "name": "Devon Garcia",
+    "persona_type": "mid_qualified",
+    "role_family": "Machine Learning & AI",
+    "target_jd_id": "jd_016",
+    "years_experience": 5,
+    "degree": "Bachelor of Science in Computer Science",
+    "skills": [
+      "Python",
+      "PyTorch",
+      "NLP",
+      "Transformers",
+      "HuggingFace"
+    ],
+    "text": "Devon Garcia\n\nSUMMARY\nNLP Research Scientist with 5 years of engineering experience focusing on Python, PyTorch, NLP.\n\nWORK EXPERIENCE\nSoftware Engineer | InnoSoft (2020 - Present)\n- Implemented backend pipelines using Python, PyTorch, NLP.\n- Wrote unit tests and automated CI/CD deployments.\n\nEDUCATION\nBachelor of Science in Computer Science\n\nTECHNICAL SKILLS\nPython, PyTorch, NLP, Transformers, HuggingFace"
+  },
+  {
+    "id": "resume_017",
+    "name": "Devon Smith",
+    "persona_type": "junior_entry",
+    "role_family": "Machine Learning & AI",
+    "target_jd_id": "jd_017",
+    "years_experience": 1,
+    "degree": "Bachelor of Science in Information Technology",
+    "skills": [
+      "Python",
+      "OpenCV",
+      "Git",
+      "Linux"
+    ],
+    "text": "Devon Smith\n\nSUMMARY\nJunior developer passionate about building reliable software using Python, OpenCV, Git, Linux.\n\nWORK EXPERIENCE\nAssociate Developer | StartUpX (2023 - Present)\n- Built basic endpoints using Python, OpenCV.\n\nEDUCATION\nBachelor of Science in Information Technology\n\nTECHNICAL SKILLS\nPython, OpenCV, Git, Linux"
+  },
+  {
+    "id": "resume_018",
+    "name": "Morgan Kumar",
+    "persona_type": "missing_experience",
+    "role_family": "Machine Learning & AI",
+    "target_jd_id": "jd_018",
+    "years_experience": 0,
+    "degree": "Bachelor of Science in Software Engineering",
+    "skills": [
+      "Python",
+      "SQL",
+      "Pandas"
+    ],
+    "text": "Morgan Kumar\n\nSUMMARY\nJunior technologist with 0 years experience in Python, SQL, Pandas.\n\nWORK EXPERIENCE\nIntern Developer | MicroGlobal (2024 - Present)\n- Assisted in coding features with Python, SQL, Pandas.\n\nEDUCATION\nBachelor of Science in Software Engineering\n\nTECHNICAL SKILLS\nPython, SQL, Pandas"
+  },
+  {
+    "id": "resume_019",
+    "name": "Taylor Martinez",
+    "persona_type": "missing_degree",
+    "role_family": "Machine Learning & AI",
+    "target_jd_id": "jd_019",
+    "years_experience": 2,
+    "degree": "Bachelor of Arts in Philosophy",
+    "skills": [
+      "Python",
+      "scikit-learn",
+      "Pandas",
+      "NumPy"
+    ],
+    "text": "Taylor Martinez\n\nSUMMARY\nSelf-taught developer with 2 years of real-world experience building software in Python, scikit-learn, Pandas, NumPy.\n\nWORK EXPERIENCE\nSoftware Developer | CodeCraft (2020 - Present)\n- Developed commercial applications with Python, scikit-learn, Pandas, NumPy.\n\nEDUCATION\nBachelor of Arts in Philosophy\n\nTECHNICAL SKILLS\nPython, scikit-learn, Pandas, NumPy"
+  },
+  {
+    "id": "resume_020",
+    "name": "Jordan Smith",
+    "persona_type": "keyword_stuffed",
+    "role_family": "Machine Learning & AI",
+    "target_jd_id": "jd_020",
+    "years_experience": 1,
+    "degree": "High School Diploma",
+    "skills": [
+      "Python",
+      "LangChain",
+      "LLMs",
+      "Vector Databases",
+      "PyTorch",
+      "Python",
+      "Java",
+      "C++",
+      "Rust",
+      "Go",
+      "Kubernetes",
+      "AWS",
+      "Azure",
+      "GCP",
+      "PyTorch",
+      "TensorFlow",
+      "React",
+      "Angular",
+      "Vue",
+      "Spark",
+      "Hadoop",
+      "Docker",
+      "GraphQL",
+      "Solidity",
+      "Swift"
+    ],
+    "text": "Jordan Smith\n\nSUMMARY\nEnthusiastic programmer familiar with all modern technologies and paradigms.\n\nWORK EXPERIENCE\nJunior Intern | WebStudio (2024 - 2024)\n- Assisted office tasks.\n\nEDUCATION\nHigh School Diploma\n\nTECHNICAL SKILLS\nPython, LangChain, LLMs, Vector Databases, PyTorch, Python, Java, C++, Rust, Go, Kubernetes, AWS, Azure, GCP, PyTorch, TensorFlow, React, Angular, Vue, Spark, Hadoop, Docker, GraphQL, Solidity, Swift"
+  },
+  {
+    "id": "resume_021",
+    "name": "Casey Smith",
+    "persona_type": "unrelated_domain",
+    "role_family": "DevOps & Cloud Infrastructure",
+    "target_jd_id": "jd_021",
+    "years_experience": 5,
+    "degree": "Bachelor of Science in Accounting",
+    "skills": [
+      "QuickBooks",
+      "Excel",
+      "Tax Preparation",
+      "Financial Auditing",
+      "Bookkeeping",
+      "Payroll"
+    ],
+    "text": "Casey Smith\n\nSUMMARY\nCertified Accountant with 5 years managing financial ledgers, auditing, and corporate taxes.\n\nWORK EXPERIENCE\nSenior Accountant | Ledger & Co (2019 - Present)\n- Reconciled monthly financial statements and tax filings.\n\nEDUCATION\nBachelor of Science in Accounting\n\nTECHNICAL SKILLS\nQuickBooks, Excel, Tax Preparation, Financial Auditing, Bookkeeping, Payroll"
+  },
+  {
+    "id": "resume_022",
+    "name": "Morgan Kumar",
+    "persona_type": "senior_qualified",
+    "role_family": "DevOps & Cloud Infrastructure",
+    "target_jd_id": "jd_022",
+    "years_experience": 7,
+    "degree": "Master of Science in Computer Science",
+    "skills": [
+      "Docker",
+      "Kubernetes",
+      "CI/CD",
+      "Linux",
+      "Bash",
+      "Terraform",
+      "AWS"
+    ],
+    "text": "Morgan Kumar\n\nSUMMARY\nSenior DevOps Automation Engineer with 7 years of demonstrated experience in Docker, Kubernetes, CI/CD.\n\nWORK EXPERIENCE\nLead Engineer | TechCorp (2018 - Present)\n- Led architecture and deployment of services using Docker, Kubernetes, CI/CD, Linux.\n- Reduced latency by 45% through query optimization.\n\nEDUCATION\nMaster of Science in Computer Science\n\nTECHNICAL SKILLS\nDocker, Kubernetes, CI/CD, Linux, Bash, Terraform, AWS"
+  },
+  {
+    "id": "resume_023",
+    "name": "Alex Garcia",
+    "persona_type": "mid_qualified",
+    "role_family": "DevOps & Cloud Infrastructure",
+    "target_jd_id": "jd_023",
+    "years_experience": 7,
+    "degree": "Bachelor of Science in Computer Science",
+    "skills": [
+      "AWS",
+      "Cloud Security",
+      "IAM",
+      "Kubernetes",
+      "Terraform"
+    ],
+    "text": "Alex Garcia\n\nSUMMARY\nCloud Security Architect with 7 years of engineering experience focusing on AWS, Cloud Security, IAM.\n\nWORK EXPERIENCE\nSoftware Engineer | InnoSoft (2020 - Present)\n- Implemented backend pipelines using AWS, Cloud Security, IAM.\n- Wrote unit tests and automated CI/CD deployments.\n\nEDUCATION\nBachelor of Science in Computer Science\n\nTECHNICAL SKILLS\nAWS, Cloud Security, IAM, Kubernetes, Terraform"
+  },
+  {
+    "id": "resume_024",
+    "name": "Chris Smith",
+    "persona_type": "junior_entry",
+    "role_family": "DevOps & Cloud Infrastructure",
+    "target_jd_id": "jd_024",
+    "years_experience": 1,
+    "degree": "Bachelor of Science in Information Technology",
+    "skills": [
+      "Linux",
+      "Git",
+      "Git",
+      "Linux"
+    ],
+    "text": "Chris Smith\n\nSUMMARY\nJunior developer passionate about building reliable software using Linux, Git, Git, Linux.\n\nWORK EXPERIENCE\nAssociate Developer | StartUpX (2023 - Present)\n- Built basic endpoints using Linux, Git.\n\nEDUCATION\nBachelor of Science in Information Technology\n\nTECHNICAL SKILLS\nLinux, Git, Git, Linux"
+  },
+  {
+    "id": "resume_025",
+    "name": "Avery Kumar",
+    "persona_type": "missing_experience",
+    "role_family": "DevOps & Cloud Infrastructure",
+    "target_jd_id": "jd_025",
+    "years_experience": 1,
+    "degree": "Bachelor of Science in Software Engineering",
+    "skills": [
+      "Kubernetes",
+      "Go",
+      "Terraform"
+    ],
+    "text": "Avery Kumar\n\nSUMMARY\nJunior technologist with 1 years experience in Kubernetes, Go, Terraform.\n\nWORK EXPERIENCE\nIntern Developer | MicroGlobal (2024 - Present)\n- Assisted in coding features with Kubernetes, Go, Terraform.\n\nEDUCATION\nBachelor of Science in Software Engineering\n\nTECHNICAL SKILLS\nKubernetes, Go, Terraform"
+  },
+  {
+    "id": "resume_026",
+    "name": "Pat Kumar",
+    "persona_type": "missing_degree",
+    "role_family": "DevOps & Cloud Infrastructure",
+    "target_jd_id": "jd_026",
+    "years_experience": 4,
+    "degree": "Bachelor of Arts in Philosophy",
+    "skills": [
+      "Azure",
+      "Terraform",
+      "PowerShell",
+      "Docker"
+    ],
+    "text": "Pat Kumar\n\nSUMMARY\nSelf-taught developer with 4 years of real-world experience building software in Azure, Terraform, PowerShell, Docker.\n\nWORK EXPERIENCE\nSoftware Developer | CodeCraft (2020 - Present)\n- Developed commercial applications with Azure, Terraform, PowerShell, Docker.\n\nEDUCATION\nBachelor of Arts in Philosophy\n\nTECHNICAL SKILLS\nAzure, Terraform, PowerShell, Docker"
+  },
+  {
+    "id": "resume_027",
+    "name": "Jamie Miller",
+    "persona_type": "keyword_stuffed",
+    "role_family": "Full-Stack Development",
+    "target_jd_id": "jd_027",
+    "years_experience": 1,
+    "degree": "High School Diploma",
+    "skills": [
+      "JavaScript",
+      "TypeScript",
+      "React",
+      "Node.js",
+      "SQL",
+      "Python",
+      "Java",
+      "C++",
+      "Rust",
+      "Go",
+      "Kubernetes",
+      "AWS",
+      "Azure",
+      "GCP",
+      "PyTorch",
+      "TensorFlow",
+      "React",
+      "Angular",
+      "Vue",
+      "Spark",
+      "Hadoop",
+      "Docker",
+      "GraphQL",
+      "Solidity",
+      "Swift"
+    ],
+    "text": "Jamie Miller\n\nSUMMARY\nEnthusiastic programmer familiar with all modern technologies and paradigms.\n\nWORK EXPERIENCE\nJunior Intern | WebStudio (2024 - 2024)\n- Assisted office tasks.\n\nEDUCATION\nHigh School Diploma\n\nTECHNICAL SKILLS\nJavaScript, TypeScript, React, Node.js, SQL, Python, Java, C++, Rust, Go, Kubernetes, AWS, Azure, GCP, PyTorch, TensorFlow, React, Angular, Vue, Spark, Hadoop, Docker, GraphQL, Solidity, Swift"
+  },
+  {
+    "id": "resume_028",
+    "name": "Jamie Kumar",
+    "persona_type": "unrelated_domain",
+    "role_family": "Full-Stack Development",
+    "target_jd_id": "jd_028",
+    "years_experience": 5,
+    "degree": "Bachelor of Science in Accounting",
+    "skills": [
+      "QuickBooks",
+      "Excel",
+      "Tax Preparation",
+      "Financial Auditing",
+      "Bookkeeping",
+      "Payroll"
+    ],
+    "text": "Jamie Kumar\n\nSUMMARY\nCertified Accountant with 5 years managing financial ledgers, auditing, and corporate taxes.\n\nWORK EXPERIENCE\nSenior Accountant | Ledger & Co (2019 - Present)\n- Reconciled monthly financial statements and tax filings.\n\nEDUCATION\nBachelor of Science in Accounting\n\nTECHNICAL SKILLS\nQuickBooks, Excel, Tax Preparation, Financial Auditing, Bookkeeping, Payroll"
+  },
+  {
+    "id": "resume_029",
+    "name": "Jamie Chen",
+    "persona_type": "senior_qualified",
+    "role_family": "Full-Stack Development",
+    "target_jd_id": "jd_029",
+    "years_experience": 5,
+    "degree": "Master of Science in Computer Science",
+    "skills": [
+      "JavaScript",
+      "React",
+      "Node.js",
+      "HTML",
+      "CSS",
+      "MongoDB",
+      "Git"
+    ],
+    "text": "Jamie Chen\n\nSUMMARY\nSenior Junior Full-Stack Developer with 5 years of demonstrated experience in JavaScript, React, Node.js.\n\nWORK EXPERIENCE\nLead Engineer | TechCorp (2018 - Present)\n- Led architecture and deployment of services using JavaScript, React, Node.js, HTML.\n- Reduced latency by 45% through query optimization.\n\nEDUCATION\nMaster of Science in Computer Science\n\nTECHNICAL SKILLS\nJavaScript, React, Node.js, HTML, CSS, MongoDB, Git"
+  },
+  {
+    "id": "resume_030",
+    "name": "Jordan Williams",
+    "persona_type": "mid_qualified",
+    "role_family": "Full-Stack Development",
+    "target_jd_id": "jd_030",
+    "years_experience": 3,
+    "degree": "Bachelor of Science in Computer Science",
+    "skills": [
+      "MongoDB",
+      "Express.js",
+      "React",
+      "Node.js",
+      "TypeScript"
+    ],
+    "text": "Jordan Williams\n\nSUMMARY\nMEAN/MERN Stack Developer with 3 years of engineering experience focusing on MongoDB, Express.js, React.\n\nWORK EXPERIENCE\nSoftware Engineer | InnoSoft (2020 - Present)\n- Implemented backend pipelines using MongoDB, Express.js, React.\n- Wrote unit tests and automated CI/CD deployments.\n\nEDUCATION\nBachelor of Science in Computer Science\n\nTECHNICAL SKILLS\nMongoDB, Express.js, React, Node.js, TypeScript"
+  },
+  {
+    "id": "resume_031",
+    "name": "Devon Martinez",
+    "persona_type": "junior_entry",
+    "role_family": "Full-Stack Development",
+    "target_jd_id": "jd_031",
+    "years_experience": 1,
+    "degree": "Bachelor of Science in Information Technology",
+    "skills": [
+      "Python",
+      "Vue.js",
+      "Git",
+      "Linux"
+    ],
+    "text": "Devon Martinez\n\nSUMMARY\nJunior developer passionate about building reliable software using Python, Vue.js, Git, Linux.\n\nWORK EXPERIENCE\nAssociate Developer | StartUpX (2023 - Present)\n- Built basic endpoints using Python, Vue.js.\n\nEDUCATION\nBachelor of Science in Information Technology\n\nTECHNICAL SKILLS\nPython, Vue.js, Git, Linux"
+  },
+  {
+    "id": "resume_032",
+    "name": "Jordan Miller",
+    "persona_type": "missing_experience",
+    "role_family": "Full-Stack Development",
+    "target_jd_id": "jd_032",
+    "years_experience": 1,
+    "degree": "Bachelor of Science in Software Engineering",
+    "skills": [
+      "Java",
+      "Spring Boot",
+      "Angular"
+    ],
+    "text": "Jordan Miller\n\nSUMMARY\nJunior technologist with 1 years experience in Java, Spring Boot, Angular.\n\nWORK EXPERIENCE\nIntern Developer | MicroGlobal (2024 - Present)\n- Assisted in coding features with Java, Spring Boot, Angular.\n\nEDUCATION\nBachelor of Science in Software Engineering\n\nTECHNICAL SKILLS\nJava, Spring Boot, Angular"
+  },
+  {
+    "id": "resume_033",
+    "name": "Morgan Kumar",
+    "persona_type": "missing_degree",
+    "role_family": "QA & Test Engineering",
+    "target_jd_id": "jd_033",
+    "years_experience": 5,
+    "degree": "Bachelor of Arts in Philosophy",
+    "skills": [
+      "Selenium",
+      "Python",
+      "pytest",
+      "Test Automation"
+    ],
+    "text": "Morgan Kumar\n\nSUMMARY\nSelf-taught developer with 5 years of real-world experience building software in Selenium, Python, pytest, Test Automation.\n\nWORK EXPERIENCE\nSoftware Developer | CodeCraft (2020 - Present)\n- Developed commercial applications with Selenium, Python, pytest, Test Automation.\n\nEDUCATION\nBachelor of Arts in Philosophy\n\nTECHNICAL SKILLS\nSelenium, Python, pytest, Test Automation"
+  },
+  {
+    "id": "resume_034",
+    "name": "Devon Smith",
+    "persona_type": "keyword_stuffed",
+    "role_family": "QA & Test Engineering",
+    "target_jd_id": "jd_034",
+    "years_experience": 1,
+    "degree": "High School Diploma",
+    "skills": [
+      "Java",
+      "Selenium",
+      "TestNG",
+      "CI/CD",
+      "Git",
+      "Python",
+      "Java",
+      "C++",
+      "Rust",
+      "Go",
+      "Kubernetes",
+      "AWS",
+      "Azure",
+      "GCP",
+      "PyTorch",
+      "TensorFlow",
+      "React",
+      "Angular",
+      "Vue",
+      "Spark",
+      "Hadoop",
+      "Docker",
+      "GraphQL",
+      "Solidity",
+      "Swift"
+    ],
+    "text": "Devon Smith\n\nSUMMARY\nEnthusiastic programmer familiar with all modern technologies and paradigms.\n\nWORK EXPERIENCE\nJunior Intern | WebStudio (2024 - 2024)\n- Assisted office tasks.\n\nEDUCATION\nHigh School Diploma\n\nTECHNICAL SKILLS\nJava, Selenium, TestNG, CI/CD, Git, Python, Java, C++, Rust, Go, Kubernetes, AWS, Azure, GCP, PyTorch, TensorFlow, React, Angular, Vue, Spark, Hadoop, Docker, GraphQL, Solidity, Swift"
+  },
+  {
+    "id": "resume_035",
+    "name": "Alex Patel",
+    "persona_type": "unrelated_domain",
+    "role_family": "QA & Test Engineering",
+    "target_jd_id": "jd_035",
+    "years_experience": 5,
+    "degree": "Bachelor of Science in Accounting",
+    "skills": [
+      "QuickBooks",
+      "Excel",
+      "Tax Preparation",
+      "Financial Auditing",
+      "Bookkeeping",
+      "Payroll"
+    ],
+    "text": "Alex Patel\n\nSUMMARY\nCertified Accountant with 5 years managing financial ledgers, auditing, and corporate taxes.\n\nWORK EXPERIENCE\nSenior Accountant | Ledger & Co (2019 - Present)\n- Reconciled monthly financial statements and tax filings.\n\nEDUCATION\nBachelor of Science in Accounting\n\nTECHNICAL SKILLS\nQuickBooks, Excel, Tax Preparation, Financial Auditing, Bookkeeping, Payroll"
+  },
+  {
+    "id": "resume_036",
+    "name": "Jamie Patel",
+    "persona_type": "senior_qualified",
+    "role_family": "QA & Test Engineering",
+    "target_jd_id": "jd_036",
+    "years_experience": 4,
+    "degree": "Master of Science in Computer Science",
+    "skills": [
+      "Manual Testing",
+      "Test Cases",
+      "Bug Tracking",
+      "Jira",
+      "SQL",
+      "Selenium",
+      "Git"
+    ],
+    "text": "Jamie Patel\n\nSUMMARY\nSenior Junior QA Tester with 4 years of demonstrated experience in Manual Testing, Test Cases, Bug Tracking.\n\nWORK EXPERIENCE\nLead Engineer | TechCorp (2018 - Present)\n- Led architecture and deployment of services using Manual Testing, Test Cases, Bug Tracking, Jira.\n- Reduced latency by 45% through query optimization.\n\nEDUCATION\nMaster of Science in Computer Science\n\nTECHNICAL SKILLS\nManual Testing, Test Cases, Bug Tracking, Jira, SQL, Selenium, Git"
+  },
+  {
+    "id": "resume_037",
+    "name": "Riley Garcia",
+    "persona_type": "mid_qualified",
+    "role_family": "QA & Test Engineering",
+    "target_jd_id": "jd_037",
+    "years_experience": 4,
+    "degree": "Bachelor of Science in Computer Science",
+    "skills": [
+      "Python",
+      "Postman",
+      "REST",
+      "pytest",
+      "Git"
+    ],
+    "text": "Riley Garcia\n\nSUMMARY\nAPI Test Automation Engineer with 4 years of engineering experience focusing on Python, Postman, REST.\n\nWORK EXPERIENCE\nSoftware Engineer | InnoSoft (2020 - Present)\n- Implemented backend pipelines using Python, Postman, REST.\n- Wrote unit tests and automated CI/CD deployments.\n\nEDUCATION\nBachelor of Science in Computer Science\n\nTECHNICAL SKILLS\nPython, Postman, REST, pytest, Git"
+  },
+  {
+    "id": "resume_038",
+    "name": "Sam Garcia",
+    "persona_type": "junior_entry",
+    "role_family": "QA & Test Engineering",
+    "target_jd_id": "jd_038",
+    "years_experience": 1,
+    "degree": "Bachelor of Science in Information Technology",
+    "skills": [
+      "Appium",
+      "Mobile Testing",
+      "Git",
+      "Linux"
+    ],
+    "text": "Sam Garcia\n\nSUMMARY\nJunior developer passionate about building reliable software using Appium, Mobile Testing, Git, Linux.\n\nWORK EXPERIENCE\nAssociate Developer | StartUpX (2023 - Present)\n- Built basic endpoints using Appium, Mobile Testing.\n\nEDUCATION\nBachelor of Science in Information Technology\n\nTECHNICAL SKILLS\nAppium, Mobile Testing, Git, Linux"
+  },
+  {
+    "id": "resume_039",
+    "name": "Casey Kumar",
+    "persona_type": "missing_experience",
+    "role_family": "Cybersecurity",
+    "target_jd_id": "jd_039",
+    "years_experience": 1,
+    "degree": "Bachelor of Science in Software Engineering",
+    "skills": [
+      "AppSec",
+      "OWASP",
+      "Vulnerability Assessment"
+    ],
+    "text": "Casey Kumar\n\nSUMMARY\nJunior technologist with 1 years experience in AppSec, OWASP, Vulnerability Assessment.\n\nWORK EXPERIENCE\nIntern Developer | MicroGlobal (2024 - Present)\n- Assisted in coding features with AppSec, OWASP, Vulnerability Assessment.\n\nEDUCATION\nBachelor of Science in Software Engineering\n\nTECHNICAL SKILLS\nAppSec, OWASP, Vulnerability Assessment"
+  },
+  {
+    "id": "resume_040",
+    "name": "Alex Garcia",
+    "persona_type": "missing_degree",
+    "role_family": "Cybersecurity",
+    "target_jd_id": "jd_040",
+    "years_experience": 3,
+    "degree": "Bachelor of Arts in Philosophy",
+    "skills": [
+      "SIEM",
+      "Incident Response",
+      "Network Security",
+      "Linux"
+    ],
+    "text": "Alex Garcia\n\nSUMMARY\nSelf-taught developer with 3 years of real-world experience building software in SIEM, Incident Response, Network Security, Linux.\n\nWORK EXPERIENCE\nSoftware Developer | CodeCraft (2020 - Present)\n- Developed commercial applications with SIEM, Incident Response, Network Security, Linux.\n\nEDUCATION\nBachelor of Arts in Philosophy\n\nTECHNICAL SKILLS\nSIEM, Incident Response, Network Security, Linux"
+  },
+  {
+    "id": "resume_041",
+    "name": "Alex Chen",
+    "persona_type": "keyword_stuffed",
+    "role_family": "Cybersecurity",
+    "target_jd_id": "jd_041",
+    "years_experience": 1,
+    "degree": "High School Diploma",
+    "skills": [
+      "Penetration Testing",
+      "Burp Suite",
+      "Ethical Hacking",
+      "Linux",
+      "Networking",
+      "Python",
+      "Java",
+      "C++",
+      "Rust",
+      "Go",
+      "Kubernetes",
+      "AWS",
+      "Azure",
+      "GCP",
+      "PyTorch",
+      "TensorFlow",
+      "React",
+      "Angular",
+      "Vue",
+      "Spark",
+      "Hadoop",
+      "Docker",
+      "GraphQL",
+      "Solidity",
+      "Swift"
+    ],
+    "text": "Alex Chen\n\nSUMMARY\nEnthusiastic programmer familiar with all modern technologies and paradigms.\n\nWORK EXPERIENCE\nJunior Intern | WebStudio (2024 - 2024)\n- Assisted office tasks.\n\nEDUCATION\nHigh School Diploma\n\nTECHNICAL SKILLS\nPenetration Testing, Burp Suite, Ethical Hacking, Linux, Networking, Python, Java, C++, Rust, Go, Kubernetes, AWS, Azure, GCP, PyTorch, TensorFlow, React, Angular, Vue, Spark, Hadoop, Docker, GraphQL, Solidity, Swift"
+  },
+  {
+    "id": "resume_042",
+    "name": "Casey Kumar",
+    "persona_type": "unrelated_domain",
+    "role_family": "Cybersecurity",
+    "target_jd_id": "jd_042",
+    "years_experience": 5,
+    "degree": "Bachelor of Science in Accounting",
+    "skills": [
+      "QuickBooks",
+      "Excel",
+      "Tax Preparation",
+      "Financial Auditing",
+      "Bookkeeping",
+      "Payroll"
+    ],
+    "text": "Casey Kumar\n\nSUMMARY\nCertified Accountant with 5 years managing financial ledgers, auditing, and corporate taxes.\n\nWORK EXPERIENCE\nSenior Accountant | Ledger & Co (2019 - Present)\n- Reconciled monthly financial statements and tax filings.\n\nEDUCATION\nBachelor of Science in Accounting\n\nTECHNICAL SKILLS\nQuickBooks, Excel, Tax Preparation, Financial Auditing, Bookkeeping, Payroll"
+  },
+  {
+    "id": "resume_043",
+    "name": "Jamie Patel",
+    "persona_type": "senior_qualified",
+    "role_family": "Cybersecurity",
+    "target_jd_id": "jd_043",
+    "years_experience": 7,
+    "degree": "Master of Science in Computer Science",
+    "skills": [
+      "AWS",
+      "Cloud Security",
+      "IAM",
+      "Linux",
+      "Python",
+      "Terraform",
+      "Docker"
+    ],
+    "text": "Jamie Patel\n\nSUMMARY\nSenior Cloud Security Analyst with 7 years of demonstrated experience in AWS, Cloud Security, IAM.\n\nWORK EXPERIENCE\nLead Engineer | TechCorp (2018 - Present)\n- Led architecture and deployment of services using AWS, Cloud Security, IAM, Linux.\n- Reduced latency by 45% through query optimization.\n\nEDUCATION\nMaster of Science in Computer Science\n\nTECHNICAL SKILLS\nAWS, Cloud Security, IAM, Linux, Python, Terraform, Docker"
+  },
+  {
+    "id": "resume_044",
+    "name": "Avery Chen",
+    "persona_type": "mid_qualified",
+    "role_family": "Cybersecurity",
+    "target_jd_id": "jd_044",
+    "years_experience": 7,
+    "degree": "Bachelor of Science in Computer Science",
+    "skills": [
+      "Incident Response",
+      "SIEM",
+      "Threat Intelligence",
+      "Leadership",
+      "Python"
+    ],
+    "text": "Avery Chen\n\nSUMMARY\nSecurity Operations Lead with 7 years of engineering experience focusing on Incident Response, SIEM, Threat Intelligence.\n\nWORK EXPERIENCE\nSoftware Engineer | InnoSoft (2020 - Present)\n- Implemented backend pipelines using Incident Response, SIEM, Threat Intelligence.\n- Wrote unit tests and automated CI/CD deployments.\n\nEDUCATION\nBachelor of Science in Computer Science\n\nTECHNICAL SKILLS\nIncident Response, SIEM, Threat Intelligence, Leadership, Python"
+  },
+  {
+    "id": "resume_045",
+    "name": "Devon Garcia",
+    "persona_type": "junior_entry",
+    "role_family": "Data Engineering",
+    "target_jd_id": "jd_045",
+    "years_experience": 1,
+    "degree": "Bachelor of Science in Information Technology",
+    "skills": [
+      "Python",
+      "SQL",
+      "Git",
+      "Linux"
+    ],
+    "text": "Devon Garcia\n\nSUMMARY\nJunior developer passionate about building reliable software using Python, SQL, Git, Linux.\n\nWORK EXPERIENCE\nAssociate Developer | StartUpX (2023 - Present)\n- Built basic endpoints using Python, SQL.\n\nEDUCATION\nBachelor of Science in Information Technology\n\nTECHNICAL SKILLS\nPython, SQL, Git, Linux"
+  },
+  {
+    "id": "resume_046",
+    "name": "Alex Brown",
+    "persona_type": "missing_experience",
+    "role_family": "Data Engineering",
+    "target_jd_id": "jd_046",
+    "years_experience": 1,
+    "degree": "Bachelor of Science in Software Engineering",
+    "skills": [
+      "Scala",
+      "Apache Spark",
+      "Hadoop"
+    ],
+    "text": "Alex Brown\n\nSUMMARY\nJunior technologist with 1 years experience in Scala, Apache Spark, Hadoop.\n\nWORK EXPERIENCE\nIntern Developer | MicroGlobal (2024 - Present)\n- Assisted in coding features with Scala, Apache Spark, Hadoop.\n\nEDUCATION\nBachelor of Science in Software Engineering\n\nTECHNICAL SKILLS\nScala, Apache Spark, Hadoop"
+  },
+  {
+    "id": "resume_047",
+    "name": "Alex Williams",
+    "persona_type": "missing_degree",
+    "role_family": "Data Engineering",
+    "target_jd_id": "jd_047",
+    "years_experience": 4,
+    "degree": "Bachelor of Arts in Philosophy",
+    "skills": [
+      "Python",
+      "SQL",
+      "Airflow",
+      "ETL"
+    ],
+    "text": "Alex Williams\n\nSUMMARY\nSelf-taught developer with 4 years of real-world experience building software in Python, SQL, Airflow, ETL.\n\nWORK EXPERIENCE\nSoftware Developer | CodeCraft (2020 - Present)\n- Developed commercial applications with Python, SQL, Airflow, ETL.\n\nEDUCATION\nBachelor of Arts in Philosophy\n\nTECHNICAL SKILLS\nPython, SQL, Airflow, ETL"
+  },
+  {
+    "id": "resume_048",
+    "name": "Jordan Lee",
+    "persona_type": "keyword_stuffed",
+    "role_family": "Data Engineering",
+    "target_jd_id": "jd_048",
+    "years_experience": 1,
+    "degree": "High School Diploma",
+    "skills": [
+      "SQL",
+      "dbt",
+      "Snowflake",
+      "Data Modeling",
+      "Git",
+      "Python",
+      "Java",
+      "C++",
+      "Rust",
+      "Go",
+      "Kubernetes",
+      "AWS",
+      "Azure",
+      "GCP",
+      "PyTorch",
+      "TensorFlow",
+      "React",
+      "Angular",
+      "Vue",
+      "Spark",
+      "Hadoop",
+      "Docker",
+      "GraphQL",
+      "Solidity",
+      "Swift"
+    ],
+    "text": "Jordan Lee\n\nSUMMARY\nEnthusiastic programmer familiar with all modern technologies and paradigms.\n\nWORK EXPERIENCE\nJunior Intern | WebStudio (2024 - 2024)\n- Assisted office tasks.\n\nEDUCATION\nHigh School Diploma\n\nTECHNICAL SKILLS\nSQL, dbt, Snowflake, Data Modeling, Git, Python, Java, C++, Rust, Go, Kubernetes, AWS, Azure, GCP, PyTorch, TensorFlow, React, Angular, Vue, Spark, Hadoop, Docker, GraphQL, Solidity, Swift"
+  },
+  {
+    "id": "resume_049",
+    "name": "Chris Williams",
+    "persona_type": "unrelated_domain",
+    "role_family": "Data Engineering",
+    "target_jd_id": "jd_049",
+    "years_experience": 5,
+    "degree": "Bachelor of Science in Accounting",
+    "skills": [
+      "QuickBooks",
+      "Excel",
+      "Tax Preparation",
+      "Financial Auditing",
+      "Bookkeeping",
+      "Payroll"
+    ],
+    "text": "Chris Williams\n\nSUMMARY\nCertified Accountant with 5 years managing financial ledgers, auditing, and corporate taxes.\n\nWORK EXPERIENCE\nSenior Accountant | Ledger & Co (2019 - Present)\n- Reconciled monthly financial statements and tax filings.\n\nEDUCATION\nBachelor of Science in Accounting\n\nTECHNICAL SKILLS\nQuickBooks, Excel, Tax Preparation, Financial Auditing, Bookkeeping, Payroll"
+  },
+  {
+    "id": "resume_050",
+    "name": "Riley Patel",
+    "persona_type": "senior_qualified",
+    "role_family": "Data Engineering",
+    "target_jd_id": "jd_050",
+    "years_experience": 9,
+    "degree": "Master of Science in Computer Science",
+    "skills": [
+      "AWS",
+      "Snowflake",
+      "Apache Spark",
+      "Airflow",
+      "Data Architecture",
+      "Terraform",
+      "Python"
+    ],
+    "text": "Riley Patel\n\nSUMMARY\nSenior Cloud Data Architect with 9 years of demonstrated experience in AWS, Snowflake, Apache Spark.\n\nWORK EXPERIENCE\nLead Engineer | TechCorp (2018 - Present)\n- Led architecture and deployment of services using AWS, Snowflake, Apache Spark, Airflow.\n- Reduced latency by 45% through query optimization.\n\nEDUCATION\nMaster of Science in Computer Science\n\nTECHNICAL SKILLS\nAWS, Snowflake, Apache Spark, Airflow, Data Architecture, Terraform, Python"
+  },
+  {
+    "id": "resume_051",
+    "name": "Casey Kumar",
+    "persona_type": "mid_qualified",
+    "role_family": "Backend Engineering",
+    "target_jd_id": "jd_001",
+    "years_experience": 6,
+    "degree": "Bachelor of Science in Computer Science",
+    "skills": [
+      "Python",
+      "FastAPI",
+      "PostgreSQL",
+      "Docker",
+      "Redis"
+    ],
+    "text": "Casey Kumar\n\nSUMMARY\nSenior Python Architect with 6 years of engineering experience focusing on Python, FastAPI, PostgreSQL.\n\nWORK EXPERIENCE\nSoftware Engineer | InnoSoft (2020 - Present)\n- Implemented backend pipelines using Python, FastAPI, PostgreSQL.\n- Wrote unit tests and automated CI/CD deployments.\n\nEDUCATION\nBachelor of Science in Computer Science\n\nTECHNICAL SKILLS\nPython, FastAPI, PostgreSQL, Docker, Redis"
+  },
+  {
+    "id": "resume_052",
+    "name": "Pat Martinez",
+    "persona_type": "junior_entry",
+    "role_family": "Backend Engineering",
+    "target_jd_id": "jd_002",
+    "years_experience": 1,
+    "degree": "Bachelor of Science in Information Technology",
+    "skills": [
+      "Python",
+      "Django",
+      "Git",
+      "Linux"
+    ],
+    "text": "Pat Martinez\n\nSUMMARY\nJunior developer passionate about building reliable software using Python, Django, Git, Linux.\n\nWORK EXPERIENCE\nAssociate Developer | StartUpX (2023 - Present)\n- Built basic endpoints using Python, Django.\n\nEDUCATION\nBachelor of Science in Information Technology\n\nTECHNICAL SKILLS\nPython, Django, Git, Linux"
+  },
+  {
+    "id": "resume_053",
+    "name": "Avery Davis",
+    "persona_type": "missing_experience",
+    "role_family": "Backend Engineering",
+    "target_jd_id": "jd_003",
+    "years_experience": 3,
+    "degree": "Bachelor of Science in Software Engineering",
+    "skills": [
+      "Go",
+      "Kubernetes",
+      "Distributed Systems"
+    ],
+    "text": "Avery Davis\n\nSUMMARY\nJunior technologist with 3 years experience in Go, Kubernetes, Distributed Systems.\n\nWORK EXPERIENCE\nIntern Developer | MicroGlobal (2024 - Present)\n- Assisted in coding features with Go, Kubernetes, Distributed Systems.\n\nEDUCATION\nBachelor of Science in Software Engineering\n\nTECHNICAL SKILLS\nGo, Kubernetes, Distributed Systems"
+  },
+  {
+    "id": "resume_054",
+    "name": "Sam Williams",
+    "persona_type": "missing_degree",
+    "role_family": "Backend Engineering",
+    "target_jd_id": "jd_004",
+    "years_experience": 2,
+    "degree": "Bachelor of Arts in Philosophy",
+    "skills": [
+      "Python",
+      "SQL",
+      "Git",
+      "REST APIs"
+    ],
+    "text": "Sam Williams\n\nSUMMARY\nSelf-taught developer with 2 years of real-world experience building software in Python, SQL, Git, REST APIs.\n\nWORK EXPERIENCE\nSoftware Developer | CodeCraft (2020 - Present)\n- Developed commercial applications with Python, SQL, Git, REST APIs.\n\nEDUCATION\nBachelor of Arts in Philosophy\n\nTECHNICAL SKILLS\nPython, SQL, Git, REST APIs"
+  },
+  {
+    "id": "resume_055",
+    "name": "Riley Chen",
+    "persona_type": "keyword_stuffed",
+    "role_family": "Backend Engineering",
+    "target_jd_id": "jd_005",
+    "years_experience": 1,
+    "degree": "High School Diploma",
+    "skills": [
+      "Java",
+      "Spring Boot",
+      "MySQL",
+      "Hibernate",
+      "Microservices",
+      "Python",
+      "Java",
+      "C++",
+      "Rust",
+      "Go",
+      "Kubernetes",
+      "AWS",
+      "Azure",
+      "GCP",
+      "PyTorch",
+      "TensorFlow",
+      "React",
+      "Angular",
+      "Vue",
+      "Spark",
+      "Hadoop",
+      "Docker",
+      "GraphQL",
+      "Solidity",
+      "Swift"
+    ],
+    "text": "Riley Chen\n\nSUMMARY\nEnthusiastic programmer familiar with all modern technologies and paradigms.\n\nWORK EXPERIENCE\nJunior Intern | WebStudio (2024 - 2024)\n- Assisted office tasks.\n\nEDUCATION\nHigh School Diploma\n\nTECHNICAL SKILLS\nJava, Spring Boot, MySQL, Hibernate, Microservices, Python, Java, C++, Rust, Go, Kubernetes, AWS, Azure, GCP, PyTorch, TensorFlow, React, Angular, Vue, Spark, Hadoop, Docker, GraphQL, Solidity, Swift"
+  },
+  {
+    "id": "resume_056",
+    "name": "Riley Garcia",
+    "persona_type": "unrelated_domain",
+    "role_family": "Backend Engineering",
+    "target_jd_id": "jd_006",
+    "years_experience": 5,
+    "degree": "Bachelor of Science in Accounting",
+    "skills": [
+      "QuickBooks",
+      "Excel",
+      "Tax Preparation",
+      "Financial Auditing",
+      "Bookkeeping",
+      "Payroll"
+    ],
+    "text": "Riley Garcia\n\nSUMMARY\nCertified Accountant with 5 years managing financial ledgers, auditing, and corporate taxes.\n\nWORK EXPERIENCE\nSenior Accountant | Ledger & Co (2019 - Present)\n- Reconciled monthly financial statements and tax filings.\n\nEDUCATION\nBachelor of Science in Accounting\n\nTECHNICAL SKILLS\nQuickBooks, Excel, Tax Preparation, Financial Auditing, Bookkeeping, Payroll"
+  },
+  {
+    "id": "resume_057",
+    "name": "Devon Lee",
+    "persona_type": "senior_qualified",
+    "role_family": "Backend Engineering",
+    "target_jd_id": "jd_007",
+    "years_experience": 8,
+    "degree": "Master of Science in Computer Science",
+    "skills": [
+      "C++",
+      "Linux",
+      "Multithreading",
+      "Data Structures",
+      "Algorithms",
+      "Socket Programming",
+      "Git"
+    ],
+    "text": "Devon Lee\n\nSUMMARY\nSenior C++ Systems Programmer with 8 years of demonstrated experience in C++, Linux, Multithreading.\n\nWORK EXPERIENCE\nLead Engineer | TechCorp (2018 - Present)\n- Led architecture and deployment of services using C++, Linux, Multithreading, Data Structures.\n- Reduced latency by 45% through query optimization.\n\nEDUCATION\nMaster of Science in Computer Science\n\nTECHNICAL SKILLS\nC++, Linux, Multithreading, Data Structures, Algorithms, Socket Programming, Git"
+  },
+  {
+    "id": "resume_058",
+    "name": "Jamie Smith",
+    "persona_type": "mid_qualified",
+    "role_family": "Frontend Engineering",
+    "target_jd_id": "jd_008",
+    "years_experience": 6,
+    "degree": "Bachelor of Science in Computer Science",
+    "skills": [
+      "React",
+      "TypeScript",
+      "JavaScript",
+      "HTML5",
+      "Next.js"
+    ],
+    "text": "Jamie Smith\n\nSUMMARY\nSenior Frontend React Architect with 6 years of engineering experience focusing on React, TypeScript, JavaScript.\n\nWORK EXPERIENCE\nSoftware Engineer | InnoSoft (2020 - Present)\n- Implemented backend pipelines using React, TypeScript, JavaScript.\n- Wrote unit tests and automated CI/CD deployments.\n\nEDUCATION\nBachelor of Science in Computer Science\n\nTECHNICAL SKILLS\nReact, TypeScript, JavaScript, HTML5, Next.js"
+  },
+  {
+    "id": "resume_059",
+    "name": "Pat Davis",
+    "persona_type": "junior_entry",
+    "role_family": "Frontend Engineering",
+    "target_jd_id": "jd_009",
+    "years_experience": 1,
+    "degree": "Bachelor of Science in Information Technology",
+    "skills": [
+      "React",
+      "JavaScript",
+      "Git",
+      "Linux"
+    ],
+    "text": "Pat Davis\n\nSUMMARY\nJunior developer passionate about building reliable software using React, JavaScript, Git, Linux.\n\nWORK EXPERIENCE\nAssociate Developer | StartUpX (2023 - Present)\n- Built basic endpoints using React, JavaScript.\n\nEDUCATION\nBachelor of Science in Information Technology\n\nTECHNICAL SKILLS\nReact, JavaScript, Git, Linux"
+  },
+  {
+    "id": "resume_060",
+    "name": "Sam Williams",
+    "persona_type": "missing_experience",
+    "role_family": "Frontend Engineering",
+    "target_jd_id": "jd_010",
+    "years_experience": 0,
+    "degree": "Bachelor of Science in Software Engineering",
+    "skills": [
+      "Vue.js",
+      "JavaScript",
+      "HTML"
+    ],
+    "text": "Sam Williams\n\nSUMMARY\nJunior technologist with 0 years experience in Vue.js, JavaScript, HTML.\n\nWORK EXPERIENCE\nIntern Developer | MicroGlobal (2024 - Present)\n- Assisted in coding features with Vue.js, JavaScript, HTML.\n\nEDUCATION\nBachelor of Science in Software Engineering\n\nTECHNICAL SKILLS\nVue.js, JavaScript, HTML"
+  },
+  {
+    "id": "resume_061",
+    "name": "Sam Williams",
+    "persona_type": "missing_degree",
+    "role_family": "Frontend Engineering",
+    "target_jd_id": "jd_011",
+    "years_experience": 2,
+    "degree": "Bachelor of Arts in Philosophy",
+    "skills": [
+      "HTML",
+      "CSS",
+      "JavaScript",
+      "Git"
+    ],
+    "text": "Sam Williams\n\nSUMMARY\nSelf-taught developer with 2 years of real-world experience building software in HTML, CSS, JavaScript, Git.\n\nWORK EXPERIENCE\nSoftware Developer | CodeCraft (2020 - Present)\n- Developed commercial applications with HTML, CSS, JavaScript, Git.\n\nEDUCATION\nBachelor of Arts in Philosophy\n\nTECHNICAL SKILLS\nHTML, CSS, JavaScript, Git"
+  },
+  {
+    "id": "resume_062",
+    "name": "Devon Patel",
+    "persona_type": "keyword_stuffed",
+    "role_family": "Frontend Engineering",
+    "target_jd_id": "jd_012",
+    "years_experience": 1,
+    "degree": "High School Diploma",
+    "skills": [
+      "JavaScript",
+      "React",
+      "Web Performance",
+      "Webpack",
+      "CSS",
+      "Python",
+      "Java",
+      "C++",
+      "Rust",
+      "Go",
+      "Kubernetes",
+      "AWS",
+      "Azure",
+      "GCP",
+      "PyTorch",
+      "TensorFlow",
+      "React",
+      "Angular",
+      "Vue",
+      "Spark",
+      "Hadoop",
+      "Docker",
+      "GraphQL",
+      "Solidity",
+      "Swift"
+    ],
+    "text": "Devon Patel\n\nSUMMARY\nEnthusiastic programmer familiar with all modern technologies and paradigms.\n\nWORK EXPERIENCE\nJunior Intern | WebStudio (2024 - 2024)\n- Assisted office tasks.\n\nEDUCATION\nHigh School Diploma\n\nTECHNICAL SKILLS\nJavaScript, React, Web Performance, Webpack, CSS, Python, Java, C++, Rust, Go, Kubernetes, AWS, Azure, GCP, PyTorch, TensorFlow, React, Angular, Vue, Spark, Hadoop, Docker, GraphQL, Solidity, Swift"
+  },
+  {
+    "id": "resume_063",
+    "name": "Morgan Brown",
+    "persona_type": "unrelated_domain",
+    "role_family": "Frontend Engineering",
+    "target_jd_id": "jd_013",
+    "years_experience": 5,
+    "degree": "Bachelor of Science in Accounting",
+    "skills": [
+      "QuickBooks",
+      "Excel",
+      "Tax Preparation",
+      "Financial Auditing",
+      "Bookkeeping",
+      "Payroll"
+    ],
+    "text": "Morgan Brown\n\nSUMMARY\nCertified Accountant with 5 years managing financial ledgers, auditing, and corporate taxes.\n\nWORK EXPERIENCE\nSenior Accountant | Ledger & Co (2019 - Present)\n- Reconciled monthly financial statements and tax filings.\n\nEDUCATION\nBachelor of Science in Accounting\n\nTECHNICAL SKILLS\nQuickBooks, Excel, Tax Preparation, Financial Auditing, Bookkeeping, Payroll"
+  },
+  {
+    "id": "resume_064",
+    "name": "Jordan Lee",
+    "persona_type": "senior_qualified",
+    "role_family": "Frontend Engineering",
+    "target_jd_id": "jd_014",
+    "years_experience": 6,
+    "degree": "Master of Science in Computer Science",
+    "skills": [
+      "JavaScript",
+      "HTML5",
+      "CSS3",
+      "Figma",
+      "UI Design",
+      "React",
+      "Animation"
+    ],
+    "text": "Jordan Lee\n\nSUMMARY\nSenior UI/UX Frontend Developer with 6 years of demonstrated experience in JavaScript, HTML5, CSS3.\n\nWORK EXPERIENCE\nLead Engineer | TechCorp (2018 - Present)\n- Led architecture and deployment of services using JavaScript, HTML5, CSS3, Figma.\n- Reduced latency by 45% through query optimization.\n\nEDUCATION\nMaster of Science in Computer Science\n\nTECHNICAL SKILLS\nJavaScript, HTML5, CSS3, Figma, UI Design, React, Animation"
+  },
+  {
+    "id": "resume_065",
+    "name": "Jamie Williams",
+    "persona_type": "mid_qualified",
+    "role_family": "Machine Learning & AI",
+    "target_jd_id": "jd_015",
+    "years_experience": 5,
+    "degree": "Bachelor of Science in Computer Science",
+    "skills": [
+      "Python",
+      "PyTorch",
+      "scikit-learn",
+      "Machine Learning",
+      "MLOps"
+    ],
+    "text": "Jamie Williams\n\nSUMMARY\nSenior Machine Learning Engineer with 5 years of engineering experience focusing on Python, PyTorch, scikit-learn.\n\nWORK EXPERIENCE\nSoftware Engineer | InnoSoft (2020 - Present)\n- Implemented backend pipelines using Python, PyTorch, scikit-learn.\n- Wrote unit tests and automated CI/CD deployments.\n\nEDUCATION\nBachelor of Science in Computer Science\n\nTECHNICAL SKILLS\nPython, PyTorch, scikit-learn, Machine Learning, MLOps"
+  },
+  {
+    "id": "resume_066",
+    "name": "Jordan Williams",
+    "persona_type": "junior_entry",
+    "role_family": "Machine Learning & AI",
+    "target_jd_id": "jd_016",
+    "years_experience": 1,
+    "degree": "Bachelor of Science in Information Technology",
+    "skills": [
+      "Python",
+      "PyTorch",
+      "Git",
+      "Linux"
+    ],
+    "text": "Jordan Williams\n\nSUMMARY\nJunior developer passionate about building reliable software using Python, PyTorch, Git, Linux.\n\nWORK EXPERIENCE\nAssociate Developer | StartUpX (2023 - Present)\n- Built basic endpoints using Python, PyTorch.\n\nEDUCATION\nBachelor of Science in Information Technology\n\nTECHNICAL SKILLS\nPython, PyTorch, Git, Linux"
+  },
+  {
+    "id": "resume_067",
+    "name": "Taylor Kumar",
+    "persona_type": "missing_experience",
+    "role_family": "Machine Learning & AI",
+    "target_jd_id": "jd_017",
+    "years_experience": 0,
+    "degree": "Bachelor of Science in Software Engineering",
+    "skills": [
+      "Python",
+      "OpenCV",
+      "PyTorch"
+    ],
+    "text": "Taylor Kumar\n\nSUMMARY\nJunior technologist with 0 years experience in Python, OpenCV, PyTorch.\n\nWORK EXPERIENCE\nIntern Developer | MicroGlobal (2024 - Present)\n- Assisted in coding features with Python, OpenCV, PyTorch.\n\nEDUCATION\nBachelor of Science in Software Engineering\n\nTECHNICAL SKILLS\nPython, OpenCV, PyTorch"
+  },
+  {
+    "id": "resume_068",
+    "name": "Chris Johnson",
+    "persona_type": "missing_degree",
+    "role_family": "Machine Learning & AI",
+    "target_jd_id": "jd_018",
+    "years_experience": 4,
+    "degree": "Bachelor of Arts in Philosophy",
+    "skills": [
+      "Python",
+      "SQL",
+      "Pandas",
+      "scikit-learn"
+    ],
+    "text": "Chris Johnson\n\nSUMMARY\nSelf-taught developer with 4 years of real-world experience building software in Python, SQL, Pandas, scikit-learn.\n\nWORK EXPERIENCE\nSoftware Developer | CodeCraft (2020 - Present)\n- Developed commercial applications with Python, SQL, Pandas, scikit-learn.\n\nEDUCATION\nBachelor of Arts in Philosophy\n\nTECHNICAL SKILLS\nPython, SQL, Pandas, scikit-learn"
+  },
+  {
+    "id": "resume_069",
+    "name": "Sam Lee",
+    "persona_type": "keyword_stuffed",
+    "role_family": "Machine Learning & AI",
+    "target_jd_id": "jd_019",
+    "years_experience": 1,
+    "degree": "High School Diploma",
+    "skills": [
+      "Python",
+      "scikit-learn",
+      "Pandas",
+      "NumPy",
+      "Git",
+      "Python",
+      "Java",
+      "C++",
+      "Rust",
+      "Go",
+      "Kubernetes",
+      "AWS",
+      "Azure",
+      "GCP",
+      "PyTorch",
+      "TensorFlow",
+      "React",
+      "Angular",
+      "Vue",
+      "Spark",
+      "Hadoop",
+      "Docker",
+      "GraphQL",
+      "Solidity",
+      "Swift"
+    ],
+    "text": "Sam Lee\n\nSUMMARY\nEnthusiastic programmer familiar with all modern technologies and paradigms.\n\nWORK EXPERIENCE\nJunior Intern | WebStudio (2024 - 2024)\n- Assisted office tasks.\n\nEDUCATION\nHigh School Diploma\n\nTECHNICAL SKILLS\nPython, scikit-learn, Pandas, NumPy, Git, Python, Java, C++, Rust, Go, Kubernetes, AWS, Azure, GCP, PyTorch, TensorFlow, React, Angular, Vue, Spark, Hadoop, Docker, GraphQL, Solidity, Swift"
+  },
+  {
+    "id": "resume_070",
+    "name": "Morgan Smith",
+    "persona_type": "unrelated_domain",
+    "role_family": "Machine Learning & AI",
+    "target_jd_id": "jd_020",
+    "years_experience": 5,
+    "degree": "Bachelor of Science in Accounting",
+    "skills": [
+      "QuickBooks",
+      "Excel",
+      "Tax Preparation",
+      "Financial Auditing",
+      "Bookkeeping",
+      "Payroll"
+    ],
+    "text": "Morgan Smith\n\nSUMMARY\nCertified Accountant with 5 years managing financial ledgers, auditing, and corporate taxes.\n\nWORK EXPERIENCE\nSenior Accountant | Ledger & Co (2019 - Present)\n- Reconciled monthly financial statements and tax filings.\n\nEDUCATION\nBachelor of Science in Accounting\n\nTECHNICAL SKILLS\nQuickBooks, Excel, Tax Preparation, Financial Auditing, Bookkeeping, Payroll"
+  },
+  {
+    "id": "resume_071",
+    "name": "Morgan Lee",
+    "persona_type": "senior_qualified",
+    "role_family": "DevOps & Cloud Infrastructure",
+    "target_jd_id": "jd_021",
+    "years_experience": 9,
+    "degree": "Master of Science in Computer Science",
+    "skills": [
+      "Kubernetes",
+      "Docker",
+      "Terraform",
+      "AWS",
+      "Linux",
+      "Python",
+      "Prometheus",
+      "Grafana"
+    ],
+    "text": "Morgan Lee\n\nSUMMARY\nSenior Senior Site Reliability Engineer (SRE) with 9 years of demonstrated experience in Kubernetes, Docker, Terraform.\n\nWORK EXPERIENCE\nLead Engineer | TechCorp (2018 - Present)\n- Led architecture and deployment of services using Kubernetes, Docker, Terraform, AWS.\n- Reduced latency by 45% through query optimization.\n\nEDUCATION\nMaster of Science in Computer Science\n\nTECHNICAL SKILLS\nKubernetes, Docker, Terraform, AWS, Linux, Python, Prometheus, Grafana"
+  },
+  {
+    "id": "resume_072",
+    "name": "Jordan Miller",
+    "persona_type": "mid_qualified",
+    "role_family": "DevOps & Cloud Infrastructure",
+    "target_jd_id": "jd_022",
+    "years_experience": 4,
+    "degree": "Bachelor of Science in Computer Science",
+    "skills": [
+      "Docker",
+      "Kubernetes",
+      "CI/CD",
+      "Linux",
+      "Terraform"
+    ],
+    "text": "Jordan Miller\n\nSUMMARY\nDevOps Automation Engineer with 4 years of engineering experience focusing on Docker, Kubernetes, CI/CD.\n\nWORK EXPERIENCE\nSoftware Engineer | InnoSoft (2020 - Present)\n- Implemented backend pipelines using Docker, Kubernetes, CI/CD.\n- Wrote unit tests and automated CI/CD deployments.\n\nEDUCATION\nBachelor of Science in Computer Science\n\nTECHNICAL SKILLS\nDocker, Kubernetes, CI/CD, Linux, Terraform"
+  },
+  {
+    "id": "resume_073",
+    "name": "Chris Patel",
+    "persona_type": "junior_entry",
+    "role_family": "DevOps & Cloud Infrastructure",
+    "target_jd_id": "jd_023",
+    "years_experience": 1,
+    "degree": "Bachelor of Science in Information Technology",
+    "skills": [
+      "AWS",
+      "Cloud Security",
+      "Git",
+      "Linux"
+    ],
+    "text": "Chris Patel\n\nSUMMARY\nJunior developer passionate about building reliable software using AWS, Cloud Security, Git, Linux.\n\nWORK EXPERIENCE\nAssociate Developer | StartUpX (2023 - Present)\n- Built basic endpoints using AWS, Cloud Security.\n\nEDUCATION\nBachelor of Science in Information Technology\n\nTECHNICAL SKILLS\nAWS, Cloud Security, Git, Linux"
+  },
+  {
+    "id": "resume_074",
+    "name": "Casey Kumar",
+    "persona_type": "missing_experience",
+    "role_family": "DevOps & Cloud Infrastructure",
+    "target_jd_id": "jd_024",
+    "years_experience": 0,
+    "degree": "Bachelor of Science in Software Engineering",
+    "skills": [
+      "Linux",
+      "Git",
+      "Bash"
+    ],
+    "text": "Casey Kumar\n\nSUMMARY\nJunior technologist with 0 years experience in Linux, Git, Bash.\n\nWORK EXPERIENCE\nIntern Developer | MicroGlobal (2024 - Present)\n- Assisted in coding features with Linux, Git, Bash.\n\nEDUCATION\nBachelor of Science in Software Engineering\n\nTECHNICAL SKILLS\nLinux, Git, Bash"
+  },
+  {
+    "id": "resume_075",
+    "name": "Avery Davis",
+    "persona_type": "missing_degree",
+    "role_family": "DevOps & Cloud Infrastructure",
+    "target_jd_id": "jd_025",
+    "years_experience": 5,
+    "degree": "Bachelor of Arts in Philosophy",
+    "skills": [
+      "Kubernetes",
+      "Go",
+      "Terraform",
+      "Docker"
+    ],
+    "text": "Avery Davis\n\nSUMMARY\nSelf-taught developer with 5 years of real-world experience building software in Kubernetes, Go, Terraform, Docker.\n\nWORK EXPERIENCE\nSoftware Developer | CodeCraft (2020 - Present)\n- Developed commercial applications with Kubernetes, Go, Terraform, Docker.\n\nEDUCATION\nBachelor of Arts in Philosophy\n\nTECHNICAL SKILLS\nKubernetes, Go, Terraform, Docker"
+  },
+  {
+    "id": "resume_076",
+    "name": "Jordan Johnson",
+    "persona_type": "keyword_stuffed",
+    "role_family": "DevOps & Cloud Infrastructure",
+    "target_jd_id": "jd_026",
+    "years_experience": 1,
+    "degree": "High School Diploma",
+    "skills": [
+      "Azure",
+      "Terraform",
+      "PowerShell",
+      "Docker",
+      "Networking",
+      "Python",
+      "Java",
+      "C++",
+      "Rust",
+      "Go",
+      "Kubernetes",
+      "AWS",
+      "Azure",
+      "GCP",
+      "PyTorch",
+      "TensorFlow",
+      "React",
+      "Angular",
+      "Vue",
+      "Spark",
+      "Hadoop",
+      "Docker",
+      "GraphQL",
+      "Solidity",
+      "Swift"
+    ],
+    "text": "Jordan Johnson\n\nSUMMARY\nEnthusiastic programmer familiar with all modern technologies and paradigms.\n\nWORK EXPERIENCE\nJunior Intern | WebStudio (2024 - 2024)\n- Assisted office tasks.\n\nEDUCATION\nHigh School Diploma\n\nTECHNICAL SKILLS\nAzure, Terraform, PowerShell, Docker, Networking, Python, Java, C++, Rust, Go, Kubernetes, AWS, Azure, GCP, PyTorch, TensorFlow, React, Angular, Vue, Spark, Hadoop, Docker, GraphQL, Solidity, Swift"
+  },
+  {
+    "id": "resume_077",
+    "name": "Morgan Martinez",
+    "persona_type": "unrelated_domain",
+    "role_family": "Full-Stack Development",
+    "target_jd_id": "jd_027",
+    "years_experience": 5,
+    "degree": "Bachelor of Science in Accounting",
+    "skills": [
+      "QuickBooks",
+      "Excel",
+      "Tax Preparation",
+      "Financial Auditing",
+      "Bookkeeping",
+      "Payroll"
+    ],
+    "text": "Morgan Martinez\n\nSUMMARY\nCertified Accountant with 5 years managing financial ledgers, auditing, and corporate taxes.\n\nWORK EXPERIENCE\nSenior Accountant | Ledger & Co (2019 - Present)\n- Reconciled monthly financial statements and tax filings.\n\nEDUCATION\nBachelor of Science in Accounting\n\nTECHNICAL SKILLS\nQuickBooks, Excel, Tax Preparation, Financial Auditing, Bookkeeping, Payroll"
+  },
+  {
+    "id": "resume_078",
+    "name": "Morgan Johnson",
+    "persona_type": "senior_qualified",
+    "role_family": "Full-Stack Development",
+    "target_jd_id": "jd_028",
+    "years_experience": 7,
+    "degree": "Master of Science in Computer Science",
+    "skills": [
+      "Python",
+      "React",
+      "FastAPI",
+      "TypeScript",
+      "PostgreSQL",
+      "Docker",
+      "Redis",
+      "AWS"
+    ],
+    "text": "Morgan Johnson\n\nSUMMARY\nSenior Senior Full-Stack Developer with 7 years of demonstrated experience in Python, React, FastAPI.\n\nWORK EXPERIENCE\nLead Engineer | TechCorp (2018 - Present)\n- Led architecture and deployment of services using Python, React, FastAPI, TypeScript.\n- Reduced latency by 45% through query optimization.\n\nEDUCATION\nMaster of Science in Computer Science\n\nTECHNICAL SKILLS\nPython, React, FastAPI, TypeScript, PostgreSQL, Docker, Redis, AWS"
+  },
+  {
+    "id": "resume_079",
+    "name": "Morgan Martinez",
+    "persona_type": "mid_qualified",
+    "role_family": "Full-Stack Development",
+    "target_jd_id": "jd_029",
+    "years_experience": 2,
+    "degree": "Bachelor of Science in Computer Science",
+    "skills": [
+      "JavaScript",
+      "React",
+      "Node.js",
+      "HTML",
+      "MongoDB"
+    ],
+    "text": "Morgan Martinez\n\nSUMMARY\nJunior Full-Stack Developer with 2 years of engineering experience focusing on JavaScript, React, Node.js.\n\nWORK EXPERIENCE\nSoftware Engineer | InnoSoft (2020 - Present)\n- Implemented backend pipelines using JavaScript, React, Node.js.\n- Wrote unit tests and automated CI/CD deployments.\n\nEDUCATION\nBachelor of Science in Computer Science\n\nTECHNICAL SKILLS\nJavaScript, React, Node.js, HTML, MongoDB"
+  },
+  {
+    "id": "resume_080",
+    "name": "Jamie Miller",
+    "persona_type": "junior_entry",
+    "role_family": "Full-Stack Development",
+    "target_jd_id": "jd_030",
+    "years_experience": 1,
+    "degree": "Bachelor of Science in Information Technology",
+    "skills": [
+      "MongoDB",
+      "Express.js",
+      "Git",
+      "Linux"
+    ],
+    "text": "Jamie Miller\n\nSUMMARY\nJunior developer passionate about building reliable software using MongoDB, Express.js, Git, Linux.\n\nWORK EXPERIENCE\nAssociate Developer | StartUpX (2023 - Present)\n- Built basic endpoints using MongoDB, Express.js.\n\nEDUCATION\nBachelor of Science in Information Technology\n\nTECHNICAL SKILLS\nMongoDB, Express.js, Git, Linux"
+  },
+  {
+    "id": "resume_081",
+    "name": "Jordan Kumar",
+    "persona_type": "missing_experience",
+    "role_family": "Full-Stack Development",
+    "target_jd_id": "jd_031",
+    "years_experience": 0,
+    "degree": "Bachelor of Science in Software Engineering",
+    "skills": [
+      "Python",
+      "Vue.js",
+      "PostgreSQL"
+    ],
+    "text": "Jordan Kumar\n\nSUMMARY\nJunior technologist with 0 years experience in Python, Vue.js, PostgreSQL.\n\nWORK EXPERIENCE\nIntern Developer | MicroGlobal (2024 - Present)\n- Assisted in coding features with Python, Vue.js, PostgreSQL.\n\nEDUCATION\nBachelor of Science in Software Engineering\n\nTECHNICAL SKILLS\nPython, Vue.js, PostgreSQL"
+  },
+  {
+    "id": "resume_082",
+    "name": "Jordan Garcia",
+    "persona_type": "missing_degree",
+    "role_family": "Full-Stack Development",
+    "target_jd_id": "jd_032",
+    "years_experience": 5,
+    "degree": "Bachelor of Arts in Philosophy",
+    "skills": [
+      "Java",
+      "Spring Boot",
+      "Angular",
+      "TypeScript"
+    ],
+    "text": "Jordan Garcia\n\nSUMMARY\nSelf-taught developer with 5 years of real-world experience building software in Java, Spring Boot, Angular, TypeScript.\n\nWORK EXPERIENCE\nSoftware Developer | CodeCraft (2020 - Present)\n- Developed commercial applications with Java, Spring Boot, Angular, TypeScript.\n\nEDUCATION\nBachelor of Arts in Philosophy\n\nTECHNICAL SKILLS\nJava, Spring Boot, Angular, TypeScript"
+  },
+  {
+    "id": "resume_083",
+    "name": "Devon Martinez",
+    "persona_type": "keyword_stuffed",
+    "role_family": "QA & Test Engineering",
+    "target_jd_id": "jd_033",
+    "years_experience": 1,
+    "degree": "High School Diploma",
+    "skills": [
+      "Selenium",
+      "Python",
+      "pytest",
+      "Test Automation",
+      "CI/CD",
+      "Python",
+      "Java",
+      "C++",
+      "Rust",
+      "Go",
+      "Kubernetes",
+      "AWS",
+      "Azure",
+      "GCP",
+      "PyTorch",
+      "TensorFlow",
+      "React",
+      "Angular",
+      "Vue",
+      "Spark",
+      "Hadoop",
+      "Docker",
+      "GraphQL",
+      "Solidity",
+      "Swift"
+    ],
+    "text": "Devon Martinez\n\nSUMMARY\nEnthusiastic programmer familiar with all modern technologies and paradigms.\n\nWORK EXPERIENCE\nJunior Intern | WebStudio (2024 - 2024)\n- Assisted office tasks.\n\nEDUCATION\nHigh School Diploma\n\nTECHNICAL SKILLS\nSelenium, Python, pytest, Test Automation, CI/CD, Python, Java, C++, Rust, Go, Kubernetes, AWS, Azure, GCP, PyTorch, TensorFlow, React, Angular, Vue, Spark, Hadoop, Docker, GraphQL, Solidity, Swift"
+  },
+  {
+    "id": "resume_084",
+    "name": "Chris Patel",
+    "persona_type": "unrelated_domain",
+    "role_family": "QA & Test Engineering",
+    "target_jd_id": "jd_034",
+    "years_experience": 5,
+    "degree": "Bachelor of Science in Accounting",
+    "skills": [
+      "QuickBooks",
+      "Excel",
+      "Tax Preparation",
+      "Financial Auditing",
+      "Bookkeeping",
+      "Payroll"
+    ],
+    "text": "Chris Patel\n\nSUMMARY\nCertified Accountant with 5 years managing financial ledgers, auditing, and corporate taxes.\n\nWORK EXPERIENCE\nSenior Accountant | Ledger & Co (2019 - Present)\n- Reconciled monthly financial statements and tax filings.\n\nEDUCATION\nBachelor of Science in Accounting\n\nTECHNICAL SKILLS\nQuickBooks, Excel, Tax Preparation, Financial Auditing, Bookkeeping, Payroll"
+  },
+  {
+    "id": "resume_085",
+    "name": "Jordan Johnson",
+    "persona_type": "senior_qualified",
+    "role_family": "QA & Test Engineering",
+    "target_jd_id": "jd_035",
+    "years_experience": 6,
+    "degree": "Master of Science in Computer Science",
+    "skills": [
+      "JMeter",
+      "Performance Testing",
+      "Python",
+      "Linux",
+      "SQL",
+      "Grafana",
+      "Docker"
+    ],
+    "text": "Jordan Johnson\n\nSUMMARY\nSenior QA Performance Engineer with 6 years of demonstrated experience in JMeter, Performance Testing, Python.\n\nWORK EXPERIENCE\nLead Engineer | TechCorp (2018 - Present)\n- Led architecture and deployment of services using JMeter, Performance Testing, Python, Linux.\n- Reduced latency by 45% through query optimization.\n\nEDUCATION\nMaster of Science in Computer Science\n\nTECHNICAL SKILLS\nJMeter, Performance Testing, Python, Linux, SQL, Grafana, Docker"
+  },
+  {
+    "id": "resume_086",
+    "name": "Avery Smith",
+    "persona_type": "mid_qualified",
+    "role_family": "QA & Test Engineering",
+    "target_jd_id": "jd_036",
+    "years_experience": 2,
+    "degree": "Bachelor of Science in Computer Science",
+    "skills": [
+      "Manual Testing",
+      "Test Cases",
+      "Bug Tracking",
+      "Jira",
+      "Selenium"
+    ],
+    "text": "Avery Smith\n\nSUMMARY\nJunior QA Tester with 2 years of engineering experience focusing on Manual Testing, Test Cases, Bug Tracking.\n\nWORK EXPERIENCE\nSoftware Engineer | InnoSoft (2020 - Present)\n- Implemented backend pipelines using Manual Testing, Test Cases, Bug Tracking.\n- Wrote unit tests and automated CI/CD deployments.\n\nEDUCATION\nBachelor of Science in Computer Science\n\nTECHNICAL SKILLS\nManual Testing, Test Cases, Bug Tracking, Jira, Selenium"
+  },
+  {
+    "id": "resume_087",
+    "name": "Sam Lee",
+    "persona_type": "junior_entry",
+    "role_family": "QA & Test Engineering",
+    "target_jd_id": "jd_037",
+    "years_experience": 1,
+    "degree": "Bachelor of Science in Information Technology",
+    "skills": [
+      "Python",
+      "Postman",
+      "Git",
+      "Linux"
+    ],
+    "text": "Sam Lee\n\nSUMMARY\nJunior developer passionate about building reliable software using Python, Postman, Git, Linux.\n\nWORK EXPERIENCE\nAssociate Developer | StartUpX (2023 - Present)\n- Built basic endpoints using Python, Postman.\n\nEDUCATION\nBachelor of Science in Information Technology\n\nTECHNICAL SKILLS\nPython, Postman, Git, Linux"
+  },
+  {
+    "id": "resume_088",
+    "name": "Alex Davis",
+    "persona_type": "missing_experience",
+    "role_family": "QA & Test Engineering",
+    "target_jd_id": "jd_038",
+    "years_experience": 0,
+    "degree": "Bachelor of Science in Software Engineering",
+    "skills": [
+      "Appium",
+      "Mobile Testing",
+      "iOS"
+    ],
+    "text": "Alex Davis\n\nSUMMARY\nJunior technologist with 0 years experience in Appium, Mobile Testing, iOS.\n\nWORK EXPERIENCE\nIntern Developer | MicroGlobal (2024 - Present)\n- Assisted in coding features with Appium, Mobile Testing, iOS.\n\nEDUCATION\nBachelor of Science in Software Engineering\n\nTECHNICAL SKILLS\nAppium, Mobile Testing, iOS"
+  },
+  {
+    "id": "resume_089",
+    "name": "Sam Chen",
+    "persona_type": "missing_degree",
+    "role_family": "Cybersecurity",
+    "target_jd_id": "jd_039",
+    "years_experience": 5,
+    "degree": "Bachelor of Arts in Philosophy",
+    "skills": [
+      "AppSec",
+      "OWASP",
+      "Vulnerability Assessment",
+      "Python"
+    ],
+    "text": "Sam Chen\n\nSUMMARY\nSelf-taught developer with 5 years of real-world experience building software in AppSec, OWASP, Vulnerability Assessment, Python.\n\nWORK EXPERIENCE\nSoftware Developer | CodeCraft (2020 - Present)\n- Developed commercial applications with AppSec, OWASP, Vulnerability Assessment, Python.\n\nEDUCATION\nBachelor of Arts in Philosophy\n\nTECHNICAL SKILLS\nAppSec, OWASP, Vulnerability Assessment, Python"
+  },
+  {
+    "id": "resume_090",
+    "name": "Chris Garcia",
+    "persona_type": "keyword_stuffed",
+    "role_family": "Cybersecurity",
+    "target_jd_id": "jd_040",
+    "years_experience": 1,
+    "degree": "High School Diploma",
+    "skills": [
+      "SIEM",
+      "Incident Response",
+      "Network Security",
+      "Linux",
+      "Threat Analysis",
+      "Python",
+      "Java",
+      "C++",
+      "Rust",
+      "Go",
+      "Kubernetes",
+      "AWS",
+      "Azure",
+      "GCP",
+      "PyTorch",
+      "TensorFlow",
+      "React",
+      "Angular",
+      "Vue",
+      "Spark",
+      "Hadoop",
+      "Docker",
+      "GraphQL",
+      "Solidity",
+      "Swift"
+    ],
+    "text": "Chris Garcia\n\nSUMMARY\nEnthusiastic programmer familiar with all modern technologies and paradigms.\n\nWORK EXPERIENCE\nJunior Intern | WebStudio (2024 - 2024)\n- Assisted office tasks.\n\nEDUCATION\nHigh School Diploma\n\nTECHNICAL SKILLS\nSIEM, Incident Response, Network Security, Linux, Threat Analysis, Python, Java, C++, Rust, Go, Kubernetes, AWS, Azure, GCP, PyTorch, TensorFlow, React, Angular, Vue, Spark, Hadoop, Docker, GraphQL, Solidity, Swift"
+  },
+  {
+    "id": "resume_091",
+    "name": "Chris Miller",
+    "persona_type": "unrelated_domain",
+    "role_family": "Cybersecurity",
+    "target_jd_id": "jd_041",
+    "years_experience": 5,
+    "degree": "Bachelor of Science in Accounting",
+    "skills": [
+      "QuickBooks",
+      "Excel",
+      "Tax Preparation",
+      "Financial Auditing",
+      "Bookkeeping",
+      "Payroll"
+    ],
+    "text": "Chris Miller\n\nSUMMARY\nCertified Accountant with 5 years managing financial ledgers, auditing, and corporate taxes.\n\nWORK EXPERIENCE\nSenior Accountant | Ledger & Co (2019 - Present)\n- Reconciled monthly financial statements and tax filings.\n\nEDUCATION\nBachelor of Science in Accounting\n\nTECHNICAL SKILLS\nQuickBooks, Excel, Tax Preparation, Financial Auditing, Bookkeeping, Payroll"
+  },
+  {
+    "id": "resume_092",
+    "name": "Pat Lee",
+    "persona_type": "senior_qualified",
+    "role_family": "Cybersecurity",
+    "target_jd_id": "jd_042",
+    "years_experience": 7,
+    "degree": "Master of Science in Computer Science",
+    "skills": [
+      "SOC 2",
+      "ISO 27001",
+      "Compliance",
+      "Risk Assessment",
+      "Audit",
+      "Cloud Security",
+      "NIST"
+    ],
+    "text": "Pat Lee\n\nSUMMARY\nSenior Security Compliance Specialist with 7 years of demonstrated experience in SOC 2, ISO 27001, Compliance.\n\nWORK EXPERIENCE\nLead Engineer | TechCorp (2018 - Present)\n- Led architecture and deployment of services using SOC 2, ISO 27001, Compliance, Risk Assessment.\n- Reduced latency by 45% through query optimization.\n\nEDUCATION\nMaster of Science in Computer Science\n\nTECHNICAL SKILLS\nSOC 2, ISO 27001, Compliance, Risk Assessment, Audit, Cloud Security, NIST"
+  },
+  {
+    "id": "resume_093",
+    "name": "Taylor Davis",
+    "persona_type": "mid_qualified",
+    "role_family": "Cybersecurity",
+    "target_jd_id": "jd_043",
+    "years_experience": 4,
+    "degree": "Bachelor of Science in Computer Science",
+    "skills": [
+      "AWS",
+      "Cloud Security",
+      "IAM",
+      "Linux",
+      "Terraform"
+    ],
+    "text": "Taylor Davis\n\nSUMMARY\nCloud Security Analyst with 4 years of engineering experience focusing on AWS, Cloud Security, IAM.\n\nWORK EXPERIENCE\nSoftware Engineer | InnoSoft (2020 - Present)\n- Implemented backend pipelines using AWS, Cloud Security, IAM.\n- Wrote unit tests and automated CI/CD deployments.\n\nEDUCATION\nBachelor of Science in Computer Science\n\nTECHNICAL SKILLS\nAWS, Cloud Security, IAM, Linux, Terraform"
+  },
+  {
+    "id": "resume_094",
+    "name": "Morgan Brown",
+    "persona_type": "junior_entry",
+    "role_family": "Cybersecurity",
+    "target_jd_id": "jd_044",
+    "years_experience": 1,
+    "degree": "Bachelor of Science in Information Technology",
+    "skills": [
+      "Incident Response",
+      "SIEM",
+      "Git",
+      "Linux"
+    ],
+    "text": "Morgan Brown\n\nSUMMARY\nJunior developer passionate about building reliable software using Incident Response, SIEM, Git, Linux.\n\nWORK EXPERIENCE\nAssociate Developer | StartUpX (2023 - Present)\n- Built basic endpoints using Incident Response, SIEM.\n\nEDUCATION\nBachelor of Science in Information Technology\n\nTECHNICAL SKILLS\nIncident Response, SIEM, Git, Linux"
+  },
+  {
+    "id": "resume_095",
+    "name": "Jordan Johnson",
+    "persona_type": "missing_experience",
+    "role_family": "Data Engineering",
+    "target_jd_id": "jd_045",
+    "years_experience": 2,
+    "degree": "Bachelor of Science in Software Engineering",
+    "skills": [
+      "Python",
+      "SQL",
+      "Apache Spark"
+    ],
+    "text": "Jordan Johnson\n\nSUMMARY\nJunior technologist with 2 years experience in Python, SQL, Apache Spark.\n\nWORK EXPERIENCE\nIntern Developer | MicroGlobal (2024 - Present)\n- Assisted in coding features with Python, SQL, Apache Spark.\n\nEDUCATION\nBachelor of Science in Software Engineering\n\nTECHNICAL SKILLS\nPython, SQL, Apache Spark"
+  },
+  {
+    "id": "resume_096",
+    "name": "Devon Miller",
+    "persona_type": "missing_degree",
+    "role_family": "Data Engineering",
+    "target_jd_id": "jd_046",
+    "years_experience": 5,
+    "degree": "Bachelor of Arts in Philosophy",
+    "skills": [
+      "Scala",
+      "Apache Spark",
+      "Hadoop",
+      "Kafka"
+    ],
+    "text": "Devon Miller\n\nSUMMARY\nSelf-taught developer with 5 years of real-world experience building software in Scala, Apache Spark, Hadoop, Kafka.\n\nWORK EXPERIENCE\nSoftware Developer | CodeCraft (2020 - Present)\n- Developed commercial applications with Scala, Apache Spark, Hadoop, Kafka.\n\nEDUCATION\nBachelor of Arts in Philosophy\n\nTECHNICAL SKILLS\nScala, Apache Spark, Hadoop, Kafka"
+  },
+  {
+    "id": "resume_097",
+    "name": "Sam Lee",
+    "persona_type": "keyword_stuffed",
+    "role_family": "Data Engineering",
+    "target_jd_id": "jd_047",
+    "years_experience": 1,
+    "degree": "High School Diploma",
+    "skills": [
+      "Python",
+      "SQL",
+      "Airflow",
+      "ETL",
+      "PostgreSQL",
+      "Python",
+      "Java",
+      "C++",
+      "Rust",
+      "Go",
+      "Kubernetes",
+      "AWS",
+      "Azure",
+      "GCP",
+      "PyTorch",
+      "TensorFlow",
+      "React",
+      "Angular",
+      "Vue",
+      "Spark",
+      "Hadoop",
+      "Docker",
+      "GraphQL",
+      "Solidity",
+      "Swift"
+    ],
+    "text": "Sam Lee\n\nSUMMARY\nEnthusiastic programmer familiar with all modern technologies and paradigms.\n\nWORK EXPERIENCE\nJunior Intern | WebStudio (2024 - 2024)\n- Assisted office tasks.\n\nEDUCATION\nHigh School Diploma\n\nTECHNICAL SKILLS\nPython, SQL, Airflow, ETL, PostgreSQL, Python, Java, C++, Rust, Go, Kubernetes, AWS, Azure, GCP, PyTorch, TensorFlow, React, Angular, Vue, Spark, Hadoop, Docker, GraphQL, Solidity, Swift"
+  },
+  {
+    "id": "resume_098",
+    "name": "Chris Chen",
+    "persona_type": "unrelated_domain",
+    "role_family": "Data Engineering",
+    "target_jd_id": "jd_048",
+    "years_experience": 5,
+    "degree": "Bachelor of Science in Accounting",
+    "skills": [
+      "QuickBooks",
+      "Excel",
+      "Tax Preparation",
+      "Financial Auditing",
+      "Bookkeeping",
+      "Payroll"
+    ],
+    "text": "Chris Chen\n\nSUMMARY\nCertified Accountant with 5 years managing financial ledgers, auditing, and corporate taxes.\n\nWORK EXPERIENCE\nSenior Accountant | Ledger & Co (2019 - Present)\n- Reconciled monthly financial statements and tax filings.\n\nEDUCATION\nBachelor of Science in Accounting\n\nTECHNICAL SKILLS\nQuickBooks, Excel, Tax Preparation, Financial Auditing, Bookkeeping, Payroll"
+  },
+  {
+    "id": "resume_099",
+    "name": "Riley Johnson",
+    "persona_type": "senior_qualified",
+    "role_family": "Data Engineering",
+    "target_jd_id": "jd_049",
+    "years_experience": 3,
+    "degree": "Master of Science in Computer Science",
+    "skills": [
+      "Python",
+      "SQL",
+      "Pandas",
+      "Git",
+      "Linux",
+      "Airflow",
+      "PostgreSQL"
+    ],
+    "text": "Riley Johnson\n\nSUMMARY\nSenior Junior Data Engineer with 3 years of demonstrated experience in Python, SQL, Pandas.\n\nWORK EXPERIENCE\nLead Engineer | TechCorp (2018 - Present)\n- Led architecture and deployment of services using Python, SQL, Pandas, Git.\n- Reduced latency by 45% through query optimization.\n\nEDUCATION\nMaster of Science in Computer Science\n\nTECHNICAL SKILLS\nPython, SQL, Pandas, Git, Linux, Airflow, PostgreSQL"
+  },
+  {
+    "id": "resume_100",
+    "name": "Morgan Smith",
+    "persona_type": "mid_qualified",
+    "role_family": "Data Engineering",
+    "target_jd_id": "jd_050",
+    "years_experience": 7,
+    "degree": "Bachelor of Science in Computer Science",
+    "skills": [
+      "AWS",
+      "Snowflake",
+      "Apache Spark",
+      "Airflow",
+      "Terraform"
+    ],
+    "text": "Morgan Smith\n\nSUMMARY\nCloud Data Architect with 7 years of engineering experience focusing on AWS, Snowflake, Apache Spark.\n\nWORK EXPERIENCE\nSoftware Engineer | InnoSoft (2020 - Present)\n- Implemented backend pipelines using AWS, Snowflake, Apache Spark.\n- Wrote unit tests and automated CI/CD deployments.\n\nEDUCATION\nBachelor of Science in Computer Science\n\nTECHNICAL SKILLS\nAWS, Snowflake, Apache Spark, Airflow, Terraform"
+  }
+]

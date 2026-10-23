@@ -1,0 +1,14 @@
+Chris Smith
+
+SUMMARY
+Junior developer passionate about building reliable software using Linux, Git, Git, Linux.
+
+WORK EXPERIENCE
+Associate Developer | StartUpX (2023 - Present)
+- Built basic endpoints using Linux, Git.
+
+EDUCATION
+Bachelor of Science in Information Technology
+
+TECHNICAL SKILLS
+Linux, Git, Git, Linux

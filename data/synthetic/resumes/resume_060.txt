@@ -1,0 +1,14 @@
+Sam Williams
+
+SUMMARY
+Junior technologist with 0 years experience in Vue.js, JavaScript, HTML.
+
+WORK EXPERIENCE
+Intern Developer | MicroGlobal (2024 - Present)
+- Assisted in coding features with Vue.js, JavaScript, HTML.
+
+EDUCATION
+Bachelor of Science in Software Engineering
+
+TECHNICAL SKILLS
+Vue.js, JavaScript, HTML

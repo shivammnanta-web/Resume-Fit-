@@ -1,0 +1,18 @@
+Cloud Data Architect
+Role Family: Data Engineering
+Experience Required: 6+ years of professional engineering experience.
+Degree Required: Master in Computer Science, Software Engineering, or related discipline.
+
+Summary:
+We are seeking an experienced Cloud Data Architect to join our high-growth engineering organization. You will design, build, and deploy high-reliability production systems and collaborate across engineering, product, and QA teams.
+
+Required Technical Skills:
+AWS, Snowflake, Apache Spark, Airflow, Data Architecture
+
+Preferred Technical Skills:
+Terraform, Python, Kafka
+
+Key Responsibilities:
+- Design and develop scalable microservices and infrastructure.
+- Deliver robust code with high unit and integration test coverage.
+- Collaborate with stakeholders to ensure high uptime and continuous integration.

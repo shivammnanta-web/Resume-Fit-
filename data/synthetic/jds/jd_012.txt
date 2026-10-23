@@ -1,0 +1,18 @@
+Frontend Performance Engineer
+Role Family: Frontend Engineering
+Experience Required: 4+ years of professional engineering experience.
+Degree Required: Bachelor in Computer Science, Software Engineering, or related discipline.
+
+Summary:
+We are seeking an experienced Frontend Performance Engineer to join our high-growth engineering organization. You will design, build, and deploy high-reliability production systems and collaborate across engineering, product, and QA teams.
+
+Required Technical Skills:
+JavaScript, React, Web Performance, Webpack, CSS
+
+Preferred Technical Skills:
+TypeScript, Lighthouse, Service Workers
+
+Key Responsibilities:
+- Design and develop scalable microservices and infrastructure.
+- Deliver robust code with high unit and integration test coverage.
+- Collaborate with stakeholders to ensure high uptime and continuous integration.

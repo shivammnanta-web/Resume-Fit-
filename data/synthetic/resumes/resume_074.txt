@@ -1,0 +1,14 @@
+Casey Kumar
+
+SUMMARY
+Junior technologist with 0 years experience in Linux, Git, Bash.
+
+WORK EXPERIENCE
+Intern Developer | MicroGlobal (2024 - Present)
+- Assisted in coding features with Linux, Git, Bash.
+
+EDUCATION
+Bachelor of Science in Software Engineering
+
+TECHNICAL SKILLS
+Linux, Git, Bash

@@ -1,0 +1,14 @@
+Devon Smith
+
+SUMMARY
+Enthusiastic programmer familiar with all modern technologies and paradigms.
+
+WORK EXPERIENCE
+Junior Intern | WebStudio (2024 - 2024)
+- Assisted office tasks.
+
+EDUCATION
+High School Diploma
+
+TECHNICAL SKILLS
+Java, Selenium, TestNG, CI/CD, Git, Python, Java, C++, Rust, Go, Kubernetes, AWS, Azure, GCP, PyTorch, TensorFlow, React, Angular, Vue, Spark, Hadoop, Docker, GraphQL, Solidity, Swift

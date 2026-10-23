@@ -1,0 +1,18 @@
+Azure Infrastructure Specialist
+Role Family: DevOps & Cloud Infrastructure
+Experience Required: 3+ years of professional engineering experience.
+Degree Required: Bachelor in Computer Science, Software Engineering, or related discipline.
+
+Summary:
+We are seeking an experienced Azure Infrastructure Specialist to join our high-growth engineering organization. You will design, build, and deploy high-reliability production systems and collaborate across engineering, product, and QA teams.
+
+Required Technical Skills:
+Azure, Terraform, PowerShell, Docker, Networking
+
+Preferred Technical Skills:
+Kubernetes, CI/CD, Security
+
+Key Responsibilities:
+- Design and develop scalable microservices and infrastructure.
+- Deliver robust code with high unit and integration test coverage.
+- Collaborate with stakeholders to ensure high uptime and continuous integration.

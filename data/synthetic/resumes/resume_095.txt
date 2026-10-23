@@ -1,0 +1,14 @@
+Jordan Johnson
+
+SUMMARY
+Junior technologist with 2 years experience in Python, SQL, Apache Spark.
+
+WORK EXPERIENCE
+Intern Developer | MicroGlobal (2024 - Present)
+- Assisted in coding features with Python, SQL, Apache Spark.
+
+EDUCATION
+Bachelor of Science in Software Engineering
+
+TECHNICAL SKILLS
+Python, SQL, Apache Spark

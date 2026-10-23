@@ -1,0 +1,14 @@
+Devon Johnson
+
+SUMMARY
+Junior technologist with 0 years experience in Python, SQL, Git.
+
+WORK EXPERIENCE
+Intern Developer | MicroGlobal (2024 - Present)
+- Assisted in coding features with Python, SQL, Git.
+
+EDUCATION
+Bachelor of Science in Software Engineering
+
+TECHNICAL SKILLS
+Python, SQL, Git

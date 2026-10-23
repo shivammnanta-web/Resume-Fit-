@@ -1,0 +1,18 @@
+Analytics Engineer
+Role Family: Data Engineering
+Experience Required: 2+ years of professional engineering experience.
+Degree Required: Bachelor in Computer Science, Software Engineering, or related discipline.
+
+Summary:
+We are seeking an experienced Analytics Engineer to join our high-growth engineering organization. You will design, build, and deploy high-reliability production systems and collaborate across engineering, product, and QA teams.
+
+Required Technical Skills:
+SQL, dbt, Snowflake, Data Modeling, Git
+
+Preferred Technical Skills:
+Python, Tableau, Looker
+
+Key Responsibilities:
+- Design and develop scalable microservices and infrastructure.
+- Deliver robust code with high unit and integration test coverage.
+- Collaborate with stakeholders to ensure high uptime and continuous integration.

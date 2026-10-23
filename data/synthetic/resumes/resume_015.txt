@@ -1,0 +1,15 @@
+Jamie Martinez
+
+SUMMARY
+Senior Senior Machine Learning Engineer with 6 years of demonstrated experience in Python, PyTorch, scikit-learn.
+
+WORK EXPERIENCE
+Lead Engineer | TechCorp (2018 - Present)
+- Led architecture and deployment of services using Python, PyTorch, scikit-learn, Machine Learning.
+- Reduced latency by 45% through query optimization.
+
+EDUCATION
+Master of Science in Computer Science
+
+TECHNICAL SKILLS
+Python, PyTorch, scikit-learn, Machine Learning, Docker, MLOps, Transformers

@@ -1,0 +1,15 @@
+Morgan Johnson
+
+SUMMARY
+Senior Senior Full-Stack Developer with 7 years of demonstrated experience in Python, React, FastAPI.
+
+WORK EXPERIENCE
+Lead Engineer | TechCorp (2018 - Present)
+- Led architecture and deployment of services using Python, React, FastAPI, TypeScript.
+- Reduced latency by 45% through query optimization.
+
+EDUCATION
+Master of Science in Computer Science
+
+TECHNICAL SKILLS
+Python, React, FastAPI, TypeScript, PostgreSQL, Docker, Redis, AWS

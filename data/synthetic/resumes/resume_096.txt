@@ -1,0 +1,14 @@
+Devon Miller
+
+SUMMARY
+Self-taught developer with 5 years of real-world experience building software in Scala, Apache Spark, Hadoop, Kafka.
+
+WORK EXPERIENCE
+Software Developer | CodeCraft (2020 - Present)
+- Developed commercial applications with Scala, Apache Spark, Hadoop, Kafka.
+
+EDUCATION
+Bachelor of Arts in Philosophy
+
+TECHNICAL SKILLS
+Scala, Apache Spark, Hadoop, Kafka

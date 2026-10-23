@@ -1,0 +1,158 @@
+{
+  "E1_model_comparison": {
+    "metrics": {
+      "Lexical (TF-IDF)": {
+        "P@1": 0.7142857142857143,
+        "P@3": 0.45714285714285713,
+        "R@3": 0.879047619047619,
+        "MRR": 0.7428571428571428,
+        "nDCG@3": 0.8893429418722855,
+        "nDCG@5": 0.9187593589651784
+      },
+      "Semantic (MiniLM)": {
+        "P@1": 0.6571428571428571,
+        "P@3": 0.4761904761904762,
+        "R@3": 0.91,
+        "MRR": 0.7142857142857143,
+        "nDCG@3": 0.8537223625232128,
+        "nDCG@5": 0.8844757066070468
+      },
+      "Hybrid Fusion (\u03b1=0.4, \u03b2=0.6)": {
+        "P@1": 0.6571428571428571,
+        "P@3": 0.4857142857142857,
+        "R@3": 0.9242857142857144,
+        "MRR": 0.7142857142857143,
+        "nDCG@3": 0.8853430118475657,
+        "nDCG@5": 0.900671499444859
+      }
+    },
+    "significance_vs_lexical": {
+      "mean_a": 0.900671499444859,
+      "mean_b": 0.9187593589651784,
+      "mean_diff": -0.018087859520319327,
+      "ci_lower": -0.05721991924733428,
+      "ci_upper": 0.029953808559467537,
+      "p_value_bootstrap": 0.423,
+      "wilcoxon_stat": 49.0,
+      "wilcoxon_p_value": 0.5318816454676332,
+      "is_significant": false
+    },
+    "significance_vs_semantic": {
+      "mean_a": 0.900671499444859,
+      "mean_b": 0.8844757066070468,
+      "mean_diff": 0.01619579283781225,
+      "ci_lower": -0.012183340443481294,
+      "ci_upper": 0.043249907333178,
+      "p_value_bootstrap": 0.237,
+      "wilcoxon_stat": 16.0,
+      "wilcoxon_p_value": 0.24112136827741826,
+      "is_significant": false
+    }
+  },
+  "E2_alpha_sweep": {
+    "dev_sweep_curve": [
+      {
+        "alpha": 0.0,
+        "beta": 1.0,
+        "dev_nDCG@5": 0.8751
+      },
+      {
+        "alpha": 0.1,
+        "beta": 0.9,
+        "dev_nDCG@5": 0.9075
+      },
+      {
+        "alpha": 0.2,
+        "beta": 0.8,
+        "dev_nDCG@5": 0.9415
+      },
+      {
+        "alpha": 0.3,
+        "beta": 0.7,
+        "dev_nDCG@5": 0.9415
+      },
+      {
+        "alpha": 0.4,
+        "beta": 0.6,
+        "dev_nDCG@5": 0.9419
+      },
+      {
+        "alpha": 0.5,
+        "beta": 0.5,
+        "dev_nDCG@5": 0.9419
+      },
+      {
+        "alpha": 0.6,
+        "beta": 0.4,
+        "dev_nDCG@5": 0.9431
+      },
+      {
+        "alpha": 0.7,
+        "beta": 0.3,
+        "dev_nDCG@5": 0.9539
+      },
+      {
+        "alpha": 0.8,
+        "beta": 0.2,
+        "dev_nDCG@5": 0.9526
+      },
+      {
+        "alpha": 0.9,
+        "beta": 0.1,
+        "dev_nDCG@5": 0.9281
+      },
+      {
+        "alpha": 1.0,
+        "beta": 0.0,
+        "dev_nDCG@5": 0.9247
+      }
+    ],
+    "optimal_alpha_dev": 0.7,
+    "optimal_dev_nDCG@5": 0.9539
+  },
+  "E3_ablations": {
+    "Full System (Baseline)": {
+      "nDCG@5": 0.9007,
+      "P@3": 0.4857
+    },
+    "Ablation: No Constraints (Raw Fusion)": {
+      "nDCG@5": 0.8908,
+      "P@3": 0.419
+    },
+    "Ablation: Mean-Pooled Only (No Req-to-Chunk)": {
+      "nDCG@5": 0.9499,
+      "P@3": 0.5048
+    }
+  },
+  "E4_robustness": {
+    "keyword_stuffed_mean_score": 0.0928,
+    "qualified_mean_score": 0.2392,
+    "effective_penalty_delta": 0.1464,
+    "stuffed_resumes_tested": 60
+  },
+  "E5_fairness": {
+    "tested_identities": [
+      "John Smith",
+      "Aisha Al-Mansoor",
+      "Carlos Rodriguez",
+      "Priya Patel",
+      "Chen Wei",
+      "Keiko Tanaka"
+    ],
+    "scores": [
+      0.31014,
+      0.32993,
+      0.32967,
+      0.29459,
+      0.34144,
+      0.32317
+    ],
+    "max_score_difference": 0.04685,
+    "score_variance": 0.00023190056666666663,
+    "is_invariant": false
+  },
+  "run_timestamp": "2026-10-23T16:44:46.777795+00:00",
+  "dev_jds_evaluated": 15,
+  "test_jds_evaluated": 35,
+  "total_pairs_evaluated": 500
+}

@@ -1,0 +1,18 @@
+Mobile React Native Engineer
+Role Family: Frontend Engineering
+Experience Required: 3+ years of professional engineering experience.
+Degree Required: Bachelor in Computer Science, Software Engineering, or related discipline.
+
+Summary:
+We are seeking an experienced Mobile React Native Engineer to join our high-growth engineering organization. You will design, build, and deploy high-reliability production systems and collaborate across engineering, product, and QA teams.
+
+Required Technical Skills:
+React Native, JavaScript, TypeScript, Mobile Development, Git
+
+Preferred Technical Skills:
+iOS, Android, Redux
+
+Key Responsibilities:
+- Design and develop scalable microservices and infrastructure.
+- Deliver robust code with high unit and integration test coverage.
+- Collaborate with stakeholders to ensure high uptime and continuous integration.

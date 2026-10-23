@@ -1,0 +1,15 @@
+Morgan Smith
+
+SUMMARY
+Cloud Data Architect with 7 years of engineering experience focusing on AWS, Snowflake, Apache Spark.
+
+WORK EXPERIENCE
+Software Engineer | InnoSoft (2020 - Present)
+- Implemented backend pipelines using AWS, Snowflake, Apache Spark.
+- Wrote unit tests and automated CI/CD deployments.
+
+EDUCATION
+Bachelor of Science in Computer Science
+
+TECHNICAL SKILLS
+AWS, Snowflake, Apache Spark, Airflow, Terraform

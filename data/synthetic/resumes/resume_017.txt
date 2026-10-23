@@ -1,0 +1,14 @@
+Devon Smith
+
+SUMMARY
+Junior developer passionate about building reliable software using Python, OpenCV, Git, Linux.
+
+WORK EXPERIENCE
+Associate Developer | StartUpX (2023 - Present)
+- Built basic endpoints using Python, OpenCV.
+
+EDUCATION
+Bachelor of Science in Information Technology
+
+TECHNICAL SKILLS
+Python, OpenCV, Git, Linux

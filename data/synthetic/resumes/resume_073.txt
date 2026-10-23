@@ -1,0 +1,14 @@
+Chris Patel
+
+SUMMARY
+Junior developer passionate about building reliable software using AWS, Cloud Security, Git, Linux.
+
+WORK EXPERIENCE
+Associate Developer | StartUpX (2023 - Present)
+- Built basic endpoints using AWS, Cloud Security.
+
+EDUCATION
+Bachelor of Science in Information Technology
+
+TECHNICAL SKILLS
+AWS, Cloud Security, Git, Linux

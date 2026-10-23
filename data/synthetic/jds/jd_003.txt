@@ -1,0 +1,18 @@
+Staff Go Systems Engineer
+Role Family: Backend Engineering
+Experience Required: 6+ years of professional engineering experience.
+Degree Required: Bachelor in Computer Science, Software Engineering, or related discipline.
+
+Summary:
+We are seeking an experienced Staff Go Systems Engineer to join our high-growth engineering organization. You will design, build, and deploy high-reliability production systems and collaborate across engineering, product, and QA teams.
+
+Required Technical Skills:
+Go, Kubernetes, Distributed Systems, gRPC, Docker
+
+Preferred Technical Skills:
+Kafka, Prometheus, Linux
+
+Key Responsibilities:
+- Design and develop scalable microservices and infrastructure.
+- Deliver robust code with high unit and integration test coverage.
+- Collaborate with stakeholders to ensure high uptime and continuous integration.

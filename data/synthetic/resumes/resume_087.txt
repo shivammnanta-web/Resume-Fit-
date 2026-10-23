@@ -1,0 +1,14 @@
+Sam Lee
+
+SUMMARY
+Junior developer passionate about building reliable software using Python, Postman, Git, Linux.
+
+WORK EXPERIENCE
+Associate Developer | StartUpX (2023 - Present)
+- Built basic endpoints using Python, Postman.
+
+EDUCATION
+Bachelor of Science in Information Technology
+
+TECHNICAL SKILLS
+Python, Postman, Git, Linux

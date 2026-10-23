@@ -1,0 +1,14 @@
+Morgan Brown
+
+SUMMARY
+Junior developer passionate about building reliable software using Incident Response, SIEM, Git, Linux.
+
+WORK EXPERIENCE
+Associate Developer | StartUpX (2023 - Present)
+- Built basic endpoints using Incident Response, SIEM.
+
+EDUCATION
+Bachelor of Science in Information Technology
+
+TECHNICAL SKILLS
+Incident Response, SIEM, Git, Linux

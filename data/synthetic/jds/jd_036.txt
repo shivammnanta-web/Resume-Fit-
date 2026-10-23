@@ -1,0 +1,18 @@
+Junior QA Tester
+Role Family: QA & Test Engineering
+Experience Required: 1+ years of professional engineering experience.
+Degree Required: Bachelor in Computer Science, Software Engineering, or related discipline.
+
+Summary:
+We are seeking an experienced Junior QA Tester to join our high-growth engineering organization. You will design, build, and deploy high-reliability production systems and collaborate across engineering, product, and QA teams.
+
+Required Technical Skills:
+Manual Testing, Test Cases, Bug Tracking, Jira, SQL
+
+Preferred Technical Skills:
+Selenium, Git, Postman
+
+Key Responsibilities:
+- Design and develop scalable microservices and infrastructure.
+- Deliver robust code with high unit and integration test coverage.
+- Collaborate with stakeholders to ensure high uptime and continuous integration.

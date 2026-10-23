@@ -1,0 +1,14 @@
+Alex Garcia
+
+SUMMARY
+Self-taught developer with 3 years of real-world experience building software in SIEM, Incident Response, Network Security, Linux.
+
+WORK EXPERIENCE
+Software Developer | CodeCraft (2020 - Present)
+- Developed commercial applications with SIEM, Incident Response, Network Security, Linux.
+
+EDUCATION
+Bachelor of Arts in Philosophy
+
+TECHNICAL SKILLS
+SIEM, Incident Response, Network Security, Linux

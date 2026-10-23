@@ -1,0 +1,15 @@
+Avery Chen
+
+SUMMARY
+Security Operations Lead with 7 years of engineering experience focusing on Incident Response, SIEM, Threat Intelligence.
+
+WORK EXPERIENCE
+Software Engineer | InnoSoft (2020 - Present)
+- Implemented backend pipelines using Incident Response, SIEM, Threat Intelligence.
+- Wrote unit tests and automated CI/CD deployments.
+
+EDUCATION
+Bachelor of Science in Computer Science
+
+TECHNICAL SKILLS
+Incident Response, SIEM, Threat Intelligence, Leadership, Python

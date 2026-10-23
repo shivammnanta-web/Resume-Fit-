@@ -1,0 +1,14 @@
+Avery Kumar
+
+SUMMARY
+Junior technologist with 1 years experience in Kubernetes, Go, Terraform.
+
+WORK EXPERIENCE
+Intern Developer | MicroGlobal (2024 - Present)
+- Assisted in coding features with Kubernetes, Go, Terraform.
+
+EDUCATION
+Bachelor of Science in Software Engineering
+
+TECHNICAL SKILLS
+Kubernetes, Go, Terraform

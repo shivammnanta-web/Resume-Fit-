@@ -1,0 +1,15 @@
+Alex Garcia
+
+SUMMARY
+Cloud Security Architect with 7 years of engineering experience focusing on AWS, Cloud Security, IAM.
+
+WORK EXPERIENCE
+Software Engineer | InnoSoft (2020 - Present)
+- Implemented backend pipelines using AWS, Cloud Security, IAM.
+- Wrote unit tests and automated CI/CD deployments.
+
+EDUCATION
+Bachelor of Science in Computer Science
+
+TECHNICAL SKILLS
+AWS, Cloud Security, IAM, Kubernetes, Terraform

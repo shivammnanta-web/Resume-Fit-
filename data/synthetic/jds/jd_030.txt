@@ -1,0 +1,18 @@
+MEAN/MERN Stack Developer
+Role Family: Full-Stack Development
+Experience Required: 2+ years of professional engineering experience.
+Degree Required: Bachelor in Computer Science, Software Engineering, or related discipline.
+
+Summary:
+We are seeking an experienced MEAN/MERN Stack Developer to join our high-growth engineering organization. You will design, build, and deploy high-reliability production systems and collaborate across engineering, product, and QA teams.
+
+Required Technical Skills:
+MongoDB, Express.js, React, Node.js, JavaScript
+
+Preferred Technical Skills:
+TypeScript, REST, Git
+
+Key Responsibilities:
+- Design and develop scalable microservices and infrastructure.
+- Deliver robust code with high unit and integration test coverage.
+- Collaborate with stakeholders to ensure high uptime and continuous integration.

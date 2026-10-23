@@ -1,0 +1,14 @@
+Sam Chen
+
+SUMMARY
+Self-taught developer with 5 years of real-world experience building software in AppSec, OWASP, Vulnerability Assessment, Python.
+
+WORK EXPERIENCE
+Software Developer | CodeCraft (2020 - Present)
+- Developed commercial applications with AppSec, OWASP, Vulnerability Assessment, Python.
+
+EDUCATION
+Bachelor of Arts in Philosophy
+
+TECHNICAL SKILLS
+AppSec, OWASP, Vulnerability Assessment, Python

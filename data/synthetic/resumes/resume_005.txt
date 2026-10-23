@@ -1,0 +1,14 @@
+Jordan Davis
+
+SUMMARY
+Self-taught developer with 5 years of real-world experience building software in Java, Spring Boot, MySQL, Hibernate.
+
+WORK EXPERIENCE
+Software Developer | CodeCraft (2020 - Present)
+- Developed commercial applications with Java, Spring Boot, MySQL, Hibernate.
+
+EDUCATION
+Bachelor of Arts in Philosophy
+
+TECHNICAL SKILLS
+Java, Spring Boot, MySQL, Hibernate

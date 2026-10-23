@@ -1,0 +1,15 @@
+Morgan Lee
+
+SUMMARY
+Senior Senior Site Reliability Engineer (SRE) with 9 years of demonstrated experience in Kubernetes, Docker, Terraform.
+
+WORK EXPERIENCE
+Lead Engineer | TechCorp (2018 - Present)
+- Led architecture and deployment of services using Kubernetes, Docker, Terraform, AWS.
+- Reduced latency by 45% through query optimization.
+
+EDUCATION
+Master of Science in Computer Science
+
+TECHNICAL SKILLS
+Kubernetes, Docker, Terraform, AWS, Linux, Python, Prometheus, Grafana

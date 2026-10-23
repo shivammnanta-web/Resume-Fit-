@@ -1,0 +1,15 @@
+Riley Garcia
+
+SUMMARY
+API Test Automation Engineer with 4 years of engineering experience focusing on Python, Postman, REST.
+
+WORK EXPERIENCE
+Software Engineer | InnoSoft (2020 - Present)
+- Implemented backend pipelines using Python, Postman, REST.
+- Wrote unit tests and automated CI/CD deployments.
+
+EDUCATION
+Bachelor of Science in Computer Science
+
+TECHNICAL SKILLS
+Python, Postman, REST, pytest, Git

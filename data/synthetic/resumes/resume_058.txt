@@ -1,0 +1,15 @@
+Jamie Smith
+
+SUMMARY
+Senior Frontend React Architect with 6 years of engineering experience focusing on React, TypeScript, JavaScript.
+
+WORK EXPERIENCE
+Software Engineer | InnoSoft (2020 - Present)
+- Implemented backend pipelines using React, TypeScript, JavaScript.
+- Wrote unit tests and automated CI/CD deployments.
+
+EDUCATION
+Bachelor of Science in Computer Science
+
+TECHNICAL SKILLS
+React, TypeScript, JavaScript, HTML5, Next.js

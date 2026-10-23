@@ -1,0 +1,14 @@
+Jordan Williams
+
+SUMMARY
+Junior developer passionate about building reliable software using Python, PyTorch, Git, Linux.
+
+WORK EXPERIENCE
+Associate Developer | StartUpX (2023 - Present)
+- Built basic endpoints using Python, PyTorch.
+
+EDUCATION
+Bachelor of Science in Information Technology
+
+TECHNICAL SKILLS
+Python, PyTorch, Git, Linux

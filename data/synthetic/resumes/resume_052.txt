@@ -1,0 +1,14 @@
+Pat Martinez
+
+SUMMARY
+Junior developer passionate about building reliable software using Python, Django, Git, Linux.
+
+WORK EXPERIENCE
+Associate Developer | StartUpX (2023 - Present)
+- Built basic endpoints using Python, Django.
+
+EDUCATION
+Bachelor of Science in Information Technology
+
+TECHNICAL SKILLS
+Python, Django, Git, Linux

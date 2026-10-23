@@ -7,6 +7,7 @@ report generation, and database persistence.
 from __future__ import annotations
 
 import datetime
+import json
 import logging
 import uuid
 from pathlib import Path
@@ -253,6 +254,14 @@ class MatchingService:
         skills_count = len(taxonomy.skills_by_uri)
         vocab_size = self.lexical_scorer.vocabulary_size
 
+        summary_file = Path("evaluation/results/latest/summary.json")
+        real_benchmarks: dict[str, Any] = {}
+        if summary_file.is_file():
+            try:
+                real_benchmarks = json.loads(summary_file.read_text(encoding="utf-8"))
+            except Exception as e:
+                logger.debug("Could not read evaluation summary: %s", e)
+
         return {
             "timestamp": datetime.datetime.now(datetime.UTC).isoformat(),
             "esco_version": self.config.skills.esco_version,
@@ -282,5 +291,6 @@ class MatchingService:
                     "ef_80": 0.995,
                     "ef_160": 1.00,
                 },
+                "experiments": real_benchmarks,
             },
         }

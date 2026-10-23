@@ -1,0 +1,15 @@
+Morgan Martinez
+
+SUMMARY
+Junior Full-Stack Developer with 2 years of engineering experience focusing on JavaScript, React, Node.js.
+
+WORK EXPERIENCE
+Software Engineer | InnoSoft (2020 - Present)
+- Implemented backend pipelines using JavaScript, React, Node.js.
+- Wrote unit tests and automated CI/CD deployments.
+
+EDUCATION
+Bachelor of Science in Computer Science
+
+TECHNICAL SKILLS
+JavaScript, React, Node.js, HTML, MongoDB

@@ -1,0 +1,18 @@
+Senior Frontend React Architect
+Role Family: Frontend Engineering
+Experience Required: 5+ years of professional engineering experience.
+Degree Required: Bachelor in Computer Science, Software Engineering, or related discipline.
+
+Summary:
+We are seeking an experienced Senior Frontend React Architect to join our high-growth engineering organization. You will design, build, and deploy high-reliability production systems and collaborate across engineering, product, and QA teams.
+
+Required Technical Skills:
+React, TypeScript, JavaScript, HTML5, CSS3, Redux
+
+Preferred Technical Skills:
+Next.js, GraphQL, TailwindCSS
+
+Key Responsibilities:
+- Design and develop scalable microservices and infrastructure.
+- Deliver robust code with high unit and integration test coverage.
+- Collaborate with stakeholders to ensure high uptime and continuous integration.

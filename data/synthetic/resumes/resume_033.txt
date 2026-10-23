@@ -1,0 +1,14 @@
+Morgan Kumar
+
+SUMMARY
+Self-taught developer with 5 years of real-world experience building software in Selenium, Python, pytest, Test Automation.
+
+WORK EXPERIENCE
+Software Developer | CodeCraft (2020 - Present)
+- Developed commercial applications with Selenium, Python, pytest, Test Automation.
+
+EDUCATION
+Bachelor of Arts in Philosophy
+
+TECHNICAL SKILLS
+Selenium, Python, pytest, Test Automation

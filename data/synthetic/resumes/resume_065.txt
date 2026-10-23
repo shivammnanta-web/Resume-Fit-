@@ -1,0 +1,15 @@
+Jamie Williams
+
+SUMMARY
+Senior Machine Learning Engineer with 5 years of engineering experience focusing on Python, PyTorch, scikit-learn.
+
+WORK EXPERIENCE
+Software Engineer | InnoSoft (2020 - Present)
+- Implemented backend pipelines using Python, PyTorch, scikit-learn.
+- Wrote unit tests and automated CI/CD deployments.
+
+EDUCATION
+Bachelor of Science in Computer Science
+
+TECHNICAL SKILLS
+Python, PyTorch, scikit-learn, Machine Learning, MLOps

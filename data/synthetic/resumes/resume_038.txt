@@ -1,0 +1,14 @@
+Sam Garcia
+
+SUMMARY
+Junior developer passionate about building reliable software using Appium, Mobile Testing, Git, Linux.
+
+WORK EXPERIENCE
+Associate Developer | StartUpX (2023 - Present)
+- Built basic endpoints using Appium, Mobile Testing.
+
+EDUCATION
+Bachelor of Science in Information Technology
+
+TECHNICAL SKILLS
+Appium, Mobile Testing, Git, Linux

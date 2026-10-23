@@ -1,0 +1,14 @@
+Casey Kumar
+
+SUMMARY
+Junior technologist with 1 years experience in AppSec, OWASP, Vulnerability Assessment.
+
+WORK EXPERIENCE
+Intern Developer | MicroGlobal (2024 - Present)
+- Assisted in coding features with AppSec, OWASP, Vulnerability Assessment.
+
+EDUCATION
+Bachelor of Science in Software Engineering
+
+TECHNICAL SKILLS
+AppSec, OWASP, Vulnerability Assessment

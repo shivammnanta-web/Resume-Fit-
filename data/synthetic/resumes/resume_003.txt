@@ -1,0 +1,14 @@
+Casey Brown
+
+SUMMARY
+Junior developer passionate about building reliable software using Go, Kubernetes, Git, Linux.
+
+WORK EXPERIENCE
+Associate Developer | StartUpX (2023 - Present)
+- Built basic endpoints using Go, Kubernetes.
+
+EDUCATION
+Bachelor of Science in Information Technology
+
+TECHNICAL SKILLS
+Go, Kubernetes, Git, Linux

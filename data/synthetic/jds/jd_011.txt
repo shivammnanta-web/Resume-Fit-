@@ -1,0 +1,18 @@
+Junior Frontend Engineer
+Role Family: Frontend Engineering
+Experience Required: 1+ years of professional engineering experience.
+Degree Required: Bachelor in Computer Science, Software Engineering, or related discipline.
+
+Summary:
+We are seeking an experienced Junior Frontend Engineer to join our high-growth engineering organization. You will design, build, and deploy high-reliability production systems and collaborate across engineering, product, and QA teams.
+
+Required Technical Skills:
+HTML, CSS, JavaScript, Git
+
+Preferred Technical Skills:
+React, Bootstrap, Figma
+
+Key Responsibilities:
+- Design and develop scalable microservices and infrastructure.
+- Deliver robust code with high unit and integration test coverage.
+- Collaborate with stakeholders to ensure high uptime and continuous integration.

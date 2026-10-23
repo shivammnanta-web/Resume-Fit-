@@ -1,0 +1,15 @@
+Devon Lee
+
+SUMMARY
+Senior C++ Systems Programmer with 8 years of demonstrated experience in C++, Linux, Multithreading.
+
+WORK EXPERIENCE
+Lead Engineer | TechCorp (2018 - Present)
+- Led architecture and deployment of services using C++, Linux, Multithreading, Data Structures.
+- Reduced latency by 45% through query optimization.
+
+EDUCATION
+Master of Science in Computer Science
+
+TECHNICAL SKILLS
+C++, Linux, Multithreading, Data Structures, Algorithms, Socket Programming, Git

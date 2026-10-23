@@ -1,0 +1,18 @@
+Senior Machine Learning Engineer
+Role Family: Machine Learning & AI
+Experience Required: 4+ years of professional engineering experience.
+Degree Required: Master in Computer Science, Software Engineering, or related discipline.
+
+Summary:
+We are seeking an experienced Senior Machine Learning Engineer to join our high-growth engineering organization. You will design, build, and deploy high-reliability production systems and collaborate across engineering, product, and QA teams.
+
+Required Technical Skills:
+Python, PyTorch, scikit-learn, Machine Learning, Docker
+
+Preferred Technical Skills:
+MLOps, Transformers, Kubernetes
+
+Key Responsibilities:
+- Design and develop scalable microservices and infrastructure.
+- Deliver robust code with high unit and integration test coverage.
+- Collaborate with stakeholders to ensure high uptime and continuous integration.

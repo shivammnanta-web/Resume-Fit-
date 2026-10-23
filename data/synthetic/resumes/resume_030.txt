@@ -1,0 +1,15 @@
+Jordan Williams
+
+SUMMARY
+MEAN/MERN Stack Developer with 3 years of engineering experience focusing on MongoDB, Express.js, React.
+
+WORK EXPERIENCE
+Software Engineer | InnoSoft (2020 - Present)
+- Implemented backend pipelines using MongoDB, Express.js, React.
+- Wrote unit tests and automated CI/CD deployments.
+
+EDUCATION
+Bachelor of Science in Computer Science
+
+TECHNICAL SKILLS
+MongoDB, Express.js, React, Node.js, TypeScript
