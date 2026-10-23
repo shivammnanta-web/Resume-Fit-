@@ -104,8 +104,8 @@ class ExtractedSkill:
 
     canonical_label: str
     esco_uri: str | None
-    category: str
-    evidence_level: EvidenceLevel
+    category: str = "skill/competence"
+    evidence_level: EvidenceLevel = EvidenceLevel.LISTED_ONLY
     evidence_records: list[SkillEvidence] = field(default_factory=list)
     related_esco_skills: list[str] = field(default_factory=list)
     match_type: str = "exact"  # "exact", "alias", or "fuzzy"

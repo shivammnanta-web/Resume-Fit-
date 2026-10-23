@@ -1,0 +1,198 @@
+{
+  "candidate_name": "Candidate",
+  "role_title": "Senior Backend Engineer\\nRequirements:\\n\u2022 3+ years experience in Python backend engineering\\n\u2022 Bachelor's degree in Computer Science\\n\u2022 Demonstrated expertise in Flask, FastAPI, and PostgreSQL\\n\u2022 Strong knowledge of Redis and Docker\\nPreferred Qualifications:\\n\u2022 Experience with Kubernetes and CI/CD pipelines",
+  "fit_index": 28.8,
+  "verdict_headline": "Low Alignment for Senior Backend Engineer\\nRequirements:\\n\u2022 3+ years experience in Python backend engineering\\n\u2022 Bachelor's degree in Computer Science\\n\u2022 Demonstrated expertise in Flask, FastAPI, and PostgreSQL\\n\u2022 Strong knowledge of Redis and Docker\\nPreferred Qualifications:\\n\u2022 Experience with Kubernetes and CI/CD pipelines",
+  "narrative_summary": "Candidate shows limited overall match (Fit Index: 28.8/100) with the published position requirements. Verified coverage of required core skills is 83.3% (5/6 mandatory skills present). Overall score was adjusted by soft constraint penalties: Required Skills Coverage (-4%).",
+  "scores": {
+    "hybrid_raw": 0.2986913608749887,
+    "pre_constraint_fit_index": 29.9,
+    "final_score": 0.28778688123848345,
+    "final_fit_index": 28.8,
+    "lexical_raw": 0.194614448488085,
+    "lexical_normalized": 0.2930388071239445,
+    "semantic_raw": 0.5222137570381165,
+    "semantic_normalized": 0.30245973004235155,
+    "alpha": 0.4,
+    "beta": 0.6,
+    "fusion_method": "weighted"
+  },
+  "skills_analysis": {
+    "total_jd_skills": 6,
+    "required_skills_count": 6,
+    "matched_required_count": 5,
+    "required_coverage_pct": 83.3,
+    "skill_coverage_table": [
+      {
+        "skill_name": "CI/CD",
+        "is_required": true,
+        "is_matched": true,
+        "evidence_tier": "demonstrated",
+        "matched_section": "experience",
+        "matched_span": "(cid:127) Implemented automated CI/CD pipelines with Docker and GitHub Actions, cutting release cycles by 40%."
+      },
+      {
+        "skill_name": "Flask",
+        "is_required": true,
+        "is_matched": true,
+        "evidence_tier": "demonstrated",
+        "matched_section": "experience",
+        "matched_span": "(cid:127) Architected and deployed microservices handling 20,000 requests/sec using Flask, PostgreSQL, and Redis."
+      },
+      {
+        "skill_name": "FastAPI",
+        "is_required": true,
+        "is_matched": true,
+        "evidence_tier": "listed_only",
+        "matched_section": "skills",
+        "matched_span": "Frameworks: Flask, SQLAlchemy, FastAPI, scikit-learn"
+      },
+      {
+        "skill_name": "Redis",
+        "is_required": true,
+        "is_matched": true,
+        "evidence_tier": "demonstrated",
+        "matched_section": "experience",
+        "matched_span": "(cid:127) Architected and deployed microservices handling 20,000 requests/sec using Flask, PostgreSQL, and Redis."
+      },
+      {
+        "skill_name": "Kubernetes",
+        "is_required": true,
+        "is_matched": false,
+        "evidence_tier": null,
+        "matched_section": null,
+        "matched_span": null
+      },
+      {
+        "skill_name": "Python (computer programming)",
+        "is_required": true,
+        "is_matched": true,
+        "evidence_tier": "demonstrated",
+        "matched_section": "summary",
+        "matched_span": "Backend Engineer with 3 years of experience specializing in distributed Python microservices, PostgreSQL databases, and "
+      }
+    ],
+    "keyword_stuffing_detected": false,
+    "keyword_stuffing_ratio": 0.57
+  },
+  "lexical_attribution": {
+    "score": 0.1946,
+    "matched_terms": [
+      {
+        "term": "backend",
+        "resume_weight": 0.0932,
+        "jd_weight": 0.3102,
+        "contribution": 0.0289
+      },
+      {
+        "term": "flask",
+        "resume_weight": 0.1086,
+        "jd_weight": 0.2135,
+        "contribution": 0.0232
+      },
+      {
+        "term": "backend engineer",
+        "resume_weight": 0.1054,
+        "jd_weight": 0.2074,
+        "contribution": 0.0219
+      },
+      {
+        "term": "redis",
+        "resume_weight": 0.0953,
+        "jd_weight": 0.1874,
+        "contribution": 0.0179
+      },
+      {
+        "term": "senior backend",
+        "resume_weight": 0.0641,
+        "jd_weight": 0.2135,
+        "contribution": 0.0137
+      },
+      {
+        "term": "ci/cd pipelines",
+        "resume_weight": 0.0623,
+        "jd_weight": 0.2074,
+        "contribution": 0.0129
+      },
+      {
+        "term": "fastapi",
+        "resume_weight": 0.0606,
+        "jd_weight": 0.2017,
+        "contribution": 0.0122
+      },
+      {
+        "term": "postgresql",
+        "resume_weight": 0.0861,
+        "jd_weight": 0.1365,
+        "contribution": 0.0118
+      },
+      {
+        "term": "python",
+        "resume_weight": 0.0676,
+        "jd_weight": 0.1072,
+        "contribution": 0.0072
+      },
+      {
+        "term": "docker",
+        "resume_weight": 0.0558,
+        "jd_weight": 0.1098,
+        "contribution": 0.0061
+      }
+    ],
+    "missing_terms": [
+      "expertise",
+      "python backend",
+      "flask fastapi",
+      "fastapi postgresql",
+      "title senior",
+      "knowledge",
+      "kubernetes",
+      "job title",
+      "title",
+      "job",
+      "strong",
+      "qualifications",
+      "engineering"
+    ]
+  },
+  "semantic_attribution": {
+    "mean_pooled_score": 0.5955,
+    "requirement_to_chunk_score": 0.5222,
+    "qualitative_rating": "Moderate",
+    "requirement_evidence": [
+      {
+        "requirement": "Job Title: Senior Backend Engineer\\nRequirements:\\n\u2022 3+ years experience in Python backend engineering\\n\u2022 Bachelor's degree in Computer Science\\n\u2022 Demonstrated expertise in Flask, FastAPI, and PostgreSQL\\n\u2022 Strong knowledge of Redis and Docker\\nPreferred Qualifications:\\n\u2022 Experience with Kubernetes and CI/CD pipelines",
+        "best_chunk_id": "sec_2_experience_0",
+        "best_chunk_text": "Senior Backend Engineer | CloudScale Tech\n\nJan 2022 - Present | Bengaluru, India\n(cid:127) Architected and deployed microservices handling 20,000 requests/sec using Flask, PostgreSQL, and Redis.\n(cid:127) Implemented automated CI/CD pipelines with Docker and GitHub Actions, cutting release cycles by 40%.\n(cid:127) Optimized SQL queries and added pgvector indexing for semantic document similarity search.\nJunior Developer | InfoSystems Ltd\nJun 2020 - Dec 2021 | Pune, India\n(cid:127) Developed REST APIs with Python and SQLAlchemy for financial ledger services.\n(cid:127) Wrote unit and integration test suites achieving 88% test coverage with pytest.",
+        "best_chunk_section": "experience",
+        "similarity": 0.5222,
+        "rating": "Moderate"
+      }
+    ]
+  },
+  "constraints": {
+    "passed_filter": true,
+    "candidate_experience_years": 6.4,
+    "required_experience_years": 3.0,
+    "candidate_degree": "bachelor",
+    "required_degree": "bachelor",
+    "total_multiplier": 0.9635,
+    "deductions": [
+      {
+        "constraint_name": "Required Skills Coverage",
+        "expected": "All 6 required skills",
+        "actual": "Missing 1: Kubernetes",
+        "multiplier": 0.9635,
+        "deduction_pct": 3.7,
+        "explanation": "Candidate lacks 1 out of 6 required skills: Kubernetes."
+      }
+    ],
+    "rejection_reasons": []
+  },
+  "audit_metadata": {
+    "esco_version": "v1.2.1",
+    "embedding_model": "sentence-transformers/all-MiniLM-L6-v2",
+    "pipeline_version": "0.1.0",
+    "timestamp_iso": "2026-10-23T15:31:59.415946+00:00"
+  }
+}
