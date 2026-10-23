@@ -1,0 +1,23 @@
+version: '3.8'
+
+services:
+  db:
+    image: pgvector/pgvector:pg15
+    container_name: resumefit_db
+    environment:
+      POSTGRES_USER: ${POSTGRES_USER:-resumefit}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:-resumefit}
+      POSTGRES_DB: ${POSTGRES_DB:-resumefit}
+    ports:
+      - "${POSTGRES_PORT:-5432}:5432"
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U ${POSTGRES_USER:-resumefit} -d ${POSTGRES_DB:-resumefit}"]
+      interval: 5s
+      timeout: 5s
+      retries: 5
+
+volumes:
+  pgdata:
+    driver: local
