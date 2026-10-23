@@ -623,6 +623,34 @@ mark.evidence-highlight {
   background: rgba(255, 255, 255, 0.02);
 }
 
+/* Candidate Comparison Cards */
+.comparison-card {
+  background: var(--bg-surface);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-lg);
+  padding: 1.5rem;
+  position: relative;
+  transition: transform var(--transition-fast), border-color var(--transition-fast);
+}
+
+.comparison-card.top-ranked {
+  border-color: var(--teal-glow);
+  box-shadow: var(--shadow-teal);
+}
+
+.fit-meter-bar {
+  height: 8px;
+  background: rgba(255, 255, 255, 0.08);
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.fit-meter-fill {
+  height: 100%;
+  background: var(--teal-gradient);
+  border-radius: 4px;
+}
+
 /* Theme Toggle Button */
 .theme-toggle {
   background: var(--bg-surface-elevated);
