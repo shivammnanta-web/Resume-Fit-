@@ -67,7 +67,7 @@ def analyze_view() -> Any:
                 flash("Uploaded PDF file was empty.", "error")
                 return redirect(url_for("web.index"))
 
-            service.analyze(
+            report = service.analyze(
                 resume_source=file_bytes,
                 jd_text=jd_text,
                 filename=fname,
@@ -82,7 +82,7 @@ def analyze_view() -> Any:
                 flash("Please upload a PDF resume or paste resume text.", "error")
                 return redirect(url_for("web.index"))
 
-            service.analyze(
+            report = service.analyze(
                 resume_source=resume_text,
                 jd_text=jd_text,
                 filename="pasted_resume.txt",
@@ -91,9 +91,10 @@ def analyze_view() -> Any:
                 persist=True,
             )
 
-        # Find latest report ID from service
-        cand_list = service.list_candidates()
-        report_id = cand_list[-1]["report_id"] if cand_list else "demo"
+        report_id = report.id
+        if not report_id:
+            cand_list = service.list_candidates()
+            report_id = cand_list[-1]["report_id"] if cand_list else "demo"
 
         return redirect(url_for("web.view_report", report_id=report_id))
 
@@ -127,27 +128,111 @@ def compare_candidates() -> Any:
             return render_template("compare.html", ranking=None)
 
         jd_text = request.form.get("jd_text", "").strip()
-        cand1_name = request.form.get("cand1_name", "Candidate A").strip()
-        cand1_text = request.form.get("cand1_text", "").strip()
-        cand2_name = request.form.get("cand2_name", "Candidate B").strip()
-        cand2_text = request.form.get("cand2_text", "").strip()
-        cand3_name = request.form.get("cand3_name", "").strip()
-        cand3_text = request.form.get("cand3_text", "").strip()
 
-        candidates = []
-        if cand1_text:
-            candidates.append({"name": cand1_name, "text": cand1_text, "filename": f"{cand1_name}.txt"})
-        if cand2_text:
-            candidates.append({"name": cand2_name, "text": cand2_text, "filename": f"{cand2_name}.txt"})
-        if cand3_text:
-            candidates.append({"name": cand3_name, "text": cand3_text, "filename": f"{cand3_name}.txt"})
+        # Helper: resolve candidate input from either PDF upload or pasted text
+        def _resolve_candidate(idx: int) -> tuple[str, str | None, bytes | None]:
+            """Return (name, text_or_none, pdf_bytes_or_none) for candidate slot idx (1-3)."""
+            name = request.form.get(f"cand{idx}_name", f"Candidate {idx}").strip()
+            text = request.form.get(f"cand{idx}_text", "").strip() or None
+            pdf_bytes: bytes | None = None
+            file_key = f"cand{idx}_file"
+            if file_key in request.files and request.files[file_key].filename:
+                file_obj = request.files[file_key]
+                pdf_bytes = file_obj.read()
+                if not pdf_bytes:
+                    pdf_bytes = None
+            return name, text, pdf_bytes
+
+        candidates: list[dict[str, Any]] = []
+        cand_names: list[str] = []
+        cand_texts: list[str] = []
+
+        for idx in range(1, 4):
+            name, text, pdf_bytes = _resolve_candidate(idx)
+            cand_names.append(name)
+            cand_texts.append(text or "")
+            if pdf_bytes:
+                # PDF upload path: run full ingestion on bytes
+                fname = secure_filename(
+                    request.files[f"cand{idx}_file"].filename or f"{name}.pdf"
+                )
+                try:
+                    report = service.analyze(
+                        resume_source=pdf_bytes,
+                        jd_text=jd_text,
+                        filename=fname,
+                        candidate_name=name,
+                        is_raw_text=False,
+                        persist=True,
+                    )
+                    candidates.append({
+                        "name": name,
+                        "report": report,
+                    })
+                except UnsupportedDocument as ud:
+                    flash(f"{name}: Document rejected — {ud.message}", "error")
+                except Exception as exc:
+                    logger.exception("Error processing PDF for %s: %s", name, exc)
+                    flash(f"{name}: PDF processing failed — {exc}", "error")
+            elif text:
+                candidates.append({
+                    "name": name,
+                    "text": text,
+                    "filename": f"{name}.txt",
+                })
 
         if len(candidates) < 2:
-            flash("Please enter at least two candidates to compare.", "error")
-            return render_template("compare.html", ranking=None)
+            flash("Please provide at least two candidates (via PDF upload or pasted text).", "error")
+            return render_template(
+                "compare.html",
+                ranking=None,
+                jd_text=jd_text,
+                cand1_name=cand_names[0] if len(cand_names) > 0 else "",
+                cand1_text=cand_texts[0] if len(cand_texts) > 0 else "",
+                cand2_name=cand_names[1] if len(cand_names) > 1 else "",
+                cand2_text=cand_texts[1] if len(cand_texts) > 1 else "",
+            )
 
-        ranking = service.rank_candidates(jd_text, candidates)
-        return render_template("compare.html", ranking=ranking, jd_text=jd_text)
+        # Build ranking: some candidates may already have reports (PDF path)
+        pre_analyzed = [c for c in candidates if "report" in c]
+        text_candidates = [c for c in candidates if "report" not in c]
+
+        # Rank text-only candidates through the standard path
+        text_ranking = service.rank_candidates(jd_text, text_candidates) if text_candidates else []
+
+        # Merge pre-analyzed PDF reports into ranking format
+        ranking: list[dict[str, Any]] = list(text_ranking)
+        for c in pre_analyzed:
+            rep = c["report"]
+            ranking.append({
+                "candidate_name": c["name"],
+                "filename": rep.id or "",
+                "report_id": rep.id,
+                "fit_index": rep.fit_index,
+                "verdict": rep.verdict_headline,
+                "lexical_score": rep.scores["lexical_score"],
+                "semantic_score": rep.scores["semantic_score"],
+                "matched_required": rep.skills_analysis["matched_required_skills"],
+                "total_required": rep.skills_analysis["total_required_skills"],
+                "skill_coverage_pct": rep.skills_analysis["skill_coverage_percentage"],
+                "years_experience": rep.constraints["candidate_years_exp"],
+                "report_dict": rep.to_dict(),
+            })
+
+        # Sort descending by Fit Index
+        ranking.sort(key=lambda x: x["fit_index"], reverse=True)
+
+        return render_template(
+            "compare.html",
+            ranking=ranking,
+            jd_text=jd_text,
+            cand1_name=cand_names[0] if len(cand_names) > 0 else "",
+            cand1_text=cand_texts[0] if len(cand_texts) > 0 else "",
+            cand2_name=cand_names[1] if len(cand_names) > 1 else "",
+            cand2_text=cand_texts[1] if len(cand_texts) > 1 else "",
+            cand3_name=cand_names[2] if len(cand_names) > 2 else "",
+            cand3_text=cand_texts[2] if len(cand_texts) > 2 else "",
+        )
 
     return render_template("compare.html", ranking=None)
 
@@ -160,9 +245,4 @@ def dashboard() -> str:
     return render_template("dashboard.html", candidates=candidates)
 
 
-@web_bp.route("/eval", methods=["GET"])
-def evaluation_dashboard() -> str:
-    """Academic benchmark and metrics evaluation dashboard."""
-    service = MatchingService.get_instance()
-    summary = service.get_eval_summary()
-    return render_template("eval.html", eval_data=summary)
+

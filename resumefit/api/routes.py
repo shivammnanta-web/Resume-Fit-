@@ -260,7 +260,7 @@ def suggest_jobs() -> Any:
         ]
 
         scored_jobs = []
-        for job in reference_jobs[: validated.top_k]:
+        for job in reference_jobs:
             rep = service.analyze(
                 resume_source=validated.resume_text,
                 jd_text=f"{job['title']}\n\n{job['description']}",
@@ -281,7 +281,8 @@ def suggest_jobs() -> Any:
             )
 
         scored_jobs.sort(key=lambda j: j["fit_index"], reverse=True)
-        return jsonify({"count": len(scored_jobs), "jobs": scored_jobs}), 200
+        top_jobs = scored_jobs[: validated.top_k]
+        return jsonify({"count": len(top_jobs), "jobs": top_jobs}), 200
 
     except ValidationError as ve:
         return make_error_response(
@@ -314,8 +315,4 @@ def delete_candidate(candidate_id: str) -> Any:
     return jsonify(resp.model_dump()), 200
 
 
-@api_bp.route("/eval/latest", methods=["GET"])
-def get_evaluation_metrics() -> Any:
-    """Return latest benchmark metrics and model configurations."""
-    service = MatchingService.get_instance()
-    return jsonify(service.get_eval_summary()), 200
+

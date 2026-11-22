@@ -19,7 +19,7 @@ function initTabs() {
   tabBtns.forEach((btn) => {
     btn.addEventListener("click", () => {
       const targetId = btn.getAttribute("data-tab");
-      const parent = btn.closest(".card") || document;
+      const parent = btn.closest(".tab-container") || btn.closest(".card") || document;
 
       parent.querySelectorAll(".tab-btn").forEach((b) => b.classList.remove("active"));
       parent.querySelectorAll(".tab-content").forEach((c) => c.classList.remove("active"));
@@ -33,38 +33,55 @@ function initTabs() {
   });
 }
 
-// 2. Drag-and-Drop file dropzone
+// 2. Drag-and-Drop file dropzones (supports multiple dropzones on page)
 function initDropzone() {
-  const dropzone = document.querySelector(".dropzone");
-  const fileInput = document.getElementById("resume_file");
-  const textHint = document.getElementById("dropzone-filename");
+  const dropzones = document.querySelectorAll(".dropzone");
+  if (!dropzones.length) return;
 
-  if (!dropzone || !fileInput) return;
+  dropzones.forEach((dropzone) => {
+    const fileInput = dropzone.querySelector("input[type='file']");
+    const textHint = dropzone.querySelector(".dropzone-text");
 
-  ["dragenter", "dragover"].forEach((eventName) => {
-    dropzone.addEventListener(eventName, (e) => {
-      e.preventDefault();
-      e.stopPropagation();
-      dropzone.classList.add("dragover");
+    if (!fileInput) return;
+
+    ["dragenter", "dragover"].forEach((eventName) => {
+      dropzone.addEventListener(eventName, (e) => {
+        e.preventDefault();
+        e.stopPropagation();
+        dropzone.classList.add("dragover");
+      });
     });
-  });
 
-  ["dragleave", "drop"].forEach((eventName) => {
-    dropzone.addEventListener(eventName, (e) => {
+    dropzone.addEventListener("dragleave", (e) => {
       e.preventDefault();
       e.stopPropagation();
       dropzone.classList.remove("dragover");
     });
-  });
 
-  fileInput.addEventListener("change", () => {
-    if (fileInput.files && fileInput.files[0]) {
-      const file = fileInput.files[0];
-      if (textHint) {
-        textHint.innerHTML = `<strong>Selected file:</strong> ${file.name} (${(file.size / 1024).toFixed(1)} KB)`;
-        textHint.style.color = "var(--teal-glow)";
+    dropzone.addEventListener("drop", (e) => {
+      e.preventDefault();
+      e.stopPropagation();
+      dropzone.classList.remove("dragover");
+
+      if (e.dataTransfer && e.dataTransfer.files && e.dataTransfer.files.length > 0) {
+        fileInput.files = e.dataTransfer.files;
+        const file = fileInput.files[0];
+        if (textHint) {
+          textHint.innerHTML = `<strong>Selected file:</strong> ${file.name} (${(file.size / 1024).toFixed(1)} KB)`;
+          textHint.style.color = "var(--teal-glow)";
+        }
       }
-    }
+    });
+
+    fileInput.addEventListener("change", () => {
+      if (fileInput.files && fileInput.files[0]) {
+        const file = fileInput.files[0];
+        if (textHint) {
+          textHint.innerHTML = `<strong>Selected file:</strong> ${file.name} (${(file.size / 1024).toFixed(1)} KB)`;
+          textHint.style.color = "var(--teal-glow)";
+        }
+      }
+    });
   });
 }
 
@@ -172,6 +189,26 @@ function initPresets() {
 
   if (btnPy) btnPy.addEventListener("click", () => loadPreset("python_architect"));
   if (btnFe) btnFe.addEventListener("click", () => loadPreset("frontend_dev"));
+
+  // Compare Page Preset
+  const btnCompare = document.getElementById("btn-compare-preset");
+  if (btnCompare) {
+    btnCompare.addEventListener("click", () => {
+      const c1Name = document.getElementById("cand1_name");
+      const c1Text = document.getElementById("cand1_text");
+      const c2Name = document.getElementById("cand2_name");
+      const c2Text = document.getElementById("cand2_text");
+      const jd = document.getElementById("jd_text");
+
+      if (jd) jd.value = DEMO_PRESETS.python_architect.jd;
+      if (c1Name) c1Name.value = "Alex Mercer";
+      if (c1Text) c1Text.value = DEMO_PRESETS.python_architect.resume;
+      if (c2Name) c2Name.value = "Jordan Smith";
+      if (c2Text) {
+        c2Text.value = `Jordan Smith - Junior Developer\nEmail: jordan.smith@example.com\n\nPROFESSIONAL SUMMARY\nJunior Developer with 2 years of experience writing web scripts.\n\nWORK EXPERIENCE\nJunior Web Developer | InnovateLabs (2022 - 2024)\n- Developed small web features in Python and Flask.\n- Created static HTML and CSS pages.\n\nEDUCATION\nBachelor of Arts in English Literature | State College (2018 - 2022)\n\nTECHNICAL SKILLS\nPython, Flask, SQLite, Git, HTML, CSS`;
+      }
+    });
+  }
 }
 
 // 4. Interactive Evidence Highlighting
@@ -191,14 +228,27 @@ function initEvidenceHighlighting() {
       chip.classList.add("active");
 
       const spanText = chip.getAttribute("data-span");
-      if (!spanText || spanText === "None" || spanText.trim().length === 0) {
+      let cleanSpan = (spanText && spanText !== "None") ? spanText.trim() : "";
+      const skillName = chip.getAttribute("data-skill") || "";
+
+      // If span is empty, fall back to matching the skill name
+      if (!cleanSpan && skillName) {
+        cleanSpan = skillName.trim();
+      }
+
+      if (!cleanSpan) {
         preview.innerHTML = originalHtml;
         return;
       }
 
-      const cleanSpan = spanText.trim();
-      const escaped = cleanSpan.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
-      const regex = new RegExp(`(${escaped})`, "gi");
+      let escaped = cleanSpan.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+      let regex = new RegExp(`(${escaped})`, "gi");
+
+      // If full span is not in original HTML, try skill name fallback
+      if (!regex.test(preview.textContent) && skillName) {
+        escaped = skillName.trim().replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+        regex = new RegExp(`\\b(${escaped})\\b`, "gi");
+      }
 
       // Replace and scroll
       preview.innerHTML = originalHtml.replace(
@@ -258,8 +308,11 @@ function initDeleteAction() {
           if (row) {
             row.style.opacity = "0";
             setTimeout(() => row.remove(), 300);
+            alert(`Right-to-Erasure complete: Candidate ${candName} was permanently erased.`);
+          } else {
+            alert(`Right-to-Erasure complete: Candidate ${candName} was permanently erased. Redirecting to dashboard.`);
+            window.location.href = "/dashboard";
           }
-          alert(`Right-to-Erasure complete: Candidate ${candName} was permanently erased.`);
         } else {
           const err = await resp.json();
           alert(`Failed to erase candidate: ${err.error?.message || "Unknown error"}`);

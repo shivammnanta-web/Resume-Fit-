@@ -24,7 +24,7 @@
             Ranked Evaluation Matrix ({{ ranking|length }} Candidates)
           </h2>
           <p style="font-size: 0.85rem; color: var(--text-muted);">
-            Ranked strictly by calibrated Fit Index (0–100) using dual lexical & semantic fusion.
+            Ranked strictly by calibrated Fit Index (0–100) using dual lexical &amp; semantic fusion.
           </p>
         </div>
         <a href="{{ url_for('web.compare_candidates') }}" class="btn btn-secondary btn-sm">&larr; New Comparison</a>
@@ -83,6 +83,14 @@
               </div>
             </div>
 
+            {% if cand.report_id %}
+              <div style="margin-top: 1rem; text-align: center;">
+                <a href="{{ url_for('web.view_report', report_id=cand.report_id) }}" class="btn btn-secondary btn-sm" style="width: 100%; display: block; text-align: center;">
+                  View Full Explainable Report &rarr;
+                </a>
+              </div>
+            {% endif %}
+
           </div>
         {% endfor %}
       </div>
@@ -91,53 +99,145 @@
 
   <!-- Comparison Form -->
   <div class="card">
-    <h2 style="font-size: 1.25rem; font-weight: 700; color: var(--text-highlight); margin-bottom: 1.25rem;">
-      Configure Candidates to Compare
-    </h2>
+    <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1.25rem; flex-wrap: wrap; gap: 0.75rem;">
+      <h2 style="font-size: 1.25rem; font-weight: 700; color: var(--text-highlight); margin-bottom: 0;">
+        Configure Candidates to Compare
+      </h2>
+      <div class="presets-bar" style="margin-bottom: 0;">
+        <span class="presets-label">&#9889; Quick Preset:</span>
+        <button type="button" class="btn btn-secondary btn-sm" id="btn-compare-preset">
+          Load Demo Benchmark Candidates
+        </button>
+      </div>
+    </div>
 
-    <form action="{{ url_for('web.compare_candidates') }}" method="POST">
+    <form action="{{ url_for('web.compare_candidates') }}" method="POST" enctype="multipart/form-data">
       <input type="hidden" name="csrf_token" value="{{ csrf_token() }}">
       <!-- Target JD -->
       <div class="form-group">
         <label class="form-label" for="jd_text">Target Job Description</label>
-        <textarea name="jd_text" id="jd_text" class="form-control" placeholder="Paste target job description here..." required style="min-height: 140px;">{{ jd_text or '' }}</textarea>
+        <textarea name="jd_text" id="jd_text" class="form-control" placeholder="Paste target job description here..." required style="min-height: 140px;">{% if jd_text %}{{ jd_text }}{% else %}Senior Python & Cloud Architect
+Experience: 6+ years required
+Degree: Bachelor's or Master's in Computer Science
+
+Responsibilities:
+- Architect high-throughput distributed backend services using Python, FastAPI, and PostgreSQL.
+- Build event-driven microservices using Docker, Kubernetes, and AWS cloud services.
+- Establish robust CI/CD deployment automation and maintain test coverage.
+
+Required Skills: Python, AWS, Docker, Kubernetes, PostgreSQL, Microservices
+Preferred Skills: Redis, CI/CD, Terraform{% endif %}</textarea>
       </div>
 
       <!-- Candidate Inputs (2 or 3) -->
       <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem; margin-bottom: 1.5rem;">
         
         <!-- Candidate 1 -->
-        <div style="background: var(--bg-surface); padding: 1.25rem; border-radius: var(--radius-md); border: 1px solid var(--border-subtle);">
+        <div class="tab-container" style="background: var(--bg-surface); padding: 1.25rem; border-radius: var(--radius-md); border: 1px solid var(--border-subtle);">
           <h3 style="font-size: 0.95rem; font-weight: 700; color: var(--teal-glow); margin-bottom: 0.75rem;">
             Candidate 1
           </h3>
           <div class="form-group">
-            <input type="text" name="cand1_name" class="form-control" placeholder="Candidate 1 Name" value="Alex Mercer" required>
+            <input type="text" name="cand1_name" id="cand1_name" class="form-control" placeholder="Candidate 1 Name" value="{{ cand1_name or 'Candidate A' }}" required>
           </div>
-          <div class="form-group" style="margin-bottom: 0;">
-            <textarea name="cand1_text" class="form-control" placeholder="Paste Candidate 1 resume text..." required style="min-height: 180px;">Alex Mercer - Senior Cloud Architect
-Experience: 7 years
-Skills: Python, FastAPI, AWS, Docker, Kubernetes, PostgreSQL, Redis, Microservices, CI/CD, Terraform
-Master of Science in Computer Science, Stanford University</textarea>
+
+          <!-- Input Format Tabs -->
+          <div class="tabs" style="margin-bottom: 0.75rem;">
+            <button type="button" class="tab-btn active" data-tab="cand1-tab-upload">Upload PDF</button>
+            <button type="button" class="tab-btn" data-tab="cand1-tab-text">Paste Text</button>
+          </div>
+
+          <!-- Tab 1: PDF Upload -->
+          <div class="tab-content active" id="cand1-tab-upload">
+            <div class="dropzone" style="min-height: 100px;">
+              <div class="dropzone-icon">&#128196;</div>
+              <p class="dropzone-text" id="cand1-dropzone-filename"><strong>Drag & drop PDF</strong> or click to browse</p>
+              <p class="dropzone-hint">PDF, up to 10 pages, max 5MB</p>
+              <input type="file" name="cand1_file" id="cand1_file" accept=".pdf">
+            </div>
+          </div>
+
+          <!-- Tab 2: Paste Text -->
+          <div class="tab-content" id="cand1-tab-text">
+            <div class="form-group" style="margin-bottom: 0;">
+              <textarea name="cand1_text" id="cand1_text" class="form-control" placeholder="Paste Candidate 1 resume text..." style="min-height: 180px;">{% if cand1_text %}{{ cand1_text }}{% endif %}</textarea>
+            </div>
           </div>
         </div>
 
         <!-- Candidate 2 -->
-        <div style="background: var(--bg-surface); padding: 1.25rem; border-radius: var(--radius-md); border: 1px solid var(--border-subtle);">
+        <div class="tab-container" style="background: var(--bg-surface); padding: 1.25rem; border-radius: var(--radius-md); border: 1px solid var(--border-subtle);">
           <h3 style="font-size: 0.95rem; font-weight: 700; color: #60A5FA; margin-bottom: 0.75rem;">
             Candidate 2
           </h3>
           <div class="form-group">
-            <input type="text" name="cand2_name" class="form-control" placeholder="Candidate 2 Name" value="Jordan Smith" required>
+            <input type="text" name="cand2_name" id="cand2_name" class="form-control" placeholder="Candidate 2 Name" value="{{ cand2_name or 'Candidate B' }}" required>
           </div>
-          <div class="form-group" style="margin-bottom: 0;">
-            <textarea name="cand2_text" class="form-control" placeholder="Paste Candidate 2 resume text..." required style="min-height: 180px;">Jordan Smith - Junior Developer
-Experience: 2 years
-Skills: Python, Flask, SQLite, Git, HTML, CSS
-Bachelor of Arts in English Literature</textarea>
+
+          <!-- Input Format Tabs -->
+          <div class="tabs" style="margin-bottom: 0.75rem;">
+            <button type="button" class="tab-btn active" data-tab="cand2-tab-upload">Upload PDF</button>
+            <button type="button" class="tab-btn" data-tab="cand2-tab-text">Paste Text</button>
+          </div>
+
+          <!-- Tab 1: PDF Upload -->
+          <div class="tab-content active" id="cand2-tab-upload">
+            <div class="dropzone" style="min-height: 100px;">
+              <div class="dropzone-icon">&#128196;</div>
+              <p class="dropzone-text" id="cand2-dropzone-filename"><strong>Drag & drop PDF</strong> or click to browse</p>
+              <p class="dropzone-hint">PDF, up to 10 pages, max 5MB</p>
+              <input type="file" name="cand2_file" id="cand2_file" accept=".pdf">
+            </div>
+          </div>
+
+          <!-- Tab 2: Paste Text -->
+          <div class="tab-content" id="cand2-tab-text">
+            <div class="form-group" style="margin-bottom: 0;">
+              <textarea name="cand2_text" id="cand2_text" class="form-control" placeholder="Paste Candidate 2 resume text..." style="min-height: 180px;">{% if cand2_text %}{{ cand2_text }}{% endif %}</textarea>
+            </div>
           </div>
         </div>
 
+      </div>
+
+      <!-- Optional Candidate 3 -->
+      <div style="margin-bottom: 1.5rem;">
+        <details>
+          <summary style="cursor: pointer; color: var(--teal-glow); font-weight: 600; font-size: 0.95rem; margin-bottom: 0.75rem;">
+            &#43; Add Candidate 3 (Optional)
+          </summary>
+          <div class="tab-container" style="background: var(--bg-surface); padding: 1.25rem; border-radius: var(--radius-md); border: 1px solid var(--border-subtle); margin-top: 0.75rem;">
+            <h3 style="font-size: 0.95rem; font-weight: 700; color: var(--text-muted); margin-bottom: 0.75rem;">
+              Candidate 3
+            </h3>
+            <div class="form-group">
+              <input type="text" name="cand3_name" id="cand3_name" class="form-control" placeholder="Candidate 3 Name" value="{{ cand3_name or '' }}">
+            </div>
+
+            <!-- Input Format Tabs -->
+            <div class="tabs" style="margin-bottom: 0.75rem;">
+              <button type="button" class="tab-btn active" data-tab="cand3-tab-upload">Upload PDF</button>
+              <button type="button" class="tab-btn" data-tab="cand3-tab-text">Paste Text</button>
+            </div>
+
+            <!-- Tab 1: PDF Upload -->
+            <div class="tab-content active" id="cand3-tab-upload">
+              <div class="dropzone" style="min-height: 100px;">
+                <div class="dropzone-icon">&#128196;</div>
+                <p class="dropzone-text" id="cand3-dropzone-filename"><strong>Drag & drop PDF</strong> or click to browse</p>
+                <p class="dropzone-hint">PDF, up to 10 pages, max 5MB</p>
+                <input type="file" name="cand3_file" id="cand3_file" accept=".pdf">
+              </div>
+            </div>
+
+            <!-- Tab 2: Paste Text -->
+            <div class="tab-content" id="cand3-tab-text">
+              <div class="form-group" style="margin-bottom: 0;">
+                <textarea name="cand3_text" id="cand3_text" class="form-control" placeholder="Paste Candidate 3 resume text..." style="min-height: 180px;">{% if cand3_text %}{{ cand3_text }}{% endif %}</textarea>
+              </div>
+            </div>
+          </div>
+        </details>
       </div>
 
       <div style="text-align: center;">

@@ -58,6 +58,7 @@ class FitReport:
     semantic_attribution: dict[str, Any]
     constraints: dict[str, Any]
     audit_metadata: dict[str, Any]
+    id: str | None = None
 
     def to_dict(self) -> dict[str, Any]:
         return asdict(self)
@@ -295,6 +296,8 @@ class ReportGenerator:
                 "esco_version": self.config.skills.esco_version,
                 "embedding_model": self.config.matching.embedding_model,
                 "pipeline_version": self.config.app.version,
+                "alpha": hybrid_score.alpha,
+                "beta": hybrid_score.beta,
                 "timestamp_iso": datetime.datetime.now(datetime.UTC).isoformat(),
             },
         )

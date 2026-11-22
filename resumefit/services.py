@@ -20,7 +20,6 @@ from core.matching.constraints import ConstraintEvaluator, detect_candidate_high
 from core.matching.hybrid import HybridFusionEngine
 from core.matching.lexical import LexicalScorer
 from core.matching.semantic import SemanticScorer
-from core.skills.esco_loader import load_esco_taxonomy
 from core.skills.extractor import SkillExtractor
 from resumefit.config import get_config
 
@@ -146,8 +145,9 @@ class MatchingService:
 
         # 9. Persistence (In-memory + DB if active)
         if persist:
-            report_dict = report.to_dict()
             report_id = str(uuid.uuid4())
+            report.id = report_id
+            report_dict = report.to_dict()
             report_dict["id"] = report_id
             report_dict["created_at"] = datetime.datetime.now(datetime.UTC).isoformat()
             report_dict["resume_text"] = clean_text
@@ -198,6 +198,7 @@ class MatchingService:
                 {
                     "candidate_name": c_name,
                     "filename": fname,
+                    "report_id": rep.id,
                     "fit_index": rep.fit_index,
                     "verdict": rep.verdict_headline,
                     "lexical_score": rep.scores["lexical_score"],
@@ -248,49 +249,4 @@ class MatchingService:
         """List all candidates in the candidate pool."""
         return list(_IN_MEMORY_CANDIDATES)
 
-    def get_eval_summary(self) -> dict[str, Any]:
-        """Return system evaluation benchmarks and metadata."""
-        taxonomy = load_esco_taxonomy()
-        skills_count = len(taxonomy.skills_by_uri)
-        vocab_size = self.lexical_scorer.vocabulary_size
 
-        summary_file = Path("evaluation/results/latest/summary.json")
-        real_benchmarks: dict[str, Any] = {}
-        if summary_file.is_file():
-            try:
-                real_benchmarks = json.loads(summary_file.read_text(encoding="utf-8"))
-            except Exception as e:
-                logger.debug("Could not read evaluation summary: %s", e)
-
-        return {
-            "timestamp": datetime.datetime.now(datetime.UTC).isoformat(),
-            "esco_version": self.config.skills.esco_version,
-            "esco_skills_count": skills_count,
-            "tfidf_vocabulary_terms": vocab_size,
-            "embedding_model": self.config.matching.embedding_model,
-            "hnsw_config": {
-                "m": self.config.database.hnsw_m,
-                "ef_construction": self.config.database.hnsw_ef_construction,
-                "ef_search": self.config.database.hnsw_ef_search,
-                "distance_metric": "cosine",
-            },
-            "benchmarks": {
-                "skill_extraction": {
-                    "evaluation_resumes": 20,
-                    "micro_precision": 0.902,
-                    "micro_recall": 0.898,
-                    "micro_f1": 0.900,
-                    "macro_precision": 0.900,
-                    "macro_recall": 0.896,
-                    "macro_f1": 0.898,
-                },
-                "hnsw_recall_at_10": {
-                    "ef_10": 0.92,
-                    "ef_20": 0.96,
-                    "ef_40": 0.985,
-                    "ef_80": 0.995,
-                    "ef_160": 1.00,
-                },
-                "experiments": real_benchmarks,
-            },
-        }

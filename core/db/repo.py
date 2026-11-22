@@ -11,6 +11,7 @@ Provides:
 from __future__ import annotations
 
 import logging
+import re
 import uuid
 from pathlib import Path
 from typing import Any
@@ -50,6 +51,24 @@ def _is_postgres(session: Session) -> bool:
     if url is None and hasattr(bind, "engine"):
         url = getattr(bind.engine, "url", None)
     return "postgresql" in str(url) if url else False
+
+
+def _execute_postgres_query(
+    session: Session, filename: str, params: dict[str, Any]
+) -> list[dict[str, Any]]:
+    """Execute a SQL query in PostgreSQL, executing SET LOCAL hnsw.ef_search separately if present."""
+    sql_text = load_sql_query(filename)
+    if "SET LOCAL hnsw.ef_search" in sql_text:
+        ef = params.pop("ef_search", 40)
+        session.execute(text(f"SET LOCAL hnsw.ef_search = {int(ef)};"))
+        sql_text = re.sub(
+            r"SET\s+LOCAL\s+hnsw\.ef_search\s*=\s*:[a-zA-Z0-9_]+;\s*",
+            "",
+            sql_text,
+            flags=re.IGNORECASE,
+        )
+    results = session.execute(text(sql_text), params)
+    return [dict(r) for r in results.mappings().all()]
 
 
 
@@ -184,14 +203,11 @@ class ResumeRepository:
         """Find top-K resume chunks using pgvector HNSW cosine distance."""
         ef = ef_search or self.config.database.hnsw_ef_search
         if _is_postgres(self.session):
-            sql_text = load_sql_query("top_k_resumes.sql")
-            # Replace SET LOCAL statement if needed or execute in transaction
-            results = self.session.execute(
-                text(sql_text),
+            return _execute_postgres_query(
+                self.session,
+                "top_k_resumes.sql",
                 {"ef_search": ef, "query_embedding": str(query_embedding), "limit": limit},
             )
-            rows = results.mappings().all()
-            return [dict(r) for r in rows]
 
         # In-memory numpy fallback for SQLite test environments
         return self._search_chunks_in_memory(query_embedding, limit=limit)
@@ -204,9 +220,9 @@ class ResumeRepository:
     ) -> list[dict[str, Any]]:
         """Search chunks restricted to specified section types."""
         if _is_postgres(self.session):
-            sql_text = load_sql_query("section_restricted.sql")
-            results = self.session.execute(
-                text(sql_text),
+            return _execute_postgres_query(
+                self.session,
+                "section_restricted.sql",
                 {
                     "ef_search": self.config.database.hnsw_ef_search,
                     "query_embedding": str(query_embedding),
@@ -214,7 +230,6 @@ class ResumeRepository:
                     "limit": limit,
                 },
             )
-            return [dict(r) for r in results.mappings().all()]
 
         # Fallback
         return self._search_chunks_in_memory(
@@ -304,16 +319,15 @@ class JobRepository:
     ) -> list[dict[str, Any]]:
         """Find top matching job opportunities for a candidate embedding."""
         if _is_postgres(self.session):
-            sql_text = load_sql_query("top_k_jobs.sql")
-            results = self.session.execute(
-                text(sql_text),
+            return _execute_postgres_query(
+                self.session,
+                "top_k_jobs.sql",
                 {
                     "ef_search": self.config.database.hnsw_ef_search,
                     "candidate_embedding": str(candidate_embedding),
                     "limit": limit,
                 },
             )
-            return [dict(r) for r in results.mappings().all()]
 
         # Fallback in-memory
         jobs = self.list_jobs(limit=100)

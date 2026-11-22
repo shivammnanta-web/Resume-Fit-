@@ -193,11 +193,15 @@ def parse_single_date(date_token: str) -> tuple[int | None, int | None, bool]:
         now = datetime.now()
         return now.year, now.month, True
 
-    # Pattern: MM/YYYY
+    # Pattern: MM/YYYY or YYYY/MM
     if "/" in token:
         parts = token.split("/")
         if len(parts) == 2 and parts[0].isdigit() and parts[1].isdigit():
-            return int(parts[1]), int(parts[0]), False
+            p0, p1 = int(parts[0]), int(parts[1])
+            if p0 > 1000:  # YYYY/MM format
+                return p0, p1, False
+            elif p1 > 1000:  # MM/YYYY format
+                return p1, p0, False
 
     year_match = re.search(r"\b(19\d{2}|20\d{2})\b", token)
     year = int(year_match.group(1)) if year_match else None
@@ -260,12 +264,11 @@ def merge_overlapping_intervals(intervals: list[tuple[int, int]]) -> list[tuple[
 def compute_total_experience_years(ranges: list[DateRange]) -> float:
     """Calculate total non-overlapping years of experience across all parsed date ranges."""
     intervals: list[tuple[int, int]] = []
-    base_year = 1990
 
     for r in ranges:
         if r.start_year and r.end_year:
-            s_idx = (r.start_year - base_year) * 12 + (r.start_month or 1)
-            e_idx = (r.end_year - base_year) * 12 + (r.end_month or 12)
+            s_idx = r.start_year * 12 + (r.start_month or 1)
+            e_idx = r.end_year * 12 + (r.end_month or 12)
             if e_idx >= s_idx:
                 intervals.append((s_idx, e_idx))
 

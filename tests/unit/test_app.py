@@ -120,16 +120,16 @@ def test_right_to_erasure_api(client: FlaskClient) -> None:
     report = resp.get_json()
     report_id = report.get("id")
 
-    if report_id:
-        # Delete by ID
-        del_resp = client.delete(f"/api/resumes/{report_id}")
-        assert del_resp.status_code == 200
-        del_data = del_resp.get_json()
-        assert del_data["deleted"] is True
+    assert report_id is not None
+    # Delete by ID
+    del_resp = client.delete(f"/api/resumes/{report_id}")
+    assert del_resp.status_code == 200
+    del_data = del_resp.get_json()
+    assert del_data["deleted"] is True
 
-        # Second deletion should return 404
-        second_del = client.delete(f"/api/resumes/{report_id}")
-        assert second_del.status_code == 404
+    # Second deletion should return 404
+    second_del = client.delete(f"/api/resumes/{report_id}")
+    assert second_del.status_code == 404
 
 
 def test_web_routes_render_html(client: FlaskClient) -> None:
@@ -149,10 +149,9 @@ def test_web_routes_render_html(client: FlaskClient) -> None:
     assert resp_dash.status_code == 200
     assert b"Candidate Pool" in resp_dash.data
 
-    # 4. Academic Evaluation view
+    # 4. Verify removed /eval page returns 404
     resp_eval = client.get("/eval")
-    assert resp_eval.status_code == 200
-    assert b"Empirical Benchmarks" in resp_eval.data
+    assert resp_eval.status_code == 404
 
 
 def test_web_form_analyze_and_report_view(client: FlaskClient) -> None:
@@ -183,12 +182,32 @@ def test_web_compare_form_submission(client: FlaskClient) -> None:
     assert b"Alice" in resp.data
 
 
-def test_api_eval_latest_endpoint(client: FlaskClient) -> None:
-    """Verify /api/eval/latest returns JSON with summary benchmark metrics."""
-    resp = client.get("/api/eval/latest")
+def test_web_compare_with_pdf_upload(client: FlaskClient) -> None:
+    """Verify HTML form submission on /compare handles PDF resume upload alongside text."""
+    pdf_path = Path("tests/fixtures/pdfs/single_col_1.pdf")
+    if not pdf_path.is_file():
+        pytest.skip("Test PDF fixture not found")
+
+    with open(pdf_path, "rb") as f:
+        file_bytes = f.read()
+
+    form_data = {
+        "jd_text": "Python Software Developer with SQL and database experience.",
+        "cand1_name": "PDF Candidate",
+        "cand1_file": (io.BytesIO(file_bytes), "sample.pdf", "application/pdf"),
+        "cand2_name": "Text Candidate",
+        "cand2_text": "Frontend designer with CSS and HTML experience.",
+    }
+    resp = client.post("/compare", data=form_data, content_type="multipart/form-data")
     assert resp.status_code == 200
-    data = resp.get_json()
-    assert "benchmarks" in data or "esco_version" in data
+    assert b"Ranked Evaluation Matrix" in resp.data
+    assert b"PDF Candidate" in resp.data
+
+
+def test_api_eval_removed(client: FlaskClient) -> None:
+    """Verify /api/eval/latest is removed and returns 404."""
+    resp = client.get("/api/eval/latest")
+    assert resp.status_code == 404
 
 
 def test_api_reports_not_found(client: FlaskClient) -> None:
@@ -216,4 +235,34 @@ def test_custom_404_error_page(client: FlaskClient) -> None:
     resp = client.get("/this-route-does-not-exist-at-all")
     assert resp.status_code == 404
     assert b"404" in resp.data
+
+
+def test_date_parsing_formats_and_pre_1990_experience() -> None:
+    """Verify YYYY/MM, MM/YYYY, and pre-1990 experience calculation."""
+    from core.ingestion.sections import (
+        DateRange,
+        compute_total_experience_years,
+        parse_single_date,
+    )
+
+    # 1. YYYY/MM vs MM/YYYY
+    y1, m1, _ = parse_single_date("2023/05")
+    assert y1 == 2023 and m1 == 5
+
+    y2, m2, _ = parse_single_date("05/2023")
+    assert y2 == 2023 and m2 == 5
+
+    # 2. Pre-1990 career timeline
+    dr1 = DateRange(
+        start_str="1984",
+        end_str="1989",
+        start_year=1984,
+        start_month=1,
+        end_year=1989,
+        end_month=12,
+        duration_months=72.0,
+    )
+    total_exp = compute_total_experience_years([dr1])
+    assert total_exp == 6.0
+
 

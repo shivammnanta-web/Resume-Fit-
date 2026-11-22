@@ -162,10 +162,8 @@ class SemanticScorer:
             req_vec = req_embeddings[req_idx]
             # Cosine similarity between this requirement and all chunks
             sims = np.dot(chunk_embeddings, req_vec)
-            # Weighted similarity penalizes lower-evidence sections (e.g. summary vs experience)
-            weighted_sims = sims * section_weights
-
-            best_idx = int(np.argmax(weighted_sims))
+            # Select the chunk that best satisfies this requirement semantically
+            best_idx = int(np.argmax(sims))
             raw_sim = float(max(0.0, min(1.0, sims[best_idx])))
             best_chunk = chunks[best_idx]
 

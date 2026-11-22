@@ -283,6 +283,16 @@ class SkillExtractor:
         if len(norm) < 4 or norm in self.nlp.Defaults.stop_words:
             return None
 
+        # Generic technical words that should never fuzzy-match specific programming languages or tools
+        GENERIC_TECH_WORDS = {
+            "programming", "coding", "developer", "development", "engineer", "engineering",
+            "software", "hardware", "language", "languages", "computer", "technology",
+        }
+        if norm in GENERIC_TECH_WORDS:
+            return None
+
+        norm_words = set(norm.split())
+
         best_score = 0.0
         best_match: tuple[str, str | None, str, str] | None = None
 
@@ -294,6 +304,13 @@ class SkillExtractor:
 
             # Length guard: true typos have almost identical length
             if abs(len(norm) - len(target_key)) > 2:
+                continue
+
+            # Short-token language guard: if target has 'c', 'r', 'go' as a distinct token,
+            # norm MUST contain that short token (e.g. 'programming' must not match 'c programming')
+            target_words = set(target_key.split())
+            guard_intersection = target_words & self.short_tokens
+            if guard_intersection and not (guard_intersection & norm_words):
                 continue
 
             score = fuzz.ratio(norm, target_key) / 100.0
@@ -379,49 +396,53 @@ class SkillExtractor:
         skills_map: dict[str, ExtractedSkill] = {}
 
         for sec in sections:
-            lines = sec.text.splitlines()
-            for line in lines:
+            line_offset = 0
+            for line in sec.text.splitlines(keepends=True):
                 sline = line.strip()
-                if not sline:
-                    continue
+                if sline:
+                    # Lead whitespace offset within this line
+                    lead_ws = len(line) - len(line.lstrip())
+                    line_start_in_sec = line_offset + lead_ws
 
-                candidates = self.extract_candidates_from_text(sline)
-                for cand_text, start_idx, end_idx in candidates:
-                    match_res = self.match_cascade(cand_text, sline)
-                    if not match_res:
-                        continue
+                    candidates = self.extract_candidates_from_text(sline)
+                    for cand_text, start_idx, end_idx in candidates:
+                        match_res = self.match_cascade(cand_text, sline)
+                        if not match_res:
+                            continue
 
-                    canonical, esco_uri, category, match_type, conf = match_res
-                    evidence_lvl, action_verbs = classify_evidence_level(sline, sec.section_type)
+                        canonical, esco_uri, category, match_type, conf = match_res
+                        evidence_lvl, action_verbs = classify_evidence_level(sline, sec.section_type)
 
-                    ev_record = SkillEvidence(
-                        skill_name=cand_text,
-                        canonical_label=canonical,
-                        esco_uri=esco_uri,
-                        evidence_level=evidence_lvl,
-                        section_type=sec.section_type,
-                        context_span=sline,
-                        start_char=sec.start_char + start_idx,
-                        end_char=sec.start_char + end_idx,
-                        action_verbs=action_verbs,
-                        is_alias=(match_type == "alias"),
-                        match_type=match_type,
-                    )
-
-                    if canonical not in skills_map:
-                        related = self.get_related_esco_labels(esco_uri)
-                        skills_map[canonical] = ExtractedSkill(
+                        ev_record = SkillEvidence(
+                            skill_name=cand_text,
                             canonical_label=canonical,
                             esco_uri=esco_uri,
-                            category=category,
                             evidence_level=evidence_lvl,
-                            evidence_records=[ev_record],
-                            related_esco_skills=related,
+                            section_type=sec.section_type,
+                            context_span=sline,
+                            start_char=sec.start_char + line_start_in_sec + start_idx,
+                            end_char=sec.start_char + line_start_in_sec + end_idx,
+                            action_verbs=action_verbs,
+                            is_alias=(match_type == "alias"),
                             match_type=match_type,
-                            confidence=conf,
                         )
-                    else:
-                        skills_map[canonical].add_evidence(ev_record)
+
+                        if canonical not in skills_map:
+                            related = self.get_related_esco_labels(esco_uri)
+                            skills_map[canonical] = ExtractedSkill(
+                                canonical_label=canonical,
+                                esco_uri=esco_uri,
+                                category=category,
+                                evidence_level=evidence_lvl,
+                                evidence_records=[ev_record],
+                                related_esco_skills=related,
+                                match_type=match_type,
+                                confidence=conf,
+                            )
+                        else:
+                            skills_map[canonical].add_evidence(ev_record)
+
+                line_offset += len(line)
 
         extracted_skills = list(skills_map.values())
 

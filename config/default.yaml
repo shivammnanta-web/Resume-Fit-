@@ -37,7 +37,7 @@ matching:
   chunk_overlap_tokens: 30
   fusion_method: "weighted"  # "weighted" or "rrf"
   rrf_k: 60
-  normalizer: "percentile"   # "percentile" or "minmax"
+  normalizer: "minmax"       # "minmax" (default) or "percentile"
   cross_encoder_enabled: false
   cross_encoder_model: "cross-encoder/ms-marco-MiniLM-L-6-v2"
   section_weights:

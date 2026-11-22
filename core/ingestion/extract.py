@@ -150,51 +150,51 @@ def extract_pdf_text(
             text_pypdf = extract_page_with_pypdf(pypdf_reader, page_idx)
             text_plumber = extract_page_from_plumber_doc(plumber_doc, page_idx)
 
-        c_pypdf, g_pypdf, s_pypdf = evaluate_page_text_quality(text_pypdf)
-        c_plumb, g_plumb, s_plumb = evaluate_page_text_quality(text_plumber)
+            c_pypdf, g_pypdf, s_pypdf = evaluate_page_text_quality(text_pypdf)
+            c_plumb, g_plumb, s_plumb = evaluate_page_text_quality(text_plumber)
 
-        # Composite quality score: Higher char yield (capped), lower garbled ratio, line sanity
-        # Score = (min(chars, 3000) / 1000) * (1.0 - garbled_ratio) * line_sanity
-        score_pypdf = (min(c_pypdf, 3000) / 1000.0) * (1.0 - g_pypdf) * s_pypdf
-        score_plumber = (min(c_plumb, 3000) / 1000.0) * (1.0 - g_plumb) * s_plumb
+            # Composite quality score: Higher char yield (capped), lower garbled ratio, line sanity
+            # Score = (min(chars, 3000) / 1000) * (1.0 - garbled_ratio) * line_sanity
+            score_pypdf = (min(c_pypdf, 3000) / 1000.0) * (1.0 - g_pypdf) * s_pypdf
+            score_plumber = (min(c_plumb, 3000) / 1000.0) * (1.0 - g_plumb) * s_plumb
 
-        if score_plumber >= score_pypdf:
-            chosen_extractor = "pdfplumber"
-            chosen_text = text_plumber
-            chosen_char_count = c_plumb
-            chosen_garbled = g_plumb
-        else:
-            chosen_extractor = "pypdf"
-            chosen_text = text_pypdf
-            chosen_char_count = c_pypdf
-            chosen_garbled = g_pypdf
+            if score_plumber >= score_pypdf:
+                chosen_extractor = "pdfplumber"
+                chosen_text = text_plumber
+                chosen_char_count = c_plumb
+                chosen_garbled = g_plumb
+            else:
+                chosen_extractor = "pypdf"
+                chosen_text = text_pypdf
+                chosen_char_count = c_pypdf
+                chosen_garbled = g_pypdf
 
-        logger.debug(
-            "Page %d: chosen %s (score=%.2f vs %.2f, chars=%d, garbled=%.2f)",
-            page_idx + 1,
-            chosen_extractor,
-            max(score_plumber, score_pypdf),
-            min(score_plumber, score_pypdf),
-            chosen_char_count,
-            chosen_garbled,
-        )
-
-        page_results.append(
-            PageExtractionResult(
-                page_number=page_idx + 1,
-                extractor_chosen=chosen_extractor,
-                char_count=chosen_char_count,
-                garbled_token_ratio=chosen_garbled,
-                raw_text=chosen_text,
-                metadata={
-                    "pypdf_chars": c_pypdf,
-                    "pdfplumber_chars": c_plumb,
-                    "pypdf_garbled": g_pypdf,
-                    "pdfplumber_garbled": g_plumb,
-                },
+            logger.debug(
+                "Page %d: chosen %s (score=%.2f vs %.2f, chars=%d, garbled=%.2f)",
+                page_idx + 1,
+                chosen_extractor,
+                max(score_plumber, score_pypdf),
+                min(score_plumber, score_pypdf),
+                chosen_char_count,
+                chosen_garbled,
             )
-        )
-        chosen_texts.append(chosen_text)
+
+            page_results.append(
+                PageExtractionResult(
+                    page_number=page_idx + 1,
+                    extractor_chosen=chosen_extractor,
+                    char_count=chosen_char_count,
+                    garbled_token_ratio=chosen_garbled,
+                    raw_text=chosen_text,
+                    metadata={
+                        "pypdf_chars": c_pypdf,
+                        "pdfplumber_chars": c_plumb,
+                        "pypdf_garbled": g_pypdf,
+                        "pdfplumber_garbled": g_plumb,
+                    },
+                )
+            )
+            chosen_texts.append(chosen_text)
 
     finally:
         if plumber_doc is not None:
